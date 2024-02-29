@@ -1,0 +1,299 @@
+<!-- Please remove this file from your project -->
+<template>
+  <div style="position: sticky; top: 0;height: 930px;">
+    <div class="logo">
+      <img class="con-box-two-img" style="margin: 0 !important;" src="~/assets/image/logo.png" alt="" />
+    </div>
+    <header class="nav-header">
+      <div class="left-menu">
+        <div class="accordion">
+          <div class="section">
+            <input
+              id="section-1"
+              type="radio"
+              name="accordion-1"
+              checked="checked"
+            />
+
+            <ul>
+              <Nuxt-link class="text-nav" to="/"
+                ><li>
+                  <svg
+                    class="svg-doc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                    /></svg
+                  >1. Introduction
+                </li></Nuxt-link
+              >
+              <Nuxt-link class="text-nav" to="/version"
+                ><li>
+                  <svg
+                    class="svg-doc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                    /></svg
+                  >2. Version
+                </li></Nuxt-link
+              >
+            </ul>
+
+            <!-- <label for="section-1"><span>Lottotype</span></label>
+            <div class="content">
+              <ul>
+                <Nuxt-link class="text-nav" to="/Lottotype">
+                  <li>
+                    <span>Lotto type </span>
+                  </li></Nuxt-link
+                >
+              </ul>
+            </div> -->
+          </div>
+          <div class="section">
+            <input
+              id="section"
+              type="radio"
+              name="accordion-1"
+              value="toggle"
+            />
+            <label for="section">
+              <span
+                ><svg
+                  class="svg-doc"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                  /></svg
+                >3. Lottotype</span
+              ></label
+            >
+            <div class="content">
+              <ul>
+                <Nuxt-link class="text-nav" to="/Lottotype" target="_self">
+                  <li>
+                    <span>3.1 Key Type</span>
+                  </li>
+                </Nuxt-link>
+              </ul>
+              <ul>
+                <Nuxt-link class="text-nav" to="/keytype" >
+                  <li>
+                    <span>3.2 Key Sub Type </span>
+                  </li>
+                </Nuxt-link>
+              </ul>
+            </div>
+          </div>
+          <div class="section">
+            <input
+              id="section-2"
+              type="radio"
+              name="accordion-1"
+              value="toggle"
+            />
+            <label for="section-2">
+              <span
+                ><svg
+                  class="svg-doc"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                  /></svg
+                >4. Semless API</span
+              ></label
+            >
+            <div class="content">
+              <ul>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.1 Introduction Seamless API</span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless42">
+                  <li>
+                    <span>4.2 Workflow </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless43">
+                  <li>
+                    <span>4.3 Setting</span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless44">
+                  <li>
+                    <span>4.4 Login request </span>
+                  </li>
+                </Nuxt-link>
+                 <Nuxt-link class="text-nav" to="/Semless45">
+                  <li>
+                    <span>4.5 Call Back Service </span>
+                  </li>
+                </Nuxt-link>
+                <!-- <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.1 GetUserDetail </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.2 GetUserBalance </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.3 UserPlaceBet </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.4 UserPlaceBetCancel </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.5 UserPlacePayout </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless">
+                  <li>
+                    <span>4.5.6 UserPlaceReToRunning </span>
+                  </li>
+                </Nuxt-link>  -->
+                <Nuxt-link class="text-nav" to="/Semless46">
+                  <li>
+                    <span>4.6 ListPlaceout </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless47">
+                  <li>
+                    <span style="word-break: break-all;">4.7 ListHotnumberandLimitnumber </span>
+                  </li>
+                </Nuxt-link>
+                <Nuxt-link class="text-nav" to="/Semless48">
+                  <li>
+                    <span>4.8 Detail </span>
+                  </li>
+                </Nuxt-link>
+              </ul>
+            </div>
+          </div>
+          <div class="section">
+            <input
+              id="section-3"
+              type="radio"
+              name="accordion-1"
+              value="toggle"
+            />
+            <label for="section-3">
+              <span
+                ><svg
+                  class="svg-doc"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                  /></svg
+                >5. Tranferwallet API</span
+              ></label
+            >
+            <div class="content">
+              <ul>
+                <Nuxt-link class="text-nav" to="/Tranferwallet">
+                  <li>5.1 Introduction Transferwallet API</li></Nuxt-link
+                >
+
+                <Nuxt-link class="text-nav" to="/Tranferwallet52">
+                  <li>
+                    <span>5.2 Workflow</span>
+                  </li>
+                </Nuxt-link>
+                <ul>
+                  <Nuxt-link class="text-nav" to="/Tranferwallet53">
+                    <li>
+                      <span>5.3 Setting</span>
+                    </li>
+                  </Nuxt-link>
+                </ul>
+                <ul>
+                  <Nuxt-link class="text-nav" to="/Tranferwallet54">
+                    <li>
+                      <span>5.4 login request</span>
+                    </li>
+                  </Nuxt-link>
+                </ul>
+                <ul>
+                  <Nuxt-link class="text-nav" to="/Tranferwallet55">
+                    <li>
+                      <span>5.5 Deposit</span>
+                    </li>
+                  </Nuxt-link>
+                  <Nuxt-link class="text-nav" to="/Tranferwallet56">
+                    <li>
+                      <span>5.6 Withdrawal</span>
+                    </li>
+                  </Nuxt-link>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="section">
+            <input
+              id="section-4"
+              type="radio"
+              name="accordion-1"
+              value="toggle"
+            />
+            <label for="section-4">
+              <span
+                ><svg
+                  class="svg-doc"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                  /></svg
+                >6. Sevice Respone Code</span
+              ></label
+            >
+            <div class="content">
+              <ul>
+                <Nuxt-link class="text-nav" to="/Sevice"
+                  ><li>6.1 Member Authen</li></Nuxt-link
+                >
+                <Nuxt-link class="text-nav" to="/Sevice">
+                  <li>
+                    <span>6.2 Service Respone</span>
+                  </li>
+                </Nuxt-link>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
