@@ -165,14 +165,14 @@ export default {
       // };
       const url = `https://dev-api.amblotto.net/apiRoute/member/loginRequest`;
       // console.log(url);
-      this.$axios
-        .post(url)
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      // this.$axios
+      //   .post(url)
+      //   .then((response) => {
+      //     console.log(response);
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //   });
     },
   },
 };
