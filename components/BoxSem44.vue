@@ -58,7 +58,7 @@
         </lable>
       </div>
       <div>
-        <div class="koh-faq-answer col-12">
+        <div class="koh-faq-answer col-12 test">
           <pre>
 
                                         <code id="3_4A" style="border-radius: 0.375rem;" class="hljs json">{
@@ -104,14 +104,20 @@
       </div>
       <div class="section">
         <div class="slide">
-          <details class="s_container">
+          <!-- <details class="s_container">
             <summary class="s_summary">
-              <p class="s_left_col">
-                <span class="s_triangle">&blacktriangledown;</span>
-              </p>
+               <label for="check"><p class="s_left_col">
+                <span class="s_triangle">
+                 &blacktriangledown;</span
+                >
+              </p></label>
             </summary>
-            <div class="koh-faq-answer col-12">
-              <pre>
+          </details> -->
+
+          <!-- <input id="check" type="checkbox" /> -->
+          <!-- <div class="koh-faq-answer col-12 test "> -->
+          <div class="koh-faq-answer col-12">
+            <pre>
 
                                         <code id="3_4B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
@@ -125,8 +131,7 @@
     },
     <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
 }</code></pre>
-            </div>
-          </details>
+          </div>
         </div>
       </div>
       <div>
@@ -140,9 +145,35 @@
     </div>
   </div>
 </template>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
+// import axios from "axios";
 export default {
   name: "BoxSem44",
+  data() {
+    return {};
+  },
+  beforeCreate() {},
+  mounted() {
+    this.getsemless();
+  },
+  watch: {},
+  methods: {
+    getsemless() {
+      // var body = {
+
+      // };
+      const url = `https://dev-api.amblotto.net/apiRoute/member/loginRequest`;
+      // console.log(url);
+      this.$axios
+        .post(url)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>

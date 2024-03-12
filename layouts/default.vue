@@ -1,22 +1,18 @@
 <template>
   <div>
-    <!-- <Header /> -->
+    <Header />
     <div class="box-cotent">
       <div class="box-Navbar">
         <Navbar />
       </div>
-      <div style="width: 85%">
+
+      <div class="W-default">
         <div style="display: flex; width: 100%">
-          <img
-            class="img"
-            src="~/assets/image/Banner3.jpg"
-            alt=""
-          />
+          <img class="img" src="~/assets/image/Banner3.jpg" alt="" />
         </div>
 
         <div style="display: flex; width: 100%">
           <div style="width: 100%"><Nuxt /></div>
-
         </div>
       </div>
     </div>
@@ -26,16 +22,17 @@
 </template>
 
 <script>
-// import Header from "~/components/Navbars/Header.vue";
+import Header from "~/components/Navbars/Header.vue";
 import Footer from "~/components/Navbars/Footer.vue";
 import Navbar from "~/components/Navbars/Navbar.vue";
+
+
 export default {
   name: "default",
   components: {
-    // Header,
+    Header,
     Footer,
     Navbar,
-
   },
 };
 </script>

@@ -117,7 +117,7 @@
       <div class="koh-faq-answer col-12">
         <pre>
 
-                                    <code id="410B" style="border-radius: 0.375rem;" class="hljs json">{
+                                    <code id="410B" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"rate"</span>: {

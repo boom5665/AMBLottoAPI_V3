@@ -18,7 +18,7 @@
       </div>
 
       <div class="btn-toolbar mb-3" role="toolbar">
-        <div class="divBox">
+        <!-- <div class="divBox">
           <div class="col-12">
             <label class="txtHead">Method : </label>
             <label>Post</label>
@@ -33,7 +33,7 @@
             <label class="txtHead"> headers : </label>
             <label> content-type application/json </label>
           </div>
-        </div>
+        </div> -->
         <div class="form-group col-12 ex">
           <lable
             ><b style="color: #19a17a !important" set-lan="text:Request Body"
@@ -121,7 +121,7 @@
             </table>
           </div>
         </div>
-        <div class="koh-tab-content col-12">
+        <!-- <div class="koh-tab-content col-12">
           <div class="koh-tab-content-body">
             <div class="koh-faq form-group">
               <div class="koh-faq-question form-group ex">
@@ -136,14 +136,14 @@
                     aria-hidden="true"
                     style="margin-left: 2%; font-size: 1rem"
                   ></i>
-                  <!-- <button onclick="copyContent(document.getElementById('seamless_tabfour-six-four_eight_req').innerHTML)" class="btn btn-info waves-effect waves-light">Copy to clipboard</button> -->
+                  <button onclick="copyContent(document.getElementById('seamless_tabfour-six-four_eight_req').innerHTML)" class="btn btn-info waves-effect waves-light">Copy to clipboard</button>
                 </lable>
               </div>
               <div class="koh-faq-answer col-12">
                 <pre>
-                                        <!-- <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
+                                        <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
                                             <svg style="position: absolute;width: 20px;left: -25px;" onclick="copyContent(document.getElementById('seamless_tabfour-six-four_eight_req').innerHTML)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Copy to Clipboard</title><path d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"></path></svg>
-                                        </div> -->
+                                        </div>
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
@@ -161,7 +161,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="form-group col-12 ex">
           <lable><b style="color: #19a17a !important">Response Body</b></lable>
         </div>
@@ -289,7 +289,7 @@
             </table>
           </div>
         </div>
-        <div class="koh-tab-content col-12">
+        <!-- <div class="koh-tab-content col-12">
           <div class="koh-tab-content-body">
             <div class="koh-faq form-group">
               <div class="koh-faq-question form-group ex">
@@ -308,9 +308,9 @@
               </div>
               <div class="koh-faq-answer col-12">
                 <pre>
-                                    <!-- <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
+                                    <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
                                             <svg style="position: absolute;width: 20px;left: -25px;" onclick="copyContent(document.getElementById('seamless_tabfour-six-four_six_ser').innerHTML)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Copy to Clipboard</title><path d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"></path></svg>
-                                        </div> -->
+                                        </div>
                                     <code id="410B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
     <span class="hljs-attr">"data"</span>: {
@@ -343,7 +343,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
 

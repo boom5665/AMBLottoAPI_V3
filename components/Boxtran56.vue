@@ -36,6 +36,7 @@
           <input type="text" placeholder="Password" />
         </div>
       </div>
+
       <div class="koh-faq-question form-group ex">
         <lable class="Point">
           <b
@@ -86,19 +87,25 @@
           <input type="text" placeholder="Password" />
         </div>
       </div>
+
       <div class="koh-faq-question form-group ex">
-        <lable class="Point"
-          ><b style="color: #19a17a !important">Example Service Respond Code</b
-          ><i
+        <lable class="Point">
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:Example Request Body"
+            >Example Service Respond Code</b
+          >
+          <i
             class="fa fa-chevron-down"
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
-          ></i
-        ></lable>
-        <div class="btn-send">
-          <button class="custom-btn btn-13">Send Code</button>
-        </div>
+          ></i>
+          <div class="btn-send">
+            <button class="custom-btn btn-13">Send Code</button>
+          </div>
+        </lable>
       </div>
+
       <div class="koh-faq-answer col-12">
         <pre>
 

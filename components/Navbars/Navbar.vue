@@ -1,8 +1,13 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div style="position: sticky; top: 0;height: 930px;">
+  <div class="nav-pc">
     <div class="logo">
-      <img class="con-box-two-img" style="margin: 0 !important;" src="~/assets/image/logo.png" alt="" />
+      <img
+        class="con-box-two-img"
+        style="margin: 0 !important"
+        src="~/assets/image/logo.png"
+        alt=""
+      />
     </div>
     <header class="nav-header">
       <div class="left-menu">
@@ -87,7 +92,7 @@
                 </Nuxt-link>
               </ul>
               <ul>
-                <Nuxt-link class="text-nav" to="/keytype" >
+                <Nuxt-link class="text-nav" to="/keytype">
                   <li>
                     <span>3.2 Key Sub Type </span>
                   </li>
@@ -138,7 +143,7 @@
                     <span>4.4 Login request </span>
                   </li>
                 </Nuxt-link>
-                 <Nuxt-link class="text-nav" to="/Semless45">
+                <Nuxt-link class="text-nav" to="/Semless45">
                   <li>
                     <span>4.5 Call Back Service </span>
                   </li>
@@ -180,7 +185,9 @@
                 </Nuxt-link>
                 <Nuxt-link class="text-nav" to="/Semless47">
                   <li>
-                    <span style="word-break: break-all;">4.7 ListHotnumberandLimitnumber </span>
+                    <span style="word-break: break-all"
+                      >4.7 ListHotnumberandLimitnumber
+                    </span>
                   </li>
                 </Nuxt-link>
                 <Nuxt-link class="text-nav" to="/Semless48">
@@ -297,3 +304,157 @@ export default {
   name: "Navbar",
 };
 </script>
+
+<style lang="scss" scoped>
+@mixin transition($trans...) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -ms-transition: $trans;
+  transition: $trans;
+}
+@mixin noselect() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+$color: #043e35;
+$toggle-background: gray;
+$toggle-background-active: lighten($toggle-background, 8);
+
+.accordion {
+  color: $color;
+  width: 100%;
+
+  .section {
+    width: 100%;
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked {
+        & + label {
+          // background: #fff;
+
+          &:before {
+            content: " ";
+            position: absolute;
+            border-left: 3px solid #043e35;
+            height: 100%;
+            left: 0;
+          }
+        }
+
+        & ~ .content {
+          max-height: 300px;
+          opacity: 1;
+          z-index: 10;
+          overflow-y: auto;
+        }
+      }
+    }
+
+    label {
+      font-size: 14px;
+      position: relative;
+      cursor: pointer;
+      padding: 10px 10px 0px 10px;
+      display: table;
+      // background: #fff;
+      width: -webkit-fill-available;
+      word-break: break-all;
+      @include transition(background 0.3s ease-in-out);
+      @include noselect();
+
+      &:before {
+        content: " ";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        // border-top: 1px solid #fff;
+      }
+
+      &:hover {
+        background: $toggle-background-active;
+        font-weight: 700;
+        color: $color;
+      }
+
+      span {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0px 15px;
+      }
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid #fff;
+    }
+
+    .content {
+      max-height: 0;
+      @include transition(all 0.4s);
+      opacity: 0;
+      position: relative;
+      overflow-y: hidden;
+    }
+  }
+}
+
+.left-menu {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.accordion {
+  font-size: 16px;
+
+  .section {
+    .content {
+      padding: 0 15px;
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked {
+        & ~ .content {
+          padding: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    padding: 5px 25px;
+
+    i {
+      font-size: 13px;
+      width: 15px;
+      margin-right: 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $color;
+      font-weight: 700;
+      background: $toggle-background-active;
+    }
+  }
+}
+</style>

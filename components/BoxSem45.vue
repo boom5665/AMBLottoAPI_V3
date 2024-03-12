@@ -22,7 +22,7 @@
       <div
         class="col-12"
         id="tabSix"
-        style="margin-left: 10px; margin-bottom: 25px"
+        style="left: 10px; margin-bottom: 25px"
       >
         <lable
           ><b
@@ -923,7 +923,7 @@
       <div
         class="col-12"
         id="tabSixs"
-        style="margin-left: 10px; margin-bottom: 25px"
+        style="left: 10px; margin-bottom: 25px"
       >
         <lable
           ><b
@@ -1066,7 +1066,7 @@
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
-                                        <code id="352A" style="border-radius: 0.375rem;" class="hljs json">{
+                                        <code id="352A" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBet"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd"</span>,
@@ -1219,7 +1219,7 @@
       <div class="koh-faq-answer col-12">
         <pre>
 
-                                        <code id="353A" style="border-radius: 0.375rem;" class="hljs json">{
+                                        <code id="353A" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBetCancel"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6"</span>,
@@ -1337,7 +1337,7 @@
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
-            >Example Reponse <span style="color: red">  (กรณีถูกรางวัล)</span>
+            >Example Reponse <span style="color: red">  (กรณีไม่ถูกรางวัล)</span>
           </b>
           <i
             class="fa fa-chevron-down"
@@ -1351,7 +1351,7 @@
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
-                                        <code id="354A" style="border-radius: 0.375rem;" class="hljs json">{
+                                        <code id="354A" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlacePayout"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd"</span>,
@@ -1443,10 +1443,8 @@
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
-                                        <!-- <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
-                                            <svg style="position: absolute;width: 20px;left: -25px;" onclick="copyContent(document.getElementById('seamless_tabfour-five-five_win_req').innerHTML)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Copy to Clipboard</title><path d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"></path></svg>
-                                        </div> -->
-                                        <code id="354A" style="border-radius: 0.375rem;" class="hljs json">{
+
+                                        <code id="354A" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlacePayout"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd"</span>,
@@ -1611,7 +1609,7 @@
       <div class="koh-faq-answer col-12">
         <pre>
 
-                                        <code id="356A" style="border-radius: 0.375rem;" class="hljs json">{
+                <code id="356A" style="border-radius: 0.375rem; height: 500px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceReToRunning"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd"</span>,
