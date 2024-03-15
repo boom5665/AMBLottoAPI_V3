@@ -4,7 +4,7 @@
     <div class="box-intro" style="display: flex">
       <div class="">
         <div class="col-12" id="tabTwo" >
-          <lable>
+          <div>
            <h1>
             <b style="color: #19a17a !important" set-lan="text:4.2 Workflow"
               >4.2
@@ -12,7 +12,7 @@
                 >Workflow</span
               ></b>
              </h1>
-          </lable>
+          </div>
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">

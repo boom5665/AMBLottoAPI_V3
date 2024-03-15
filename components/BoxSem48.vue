@@ -7,14 +7,14 @@
       </div>
       <!-- // -->
       <div class="col-12" id="tabSeven">
-        <lable
-          ><b style="color: #19a17a !important" set-lan="text:4.8 Detail"
+        <div>
+          <b style="color: #19a17a !important" set-lan="text:4.8 Detail"
             >4.8
             <span style="padding-left: 3px" id="Seamless_Detail"
               >Detail</span
             ></b
-          ></lable
-        >
+          >
+        </div>
       </div>
 
       <div class="divBox">
@@ -24,28 +24,28 @@
         </div>
         <div class="col-12">
           <label class="txtHead"> Url : </label>
-          <label> https://dev-api.amblotto.net/apiRoute/api/detail </label>
+          <label> https://test-api.askmelotto.com/apiRoute/api/detail </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
           <label> content-type application/json </label>
         </div>
       </div>
-     <div class="col-12 boxinput">
+      <!-- <div class="col-12 boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
-         <div class="false-input">
+        <div class="false-input">
           <input type="text" placeholder="Password" />
         </div>
-      </div>
+      </div> -->
 
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
-            >Example Reponse
+            >Example Request Body
           </b>
           <i
             class="fa fa-chevron-down"
@@ -53,9 +53,9 @@
             style="margin-left: 2%; font-size: 1rem"
           ></i>
           <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
+            <button class="custom-btn btn-13" @click="get_semless">Send Code</button>
           </div>
-        </lable>
+        </div>
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
@@ -76,29 +76,52 @@
 }</code></pre>
       </div>
       <!-- // -->
-       <div>
+      <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
-          Click Send Code to start a request and see the response here! Or
-          choose an example: application/json
-          <span>
-            <button class="buton-suscess"></button> 200
-          </span>
-
+          <div v-if="success" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-suscess"></button> Code 200&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div>
+                {{ success }}
+              </div>
+            </div>
+          </div>
+          <div v-else-if="nosuccess" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="dis-center">
+              <div>
+                {{ nosuccess }}
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            Click Send Code to start a request and see the response here! Or
+            choose an example: application/json
+            <span> <button class="buton-suscess"></button> 200 </span>
+          </div>
         </div>
       </div>
       <!-- // -->
 
-     <div class="col-12 boxinput">
+      <!-- <div class="col-12 boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
          <div class="false-input">
           <input type="text" placeholder="Password" />
         </div>
-      </div>
+      </div> -->
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Service Respond Code"
@@ -109,10 +132,10 @@
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
-          <div class="btn-send">
+          <!-- <div class="btn-send">
             <button class="custom-btn btn-13">Send Code</button>
-          </div>
-        </lable>
+          </div> -->
+        </div>
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
@@ -241,7 +264,7 @@
       </div>
 
       <!-- // -->
-       <div>
+      <!-- <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
           Click Send Code to start a request and see the response here! Or
@@ -251,7 +274,7 @@
           </span>
 
         </div>
-      </div>
+      </div> -->
       <!-- // -->
     </div>
   </div>
@@ -260,5 +283,55 @@
 <script>
 export default {
   name: "BoxSem48",
+  data() {
+    return {
+      success: "",
+      nosuccess: "",
+    };
+  },
+  beforeCreate() {},
+  mounted() {
+    // this.get_semless();
+  },
+  watch: {},
+  methods: {
+    get_semless() {
+      alert("Send code clicked!");
+      var senduser = {
+        agentUsername: "superadmincash",
+        agentApiKey:
+          "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
+        services: "DeleteLimitnumber",
+        data: {
+          limitnumber: {
+            thailotto: {
+              top3: {
+                number: "567",
+              },
+            },
+          },
+        },
+      };
+      const URL = "https://test-api.askmelotto.com/apiRoute/api/detail";
+      this.$axios
+           .$post(URL, senduser)
+        .then((response) => {
+          console.log(response);
+          if (response) {
+            this.success = "Successful operation."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error) {
+            this.nosuccess = "Bad Request."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        });
+    },
+  },
 };
 </script>

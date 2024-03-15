@@ -6,14 +6,14 @@
         <div class="font-prim"><span>Code Semless</span></div>
       </div>
       <div class="col-12" id="tabFour">
-        <lable
-          ><b style="color: #19a17a !important" set-lan="text:4.4 login request"
+        <div>
+          <b style="color: #19a17a !important" set-lan="text:4.4 login request"
             >4.4
             <span style="padding-left: 3px" id="Seamless_login_request"
               >Login request</span
             ></b
-          ></lable
-        >
+          >
+        </div>
       </div>
       <div class="divBox" style="margin-left: 0%">
         <div class="col-12">
@@ -23,7 +23,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://dev-api.amblotto.net/apiRoute/member/loginRequest
+            https://test-api.askmelotto.com/apiRoute/member/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -31,17 +31,17 @@
           <label> content-type application/json </label>
         </div>
       </div>
-      <div class="boxinput">
+      <!-- <div class="boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
         <div class="false-input">
           <input type="text" placeholder="Password" />
         </div>
-      </div>
+      </div> -->
 
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
@@ -53,40 +53,68 @@
             style="margin-left: 2%; font-size: 1rem"
           ></i>
           <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
+            <button class="custom-btn btn-13" @click="get_semless">
+              Send Code
+            </button>
           </div>
-        </lable>
+        </div>
       </div>
       <div>
         <div class="koh-faq-answer col-12 test">
           <pre>
 
                                         <code id="3_4A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"comptestseamless"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"18791944ec1a15e649c390d1403c5d6bc888a0d63602116c8f8b1725975e7c2eb832b2509f00eaf11f35bfbf810637e0"</span>,
-    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>
+    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"sportbookv2"</span>,
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba"</span>,
+    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>
 }</code></pre>
         </div>
       </div>
       <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
-          Click Send Code to start a request and see the response here! Or
-          choose an example: application/json
-          <span> <button class="buton-suscess"></button> 200 </span>
+          <div v-if="success" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-suscess"></button> Code 200&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div>
+                {{ success }}
+              </div>
+            </div>
+          </div>
+          <div v-else-if="nosuccess" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="dis-center">
+              <div>
+                {{ nosuccess }}
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            Click Send Code to start a request and see the response here! Or
+            choose an example: application/json
+            <span> <button class="buton-suscess"></button> 200 </span>
+          </div>
         </div>
       </div>
-      <div class="boxinput">
+      <!-- <div class="boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
         <div class="false-input">
           <input type="text" placeholder="Password" />
         </div>
-      </div>
+      </div> -->
 
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
@@ -97,10 +125,10 @@
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
-          <div class="btn-send">
+          <!-- <div class="btn-send">
             <button class="custom-btn btn-13">Send Code</button>
-          </div>
-        </lable>
+          </div> -->
+        </div>
       </div>
       <div class="section">
         <div class="slide">
@@ -122,57 +150,73 @@
                                         <code id="3_4B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"67239355aa8af3f4a6678e31cc3eb83a1612322fc2bf6b8f268b1660f1f37e"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@comptestseamless"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
-        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6IiJ9.eyJhZ2VudGlkIjoxODksImV4cCI6MTYyNzE3ODYzMCwiaWF0IjoxNjI2MzE0NjMwLCJyb2xlIjoibWVtYmVyMUBjb21wc2VhbWxlc3MiLCJzdWIiOmZhbHNlfQ.eLfAFfTnSD80OajqxH6yWmojd_m8MB7C0xxvahoWtPg"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6IiJ9.eyJhZ2VudGlkIjoxODksImV4cCI6MTYyNzE3ODYzMCwiaWF0IjoxNjI2MzE0NjMwLCJyb2xlIjoibWVtYmVyMUBjb21wc2VhbWxlc3MiLCJzdWIiOmZhbHNlfQ.eLfAFfTnSD80OajqxH6yWmojd_m8MB7C0xxvahoWtPg&header=off"</span>,
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6IiJ9.eyJhZ2VudGlkIjoxODksImV4cCI6MTYyNzE3ODYzMCwiaWF0IjoxNjI2MzE0NjMwLCJyb2xlIjoibWVtYmVyMUBjb21wc2VhbWxlc3MiLCJzdWIiOmZhbHNlfQ.eLfAFfTnSD80OajqxH6yWmojd_m8MB7C0xxvahoWtPg&header=on"</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc08e7ed2e3ae953d40437a4015092fd3ea5ca691e85b6bc323b3e468e1dbfdd8ae"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong@sportbookv2"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>
     },
     <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
 }</code></pre>
           </div>
         </div>
       </div>
-      <div>
+      <!-- <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
           Click Send Code to start a request and see the response here! Or
           choose an example: application/json
           <span> <button class="buton-suscess"></button> 200 </span>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 <script>
-// import axios from "axios";
 export default {
   name: "BoxSem44",
   data() {
-    return {};
+    return {
+      success: "",
+      nosuccess: "",
+    };
   },
   beforeCreate() {},
   mounted() {
-    this.getsemless();
+    // this.get_semless();
   },
   watch: {},
   methods: {
-    getsemless() {
-      // var body = {
-
-      // };
-      const url = `https://dev-api.amblotto.net/apiRoute/member/loginRequest`;
-      // console.log(url);
-      // this.$axios
-      //   .post(url)
-      //   .then((response) => {
-      //     console.log(response);
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   });
+    get_semless() {
+      alert("Send code clicked!");
+      var senduser = {
+        agentUsername: "sportbookv2",
+        agentApiKey:
+          "29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba",
+        playerUsername: "testa0alottoviptesttong",
+      };
+      const URL =
+        "https://test-api.askmelotto.com/apiRoute/member/loginRequest";
+      this.$axios
+        .$post(URL, senduser)
+        .then((response) => {
+          console.log(response);
+          if (response) {
+            this.success = "Successful operation."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error) {
+            this.success = "Bad Request."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        });
     },
   },
 };

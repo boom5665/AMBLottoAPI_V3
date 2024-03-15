@@ -4,7 +4,7 @@
     <div class="box-Sem" style="display: flex">
       <div class="box-all">
         <div class="col-12" id="tabFour" style="">
-          <lable
+          <div
             ><h1>
               <b
                 style="color: #19a17a !important"
@@ -14,7 +14,7 @@
                   >Login request</span
                 ></b
               >
-            </h1></lable
+            </h1></div
           >
         </div>
 
@@ -27,7 +27,7 @@
             <div class="col-12">
               <label class="txtHead"> Url : </label>
               <label>
-                https://dev-api.amblotto.net/apiRoute/member/loginRequest
+                https://test-api.askmelotto.com/apiRoute/member/loginRequest
               </label>
             </div>
             <div class="col-12">
@@ -36,11 +36,11 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <lable
+            <div
               ><b style="color: #19a17a !important" set-lan="text:Request Body"
                 >Request Body</b
               >
-            </lable>
+            </div>
           </div>
 
           <div class="form-group col-12">
@@ -103,7 +103,7 @@
             <div class="koh-tab-content-body">
               <div class="koh-faq form-group">
                 <div class="koh-faq-question form-group ex">
-                  <lable class="Point">
+                  <div class="Point">
                     <b
                       style="color: #19a17a !important"
                       set-lan="text:Example Request Body"
@@ -115,7 +115,7 @@
                       style="margin-left: 2%; font-size: 1rem"
                     ></i>
                     <button onclick="copyContent(document.getElementById('seamless_tabfour-four_req').innerHTML)" class="btn btn-info waves-effect waves-light">Copy to clipboard</button>
-                  </lable>
+                  </div>
                 </div>
                 <div class="koh-faq-answer col-12">
                   <pre>
@@ -132,8 +132,8 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <lable
-              ><b style="color: #19a17a !important">Response Body</b></lable
+            <div
+              ><b style="color: #19a17a !important">Response Body</b></div
             >
           </div>
 
@@ -225,8 +225,8 @@
             </div>
           </div>
           <div class="form-group col-12 ex">
-            <lable
-              ><b style="color: #19a17a !important">Response Code</b></lable
+            <div
+              ><b style="color: #19a17a !important">Response Code</b></div
             >
           </div>
 
@@ -303,7 +303,7 @@
             <div class="koh-tab-content-body">
               <div class="koh-faq form-group">
                 <div class="koh-faq-question form-group ex">
-                  <lable class="Point">
+                  <div class="Point">
                     <b
                       style="color: #19a17a !important"
                       set-lan="text:Example Request Body"
@@ -315,7 +315,7 @@
                       style="margin-left: 2%; font-size: 1rem"
                     ></i>
                     <button onclick="copyContent(document.getElementById('seamless_tabfour-four_res').innerHTML)" class="btn btn-info waves-effect waves-light">Copy to clipboard</button>
-                  </lable>
+                  </div>
                 </div>
                 <div class="koh-faq-answer col-12">
                   <pre>
@@ -339,10 +339,10 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <lable
+            <div
               ><b style="color: #19a17a !important" set-lan="text:** Optional"
                 >** Optional for direct/re-direct link.</b
-              ></lable
+              ></div
             >
           </div>
           <div class="form-group col-12">
@@ -494,8 +494,8 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
-            <lable
-              ><b style="color: #19a17a !important">Game direct link</b></lable
+            <div
+              ><b style="color: #19a17a !important">Game direct link</b></div
             >
           </div>
         </div>
@@ -984,7 +984,7 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
-            <lable><b style="color: #19a17a !important">Language</b></lable>
+            <div><b style="color: #19a17a !important">Language</b></div>
           </div>
           <div class="form-group col-12">
             <label> หมายเหตุ : กรุณาใช้รหัสตรงตามตัวอย่าง</label>
@@ -1082,10 +1082,10 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
-            <lable
+            <div
               ><b style="color: #19a17a !important"
                 >Signout re-direct optional link:</b
-              ></lable
+              ></div
             >
           </div>
         </div>

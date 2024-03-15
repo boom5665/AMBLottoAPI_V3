@@ -26,7 +26,7 @@
             <div class="col-12">
               <label class="txtHead"> Url : </label>
               <label>
-                https://dev-api.amblotto.net/api/v2/apiRoute/member/tranferwallet/loginRequest
+                https://test-api.askmelotto.com/api/v2/apiRoute/member/tranferwallet/loginRequest
               </label>
             </div>
             <div class="col-12">

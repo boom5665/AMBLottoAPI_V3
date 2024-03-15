@@ -8,7 +8,7 @@
         >
       </h1>
       <div class="col-12" id="tabOne" style="margin-top: 10px">
-        <lable
+        <div
           ><b style="color: #19a17a !important"
             >4.1
             <span
@@ -16,7 +16,7 @@
               id="Seamless_Introduction_Seamless_API"
               >Introduction Seamless API</span
             ></b
-          ></lable
+          ></div
         >
       </div>
 

@@ -350,7 +350,7 @@ a {
 
 section {
   // padding-top: 4rem;
-  width: 50%;
+  width: 90%;
   margin-left: 10px;
 }
 

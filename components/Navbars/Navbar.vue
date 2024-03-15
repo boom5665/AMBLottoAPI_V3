@@ -148,36 +148,36 @@
                     <span>4.5 Call Back Service </span>
                   </li>
                 </Nuxt-link>
-                <!-- <Nuxt-link class="text-nav" to="/Semless">
+                  <Nuxt-link class="text-nav" to="/Semless45">
                   <li>
-                    <span>4.5.1 GetUserDetail </span>
+                    <span>4.5.1 GetUserBalance </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Semless452">
                   <li>
                     <span>4.5.2 GetUserBalance </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Semless453">
                   <li>
                     <span>4.5.3 UserPlaceBet </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Semless454">
                   <li>
                     <span>4.5.4 UserPlaceBetCancel </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Semless455">
                   <li>
                     <span>4.5.5 UserPlacePayout </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Semless456">
                   <li>
                     <span>4.5.6 UserPlaceReToRunning </span>
                   </li>
-                </Nuxt-link>  -->
+                </Nuxt-link>
                 <Nuxt-link class="text-nav" to="/Semless46">
                   <li>
                     <span>4.6 ListPlaceout </span>

@@ -3,32 +3,24 @@
   <div style="">
     <div type="primary" class="box-r-scoll">
       <div>
-        <div class="font-prim"><span>Code Tranfer</span></div>
+        <div class="font-prim"><span>Code Semless</span></div>
       </div>
       <!-- // -->
-      <div class="col-12" id="tabFour">
+
+      <div class="col-12" id="tabSixs" style="left: 10px; margin-bottom: 25px">
         <div>
-          <b style="color: #19a17a !important"
-            >5.5 <span style="padding-left: 3px" id="deposit">deposit</span></b
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.2 GetUserBalance"
+            >4.5.2
+            <span style="padding-left: 3px" id="Seamless_GetUserBalance"
+              >GetUserBalance</span
+            ></b
           >
         </div>
       </div>
-      <div class="divBox">
-        <div class="col-12">
-          <label class="txtHead">Method : </label>
-          <label>Post</label>
-        </div>
-        <div class="col-12">
-          <label class="txtHead">Url : </label>
-          <label> https://test-api.askmelotto.com/apiRoute/api/deposit </label>
-        </div>
-        <div class="col-12">
-          <label class="txtHead"> headers : </label>
-          <label> content-type application/json </label>
-        </div>
-      </div>
-<!--
-      <div class="col-12 boxinput">
+
+      <!-- <div class="col-12 boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
@@ -36,39 +28,38 @@
           <input type="text" placeholder="Password" />
         </div>
       </div> -->
-
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
-            >Example Request Body</b
-          >
+            >Example Reponse
+          </b>
           <i
             class="fa fa-chevron-down"
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
           <div class="btn-send">
-            <button class="custom-btn btn-13" @click="get_tranfer">Send Code</button>
+            <button class="custom-btn btn-13" @click="get_semless">
+              Send Code
+            </button>
           </div>
         </div>
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
 
-                                    <code id="46A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",</span>
-    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi001",</span>
-    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300,</span>
-    <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd6612676125127126761216541276519"</span>
+                                        <code id="351A" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"service"</span>: <span class="hljs-string">"GetUserBalance"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptest2@comptestseamless"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptest2"</span>
+    }
 }</code></pre>
-        <!-- <script src="./API_files/ex4_6.js.download"></script> -->
       </div>
-
-      <!-- // -->
-         <div>
+      <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -102,8 +93,6 @@
           </div>
         </div>
       </div>
-
-      <!-- // -->
       <!-- <div class="col-12 boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
@@ -125,32 +114,33 @@
           </div> -->
         </div>
       </div>
+
       <div class="koh-faq-answer col-12">
         <pre>
 
-                                    <code id="46B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0,</span>
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"addBalance"</span>: <span class="hljs-number">100,</span>
-        <span class="hljs-attr">"afterAgentBalance"</span>:<span class="hljs-number">43813417.23,</span>
-        <span class="hljs-attr">"afterMemberBalance"</span>:<span class="hljs-number">100,</span>
-        <span class="hljs-attr">"beforeAgentBalance"</span>:<span class="hljs-number">43812886.55,</span>
-        <span class="hljs-attr">"beforeMemberBalance"</span>:<span class="hljs-number">369,</span>
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"ff4003404239450abb86dd313cb138cabea9ded4f26993a72933d318b16e86",</span>
-        <span class="hljs-attr">"playerApiUsername"</span>:<span class="hljs-string">"testuserapi001@agentapi",</span>
-        <span class="hljs-attr">"playerUsername"</span>:<span class="hljs-string">"testuserapi001",</span>
-        <span class="hljs-attr">"ref"</span>:<span class="hljs-string">"1e77a9cfc9a8b05e613cc0a4f87c2226575c5e77f095d3411b0094b0e730d4",</span>
-    },
-    <span class="hljs-attr">"msg"</span>:<span class="hljs-string">"success"</span>
+                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
 }</code></pre>
       </div>
+      <!-- <div>
+        <div>RESPONSE</div>
+        <div class="divBox-content">
+          Click Send Code to start a request and see the response here! Or
+          choose an example: application/json
+          <span>
+            <button class="buton-suscess"></button> 200
+          </span>
+
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "BoxSem55",
+  name: "",
   data() {
     return {
       success: "",
@@ -159,23 +149,54 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_tranfer();
+    // this.get_semless();
   },
   watch: {},
   methods: {
-    get_tranfer() {
+    get_semless() {
       alert("Send code clicked!");
       var senduser = {
-        agentUsername: "agentapi",
-        agentApiKey:
-          "18c089a2e49dfc1776b6abc2ea3ee909d43b10bc37dfd7195a7265da82f8b4a983a1ebf3",
-        playerUsername: "testuserapi001",
-        balance: 100,
-        transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276512",
+        service: "UserPlaceReToRunning",
+        data: {
+          playerApiId:
+            "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+          playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+          playerUsername: "testa0aagentthbmb01",
+          ticketId: 40864,
+          type: "pingponglotto6",
+          government: false,
+          drawId: 37187,
+          totalBetAmt: 1243,
+          txtList: [
+            {
+              agentPt: "95",
+              apiPt: "5",
+              betKey: "NDA4NjQtMQ==",
+              betId: "1",
+              betType: "top6",
+              betNumber: "789000",
+              betStatus: "pending",
+              betAmt: 733,
+              betTotal: 733,
+              betDiscount: 0,
+              payOutRate: 50000,
+              rateLevel: 0,
+              rateLevelAmount: 0,
+              betResultKey: "",
+              payOutAmt: 0,
+            },
+          ],
+          status: "pending",
+          createDate: "2023-10-07 17:18:42",
+          DrawOpen: "2023-10-07 17:00:00",
+          currency: "thb",
+          drawExpire: "2023-10-07 17:30:00",
+          totalPayOutAmt: 0,
+        },
       };
-      const URL = "https://test-api.askmelotto.com/apiRoute/api/deposit";
+      const URL = "https://api-test.ambexapi.com/api/v1/l/c";
       this.$axios
-         .$post(URL, senduser)
+        .$post(URL, senduser)
         .then((response) => {
           console.log(response);
           if (response) {

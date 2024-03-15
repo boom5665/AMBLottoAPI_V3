@@ -6,13 +6,13 @@
 
 
       <div class="col-12" id="tab49">
-        <lable
+        <div
           ><h1><b style="color: #19a17a !important"
             >4.8
             <span style="padding-left: 3px" id="Seamless_Detail"
               >Detail</span
             ></b
-          ></h1></lable
+          ></h1></div
         >
       </div>
 
@@ -24,7 +24,7 @@
           </div>
           <div class="col-12">
             <label class="txtHead"> Url : </label>
-            <label> https://dev-api.amblotto.net/apiRoute/api/detail </label>
+            <label> https://test-api.askmelotto.com/apiRoute/api/detail </label>
           </div>
           <div class="col-12">
             <label class="txtHead"> headers : </label>
@@ -32,11 +32,11 @@
           </div>
         </div> -->
         <div class="form-group col-12 ex">
-          <lable
+          <div
             ><b style="color: #19a17a !important" set-lan="text:Request Body"
               >Request Body</b
             >
-          </lable>
+          </div>
         </div>
 
         <div class="form-group col-12">
@@ -122,7 +122,7 @@
           <div class="koh-tab-content-body">
             <div class="koh-faq form-group">
               <div class="koh-faq-question form-group ex">
-                <lable class="Point">
+                <div class="Point">
                   <b
                     style="color: #19a17a !important"
                     set-lan="text:Example Request Body"
@@ -134,7 +134,7 @@
                     style="margin-left: 2%; font-size: 1rem"
                   ></i>
                   <button onclick="copyContent(document.getElementById('seamless_tabfour-six-four_nine_req').innerHTML)" class="btn btn-info waves-effect waves-light">Copy to clipboard</button>
-                </lable>
+                </div>
               </div>
               <div class="koh-faq-answer col-12">
                 <pre>
@@ -160,7 +160,7 @@
           </div>
         </div> -->
         <div class="form-group col-12 ex">
-          <lable><b style="color: #19a17a !important">Response Body</b></lable>
+          <div><b style="color: #19a17a !important">Response Body</b></div>
         </div>
 
         <div class="form-group col-12">
@@ -210,10 +210,10 @@
           </div>
         </div>
         <div class="form-group col-12 ex">
-          <lable
+          <div
             ><b style="color: #19a17a !important"
               >Service Response Code</b
-            ></lable
+            ></div
           >
         </div>
 
@@ -294,7 +294,7 @@
           <div class="koh-tab-content-body">
             <div class="koh-faq form-group">
               <div class="koh-faq-question form-group ex">
-                <lable class="Point">
+                <div class="Point">
                   <b
                     style="color: #19a17a !important"
                     set-lan="text:Example Service Respond Code"
@@ -305,7 +305,7 @@
                     aria-hidden="true"
                     style="margin-left: 2%; font-size: 1rem"
                   ></i>
-                </lable>
+                </div>
               </div>
               <div class="koh-faq-answer col-12">
                 <pre>

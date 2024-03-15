@@ -7,14 +7,14 @@
       </div>
       <!-- // -->
       <div class="col-12" id="tabSeven">
-        <lable
-          ><b style="color: #19a17a !important" set-lan="text:4.7 UserPlaceBet"
+        <div>
+          <b style="color: #19a17a !important" set-lan="text:4.7 UserPlaceBet"
             >4.7
             <span style="padding-left: 3px" id="Seamless_UserPlaceBet"
               >ListHotnumberandLimitnumber</span
             ></b
-          ></lable
-        >
+          >
+        </div>
       </div>
       <div class="divBox">
         <div class="col-12">
@@ -24,7 +24,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://dev-api.amblotto.net/apiRoute/api/ListHotnumberandLimitnumber
+            https://test-api.askmelotto.com/apiRoute/api/ListHotnumberandLimitnumber
           </label>
         </div>
         <div class="col-12">
@@ -32,20 +32,20 @@
           <label> content-type application/json </label>
         </div>
       </div>
-     <div class="col-12 boxinput">
+      <!-- <div class="col-12 boxinput">
         <div class="false-input">
           <input type="text" placeholder="Username" />
         </div>
-         <div class="false-input">
+        <div class="false-input">
           <input type="text" placeholder="Password" />
         </div>
-      </div>
+      </div> -->
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
-            >Example Reponse
+            >Example Request Body
           </b>
           <i
             class="fa fa-chevron-down"
@@ -53,9 +53,11 @@
             style="margin-left: 2%; font-size: 1rem"
           ></i>
           <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
+            <button class="custom-btn btn-13" @click="get_semless">
+              Send Code
+            </button>
           </div>
-        </lable>
+        </div>
       </div>
       <!-- // -->
       <div class="koh-faq-answer col-12">
@@ -76,48 +78,58 @@
     }
 }</code></pre>
       </div>
-        <div>
+      <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
-          Click Send Code to start a request and see the response here! Or
-          choose an example: application/json
-          <span>
-            <button class="buton-suscess"></button> 200
-          </span>
-
+          <div v-if="success" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-suscess"></button> Code 200&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div>
+                {{ success }}
+              </div>
+            </div>
+          </div>
+          <div v-else-if="nosuccess" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="dis-center">
+              <div>
+                {{ nosuccess }}
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            Click Send Code to start a request and see the response here! Or
+            choose an example: application/json
+            <span> <button class="buton-suscess"></button> 200 </span>
+          </div>
         </div>
       </div>
 
-     <div class="col-12 boxinput">
-        <div class="false-input">
-          <input type="text" placeholder="Username" />
-        </div>
-         <div class="false-input">
-          <input type="text" placeholder="Password" />
-        </div>
-      </div>
       <div class="koh-faq-question form-group ex">
-        <lable class="Point">
+        <div class="Point">
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Service Respond Code"
-            >Example Service Respond Code</b
-          >
+            >Example Service Respond Code
+          </b>
           <i
             class="fa fa-chevron-down"
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
-          <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
-          </div>
-        </lable>
+        </div>
       </div>
       <div class="koh-faq-answer col-12">
         <pre>
-                                    <!-- <div class="copy-clipboard" style="position: absolute;width: 20px;top: 30px;right: 0;cursor:pointer">
-                                            <svg style="position: absolute;width: 20px;left: -25px;" onclick="copyContent(document.getElementById('seamless_tabfour-six-four_six_ser').innerHTML)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Copy to Clipboard</title><path d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"></path></svg>
-                                        </div> -->
+
                                     <code id="410B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
     <span class="hljs-attr">"data"</span>: {
@@ -148,7 +160,7 @@
     }
 }</code></pre>
       </div>
-   <div>
+      <!-- <div>
         <div>RESPONSE</div>
         <div class="divBox-content">
           Click Send Code to start a request and see the response here! Or
@@ -158,7 +170,7 @@
           </span>
 
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -166,5 +178,56 @@
 <script>
 export default {
   name: "BoxSem47",
+  data() {
+    return {
+      success: "",
+      nosuccess: "",
+    };
+  },
+  beforeCreate() {},
+  mounted() {
+    // this.get_semless();
+  },
+  watch: {},
+  methods: {
+    get_semless() {
+      alert("Send code clicked!");
+      var senduser = {
+        agentUsername: "superadmincash",
+        agentApiKey:
+          "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
+        services: "DeleteLimitnumber",
+        data: {
+          limitnumber: {
+            thailotto: {
+              top3: {
+                number: "567",
+              },
+            },
+          },
+        },
+      };
+      const URL =
+        "https://test-api.askmelotto.com/apiRoute/api/ListHotnumberandLimitnumber";
+      this.$axios
+        .$post(URL, senduser)
+        .then((response) => {
+          console.log(response);
+          if (response) {
+            this.success = "Successful operation."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error) {
+            this.nosuccess = "Bad Request."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          } else {
+            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+          }
+        });
+    },
+  },
 };
 </script>

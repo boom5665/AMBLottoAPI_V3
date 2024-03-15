@@ -14,13 +14,13 @@
 
 
       <div class="col-12" id="tabOne" style=";margin-bottom: 10px;">
-        <lable
+        <div
           ><b style="color: #19a17a !important "
             >6.1
             <span style="padding-left: 3px" id="ser_Member_Authen"
               >Member Authen</span
             ></b
-          ></lable
+          ></div
         >
       </div>
       <div class="btn-toolbar mb-3" role="toolbar">
@@ -75,13 +75,13 @@
       </div>
 
       <div class="col-12" id="tabTwo" style=";margin-bottom: 10px;">
-        <lable
+        <div
           ><b style="color: #19a17a !important"
             >6.2
             <span style="padding-left: 3px" id="ser_Service_Respone"
               >Service Respone</span
             ></b
-          ></lable
+          ></div
         >
       </div>
       <div class="btn-toolbar mb-3" role="toolbar">
