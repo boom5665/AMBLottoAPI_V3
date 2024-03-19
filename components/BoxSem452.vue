@@ -41,9 +41,11 @@
             style="margin-left: 2%; font-size: 1rem"
           ></i>
           <div class="btn-send">
-            <button class="custom-btn btn-13" @click="get_semless">
-              Send Code
-            </button>
+            <a href="#openModal-about">
+              <button class="custom-btn btn-13" @click="get_semless">
+                Send Code
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -86,6 +88,18 @@
               </div>
             </div>
           </div>
+           <div v-else-if="permission" class="dis-colum-center">
+            <div>
+              <span>
+                <button class="buton-fail"></button> Code 403&nbsp;&nbsp;
+              </span>
+            </div>
+            <div style="dis-center">
+              <div>
+                {{ permission }}
+              </div>
+            </div>
+          </div>
           <div v-else>
             Click Send Code to start a request and see the response here! Or
             choose an example: application/json
@@ -93,47 +107,129 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col-12 boxinput">
-        <div class="false-input">
-          <input type="text" placeholder="Username" />
-        </div>
-         <div class="false-input">
-          <input type="text" placeholder="Password" />
-        </div>
-      </div> -->
-      <div class="koh-faq-question form-group ex">
-        <div class="Point">
-          <b style="color: #19a17a !important">Example Service Respond Code</b
-          ><i
-            class="fa fa-chevron-down"
-            aria-hidden="true"
-            style="margin-left: 2%; font-size: 1rem"
-          ></i>
-          <!-- <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
-          </div> -->
-        </div>
-      </div>
 
-      <div class="koh-faq-answer col-12">
-        <pre>
+
+      <!-- <a href="#openModal-about">Send Success</a> -->
+      <!--modals-->
+      <div id="openModal-about" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <div>
+            <div class="font-prim"><span>Code Semless</span></div>
+          </div>
+          <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Request Body</b
+                >
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <pre>
+
+                                        <code id="351A" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"service"</span>: <span class="hljs-string">"GetUserBalance"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptest2@comptestseamless"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptest2"</span>
+    }
+}</code></pre>
+            </div>
+            <!-- // -->
+          </div>
+          <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Service Respond Code
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
 }</code></pre>
-      </div>
-      <!-- <div>
-        <div>RESPONSE</div>
-        <div class="divBox-content">
-          Click Send Code to start a request and see the response here! Or
-          choose an example: application/json
-          <span>
-            <button class="buton-suscess"></button> 200
-          </span>
+            </div>
+            <!-- // -->
+          </div>
 
+          <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                >
+                  Service Respond Code
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div v-if="success">
+              <div class="koh-faq-answer col-12">
+                <pre>
+
+                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
+}</code></pre>
+              </div>
+            </div>
+
+            <div v-else-if="nosuccess" class="divBox-content">
+              <div class="dis-colum-center">
+                <div>
+                  <span>
+                    <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
+                  </span>
+                </div>
+                <div style="dis-center">
+                  <div>
+                    {{ nosuccess }}
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div v-else-if="permission" class="divBox-content">
+              <div class="dis-colum-center">
+                <div>
+                  <span>
+                    <button class="buton-fail"></button> Code 403&nbsp;&nbsp;
+                  </span>
+                </div>
+                <div style="dis-center">
+                  <div>
+                    {{ permission }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -145,6 +241,7 @@ export default {
     return {
       success: "",
       nosuccess: "",
+      permission: "",
     };
   },
   beforeCreate() {},
@@ -194,23 +291,26 @@ export default {
           totalPayOutAmt: 0,
         },
       };
+      // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
       const URL = "https://api-test.ambexapi.com/api/v1/l/c";
       this.$axios
         .$post(URL, senduser)
         .then((response) => {
           console.log(response);
-          if (response) {
-            this.success = "Successful operation."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          if (response.code === 0) {
+            this.success = "Successful operation.";
+          } else if (response.code === 403) {
+            this.permission = "Permission denied.";
           } else {
-            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+            this.nosuccess = "Bad Request.";
           }
         })
         .catch((error) => {
           console.log(error);
-          if (error) {
-            this.nosuccess = "Bad Request."; // กำหนดค่า success ให้เป็น "SUCCESS"
+          if (response.code === 403) {
+            this.permission = "Permission denied.";
           } else {
-            this.nosuccess = "Bad Request."; // กำหนดค่า nosuccess ให้เป็น "Fail"
+            this.nosuccess = "Bad Request.";
           }
         });
     },

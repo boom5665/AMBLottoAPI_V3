@@ -150,7 +150,7 @@
                 </Nuxt-link>
                   <Nuxt-link class="text-nav" to="/Semless45">
                   <li>
-                    <span>4.5.1 GetUserBalance </span>
+                    <span>4.5.1 GetUserDetail </span>
                   </li>
                 </Nuxt-link>
                 <Nuxt-link class="text-nav" to="/Semless452">
@@ -409,7 +409,7 @@ $toggle-background-active: lighten($toggle-background, 8);
   background: #fff;
   width: 100%;
   position: relative;
-  top: 0;
+  top: 25px;
   bottom: 0;
   font-size: 14px;
 }

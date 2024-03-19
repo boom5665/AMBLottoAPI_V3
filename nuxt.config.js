@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Docapi',
+    title: 'AMBLottoAPI_V3',
     htmlAttrs: {
       lang: 'en'
     },
@@ -24,7 +24,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/scss/main.scss', '~/assets/css/style.min.css', '~/assets/css/ocean.min.css', '~/assets/css/bootstrap.min.css'
+    '~/assets/scss/main.scss', '~/assets/css/style.min.css', '~/assets/css/ocean.min.css','bootstrap/dist/css/bootstrap.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,6 +36,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'bootstrap-vue/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
