@@ -2545,6 +2545,7 @@
       <div class="box-all-content">
         <div style="position: sticky; top: 0px"><Boxtran54 /></div>
       </div>
+
     </div>
   </div>
 </template>

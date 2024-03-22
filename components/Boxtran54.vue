@@ -34,15 +34,37 @@
         </div>
       </div>
 
-      <!-- <div class="col-12 boxinput">
+           <!-- <div class="boxinput">
         <div class="false-input">
-          <input type="text" placeholder="Username" />
+          <input
+            type="text"
+            v-model="agentUsername"
+            placeholder="Agent Username"
+          />
         </div>
         <div class="false-input">
-          <input type="text" placeholder="Password" />
+          <input
+            type="text"
+            v-model="agentApiKey"
+            placeholder="Agent API Key"
+          />
+        </div>
+      </div>
+      <div class="boxinput">
+        <div class="false-input">
+          <input
+            type="text"
+            v-model="playerUsername"
+            placeholder="Player Username"
+          />
         </div>
       </div> -->
-
+ <!-- <div class="koh-faq-answer col-12">
+        <code>
+          <textarea v-model="jsonData" rows="8" class="custom-textarea">
+          </textarea>
+        </code>
+      </div> -->
       <div class="koh-faq form-group">
         <div class="koh-faq-question form-group ex">
           <div class="Point">
@@ -68,7 +90,7 @@
 
         <div class="koh-faq-answer col-12">
           <pre>
-<code id="3_4A" style="border-radius: 0.375rem; height: 500px;
+<code id="3_4A" style="border-radius: 0.375rem;  height: 300px;
     overflow: scroll;" class="hljs json">{
   <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
   <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",</span>
@@ -1385,50 +1407,53 @@
       </div>
       <!-- // -->
       <div>
-        <div>RESPONSE</div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
-            <div>
-              <span>
-                <button class="buton-suscess"></button> Code 200&nbsp;&nbsp;
-              </span>
-            </div>
-            <div style="display: flex; justify-content: center">
-              <div>
-                {{ success }}
+            <div class="box-respon">
+              <div class="pdd-top">RESPONSE</div>
+              <div class="pdd-top">
+                <button class="buton-suscess"></button> Code {{numfail}}&nbsp;&nbsp;
               </div>
+            </div>
+            <div class="padding-content">
+              <span> <button class="buton-suscess"></button> {{numfail}} </span>
+              {{ success }}
             </div>
           </div>
           <div v-else-if="nosuccess" class="dis-colum-center">
-            <div>
-              <span>
-                <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
-              </span>
-            </div>
-            <div style="dis-center">
-              <div>
-                {{ nosuccess }}
+            <div class="box-respon">
+              <div class="pdd-top">RESPONSE</div>
+              <div class="pdd-top">
+                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
               </div>
             </div>
+            <div class="padding-content">
+              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              {{ nosuccess }}
+            </div>
           </div>
-
           <div v-else-if="permission" class="dis-colum-center">
-            <div>
-              <span>
-                <button class="buton-fail"></button> Code 403&nbsp;&nbsp;
-              </span>
-            </div>
-            <div style="dis-center">
-              <div>
-                {{ permission }}
+            <div class="box-respon">
+              <div class="pdd-top">RESPONSE</div>
+              <div class="pdd-top">
+                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
               </div>
             </div>
+            <div class="padding-content">
+              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              {{ permission }}
+            </div>
           </div>
-
           <div v-else>
-            Click Send Code to start a request and see the response here! Or
-            choose an example: application/json
-            <span> <button class="buton-suscess"></button> 200 </span>
+            <div class="box-respon">
+              <div class="pdd-top">RESPONSE</div>
+              <div class="pdd-top">Example</div>
+            </div>
+            <div class="padding-content">
+              Click Send Code to start a request and see the response here! Or
+              choose an example: application/json
+              <span> <button class="buton-suscess"></button> 200 </span>
+            </div>
           </div>
         </div>
       </div>
@@ -1458,7 +1483,7 @@
             </div>
             <div class="koh-faq-answer col-12">
               <pre>
-<code id="3_4A" style="border-radius: 0.375rem; height: 500px;
+<code id="3_4A" style="border-radius: 0.375rem;  height: 300px;
     overflow: scroll;" class="hljs json">{
   <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
   <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",</span>
@@ -2792,17 +2817,17 @@
             <div class="koh-faq-answer col-12">
               <pre>
                                     <code id="44B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>:  <span class="hljs-attr">200,</span>
+    <span class="hljs-attr">"code"</span>:  <span class="hljs-number">200</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-number">"ac355caa7591bae913f0e27ec84ab6c526274778",</span>
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-number">"testuserapi002@agenttoe2",</span>
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-number">"testuserapi002",</span>
-        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-number">"12cfc90e9569faf6e70c6d001b12f9e1c392f631",</span>
-        <span class="hljs-attr">"url"</span>: <span class="hljs-number">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off",</span>
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-number">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"ac355caa7591bae913f0e27ec84ab6c526274778"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi002@agenttoe2"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi002"</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"12cfc90e9569faf6e70c6d001b12f9e1c392f631"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
     },
     <span class="hljs-attr"> "msg"</span>: {
-        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success",</span>
+        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success"</span>,
         <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
     }
 }</code></pre>
@@ -2830,54 +2855,48 @@
               <div class="koh-faq-answer col-12">
                 <pre>
                                     <code id="44B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>:  <span class="hljs-attr">200,</span>
+<span class="hljs-attr">"code"</span>: <span class="hljs-number">{{ code }}</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-number">"ac355caa7591bae913f0e27ec84ab6c526274778",</span>
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-number">"testuserapi002@agenttoe2",</span>
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-number">"testuserapi002",</span>
-        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-number">"12cfc90e9569faf6e70c6d001b12f9e1c392f631",</span>
-        <span class="hljs-attr">"url"</span>: <span class="hljs-number">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off",</span>
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-number">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
+         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">{{playerApiId }}</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">{{ playerApiUsername}}</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">{{playerUsername }}</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">{{ tkUuid}}</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">{{url }}</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">{{ urlFullPage}}</span>
     },
     <span class="hljs-attr"> "msg"</span>: {
-        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success",</span>
-        <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
+        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"{{en}}",</span>
+        <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"{{th}}"</span>
     }
 }</code></pre>
               </div>
             </div>
 
-            <div v-else-if="nosuccess" class="divBox-content">
-              <div class="dis-colum-center">
-                <div>
-                  <span>
-                    <button class="buton-fail"></button> Code 400&nbsp;&nbsp;
-                  </span>
-                </div>
-                <div style="dis-center">
-                  <div>
-                    {{ nosuccess }}
-                  </div>
-                </div>
+            <div v-else-if="nosuccess">
+              <div class="koh-faq-answer col-12">
+                <pre>
+
+                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">{{numfail}}</span>,
+        <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">{{ nosuccess }}</span>
+}</code></pre>
               </div>
             </div>
-            <div v-else-if="permission" class="divBox-content">
-              <div class="dis-colum-center">
-                <div>
-                  <span>
-                    <button class="buton-fail"></button> Code 403&nbsp;&nbsp;
-                  </span>
-                </div>
-                <div style="dis-center">
-                  <div>
-                    {{ permission }}
-                  </div>
-                </div>
+            <div v-else-if="permission">
+              <div class="koh-faq-answer col-12">
+                <pre>
+
+                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">{{numfail}}</span>,
+        <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">{{ permission }}</span>
+}</code></pre>
               </div>
             </div>
           </div>
         </div>
       </div>
+<div class="loading" v-if="isLoading">Loading...</div>
+
     </div>
   </div>
 </template>
@@ -2890,6 +2909,23 @@ export default {
       success: "",
       nosuccess: "",
       permission: "",
+       numfail:"",
+      code: "",
+      playerApiId: "",
+      playerApiUsername: "",
+      playerUsername: "",
+      url: "",
+      urlFullPage: "",
+      tkUuid: "",
+      msg: "",
+      en: "",
+      th: "",
+       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
+      pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
+       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
+      // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
+      // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
     };
   },
   beforeCreate() {},
@@ -2899,12 +2935,17 @@ export default {
   watch: {},
   methods: {
     get_tranfer() {
-      alert("Send code clicked!");
+            alert("Send code clicked!");
+      this.isLoading = true;
+      this.pop = true;
       var senduser = {
         agentUsername: "agenttoe2",
         agentApiKey:
           "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
         playerUsername: "testuserapi002",
+        // agentUsername: this.agentUsername,
+        // agentApiKey: this.agentApiKey,
+        // playerUsername: this.playerUsername,
         data: {
           username: "ketttt",
           phone: "0111111111",
@@ -4217,23 +4258,170 @@ export default {
         .$post(URL, senduser)
         .then((response) => {
           console.log(response);
-          if (response.code === 0) {
-            this.success = "Successful operation.";
-          } else if (response.code === 403) {
+          if (response.code === 0 || response.code === 200) {
+            console.log(response.code === 200);
+                        this.success = "Successful operation.";
+            this.code = response.code;
+            this.numfail = this.code;
+            this.code = response.code;
+            this.msg = response.msg;
+            this.playerApiId = response.data.playerApiId;
+            this.playerApiUsername = response.data.playerApiUsername;
+            this.playerUsername = response.data.playerUsername;
+            this.url = response.data.url;
+            this.urlFullPage = response.data.urlFullPage;
+            this.tkUuid = response.data.tkUuid;
+            this.en = response.msg.en;
+            this.th = response.msg.th;
+                   } else if (response.code === 403) {
             this.permission = "Permission denied.";
+            this.numfail = "403";
+          } else if (response.code === 401) {
+            this.numfail = "401";
+            this.permission = "Authentication Failed.";
+          } else if (response.code === 404) {
+            this.permission = "Not Found.";
+            this.numfail = "404";
+          } else if (response.code === 405) {
+            this.permission = "Method Not Allowed.";
+            this.numfail = "405";
+          } else if (response.code === 500) {
+            this.permission = "Server error.";
+            this.numfail = "500";
           } else {
             this.nosuccess = "Bad Request.";
+            this.numfail = "400";
           }
+          this.isLoading = false;
         })
-        .catch((error) => {
-          console.log(error);
-          if (response.code === 403) {
-            this.permission = "Permission denied.";
+     .catch((error) => {
+          if (error.response) {
+            const statusCode = error.response.status;
+            switch (statusCode) {
+              case 403:
+                this.permission = "Permission denied.";
+                this.numfail = "403";
+                break;
+              case 401:
+                this.numfail = "401";
+                this.permission = "Authentication Failed.";
+                break;
+              case 404:
+                this.permission = "Not Found.";
+                this.numfail = "404";
+                break;
+              case 405:
+                this.permission = "Method Not Allowed.";
+                this.numfail = "405";
+                break;
+              case 500:
+                this.permission = "Server error.";
+                this.numfail = "500";
+                break;
+              default:
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+            }
           } else {
             this.nosuccess = "Bad Request.";
+            this.numfail = "400";
           }
+          this.isLoading = false;
         });
     },
+      // get_semless() {
+    //   alert("Send code clicked!");
+    //   this.isLoading = true;
+    //   this.pop = true;
+    //   this.isLoading = true;
+    //   // แปลงข้อมูล JSON จาก string ให้เป็น object
+    //   const dataToSend = JSON.parse(this.jsonData);
+
+    //   // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
+    //   // ตัวอย่าง:
+    //   this.$axios
+    //     .post(
+    //       "https://test-api.askmelotto.com/apiRoute/member/loginRequest",
+    //       dataToSend
+    //     )
+    //     .then((response) => {
+    //       // ตอบกลับจากเซิร์ฟเวอร์
+    //       this.response = response.data;
+    //       console.log("Sending JSON serv:", this.response);
+    //       if (this.response.code === 0 || this.response.code === 200) {
+    //         this.success = "Successful operation.";
+    //         this.code = this.response.code;
+    //         this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
+    //         this.msg = this.response.msg;
+    //         this.playerApiId = this.response.data.playerApiId;
+    //         this.playerApiUsername = this.response.data.playerApiUsername;
+    //         this.playerUsername = this.response.data.playerUsername;
+    //         this.url = this.response.data.url;
+    //         this.urlFullPage = this.response.data.urlFullPage;
+    //         this.tkUuid = this.response.data.tkUuid;
+    //         this.code = this.response.code;
+    //         this.numfail = this.code;
+    //       } else if (this.response.code === 403) {
+    //         this.permission = "Permission denied.";
+    //         this.numfail = "403";
+    //       } else if (this.response.code === 401) {
+    //         this.numfail = "401";
+    //         this.permission = "Authentication Failed.";
+    //       } else if (this.response.code === 404) {
+    //         this.permission = "Not Found.";
+    //         this.numfail = "404";
+    //       } else if (this.response.code === 405) {
+    //         this.permission = "Method Not Allowed.";
+    //         this.numfail = "405";
+    //       } else if (this.response.code === 500) {
+    //         this.permission = "Server error.";
+    //         this.numfail = "500";
+    //       } else {
+    //         this.nosuccess = "Bad Request.";
+    //         this.numfail = "400";
+    //       }
+    //       this.isLoading = false;
+    //     })
+    //     .catch((error) => {
+    //       // จัดการข้อผิดพลาด
+    //       console.log(error);
+    //       if (error.response) {
+    //         const statusCode = error.response.status;
+    //         switch (statusCode) {
+    //           case 403:
+    //             this.permission = "Permission denied.";
+    //             this.numfail = "403";
+    //             break;
+    //           case 401:
+    //             this.numfail = "401";
+    //             this.permission = "Authentication Failed.";
+    //             break;
+    //           case 404:
+    //             this.permission = "Not Found.";
+    //             this.numfail = "404";
+    //             break;
+    //           case 405:
+    //             this.permission = "Method Not Allowed.";
+    //             this.numfail = "405";
+    //             break;
+    //           case 500:
+    //             this.permission = "Server error.";
+    //             this.numfail = "500";
+    //             break;
+    //           default:
+    //             this.nosuccess = "Bad Request.";
+    //             this.numfail = "400";
+    //         }
+    //       } else {
+    //         this.nosuccess = "Bad Request.";
+    //         this.numfail = "400";
+    //       }
+    //       this.isLoading = false;
+    //     });
+
+    //   // สำหรับเนื้อหาทดสอบ
+    //   console.log("Sending JSON data:", dataToSend);
+    // },
   },
 };
 </script>

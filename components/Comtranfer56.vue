@@ -370,6 +370,7 @@
       <div class="box-all-content">
         <div style="position: sticky; top: 0px"><Boxtran56 /></div>
       </div>
+
     </div>
   </div>
 </template>
