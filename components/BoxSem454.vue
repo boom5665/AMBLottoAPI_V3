@@ -18,7 +18,7 @@
         </div>
       </div>
 
-       <!-- <div class="boxinput">
+      <!-- <div class="boxinput">
         <div class="false-input">
           <input
             type="text"
@@ -43,7 +43,7 @@
           />
         </div>
       </div> -->
-            <div class="boxinput">
+      <div class="boxinput">
         <div class="false-input">
           <input type="text" v-model="URLdata" placeholder="URL" />
         </div>
@@ -81,7 +81,8 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-        <pre>
+        <copy-text id="myDiv">
+          <pre>
 
                                         <code id="353A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBetCancel"</span>,
@@ -120,6 +121,7 @@
         <span class="hljs-attr">"drawExpire"</span>: <span class="hljs-string">"2023-11-19 15:25:00"</span>
     }
 }</code></pre>
+        </copy-text>
       </div>
       <!-- // -->
       <div>
@@ -128,11 +130,14 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-suscess"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-suscess"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-suscess"></button> {{numfail}} </span>
+              <span>
+                <button class="buton-suscess"></button> {{ numfail }}
+              </span>
               {{ success }}
             </div>
           </div>
@@ -140,11 +145,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ nosuccess }}
             </div>
           </div>
@@ -152,11 +158,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ permission }}
             </div>
           </div>
@@ -314,24 +321,27 @@
           </div>
         </div>
       </div>
-<div class="loading" v-if="isLoading">Loading...</div>
-
+      <div class="loading" v-if="isLoading">Loading...</div>
     </div>
   </div>
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem45",
   data() {
     return {
       success: "",
       nosuccess: "",
       permission: "",
-       numfail:"",
-        isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
+      numfail: "",
+      isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-             jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
@@ -344,118 +354,118 @@ export default {
   },
   watch: {},
   methods: {
-//     get_semless() {
-//             alert("Send code clicked!");
-//       this.isLoading = true;
-//       this.pop = true;
-//       var senduser = {
-//         service: "UserPlaceBetCancel",
-//         data: {
-//           playerApiId:
-//             "4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6",
-//           playerApiUsername: "testa0alottoviptestcarl@comptestseamless",
-//           playerUsername: "testa0alottoviptestcarl",
-//            // playerApiId: this.playerApiId,
-//           // playerApiUsername: this.playerApiUsername,
-//           // playerUsername: this.playerUsername,
-//           ticketId: 53000,
-//           type: "thailotto",
-//           government: false,
-//           drawId: 44170,
-//           totalBetAmt: -10000,
-//           txtList: [
-//             {
-//               agentPt: "95",
-//               apiPt: "5",
-//               betKey: "NTMwMDAtMQ==",
-//               betId: "1",
-//               betType: "bottom2",
-//               betNumber: "10",
-//               betStatus: "pending",
-//               betAmt: 10000,
-//               betTotal: 10000,
-//               betDiscount: 0,
-//               payOutRate: 90,
-//               rateLevel: 0,
-//               rateLevelAmount: 0,
-//               betResultKey: "",
-//               payOutAmt: 0,
-//             },
-//           ],
-//           status: "cancel",
-//           createDate: "2023-11-11 15:16:44",
-//           currency: "thb",
-//           DrawOpen: "2023-11-09 01:00:00",
-//           drawExpire: "2023-11-19 15:25:00",
-//         },
-//       };
-//       // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-//       const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-//       this.$axios
-//         .$post(URL, senduser)
-//         .then((response) => {
-//           console.log(response);
-//           if (response.code === 0 || response.code === 200) {
-//                         this.success = "Successful operation.";
-//             this.code = response.code;
-//             this.numfail = this.code;
-//                    } else if (response.code === 403) {
-//             this.permission = "Permission denied.";
-//             this.numfail = "403";
-//           } else if (response.code === 401) {
-//             this.numfail = "401";
-//             this.permission = "Authentication Failed.";
-//           } else if (response.code === 404) {
-//             this.permission = "Not Found.";
-//             this.numfail = "404";
-//           } else if (response.code === 405) {
-//             this.permission = "Method Not Allowed.";
-//             this.numfail = "405";
-//           } else if (response.code === 500) {
-//             this.permission = "Server error.";
-//             this.numfail = "500";
-//           } else {
-//             this.nosuccess = "Bad Request.";
-//             this.numfail = "400";
-//           }
-//           this.isLoading = false;
-//         })
-// .catch((error) => {
-//           if (error.response) {
-//             const statusCode = error.response.status;
-//             switch (statusCode) {
-//               case 403:
-//                 this.permission = "Permission denied.";
-//                 this.numfail = "403";
-//                 break;
-//               case 401:
-//                 this.numfail = "401";
-//                 this.permission = "Authentication Failed.";
-//                 break;
-//               case 404:
-//                 this.permission = "Not Found.";
-//                 this.numfail = "404";
-//                 break;
-//               case 405:
-//                 this.permission = "Method Not Allowed.";
-//                 this.numfail = "405";
-//                 break;
-//               case 500:
-//                 this.permission = "Server error.";
-//                 this.numfail = "500";
-//                 break;
-//               default:
-//                 this.nosuccess = "Bad Request.";
-//                 this.numfail = "400";
-//             }
-//           } else {
-//             this.nosuccess = "Bad Request.";
-//             this.numfail = "400";
-//           }
-//           this.isLoading = false;
-//         });
-//     },
-  get_semless() {
+    //     get_semless() {
+    //             alert("Send code clicked!");
+    //       this.isLoading = true;
+    //       this.pop = true;
+    //       var senduser = {
+    //         service: "UserPlaceBetCancel",
+    //         data: {
+    //           playerApiId:
+    //             "4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6",
+    //           playerApiUsername: "testa0alottoviptestcarl@comptestseamless",
+    //           playerUsername: "testa0alottoviptestcarl",
+    //            // playerApiId: this.playerApiId,
+    //           // playerApiUsername: this.playerApiUsername,
+    //           // playerUsername: this.playerUsername,
+    //           ticketId: 53000,
+    //           type: "thailotto",
+    //           government: false,
+    //           drawId: 44170,
+    //           totalBetAmt: -10000,
+    //           txtList: [
+    //             {
+    //               agentPt: "95",
+    //               apiPt: "5",
+    //               betKey: "NTMwMDAtMQ==",
+    //               betId: "1",
+    //               betType: "bottom2",
+    //               betNumber: "10",
+    //               betStatus: "pending",
+    //               betAmt: 10000,
+    //               betTotal: 10000,
+    //               betDiscount: 0,
+    //               payOutRate: 90,
+    //               rateLevel: 0,
+    //               rateLevelAmount: 0,
+    //               betResultKey: "",
+    //               payOutAmt: 0,
+    //             },
+    //           ],
+    //           status: "cancel",
+    //           createDate: "2023-11-11 15:16:44",
+    //           currency: "thb",
+    //           DrawOpen: "2023-11-09 01:00:00",
+    //           drawExpire: "2023-11-19 15:25:00",
+    //         },
+    //       };
+    //       // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
+    //       const URL = "https://api-test.ambexapi.com/api/v1/l/c";
+    //       this.$axios
+    //         .$post(URL, senduser)
+    //         .then((response) => {
+    //           console.log(response);
+    //           if (response.code === 0 || response.code === 200) {
+    //                         this.success = "Successful operation.";
+    //             this.code = response.code;
+    //             this.numfail = this.code;
+    //                    } else if (response.code === 403) {
+    //             this.permission = "Permission denied.";
+    //             this.numfail = "403";
+    //           } else if (response.code === 401) {
+    //             this.numfail = "401";
+    //             this.permission = "Authentication Failed.";
+    //           } else if (response.code === 404) {
+    //             this.permission = "Not Found.";
+    //             this.numfail = "404";
+    //           } else if (response.code === 405) {
+    //             this.permission = "Method Not Allowed.";
+    //             this.numfail = "405";
+    //           } else if (response.code === 500) {
+    //             this.permission = "Server error.";
+    //             this.numfail = "500";
+    //           } else {
+    //             this.nosuccess = "Bad Request.";
+    //             this.numfail = "400";
+    //           }
+    //           this.isLoading = false;
+    //         })
+    // .catch((error) => {
+    //           if (error.response) {
+    //             const statusCode = error.response.status;
+    //             switch (statusCode) {
+    //               case 403:
+    //                 this.permission = "Permission denied.";
+    //                 this.numfail = "403";
+    //                 break;
+    //               case 401:
+    //                 this.numfail = "401";
+    //                 this.permission = "Authentication Failed.";
+    //                 break;
+    //               case 404:
+    //                 this.permission = "Not Found.";
+    //                 this.numfail = "404";
+    //                 break;
+    //               case 405:
+    //                 this.permission = "Method Not Allowed.";
+    //                 this.numfail = "405";
+    //                 break;
+    //               case 500:
+    //                 this.permission = "Server error.";
+    //                 this.numfail = "500";
+    //                 break;
+    //               default:
+    //                 this.nosuccess = "Bad Request.";
+    //                 this.numfail = "400";
+    //             }
+    //           } else {
+    //             this.nosuccess = "Bad Request.";
+    //             this.numfail = "400";
+    //           }
+    //           this.isLoading = false;
+    //         });
+    //     },
+    get_semless() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

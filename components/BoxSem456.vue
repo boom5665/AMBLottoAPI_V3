@@ -41,7 +41,7 @@
           />
         </div>
       </div> -->
-            <div class="boxinput">
+      <div class="boxinput">
         <div class="false-input">
           <input type="text" v-model="URLdata" placeholder="URL" />
         </div>
@@ -79,7 +79,8 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-        <pre>
+        <copy-text id="myDiv">
+          <pre>
 
                 <code id="356A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceReToRunning"</span>,
@@ -119,6 +120,7 @@
         <span class="hljs-attr">"totalPayOutAmt"</span>: <span class="hljs-string">0</span>
     }
 }</code></pre>
+        </copy-text>
       </div>
       <!-- // -->
       <div>
@@ -127,11 +129,14 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-suscess"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-suscess"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-suscess"></button> {{numfail}} </span>
+              <span>
+                <button class="buton-suscess"></button> {{ numfail }}
+              </span>
               {{ success }}
             </div>
           </div>
@@ -139,11 +144,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ nosuccess }}
             </div>
           </div>
@@ -151,11 +157,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ permission }}
             </div>
           </div>
@@ -330,24 +337,27 @@
           </div>
         </div>
       </div>
-<div class="loading" v-if="isLoading">Loading...</div>
-
+      <div class="loading" v-if="isLoading">Loading...</div>
     </div>
   </div>
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem45",
   data() {
     return {
       success: "",
       nosuccess: "",
       permission: "",
-       numfail:"",
-        isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
+      numfail: "",
+      isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-             jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",

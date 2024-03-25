@@ -95,7 +95,8 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-        <pre>
+        <copy-text id="myDiv">
+          <pre>
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
@@ -111,6 +112,7 @@
         }
     }
 }</code></pre>
+        </copy-text>
       </div>
       <!-- // -->
       <div>
@@ -523,13 +525,17 @@
           </div>
         </div>
       </div>
-<div class="loading" v-if="isLoading">Loading...</div>
+      <div class="loading" v-if="isLoading">Loading...</div>
     </div>
   </div>
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem48",
   data() {
     return {
@@ -539,7 +545,7 @@ export default {
       numfail: "",
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-             jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentUsername: "",
       // agentApiKey: "",
@@ -639,7 +645,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-   get_semless() {
+    get_semless() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

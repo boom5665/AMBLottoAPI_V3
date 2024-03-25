@@ -53,7 +53,7 @@
           />
         </div>
       </div> -->
-           <div class="boxinput">
+      <div class="boxinput">
         <div class="false-input">
           <input type="text" v-model="URLdata" placeholder="URL" />
         </div>
@@ -91,7 +91,8 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-        <pre>
+        <copy-text id="myDiv">
+          <pre>
                                     <code id="47A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b"</span>,
@@ -99,6 +100,7 @@
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300</span>,
     <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd6612676125127126761216541276519"</span>
 }</code></pre>
+        </copy-text>
       </div>
 
       <!-- // -->
@@ -303,7 +305,11 @@
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem56",
   data() {
     return {
@@ -313,7 +319,7 @@ export default {
       numfail: "",
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-            jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentApiKey:

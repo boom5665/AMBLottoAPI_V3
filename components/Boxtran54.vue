@@ -99,7 +99,8 @@
         </div>
 
         <div class="koh-faq-answer col-12">
-          <pre>
+          <copy-text id="myDiv">
+            <pre>
 <code id="3_4A" style="border-radius: 0.375rem;  height: 300px;
     overflow: scroll;" class="hljs json">{
   <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
@@ -1412,6 +1413,7 @@
     }
 
 }</code></pre>
+          </copy-text>
           <!-- <script src="./API_files/ex_3-1.js.download"></script> -->
         </div>
       </div>
@@ -2916,7 +2918,11 @@
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem54",
   data() {
     return {

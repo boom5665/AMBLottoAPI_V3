@@ -88,12 +88,14 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-        <pre>
+        <copy-text id="myDiv">
+          <pre>
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"buildexcompany"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd"</span>
 }</code></pre>
+        </copy-text>
       </div>
       <!-- // -->
       <div>
@@ -2761,7 +2763,11 @@
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem46",
   data() {
     return {
@@ -2859,7 +2865,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-  get_semless() {
+    get_semless() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

@@ -76,7 +76,7 @@
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
-          <button @click="copyDiv">คัดลอก</button>
+
           <div class="btn-send">
             <a id="myLink" href="#openModal-about">
               <button class="custom-btn btn-13" @click="get_semless">
@@ -88,13 +88,15 @@
       </div>
       <div>
         <div class="koh-faq-answer col-12 test">
-          <pre id="myDiv">
+          <copy-text id="myDiv">
+            <pre>
 
                                         <code id="3_4A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"sportbookv2"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba"</span>,
     <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>
 }</code></pre>
+          </copy-text>
         </div>
       </div>
       <div>
@@ -296,7 +298,11 @@
 </template>
 
 <script>
+import CopyText from "~/components/CopyText.vue";
 export default {
+  components: {
+    CopyText,
+  },
   name: "BoxSem44",
   data() {
     return {
@@ -420,17 +426,21 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-    copyDiv() {
-      // คัดลอกเนื้อหาภายใน <div> ไปยังคลิปบอร์ด
-      this.$copyText(document.getElementById("myDiv").innerText)
-        .then(() => {
-          // คัดลอกสำเร็จ
-          alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
-        })
-        .catch(() => {
-          // เกิดข้อผิดพลาดในการคัดลอก
-          alert("มีบางอย่างผิดพลาดในการคัดลอก");
-        });
+    copyText() {
+      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
+      const textToCopy = document.getElementById("myDiv").innerText;
+      // สร้าง element input สำหรับคัดลอกข้อความ
+      const inputElement = document.createElement("input");
+      inputElement.setAttribute("value", textToCopy);
+      document.body.appendChild(inputElement);
+      // เลือกและคัดลอกข้อความที่อยู่ใน input element
+      inputElement.select();
+      document.execCommand("copy");
+      // ลบ input element ที่สร้างขึ้น
+      document.body.removeChild(inputElement);
+
+      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
+      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
     },
     get_semless() {
       alert("Send code clicked!");

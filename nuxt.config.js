@@ -44,6 +44,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     "@nuxtjs/axios",
+    // 'vue-clipboard2/nuxt',
   ],
 
   axios: {
