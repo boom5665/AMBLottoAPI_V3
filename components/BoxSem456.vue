@@ -41,12 +41,22 @@
           />
         </div>
       </div> -->
-       <!-- <div class="koh-faq-answer col-12">
+            <div class="boxinput">
+        <div class="false-input">
+          <input type="text" v-model="URLdata" placeholder="URL" />
+        </div>
+      </div>
+      <div class="koh-faq-answer col-12">
         <code>
-          <textarea v-model="jsonData" rows="8" class="custom-textarea">
+          <textarea
+            v-model="jsonData"
+            rows="8"
+            class="custom-textarea"
+            placeholder="กรุณากรอกข้อความที่นี่"
+          >
           </textarea>
         </code>
-      </div> -->
+      </div>
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
@@ -165,7 +175,7 @@
 
       <!-- <a href="#openModal-about">Send Success</a> -->
       <!--modals-->
-      <div id="openModal-about" class="modalDialog">
+      <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <div>
@@ -337,7 +347,8 @@ export default {
        numfail:"",
         isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+             jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
       // playerUsername: "",
@@ -349,215 +360,127 @@ export default {
   },
   watch: {},
   methods: {
-    get_semless() {
-            alert("Send code clicked!");
-      this.isLoading = true;
-      this.pop = true;
-      var senduser = {
-        service: "UserPlaceReToRunning",
-        // playerApiId: this.playerApiId,
-        // playerApiUsername: this.playerApiUsername,
-        // playerUsername: this.playerUsername,
-        data: {
-          playerApiId:
-            "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
-          playerApiUsername: "AALFLFLFLF000005@top1betvip",
-          playerUsername: "AALFLFLFLF000005",
-          ticketId: 2904120,
-          type: "pingponglotto",
-          government: false,
-          drawId: 62551,
-          totalBetAmt: -39.67,
-          txtList: [
-            {
-              agentPt: "0",
-              apiPt: "100",
-              betKey: "MjkwNDEyMC0x",
-              betId: "1",
-              betType: "top2",
-              betNumber: "88",
-              betStatus: "pending",
-              betAmt: 9.975,
-              betTotal: 10,
-              betDiscount: 0.3,
-              payOutRate: 90,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "",
-              payOutAmt: 0,
-            },
-            {
-              agentPt: "0",
-              apiPt: "100",
-              betKey: "MjkwNDEyMC0y",
-              betId: "2",
-              betType: "bottom2",
-              betNumber: "88",
-              betStatus: "pending",
-              betAmt: 9.9,
-              betTotal: 10,
-              betDiscount: 1,
-              payOutRate: 90,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "",
-              payOutAmt: 0,
-            },
-            {
-              agentPt: "0",
-              apiPt: "100",
-              betKey: "MjkwNDEyMC0z",
-              betId: "3",
-              betType: "top1",
-              betNumber: "8",
-              betStatus: "pending",
-              betAmt: 9.9,
-              betTotal: 10,
-              betDiscount: 1,
-              payOutRate: 3,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "",
-              payOutAmt: 0,
-            },
-            {
-              agentPt: "0",
-              apiPt: "100",
-              betKey: "MjkwNDEyMC00",
-              betId: "4",
-              betType: "bottom1",
-              betNumber: "8",
-              betStatus: "pending",
-              betAmt: 9.9,
-              betTotal: 10,
-              betDiscount: 1,
-              payOutRate: 4.2,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "",
-              payOutAmt: 0,
-            },
-          ],
-          status: "pending",
-          createDate: "2024-03-15 18:52:37",
-          DrawOpen: "2024-03-15 18:30:00",
-          currency: "thb",
-          drawExpire: "2024-03-15 19:00:00",
-          totalPayOutAmt: 0,
-        },
-      };
-      // const URL =
-      // "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-      const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-      this.$axios
-        .$post(URL, senduser)
-        .then((response) => {
-          console.log(response);
-          if (response.code === 0 || response.code === 200) {
-                        this.success = "Successful operation.";
-            this.code = response.code;
-            this.numfail = this.code;
-          } else if (response.code === 403) {
-            this.permission = "Permission denied.";
-            this.numfail = "403";
-          } else if (response.code === 401) {
-            this.numfail = "401";
-            this.permission = "Authentication Failed.";
-          } else if (response.code === 404) {
-            this.permission = "Not Found.";
-            this.numfail = "404";
-          } else if (response.code === 405) {
-            this.permission = "Method Not Allowed.";
-            this.numfail = "405";
-          } else if (response.code === 500) {
-            this.permission = "Server error.";
-            this.numfail = "500";
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        })
-    .catch((error) => {
-          if (error.response) {
-            const statusCode = error.response.status;
-            switch (statusCode) {
-              case 403:
-                this.permission = "Permission denied.";
-                this.numfail = "403";
-                break;
-              case 401:
-                this.numfail = "401";
-                this.permission = "Authentication Failed.";
-                break;
-              case 404:
-                this.permission = "Not Found.";
-                this.numfail = "404";
-                break;
-              case 405:
-                this.permission = "Method Not Allowed.";
-                this.numfail = "405";
-                break;
-              case 500:
-                this.permission = "Server error.";
-                this.numfail = "500";
-                break;
-              default:
-                this.nosuccess = "Bad Request.";
-                this.numfail = "400";
-            }
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        });
-    },
-      // get_semless() {
-    //   alert("Send code clicked!");
+    // get_semless() {
+    //         alert("Send code clicked!");
     //   this.isLoading = true;
     //   this.pop = true;
-    //   this.isLoading = true;
-    //   // แปลงข้อมูล JSON จาก string ให้เป็น object
-    //   const dataToSend = JSON.parse(this.jsonData);
-
-    //   // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
-    //   // ตัวอย่าง:
+    //   var senduser = {
+    //     service: "UserPlaceReToRunning",
+    //     // playerApiId: this.playerApiId,
+    //     // playerApiUsername: this.playerApiUsername,
+    //     // playerUsername: this.playerUsername,
+    //     data: {
+    //       playerApiId:
+    //         "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
+    //       playerApiUsername: "AALFLFLFLF000005@top1betvip",
+    //       playerUsername: "AALFLFLFLF000005",
+    //       ticketId: 2904120,
+    //       type: "pingponglotto",
+    //       government: false,
+    //       drawId: 62551,
+    //       totalBetAmt: -39.67,
+    //       txtList: [
+    //         {
+    //           agentPt: "0",
+    //           apiPt: "100",
+    //           betKey: "MjkwNDEyMC0x",
+    //           betId: "1",
+    //           betType: "top2",
+    //           betNumber: "88",
+    //           betStatus: "pending",
+    //           betAmt: 9.975,
+    //           betTotal: 10,
+    //           betDiscount: 0.3,
+    //           payOutRate: 90,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "",
+    //           payOutAmt: 0,
+    //         },
+    //         {
+    //           agentPt: "0",
+    //           apiPt: "100",
+    //           betKey: "MjkwNDEyMC0y",
+    //           betId: "2",
+    //           betType: "bottom2",
+    //           betNumber: "88",
+    //           betStatus: "pending",
+    //           betAmt: 9.9,
+    //           betTotal: 10,
+    //           betDiscount: 1,
+    //           payOutRate: 90,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "",
+    //           payOutAmt: 0,
+    //         },
+    //         {
+    //           agentPt: "0",
+    //           apiPt: "100",
+    //           betKey: "MjkwNDEyMC0z",
+    //           betId: "3",
+    //           betType: "top1",
+    //           betNumber: "8",
+    //           betStatus: "pending",
+    //           betAmt: 9.9,
+    //           betTotal: 10,
+    //           betDiscount: 1,
+    //           payOutRate: 3,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "",
+    //           payOutAmt: 0,
+    //         },
+    //         {
+    //           agentPt: "0",
+    //           apiPt: "100",
+    //           betKey: "MjkwNDEyMC00",
+    //           betId: "4",
+    //           betType: "bottom1",
+    //           betNumber: "8",
+    //           betStatus: "pending",
+    //           betAmt: 9.9,
+    //           betTotal: 10,
+    //           betDiscount: 1,
+    //           payOutRate: 4.2,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "",
+    //           payOutAmt: 0,
+    //         },
+    //       ],
+    //       status: "pending",
+    //       createDate: "2024-03-15 18:52:37",
+    //       DrawOpen: "2024-03-15 18:30:00",
+    //       currency: "thb",
+    //       drawExpire: "2024-03-15 19:00:00",
+    //       totalPayOutAmt: 0,
+    //     },
+    //   };
+    //   // const URL =
+    //   // "https://top1betvip.infosoft.click/api/latest/integration/lotto";
+    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
     //   this.$axios
-    //     .post(
-    //       "https://test-api.askmelotto.com/apiRoute/member/loginRequest",
-    //       dataToSend
-    //     )
+    //     .$post(URL, senduser)
     //     .then((response) => {
-    //       // ตอบกลับจากเซิร์ฟเวอร์
-    //       this.response = response.data;
-    //       console.log("Sending JSON serv:", this.response);
-    //       if (this.response.code === 0 || this.response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = this.response.code;
-    //         this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
-    //         this.msg = this.response.msg;
-    //         this.playerApiId = this.response.data.playerApiId;
-    //         this.playerApiUsername = this.response.data.playerApiUsername;
-    //         this.playerUsername = this.response.data.playerUsername;
-    //         this.url = this.response.data.url;
-    //         this.urlFullPage = this.response.data.urlFullPage;
-    //         this.tkUuid = this.response.data.tkUuid;
-    //         this.code = this.response.code;
+    //       console.log(response);
+    //       if (response.code === 0 || response.code === 200) {
+    //                     this.success = "Successful operation.";
+    //         this.code = response.code;
     //         this.numfail = this.code;
-    //       } else if (this.response.code === 403) {
+    //       } else if (response.code === 403) {
     //         this.permission = "Permission denied.";
     //         this.numfail = "403";
-    //       } else if (this.response.code === 401) {
+    //       } else if (response.code === 401) {
     //         this.numfail = "401";
     //         this.permission = "Authentication Failed.";
-    //       } else if (this.response.code === 404) {
+    //       } else if (response.code === 404) {
     //         this.permission = "Not Found.";
     //         this.numfail = "404";
-    //       } else if (this.response.code === 405) {
+    //       } else if (response.code === 405) {
     //         this.permission = "Method Not Allowed.";
     //         this.numfail = "405";
-    //       } else if (this.response.code === 500) {
+    //       } else if (response.code === 500) {
     //         this.permission = "Server error.";
     //         this.numfail = "500";
     //       } else {
@@ -566,9 +489,7 @@ export default {
     //       }
     //       this.isLoading = false;
     //     })
-    //     .catch((error) => {
-    //       // จัดการข้อผิดพลาด
-    //       console.log(error);
+    // .catch((error) => {
     //       if (error.response) {
     //         const statusCode = error.response.status;
     //         switch (statusCode) {
@@ -602,10 +523,113 @@ export default {
     //       }
     //       this.isLoading = false;
     //     });
-
-    //   // สำหรับเนื้อหาทดสอบ
-    //   console.log("Sending JSON data:", dataToSend);
     // },
+    get_semless() {
+      alert("Send code clicked!");
+      if (this.jsonData) {
+        this.isLoading = true;
+        this.pop = true;
+        this.isLoading = true;
+        try {
+          const dataToSend = JSON.parse(this.jsonData);
+          const URL = this.URLdata;
+          console.log("URL", URL);
+          // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
+          // ตัวอย่าง:
+
+          this.$axios
+            .post(URL, dataToSend)
+            .then((response) => {
+              // ตอบกลับจากเซิร์ฟเวอร์
+              this.response = response.data;
+              console.log("Sending JSON serv:", this.response);
+              if (this.response.code === 0 || this.response.code === 200) {
+                this.success = "Successful operation.";
+                this.code = this.response.code;
+                this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
+                this.msg = this.response.msg;
+                this.playerApiId = this.response.data.playerApiId;
+                this.playerApiUsername = this.response.data.playerApiUsername;
+                this.playerUsername = this.response.data.playerUsername;
+                this.url = this.response.data.url;
+                this.urlFullPage = this.response.data.urlFullPage;
+                this.tkUuid = this.response.data.tkUuid;
+                this.code = this.response.code;
+                this.numfail = this.code;
+              } else if (this.response.code === 403) {
+                this.permission = "Permission denied.";
+                this.numfail = "403";
+              } else if (this.response.code === 401) {
+                this.numfail = "401";
+                this.permission = "Authentication Failed.";
+              } else if (this.response.code === 404) {
+                this.permission = "Not Found.";
+                this.numfail = "404";
+              } else if (this.response.code === 405) {
+                this.permission = "Method Not Allowed.";
+                this.numfail = "405";
+              } else if (this.response.code === 500) {
+                this.permission = "Server error.";
+                this.numfail = "500";
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            })
+            .catch((error) => {
+              // จัดการข้อผิดพลาด
+              console.log(error);
+              if (error.response) {
+                const statusCode = error.response.status;
+                switch (statusCode) {
+                  case 403:
+                    this.permission = "Permission denied.";
+                    this.numfail = "403";
+                    break;
+                  case 401:
+                    this.numfail = "401";
+                    this.permission = "Authentication Failed.";
+                    break;
+                  case 404:
+                    this.permission = "Not Found.";
+                    this.numfail = "404";
+                    break;
+                  case 405:
+                    this.permission = "Method Not Allowed.";
+                    this.numfail = "405";
+                    break;
+                  case 500:
+                    this.permission = "Server error.";
+                    this.numfail = "500";
+                    break;
+                  default:
+                    this.nosuccess = "Bad Request.";
+                    this.numfail = "400";
+                }
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            });
+        } catch (error) {
+          // กรณีที่ข้อมูล JSON ไม่ถูกต้อง
+          console.error("Invalid JSON format:", error);
+          alert("กรุณากรอกข้อมูล JSON ที่ถูกต้อง");
+          this.pop = false;
+          this.isLoading = false;
+        }
+        // สำหรับเนื้อหาทดสอบ
+        // console.log("Sending JSON data:", dataToSend);
+      } else if (this.URLdata) {
+        alert("กรุณากรอก URL ที่นี่");
+        this.pop = false;
+      } else {
+        alert("กรุณากรอก Request ที่นี่");
+        this.pop = false;
+      }
+    },
   },
 };
 </script>

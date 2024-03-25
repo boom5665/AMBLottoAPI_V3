@@ -43,12 +43,22 @@
           />
         </div>
       </div> -->
- <!-- <div class="koh-faq-answer col-12">
+      <div class="boxinput">
+        <div class="false-input">
+          <input type="text" v-model="URLdata" placeholder="URL" />
+        </div>
+      </div>
+      <div class="koh-faq-answer col-12">
         <code>
-          <textarea v-model="jsonData" rows="8" class="custom-textarea">
+          <textarea
+            v-model="jsonData"
+            rows="8"
+            class="custom-textarea"
+            placeholder="กรุณากรอกข้อความที่นี่"
+          >
           </textarea>
         </code>
-      </div> -->
+      </div>
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
@@ -159,13 +169,13 @@
             style="margin-left: 2%; font-size: 1rem"
           ></i>
 
-          <div class="btn-send">
+          <!-- <div class="btn-send">
             <a href="#openModal-about">
               <button class="custom-btn btn-13" @click="get_semless">
                 Send Code
               </button></a
             >
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -250,11 +260,14 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-suscess"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-suscess"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-suscess"></button> {{numfail}} </span>
+              <span>
+                <button class="buton-suscess"></button> {{ numfail }}
+              </span>
               {{ success }}
             </div>
           </div>
@@ -262,11 +275,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ nosuccess }}
             </div>
           </div>
@@ -274,11 +288,12 @@
             <div class="box-respon">
               <div class="pdd-top">RESPONSE</div>
               <div class="pdd-top">
-                <button class="buton-fail"></button> Code {{numfail}}&nbsp;&nbsp;
+                <button class="buton-fail"></button> Code
+                {{ numfail }}&nbsp;&nbsp;
               </div>
             </div>
             <div class="padding-content">
-              <span> <button class="buton-fail"></button> {{numfail}} </span>
+              <span> <button class="buton-fail"></button> {{ numfail }} </span>
               {{ permission }}
             </div>
           </div>
@@ -299,7 +314,7 @@
 
       <!-- <a href="#openModal-about">Send Success</a> -->
       <!--modals-->
-      <div id="openModal-about" class="modalDialog">
+      <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <div>
@@ -319,7 +334,6 @@
                   aria-hidden="true"
                   style="margin-left: 2%; font-size: 1rem"
                 ></i>
-
               </div>
             </div>
             <div class="koh-faq-answer col-12">
@@ -409,8 +423,6 @@
                   aria-hidden="true"
                   style="margin-left: 2%; font-size: 1rem"
                 ></i>
-
-
               </div>
             </div>
             <div class="koh-faq-answer col-12">
@@ -565,8 +577,7 @@
           </div>
         </div>
       </div>
-<div class="loading" v-if="isLoading">Loading...</div>
-
+      <div class="loading" v-if="isLoading">Loading...</div>
     </div>
   </div>
 </template>
@@ -579,10 +590,11 @@ export default {
       success: "",
       nosuccess: "",
       permission: "",
-       numfail:"",
-        isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
+      numfail: "",
+      isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
       // playerUsername: "",
@@ -594,682 +606,279 @@ export default {
   },
   watch: {},
   methods: {
-    get_semlessfalse() {
-            alert("Send code clicked!");
-      this.isLoading = true;
-      this.pop = true;
-      var senduser = {
-        service: "UserPlacePayout",
-        // playerApiId: this.playerApiId,
-        // playerApiUsername: this.playerApiUsername,
-        // playerUsername: this.playerUsername,
-        // data: {
-
-        //   playerApiId:
-        //     "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
-        //   playerApiUsername: "AALFLFLFLF000005@top1betvip",
-        //   playerUsername: "AALFLFLFLF000005",
-
-        //   ticketId: 2897891,
-        //   type: "pingponglotto",
-        //   government: false,
-        //   drawId: 62541,
-        //   totalBetAmt: -15.92,
-        //   totalPayOutAmt: 0,
-        //   txtList: [
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS0x",
-        //       betId: "1",
-        //       betType: "top2",
-        //       betNumber: "16",
-        //       betStatus: "false",
-        //       betAmt: 1.995,
-        //       betTotal: 2,
-        //       betDiscount: 0.5,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS0y",
-        //       betId: "2",
-        //       betType: "top2",
-        //       betNumber: "61",
-        //       betStatus: "false",
-        //       betAmt: 1.995,
-        //       betTotal: 2,
-        //       betDiscount: 0.5,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS0z",
-        //       betId: "3",
-        //       betType: "bottom2",
-        //       betNumber: "16",
-        //       betStatus: "false",
-        //       betAmt: 1.98,
-        //       betTotal: 2,
-        //       betDiscount: 1,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS00",
-        //       betId: "4",
-        //       betType: "bottom2",
-        //       betNumber: "61",
-        //       betStatus: "false",
-        //       betAmt: 1.98,
-        //       betTotal: 2,
-        //       betDiscount: 1,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS01",
-        //       betId: "5",
-        //       betType: "top2",
-        //       betNumber: "68",
-        //       betStatus: "false",
-        //       betAmt: 1.995,
-        //       betTotal: 2,
-        //       betDiscount: 0.5,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS02",
-        //       betId: "6",
-        //       betType: "top2",
-        //       betNumber: "86",
-        //       betStatus: "false",
-        //       betAmt: 1.995,
-        //       betTotal: 2,
-        //       betDiscount: 0.5,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS03",
-        //       betId: "7",
-        //       betType: "bottom2",
-        //       betNumber: "68",
-        //       betStatus: "false",
-        //       betAmt: 1.98,
-        //       betTotal: 2,
-        //       betDiscount: 1,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //     {
-        //       agentPt: "0",
-        //       apiPt: "100",
-        //       betKey: "Mjg5Nzg5MS04",
-        //       betId: "8",
-        //       betType: "bottom2",
-        //       betNumber: "86",
-        //       betStatus: "false",
-        //       betAmt: 1.98,
-        //       betTotal: 2,
-        //       betDiscount: 1,
-        //       payOutRate: 90,
-        //       rateLevel: 0,
-        //       rateLevelAmount: 0,
-        //       betResultKey: "",
-        //       payOutAmt: 0,
-        //     },
-        //   ],
-        //   status: "success",
-        //   result: {
-        //     bottom1: ["0", "1"],
-        //     bottom2: ["01"],
-        //     row2: ["78", "74", "87", "84", "47", "48"],
-        //     row3: ["478", "487", "748", "784", "847", "874"],
-        //     row4: [
-        //       "3478",
-        //       "3487",
-        //       "3748",
-        //       "3784",
-        //       "3847",
-        //       "3874",
-        //       "4378",
-        //       "4387",
-        //       "4738",
-        //       "4783",
-        //       "4837",
-        //       "4873",
-        //       "7348",
-        //       "7384",
-        //       "7438",
-        //       "7483",
-        //       "7834",
-        //       "7843",
-        //       "8347",
-        //       "8374",
-        //       "8437",
-        //       "8473",
-        //       "8734",
-        //       "8743",
-        //     ],
-        //     top1: ["7", "8", "4"],
-        //     top2: ["84"],
-        //     top3: ["784"],
-        //     top4: ["3784"],
-        //     top5: ["13784"],
-        //     top6: ["013784"],
-        //   },
-        //   resultlink: "",
-        //   createDate: "2024-03-15 17:38:38",
-        //   currency: "thb",
-        // },
-        service: "UserPlacePayout",
-        data: {
-          playerApiId:
-            "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
-          playerApiUsername: "testa0aagentthbmb01@comptestseamless",
-          playerUsername: "testa0aagentthbmb01",
-          ticketId: "751811",
-          type: "stockgerman",
-          government: false,
-          drawId: 47600,
-          totalBetAmt: -9.9,
-          totalPayOutAmt: 900,
-          txtList: [
-            {
-              agentPt: "95",
-              apiPt: "5",
-              betKey: "NzUxODExLTI=",
-              betId: "1",
-              betType: "bottom2",
-              betNumber: "87",
-              betStatus: "false",
-              betAmt: 9.9,
-              betTotal: 10,
-              betDiscount: 1,
-              payOutRate: 90,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "",
-              payOutAmt: 0,
-            },
-          ],
-          status: "Success",
-          result: {
-            bottom1: ["7", "8"],
-            bottom2: ["78"],
-            row2: ["77", "78", "87"],
-            row3: ["456", "465", "546", "564", "645", "654"],
-            top1: ["4", "5", "6"],
-            top2: ["56"],
-            top3: ["456"],
-          },
-          resultlink: "",
-          createDate: "2023-10-02 20:41:54",
-          currency: "thb",
-        },
-      };
-      // const URL =
-      //   "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-      const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-      this.$axios
-        .$post(URL, senduser)
-        .then((response) => {
-          console.log(response);
-          if (response.code === 0 || response.code === 200) {
-                        this.success = "Successful operation.";
-            this.code = response.code;
-            this.numfail = this.code;
-          } else if (response.code === 403) {
-            this.permission = "Permission denied.";
-            this.numfail = "403";
-          } else if (response.code === 401) {
-            this.numfail = "401";
-            this.permission = "Authentication Failed.";
-          } else if (response.code === 404) {
-            this.permission = "Not Found.";
-            this.numfail = "404";
-          } else if (response.code === 405) {
-            this.permission = "Method Not Allowed.";
-            this.numfail = "405";
-          } else if (response.code === 500) {
-            this.permission = "Server error.";
-            this.numfail = "500";
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        })
-   .catch((error) => {
-          if (error.response) {
-            const statusCode = error.response.status;
-            switch (statusCode) {
-              case 403:
-                this.permission = "Permission denied.";
-                this.numfail = "403";
-                break;
-              case 401:
-                this.numfail = "401";
-                this.permission = "Authentication Failed.";
-                break;
-              case 404:
-                this.permission = "Not Found.";
-                this.numfail = "404";
-                break;
-              case 405:
-                this.permission = "Method Not Allowed.";
-                this.numfail = "405";
-                break;
-              case 500:
-                this.permission = "Server error.";
-                this.numfail = "500";
-                break;
-              default:
-                this.nosuccess = "Bad Request.";
-                this.numfail = "400";
-            }
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        });
-    },
-    get_semless() {
-            alert("Send code clicked!");
-      this.isLoading = true;
-      this.pop = true;
-      var senduser = {
-        // service: "UserPlacePayout",
-        // data: {
-        //   service: "UserPlacePayout",
-        //   data: {
-        //     playerApiId:
-        //       "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
-        //     playerApiUsername: "AALFLFLFLF000005@top1betvip",
-        //     playerUsername: "AALFLFLFLF000005",
-        //     ticketId: 2897891,
-        //     type: "pingponglotto",
-        //     government: false,
-        //     drawId: 62541,
-        //     totalBetAmt: -15.92,
-        //     totalPayOutAmt: 0,
-        //     txtList: [
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS0x",
-        //         betId: "1",
-        //         betType: "top2",
-        //         betNumber: "16",
-        //         betStatus: "false",
-        //         betAmt: 1.995,
-        //         betTotal: 2,
-        //         betDiscount: 0.5,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS0y",
-        //         betId: "2",
-        //         betType: "top2",
-        //         betNumber: "61",
-        //         betStatus: "false",
-        //         betAmt: 1.995,
-        //         betTotal: 2,
-        //         betDiscount: 0.5,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS0z",
-        //         betId: "3",
-        //         betType: "bottom2",
-        //         betNumber: "16",
-        //         betStatus: "true",
-        //         betAmt: 1.98,
-        //         betTotal: 2,
-        //         betDiscount: 1,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS00",
-        //         betId: "4",
-        //         betType: "bottom2",
-        //         betNumber: "61",
-        //         betStatus: "false",
-        //         betAmt: 1.98,
-        //         betTotal: 2,
-        //         betDiscount: 1,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS01",
-        //         betId: "5",
-        //         betType: "top2",
-        //         betNumber: "68",
-        //         betStatus: "false",
-        //         betAmt: 1.995,
-        //         betTotal: 2,
-        //         betDiscount: 0.5,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS02",
-        //         betId: "6",
-        //         betType: "top2",
-        //         betNumber: "86",
-        //         betStatus: "false",
-        //         betAmt: 1.995,
-        //         betTotal: 2,
-        //         betDiscount: 0.5,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS03",
-        //         betId: "7",
-        //         betType: "bottom2",
-        //         betNumber: "68",
-        //         betStatus: "false",
-        //         betAmt: 1.98,
-        //         betTotal: 2,
-        //         betDiscount: 1,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //       {
-        //         agentPt: "0",
-        //         apiPt: "100",
-        //         betKey: "Mjg5Nzg5MS04",
-        //         betId: "8",
-        //         betType: "bottom2",
-        //         betNumber: "86",
-        //         betStatus: "false",
-        //         betAmt: 1.98,
-        //         betTotal: 2,
-        //         betDiscount: 1,
-        //         payOutRate: 90,
-        //         rateLevel: 0,
-        //         rateLevelAmount: 0,
-        //         betResultKey: "",
-        //         payOutAmt: 0,
-        //       },
-        //     ],
-        //     status: "success",
-        //     result: {
-        //       bottom1: ["0", "1"],
-        //       bottom2: ["01"],
-        //       row2: ["78", "74", "87", "84", "47", "48"],
-        //       row3: ["478", "487", "748", "784", "847", "874"],
-        //       row4: [
-        //         "3478",
-        //         "3487",
-        //         "3748",
-        //         "3784",
-        //         "3847",
-        //         "3874",
-        //         "4378",
-        //         "4387",
-        //         "4738",
-        //         "4783",
-        //         "4837",
-        //         "4873",
-        //         "7348",
-        //         "7384",
-        //         "7438",
-        //         "7483",
-        //         "7834",
-        //         "7843",
-        //         "8347",
-        //         "8374",
-        //         "8437",
-        //         "8473",
-        //         "8734",
-        //         "8743",
-        //       ],
-        //       top1: ["7", "8", "4"],
-        //       top2: ["84"],
-        //       top3: ["784"],
-        //       top4: ["3784"],
-        //       top5: ["13784"],
-        //       top6: ["013784"],
-        //     },
-        //     resultlink: "",
-        //     createDate: "2024-03-15 17:38:38",
-        //     currency: "thb",
-        //   },
-        // },
-        service: "UserPlacePayout",
-        data: {
-          playerApiId:
-            "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
-          playerApiUsername: "testa0aagentthbmb01@comptestseamless",
-          playerUsername: "testa0aagentthbmb01",
-          ticketId: "751812",
-          type: "stockgerman",
-          government: false,
-          drawId: 47600,
-          totalBetAmt: -9.9,
-          totalPayOutAmt: 900,
-          txtList: [
-            {
-              agentPt: "95",
-              apiPt: "5",
-              betKey: "NzUxODExLTE=",
-              betId: "1",
-              betType: "bottom2",
-              betNumber: "78",
-              betStatus: "true",
-              betAmt: 9.9,
-              betTotal: 10,
-              betDiscount: 1,
-              payOutRate: 90,
-              rateLevel: 0,
-              rateLevelAmount: 0,
-              betResultKey: "bottom2",
-              payOutAmt: 900,
-            },
-          ],
-          status: "Success",
-          result: {
-            bottom1: ["7", "8"],
-            bottom2: ["78"],
-            row2: ["77", "78", "87"],
-            row3: ["456", "465", "546", "564", "645", "654"],
-            top1: ["4", "5", "6"],
-            top2: ["56"],
-            top3: ["456"],
-          },
-          resultlink: "",
-          createDate: "2023-10-02 20:41:54",
-          currency: "thb",
-        },
-      };
-      // const URL =
-      //   "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-      const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-      this.$axios
-        .$post(URL, senduser)
-        .then((response) => {
-          console.log(response);
-          if (response.code === 0 || response.code === 200) {
-                        this.success = "Successful operation.";
-            this.code = response.code;
-            this.numfail = this.code;
-          } else if (response.code === 403) {
-            this.permission = "Permission denied.";
-            this.numfail = "403";
-          } else if (response.code === 401) {
-            this.numfail = "401";
-            this.permission = "Authentication Failed.";
-          } else if (response.code === 404) {
-            this.permission = "Not Found.";
-            this.numfail = "404";
-          } else if (response.code === 405) {
-            this.permission = "Method Not Allowed.";
-            this.numfail = "405";
-          } else if (response.code === 500) {
-            this.permission = "Server error.";
-            this.numfail = "500";
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        })
-    .catch((error) => {
-          if (error.response) {
-            const statusCode = error.response.status;
-            switch (statusCode) {
-              case 403:
-                this.permission = "Permission denied.";
-                this.numfail = "403";
-                break;
-              case 401:
-                this.numfail = "401";
-                this.permission = "Authentication Failed.";
-                break;
-              case 404:
-                this.permission = "Not Found.";
-                this.numfail = "404";
-                break;
-              case 405:
-                this.permission = "Method Not Allowed.";
-                this.numfail = "405";
-                break;
-              case 500:
-                this.permission = "Server error.";
-                this.numfail = "500";
-                break;
-              default:
-                this.nosuccess = "Bad Request.";
-                this.numfail = "400";
-            }
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        });
-    },
-
-      // get_semless() {
+    // get_semlessfalse() {
     //   alert("Send code clicked!");
     //   this.isLoading = true;
     //   this.pop = true;
-    //   this.isLoading = true;
-    //   // แปลงข้อมูล JSON จาก string ให้เป็น object
-    //   const dataToSend = JSON.parse(this.jsonData);
+    //   var senduser = {
+    //     service: "UserPlacePayout",
+    //     // playerApiId: this.playerApiId,
+    //     // playerApiUsername: this.playerApiUsername,
+    //     // playerUsername: this.playerUsername,
+    //     // data: {
 
-    //   // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
-    //   // ตัวอย่าง:
+    //     //   playerApiId:
+    //     //     "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
+    //     //   playerApiUsername: "AALFLFLFLF000005@top1betvip",
+    //     //   playerUsername: "AALFLFLFLF000005",
+
+    //     //   ticketId: 2897891,
+    //     //   type: "pingponglotto",
+    //     //   government: false,
+    //     //   drawId: 62541,
+    //     //   totalBetAmt: -15.92,
+    //     //   totalPayOutAmt: 0,
+    //     //   txtList: [
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS0x",
+    //     //       betId: "1",
+    //     //       betType: "top2",
+    //     //       betNumber: "16",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.995,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 0.5,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS0y",
+    //     //       betId: "2",
+    //     //       betType: "top2",
+    //     //       betNumber: "61",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.995,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 0.5,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS0z",
+    //     //       betId: "3",
+    //     //       betType: "bottom2",
+    //     //       betNumber: "16",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.98,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 1,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS00",
+    //     //       betId: "4",
+    //     //       betType: "bottom2",
+    //     //       betNumber: "61",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.98,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 1,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS01",
+    //     //       betId: "5",
+    //     //       betType: "top2",
+    //     //       betNumber: "68",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.995,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 0.5,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS02",
+    //     //       betId: "6",
+    //     //       betType: "top2",
+    //     //       betNumber: "86",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.995,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 0.5,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS03",
+    //     //       betId: "7",
+    //     //       betType: "bottom2",
+    //     //       betNumber: "68",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.98,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 1,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //     {
+    //     //       agentPt: "0",
+    //     //       apiPt: "100",
+    //     //       betKey: "Mjg5Nzg5MS04",
+    //     //       betId: "8",
+    //     //       betType: "bottom2",
+    //     //       betNumber: "86",
+    //     //       betStatus: "false",
+    //     //       betAmt: 1.98,
+    //     //       betTotal: 2,
+    //     //       betDiscount: 1,
+    //     //       payOutRate: 90,
+    //     //       rateLevel: 0,
+    //     //       rateLevelAmount: 0,
+    //     //       betResultKey: "",
+    //     //       payOutAmt: 0,
+    //     //     },
+    //     //   ],
+    //     //   status: "success",
+    //     //   result: {
+    //     //     bottom1: ["0", "1"],
+    //     //     bottom2: ["01"],
+    //     //     row2: ["78", "74", "87", "84", "47", "48"],
+    //     //     row3: ["478", "487", "748", "784", "847", "874"],
+    //     //     row4: [
+    //     //       "3478",
+    //     //       "3487",
+    //     //       "3748",
+    //     //       "3784",
+    //     //       "3847",
+    //     //       "3874",
+    //     //       "4378",
+    //     //       "4387",
+    //     //       "4738",
+    //     //       "4783",
+    //     //       "4837",
+    //     //       "4873",
+    //     //       "7348",
+    //     //       "7384",
+    //     //       "7438",
+    //     //       "7483",
+    //     //       "7834",
+    //     //       "7843",
+    //     //       "8347",
+    //     //       "8374",
+    //     //       "8437",
+    //     //       "8473",
+    //     //       "8734",
+    //     //       "8743",
+    //     //     ],
+    //     //     top1: ["7", "8", "4"],
+    //     //     top2: ["84"],
+    //     //     top3: ["784"],
+    //     //     top4: ["3784"],
+    //     //     top5: ["13784"],
+    //     //     top6: ["013784"],
+    //     //   },
+    //     //   resultlink: "",
+    //     //   createDate: "2024-03-15 17:38:38",
+    //     //   currency: "thb",
+    //     // },
+    //     service: "UserPlacePayout",
+    //     data: {
+    //       playerApiId:
+    //         "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+    //       playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+    //       playerUsername: "testa0aagentthbmb01",
+    //       ticketId: "751811",
+    //       type: "stockgerman",
+    //       government: false,
+    //       drawId: 47600,
+    //       totalBetAmt: -9.9,
+    //       totalPayOutAmt: 900,
+    //       txtList: [
+    //         {
+    //           agentPt: "95",
+    //           apiPt: "5",
+    //           betKey: "NzUxODExLTI=",
+    //           betId: "1",
+    //           betType: "bottom2",
+    //           betNumber: "87",
+    //           betStatus: "false",
+    //           betAmt: 9.9,
+    //           betTotal: 10,
+    //           betDiscount: 1,
+    //           payOutRate: 90,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "",
+    //           payOutAmt: 0,
+    //         },
+    //       ],
+    //       status: "Success",
+    //       result: {
+    //         bottom1: ["7", "8"],
+    //         bottom2: ["78"],
+    //         row2: ["77", "78", "87"],
+    //         row3: ["456", "465", "546", "564", "645", "654"],
+    //         top1: ["4", "5", "6"],
+    //         top2: ["56"],
+    //         top3: ["456"],
+    //       },
+    //       resultlink: "",
+    //       createDate: "2023-10-02 20:41:54",
+    //       currency: "thb",
+    //     },
+    //   };
+    //   // const URL =
+    //   //   "https://top1betvip.infosoft.click/api/latest/integration/lotto";
+    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
     //   this.$axios
-    //     .post(
-    //       "https://test-api.askmelotto.com/apiRoute/member/loginRequest",
-    //       dataToSend
-    //     )
+    //     .$post(URL, senduser)
     //     .then((response) => {
-    //       // ตอบกลับจากเซิร์ฟเวอร์
-    //       this.response = response.data;
-    //       console.log("Sending JSON serv:", this.response);
-    //       if (this.response.code === 0 || this.response.code === 200) {
+    //       console.log(response);
+    //       if (response.code === 0 || response.code === 200) {
     //         this.success = "Successful operation.";
-    //         this.code = this.response.code;
-    //         this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
-    //         this.msg = this.response.msg;
-    //         this.playerApiId = this.response.data.playerApiId;
-    //         this.playerApiUsername = this.response.data.playerApiUsername;
-    //         this.playerUsername = this.response.data.playerUsername;
-    //         this.url = this.response.data.url;
-    //         this.urlFullPage = this.response.data.urlFullPage;
-    //         this.tkUuid = this.response.data.tkUuid;
-    //         this.code = this.response.code;
+    //         this.code = response.code;
     //         this.numfail = this.code;
-    //       } else if (this.response.code === 403) {
+    //       } else if (response.code === 403) {
     //         this.permission = "Permission denied.";
     //         this.numfail = "403";
-    //       } else if (this.response.code === 401) {
+    //       } else if (response.code === 401) {
     //         this.numfail = "401";
     //         this.permission = "Authentication Failed.";
-    //       } else if (this.response.code === 404) {
+    //       } else if (response.code === 404) {
     //         this.permission = "Not Found.";
     //         this.numfail = "404";
-    //       } else if (this.response.code === 405) {
+    //       } else if (response.code === 405) {
     //         this.permission = "Method Not Allowed.";
     //         this.numfail = "405";
-    //       } else if (this.response.code === 500) {
+    //       } else if (response.code === 500) {
     //         this.permission = "Server error.";
     //         this.numfail = "500";
     //       } else {
@@ -1279,8 +888,6 @@ export default {
     //       this.isLoading = false;
     //     })
     //     .catch((error) => {
-    //       // จัดการข้อผิดพลาด
-    //       console.log(error);
     //       if (error.response) {
     //         const statusCode = error.response.status;
     //         switch (statusCode) {
@@ -1314,10 +921,428 @@ export default {
     //       }
     //       this.isLoading = false;
     //     });
-
-    //   // สำหรับเนื้อหาทดสอบ
-    //   console.log("Sending JSON data:", dataToSend);
     // },
+    // get_semless() {
+    //   alert("Send code clicked!");
+    //   this.isLoading = true;
+    //   this.pop = true;
+    //   var senduser = {
+    //     // service: "UserPlacePayout",
+    //     // data: {
+    //     //   service: "UserPlacePayout",
+    //     //   data: {
+    //     //     playerApiId:
+    //     //       "989bda3ba671f2374635d295fc08b4f461cd1e48fb749420287f9b7f66cb8ced",
+    //     //     playerApiUsername: "AALFLFLFLF000005@top1betvip",
+    //     //     playerUsername: "AALFLFLFLF000005",
+    //     //     ticketId: 2897891,
+    //     //     type: "pingponglotto",
+    //     //     government: false,
+    //     //     drawId: 62541,
+    //     //     totalBetAmt: -15.92,
+    //     //     totalPayOutAmt: 0,
+    //     //     txtList: [
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS0x",
+    //     //         betId: "1",
+    //     //         betType: "top2",
+    //     //         betNumber: "16",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.995,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 0.5,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS0y",
+    //     //         betId: "2",
+    //     //         betType: "top2",
+    //     //         betNumber: "61",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.995,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 0.5,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS0z",
+    //     //         betId: "3",
+    //     //         betType: "bottom2",
+    //     //         betNumber: "16",
+    //     //         betStatus: "true",
+    //     //         betAmt: 1.98,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 1,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS00",
+    //     //         betId: "4",
+    //     //         betType: "bottom2",
+    //     //         betNumber: "61",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.98,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 1,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS01",
+    //     //         betId: "5",
+    //     //         betType: "top2",
+    //     //         betNumber: "68",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.995,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 0.5,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS02",
+    //     //         betId: "6",
+    //     //         betType: "top2",
+    //     //         betNumber: "86",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.995,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 0.5,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS03",
+    //     //         betId: "7",
+    //     //         betType: "bottom2",
+    //     //         betNumber: "68",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.98,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 1,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //       {
+    //     //         agentPt: "0",
+    //     //         apiPt: "100",
+    //     //         betKey: "Mjg5Nzg5MS04",
+    //     //         betId: "8",
+    //     //         betType: "bottom2",
+    //     //         betNumber: "86",
+    //     //         betStatus: "false",
+    //     //         betAmt: 1.98,
+    //     //         betTotal: 2,
+    //     //         betDiscount: 1,
+    //     //         payOutRate: 90,
+    //     //         rateLevel: 0,
+    //     //         rateLevelAmount: 0,
+    //     //         betResultKey: "",
+    //     //         payOutAmt: 0,
+    //     //       },
+    //     //     ],
+    //     //     status: "success",
+    //     //     result: {
+    //     //       bottom1: ["0", "1"],
+    //     //       bottom2: ["01"],
+    //     //       row2: ["78", "74", "87", "84", "47", "48"],
+    //     //       row3: ["478", "487", "748", "784", "847", "874"],
+    //     //       row4: [
+    //     //         "3478",
+    //     //         "3487",
+    //     //         "3748",
+    //     //         "3784",
+    //     //         "3847",
+    //     //         "3874",
+    //     //         "4378",
+    //     //         "4387",
+    //     //         "4738",
+    //     //         "4783",
+    //     //         "4837",
+    //     //         "4873",
+    //     //         "7348",
+    //     //         "7384",
+    //     //         "7438",
+    //     //         "7483",
+    //     //         "7834",
+    //     //         "7843",
+    //     //         "8347",
+    //     //         "8374",
+    //     //         "8437",
+    //     //         "8473",
+    //     //         "8734",
+    //     //         "8743",
+    //     //       ],
+    //     //       top1: ["7", "8", "4"],
+    //     //       top2: ["84"],
+    //     //       top3: ["784"],
+    //     //       top4: ["3784"],
+    //     //       top5: ["13784"],
+    //     //       top6: ["013784"],
+    //     //     },
+    //     //     resultlink: "",
+    //     //     createDate: "2024-03-15 17:38:38",
+    //     //     currency: "thb",
+    //     //   },
+    //     // },
+    //     service: "UserPlacePayout",
+    //     data: {
+    //       playerApiId:
+    //         "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+    //       playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+    //       playerUsername: "testa0aagentthbmb01",
+    //       ticketId: "751812",
+    //       type: "stockgerman",
+    //       government: false,
+    //       drawId: 47600,
+    //       totalBetAmt: -9.9,
+    //       totalPayOutAmt: 900,
+    //       txtList: [
+    //         {
+    //           agentPt: "95",
+    //           apiPt: "5",
+    //           betKey: "NzUxODExLTE=",
+    //           betId: "1",
+    //           betType: "bottom2",
+    //           betNumber: "78",
+    //           betStatus: "true",
+    //           betAmt: 9.9,
+    //           betTotal: 10,
+    //           betDiscount: 1,
+    //           payOutRate: 90,
+    //           rateLevel: 0,
+    //           rateLevelAmount: 0,
+    //           betResultKey: "bottom2",
+    //           payOutAmt: 900,
+    //         },
+    //       ],
+    //       status: "Success",
+    //       result: {
+    //         bottom1: ["7", "8"],
+    //         bottom2: ["78"],
+    //         row2: ["77", "78", "87"],
+    //         row3: ["456", "465", "546", "564", "645", "654"],
+    //         top1: ["4", "5", "6"],
+    //         top2: ["56"],
+    //         top3: ["456"],
+    //       },
+    //       resultlink: "",
+    //       createDate: "2023-10-02 20:41:54",
+    //       currency: "thb",
+    //     },
+    //   };
+    //   // const URL =
+    //   //   "https://top1betvip.infosoft.click/api/latest/integration/lotto";
+    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
+    //   this.$axios
+    //     .$post(URL, senduser)
+    //     .then((response) => {
+    //       console.log(response);
+    //       if (response.code === 0 || response.code === 200) {
+    //         this.success = "Successful operation.";
+    //         this.code = response.code;
+    //         this.numfail = this.code;
+    //       } else if (response.code === 403) {
+    //         this.permission = "Permission denied.";
+    //         this.numfail = "403";
+    //       } else if (response.code === 401) {
+    //         this.numfail = "401";
+    //         this.permission = "Authentication Failed.";
+    //       } else if (response.code === 404) {
+    //         this.permission = "Not Found.";
+    //         this.numfail = "404";
+    //       } else if (response.code === 405) {
+    //         this.permission = "Method Not Allowed.";
+    //         this.numfail = "405";
+    //       } else if (response.code === 500) {
+    //         this.permission = "Server error.";
+    //         this.numfail = "500";
+    //       } else {
+    //         this.nosuccess = "Bad Request.";
+    //         this.numfail = "400";
+    //       }
+    //       this.isLoading = false;
+    //     })
+    //     .catch((error) => {
+    //       if (error.response) {
+    //         const statusCode = error.response.status;
+    //         switch (statusCode) {
+    //           case 403:
+    //             this.permission = "Permission denied.";
+    //             this.numfail = "403";
+    //             break;
+    //           case 401:
+    //             this.numfail = "401";
+    //             this.permission = "Authentication Failed.";
+    //             break;
+    //           case 404:
+    //             this.permission = "Not Found.";
+    //             this.numfail = "404";
+    //             break;
+    //           case 405:
+    //             this.permission = "Method Not Allowed.";
+    //             this.numfail = "405";
+    //             break;
+    //           case 500:
+    //             this.permission = "Server error.";
+    //             this.numfail = "500";
+    //             break;
+    //           default:
+    //             this.nosuccess = "Bad Request.";
+    //             this.numfail = "400";
+    //         }
+    //       } else {
+    //         this.nosuccess = "Bad Request.";
+    //         this.numfail = "400";
+    //       }
+    //       this.isLoading = false;
+    //     });
+    // },
+
+  get_semless() {
+      alert("Send code clicked!");
+      if (this.jsonData) {
+        this.isLoading = true;
+        this.pop = true;
+        this.isLoading = true;
+        try {
+          const dataToSend = JSON.parse(this.jsonData);
+          const URL = this.URLdata;
+          console.log("URL", URL);
+          // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
+          // ตัวอย่าง:
+
+          this.$axios
+            .post(URL, dataToSend)
+            .then((response) => {
+              // ตอบกลับจากเซิร์ฟเวอร์
+              this.response = response.data;
+              console.log("Sending JSON serv:", this.response);
+              if (this.response.code === 0 || this.response.code === 200) {
+                this.success = "Successful operation.";
+                this.code = this.response.code;
+                this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
+                this.msg = this.response.msg;
+                this.playerApiId = this.response.data.playerApiId;
+                this.playerApiUsername = this.response.data.playerApiUsername;
+                this.playerUsername = this.response.data.playerUsername;
+                this.url = this.response.data.url;
+                this.urlFullPage = this.response.data.urlFullPage;
+                this.tkUuid = this.response.data.tkUuid;
+                this.code = this.response.code;
+                this.numfail = this.code;
+              } else if (this.response.code === 403) {
+                this.permission = "Permission denied.";
+                this.numfail = "403";
+              } else if (this.response.code === 401) {
+                this.numfail = "401";
+                this.permission = "Authentication Failed.";
+              } else if (this.response.code === 404) {
+                this.permission = "Not Found.";
+                this.numfail = "404";
+              } else if (this.response.code === 405) {
+                this.permission = "Method Not Allowed.";
+                this.numfail = "405";
+              } else if (this.response.code === 500) {
+                this.permission = "Server error.";
+                this.numfail = "500";
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            })
+            .catch((error) => {
+              // จัดการข้อผิดพลาด
+              console.log(error);
+              if (error.response) {
+                const statusCode = error.response.status;
+                switch (statusCode) {
+                  case 403:
+                    this.permission = "Permission denied.";
+                    this.numfail = "403";
+                    break;
+                  case 401:
+                    this.numfail = "401";
+                    this.permission = "Authentication Failed.";
+                    break;
+                  case 404:
+                    this.permission = "Not Found.";
+                    this.numfail = "404";
+                    break;
+                  case 405:
+                    this.permission = "Method Not Allowed.";
+                    this.numfail = "405";
+                    break;
+                  case 500:
+                    this.permission = "Server error.";
+                    this.numfail = "500";
+                    break;
+                  default:
+                    this.nosuccess = "Bad Request.";
+                    this.numfail = "400";
+                }
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            });
+        } catch (error) {
+          // กรณีที่ข้อมูล JSON ไม่ถูกต้อง
+          console.error("Invalid JSON format:", error);
+          alert("กรุณากรอกข้อมูล JSON ที่ถูกต้อง");
+          this.pop = false;
+          this.isLoading = false;
+        }
+        // สำหรับเนื้อหาทดสอบ
+        // console.log("Sending JSON data:", dataToSend);
+      } else if (this.URLdata) {
+        alert("กรุณากรอก URL ที่นี่");
+        this.pop = false;
+      } else {
+        alert("กรุณากรอก Request ที่นี่");
+        this.pop = false;
+      }
+    },
   },
 };
 </script>

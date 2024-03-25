@@ -52,12 +52,22 @@
           />
         </div>
       </div> -->
- <!-- <div class="koh-faq-answer col-12">
+      <div class="boxinput">
+        <div class="false-input">
+          <input type="text" v-model="URLdata" placeholder="URL" />
+        </div>
+      </div>
+      <div class="koh-faq-answer col-12">
         <code>
-          <textarea v-model="jsonData" rows="8" class="custom-textarea">
+          <textarea
+            v-model="jsonData"
+            rows="8"
+            class="custom-textarea"
+            placeholder="กรุณากรอกข้อความที่นี่"
+          >
           </textarea>
         </code>
-      </div> -->
+      </div>
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
@@ -151,7 +161,7 @@
       </div>
       <!-- <a href="#openModal-about">Send Success</a> -->
       <!--modals-->
-      <div id="openModal-about" class="modalDialog">
+      <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <div>
@@ -284,8 +294,7 @@
           </div>
         </div>
       </div>
-<div class="loading" v-if="isLoading">Loading...</div>
-
+      <div class="loading" v-if="isLoading">Loading...</div>
     </div>
   </div>
 </template>
@@ -301,7 +310,8 @@ export default {
       numfail: "",
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
+      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
       // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
@@ -313,132 +323,44 @@ export default {
   },
   watch: {},
   methods: {
-    get_tranfer() {
-      alert("Send code clicked!");
-      this.isLoading = true;
-      this.pop = true;
-      var senduser = {
-        agentUsername: "agentapi",
-        agentApiKey:
-          "18c089a2e49dfc1776b6abc2ea3ee909d43b10bc37dfd7195a7265da82f8b4a983a1ebf3",
-        playerUsername: "testuserapi001",
-        // agentUsername: "top1betvip", // กำหนดค่าเริ่มต้นของ agentUsername
-        // agentApiKey:
-        //   "95b1b602d7d4929e48593af7d96fbe79c615a10b91a9411423c5ca04ae073d11", // กำหนดค่าเริ่มต้นของ agentApiKey
-        // playerUsername: "AALFLFLFLF000005", // กำหนดค่าเริ่มต้นของ playerUsername
-        balance: 100,
-        transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276512",
-      };
-      const URL = "https://test-api.askmelotto.com/apiRoute/api/deposit";
-      this.$axios
-        .$post(URL, senduser)
-        .then((response) => {
-          console.log(response);
-          if (response.code === 0 || response.code === 200) {
-            this.success = "Successful operation.";
-            this.code = response.code;
-            this.numfail = this.code;
-          } else if (response.code === 403) {
-            this.permission = "Permission denied.";
-            this.numfail = "403";
-          } else if (response.code === 401) {
-            this.numfail = "401";
-            this.permission = "Authentication Failed.";
-          } else if (response.code === 404) {
-            this.permission = "Not Found.";
-            this.numfail = "404";
-          } else if (response.code === 405) {
-            this.permission = "Method Not Allowed.";
-            this.numfail = "405";
-          } else if (response.code === 500) {
-            this.permission = "Server error.";
-            this.numfail = "500";
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        })
-        .catch((error) => {
-          if (error.response) {
-            const statusCode = error.response.status;
-            switch (statusCode) {
-              case 403:
-                this.permission = "Permission denied.";
-                this.numfail = "403";
-                break;
-              case 401:
-                this.numfail = "401";
-                this.permission = "Authentication Failed.";
-                break;
-              case 404:
-                this.permission = "Not Found.";
-                this.numfail = "404";
-                break;
-              case 405:
-                this.permission = "Method Not Allowed.";
-                this.numfail = "405";
-                break;
-              case 500:
-                this.permission = "Server error.";
-                this.numfail = "500";
-                break;
-              default:
-                this.nosuccess = "Bad Request.";
-                this.numfail = "400";
-            }
-          } else {
-            this.nosuccess = "Bad Request.";
-            this.numfail = "400";
-          }
-          this.isLoading = false;
-        });
-    },
-      // get_semless() {
+    // get_tranfer() {
     //   alert("Send code clicked!");
     //   this.isLoading = true;
     //   this.pop = true;
-    //   this.isLoading = true;
-    //   // แปลงข้อมูล JSON จาก string ให้เป็น object
-    //   const dataToSend = JSON.parse(this.jsonData);
-
-    //   // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
-    //   // ตัวอย่าง:
+    //   var senduser = {
+    //     agentUsername: "agentapi",
+    //     agentApiKey:
+    //       "18c089a2e49dfc1776b6abc2ea3ee909d43b10bc37dfd7195a7265da82f8b4a983a1ebf3",
+    //     playerUsername: "testuserapi001",
+    //     // agentUsername: "top1betvip", // กำหนดค่าเริ่มต้นของ agentUsername
+    //     // agentApiKey:
+    //     //   "95b1b602d7d4929e48593af7d96fbe79c615a10b91a9411423c5ca04ae073d11", // กำหนดค่าเริ่มต้นของ agentApiKey
+    //     // playerUsername: "AALFLFLFLF000005", // กำหนดค่าเริ่มต้นของ playerUsername
+    //     balance: 100,
+    //     transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276512",
+    //   };
+    //   const URL = "https://test-api.askmelotto.com/apiRoute/api/deposit";
     //   this.$axios
-    //     .post(
-    //       "https://test-api.askmelotto.com/apiRoute/member/loginRequest",
-    //       dataToSend
-    //     )
+    //     .$post(URL, senduser)
     //     .then((response) => {
-    //       // ตอบกลับจากเซิร์ฟเวอร์
-    //       this.response = response.data;
-    //       console.log("Sending JSON serv:", this.response);
-    //       if (this.response.code === 0 || this.response.code === 200) {
+    //       console.log(response);
+    //       if (response.code === 0 || response.code === 200) {
     //         this.success = "Successful operation.";
-    //         this.code = this.response.code;
-    //         this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
-    //         this.msg = this.response.msg;
-    //         this.playerApiId = this.response.data.playerApiId;
-    //         this.playerApiUsername = this.response.data.playerApiUsername;
-    //         this.playerUsername = this.response.data.playerUsername;
-    //         this.url = this.response.data.url;
-    //         this.urlFullPage = this.response.data.urlFullPage;
-    //         this.tkUuid = this.response.data.tkUuid;
-    //         this.code = this.response.code;
+    //         this.code = response.code;
     //         this.numfail = this.code;
-    //       } else if (this.response.code === 403) {
+    //       } else if (response.code === 403) {
     //         this.permission = "Permission denied.";
     //         this.numfail = "403";
-    //       } else if (this.response.code === 401) {
+    //       } else if (response.code === 401) {
     //         this.numfail = "401";
     //         this.permission = "Authentication Failed.";
-    //       } else if (this.response.code === 404) {
+    //       } else if (response.code === 404) {
     //         this.permission = "Not Found.";
     //         this.numfail = "404";
-    //       } else if (this.response.code === 405) {
+    //       } else if (response.code === 405) {
     //         this.permission = "Method Not Allowed.";
     //         this.numfail = "405";
-    //       } else if (this.response.code === 500) {
+    //       } else if (response.code === 500) {
     //         this.permission = "Server error.";
     //         this.numfail = "500";
     //       } else {
@@ -448,8 +370,6 @@ export default {
     //       this.isLoading = false;
     //     })
     //     .catch((error) => {
-    //       // จัดการข้อผิดพลาด
-    //       console.log(error);
     //       if (error.response) {
     //         const statusCode = error.response.status;
     //         switch (statusCode) {
@@ -483,10 +403,113 @@ export default {
     //       }
     //       this.isLoading = false;
     //     });
-
-    //   // สำหรับเนื้อหาทดสอบ
-    //   console.log("Sending JSON data:", dataToSend);
     // },
+    get_tranfer() {
+      alert("Send code clicked!");
+      if (this.jsonData) {
+        this.isLoading = true;
+        this.pop = true;
+        this.isLoading = true;
+        try {
+          const dataToSend = JSON.parse(this.jsonData);
+          const URL = this.URLdata;
+          console.log("URL", URL);
+          // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
+          // ตัวอย่าง:
+
+          this.$axios
+            .post(URL, dataToSend)
+            .then((response) => {
+              // ตอบกลับจากเซิร์ฟเวอร์
+              this.response = response.data;
+              console.log("Sending JSON serv:", this.response);
+              if (this.response.code === 0 || this.response.code === 200) {
+                this.success = "Successful operation.";
+                this.code = this.response.code;
+                this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
+                this.msg = this.response.msg;
+                this.playerApiId = this.response.data.playerApiId;
+                this.playerApiUsername = this.response.data.playerApiUsername;
+                this.playerUsername = this.response.data.playerUsername;
+                this.url = this.response.data.url;
+                this.urlFullPage = this.response.data.urlFullPage;
+                this.tkUuid = this.response.data.tkUuid;
+                this.code = this.response.code;
+                this.numfail = this.code;
+              } else if (this.response.code === 403) {
+                this.permission = "Permission denied.";
+                this.numfail = "403";
+              } else if (this.response.code === 401) {
+                this.numfail = "401";
+                this.permission = "Authentication Failed.";
+              } else if (this.response.code === 404) {
+                this.permission = "Not Found.";
+                this.numfail = "404";
+              } else if (this.response.code === 405) {
+                this.permission = "Method Not Allowed.";
+                this.numfail = "405";
+              } else if (this.response.code === 500) {
+                this.permission = "Server error.";
+                this.numfail = "500";
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            })
+            .catch((error) => {
+              // จัดการข้อผิดพลาด
+              console.log(error);
+              if (error.response) {
+                const statusCode = error.response.status;
+                switch (statusCode) {
+                  case 403:
+                    this.permission = "Permission denied.";
+                    this.numfail = "403";
+                    break;
+                  case 401:
+                    this.numfail = "401";
+                    this.permission = "Authentication Failed.";
+                    break;
+                  case 404:
+                    this.permission = "Not Found.";
+                    this.numfail = "404";
+                    break;
+                  case 405:
+                    this.permission = "Method Not Allowed.";
+                    this.numfail = "405";
+                    break;
+                  case 500:
+                    this.permission = "Server error.";
+                    this.numfail = "500";
+                    break;
+                  default:
+                    this.nosuccess = "Bad Request.";
+                    this.numfail = "400";
+                }
+              } else {
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+              }
+              this.isLoading = false;
+            });
+        } catch (error) {
+          // กรณีที่ข้อมูล JSON ไม่ถูกต้อง
+          console.error("Invalid JSON format:", error);
+          alert("กรุณากรอกข้อมูล JSON ที่ถูกต้อง");
+          this.pop = false;
+          this.isLoading = false;
+        }
+        // สำหรับเนื้อหาทดสอบ
+        // console.log("Sending JSON data:", dataToSend);
+      } else if (this.URLdata) {
+        alert("กรุณากรอก URL ที่นี่");
+        this.pop = false;
+      } else {
+        alert("กรุณากรอก Request ที่นี่");
+        this.pop = false;
+      }
+    },
   },
 };
 </script>
