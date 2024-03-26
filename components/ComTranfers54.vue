@@ -26,7 +26,7 @@
             <div class="col-12">
               <label class="txtHead"> Url : </label>
               <label>
-                https://test-api.askmelotto.com/api/v2/apiRoute/member/tranferwallet/loginRequest
+                https://test-api.askmelotto.com/api/v2/apiRoute/member/Tranferswallet/loginRequest
               </label>
             </div>
             <div class="col-12">
@@ -2552,6 +2552,6 @@
 
 <script>
 export default {
-  name: "Comtranfer",
+  name: "ComTranfers",
 };
 </script>

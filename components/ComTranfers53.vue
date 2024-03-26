@@ -81,6 +81,6 @@
 
 <script>
 export default {
-  name: "Comtranfer",
+  name: "ComTranfers",
 };
 </script>

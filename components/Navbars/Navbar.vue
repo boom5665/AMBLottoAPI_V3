@@ -216,41 +216,41 @@
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
-                >5. Tranferwallet API</span
+                >5. Tranferswallet API</span
               ></label
             >
             <div class="content">
               <ul>
-                <Nuxt-link class="text-nav" to="/Tranferwallet">
+                <Nuxt-link class="text-nav" to="/Tranferswallet">
                   <li>5.1 Introduction Transferwallet API</li></Nuxt-link
                 >
 
-                <Nuxt-link class="text-nav" to="/Tranferwallet52">
+                <Nuxt-link class="text-nav" to="/Tranferswallet52">
                   <li>
                     <span>5.2 Workflow</span>
                   </li>
                 </Nuxt-link>
                 <ul>
-                  <Nuxt-link class="text-nav" to="/Tranferwallet53">
+                  <Nuxt-link class="text-nav" to="/Tranferswallet53">
                     <li>
                       <span>5.3 Setting</span>
                     </li>
                   </Nuxt-link>
                 </ul>
                 <ul>
-                  <Nuxt-link class="text-nav " to="/Tranferwallet54">
+                  <Nuxt-link class="text-nav " to="/Tranferswallet54">
                     <li>
                       <span>5.4 login request</span>
                     </li>
                   </Nuxt-link>
                 </ul>
                 <ul>
-                  <Nuxt-link class="text-nav" to="/Tranferwallet55">
+                  <Nuxt-link class="text-nav" to="/Tranferswallet55">
                     <li>
                       <span>5.5 Deposit</span>
                     </li>
                   </Nuxt-link>
-                  <Nuxt-link class="text-nav" to="/Tranferwallet56">
+                  <Nuxt-link class="text-nav" to="/Tranferswallet56">
                     <li>
                       <span>5.6 Withdrawal</span>
                     </li>
