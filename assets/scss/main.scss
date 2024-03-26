@@ -36,7 +36,7 @@ a:hover {
 }
 
 .box-cotent {
-  background: #043E35 !important;
+  background: #f2f3f4 !important;
   display: flex;
   width: 100%;
   position: relative;
@@ -69,7 +69,7 @@ a:hover {
 
 
 .box-intro {
-  background: #f2f3f4;
+  background: #ffff;
 
   margin: 10px;
   border-radius: 5px;
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .box-version {
-  background: #f2f3f4;
+  background: #ffff;
 
   margin: 10px;
   border-radius: 5px;
@@ -99,9 +99,10 @@ a:hover {
 .box-Sem {
   // background: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px 0px 0px 0px;
   margin-left: 5px;
   margin-right: 0px;
+
 }
 
 .box-tran {
@@ -111,7 +112,7 @@ a:hover {
 }
 
 .box-Sev {
-  background: #f2f3f4;
+  background: #ffff;
 
   margin-top: 10px;
   border-radius: 5px;
@@ -121,7 +122,7 @@ a:hover {
 
 
 .box-all-content {
-  background: #f2f3f4;
+  background: #ffffff;
   padding-left: 15px;
   padding-top: 10px;
   margin-top: 5px;
@@ -198,7 +199,7 @@ img {
 }
 
 .box-all {
-  background: #f2f3f4;
+  background: #ffff;
 
   padding: 10px 20px 0px 20px;
   margin-top: 5px;
@@ -329,7 +330,7 @@ img {
 
   /* 13 */
   .btn-13 {
-    background-color: #043E35;
+    background-color: #19a17a !important;
     // background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
     border: none;
     z-index: 1;
@@ -344,7 +345,7 @@ img {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-color: rgb(25, 161, 122);
+    background-color: rgb(0, 196, 140);
     // background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
     box-shadow:
       // -7px -7px 20px 0px #fff9,

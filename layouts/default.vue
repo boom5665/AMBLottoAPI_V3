@@ -12,7 +12,7 @@
         </div>
 
         <div style="display: flex; width: 100%">
-          <div style="width: 100%"><Nuxt /></div>
+          <div style="width: 100% ;background-color: rgba(0, 0, 0, 0.08);"><Nuxt /></div>
         </div>
       </div>
     </div>

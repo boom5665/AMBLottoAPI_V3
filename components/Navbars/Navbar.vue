@@ -21,14 +21,14 @@
             />
 
             <ul>
-              <Nuxt-link class="text-nav" to="/"
-                ><li>
+              <Nuxt-link class="text-nav " to="/"
+                ><li class="underline">
                   <svg
                     class="svg-doc"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"
                   >
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                     <path
                       d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                     /></svg
@@ -36,13 +36,13 @@
                 </li></Nuxt-link
               >
               <Nuxt-link class="text-nav" to="/version"
-                ><li>
+                ><li class="underline">
                   <svg
                     class="svg-doc"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"
                   >
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                     <path
                       d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                     /></svg
@@ -69,14 +69,14 @@
               name="accordion-1"
               value="toggle"
             />
-            <label for="section">
+            <label for="section" class="underline">
               <span
                 ><svg
                   class="svg-doc"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
-                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
@@ -107,21 +107,21 @@
               name="accordion-1"
               value="toggle"
             />
-            <label for="section-2">
+            <label for="section-2" class="underline">
               <span
                 ><svg
                   class="svg-doc"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
-                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
                 >4. Semless API</span
               ></label
             >
-            <div class="content">
+            <div class="content" >
               <ul>
                 <Nuxt-link class="text-nav" to="/Semless">
                   <li>
@@ -205,14 +205,14 @@
               name="accordion-1"
               value="toggle"
             />
-            <label for="section-3">
+            <label for="section-3" class="underline">
               <span
                 ><svg
                   class="svg-doc"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
-                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
@@ -238,7 +238,7 @@
                   </Nuxt-link>
                 </ul>
                 <ul>
-                  <Nuxt-link class="text-nav" to="/Tranferwallet54">
+                  <Nuxt-link class="text-nav " to="/Tranferwallet54">
                     <li>
                       <span>5.4 login request</span>
                     </li>
@@ -259,21 +259,21 @@
               </ul>
             </div>
           </div>
-          <div class="section">
+          <div class="section" >
             <input
               id="section-4"
               type="radio"
               name="accordion-1"
               value="toggle"
             />
-            <label for="section-4">
+            <label for="section-4" class="underline">
               <span
                 ><svg
                   class="svg-doc"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
-                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
@@ -456,5 +456,12 @@ ul {
       background: $toggle-background-active;
     }
   }
+}
+.underline {
+  border: none; /* ลบเส้นขอบ */
+  border-bottom: 1px solid #ced4da; /* เพิ่มเส้นใต้ */
+  padding: 8px; /* ระยะห่าง */
+  color: #333; /* สีข้อความ */
+  outline: none; /* ลบเส้นขอบเมื่อคลิก */
 }
 </style>
