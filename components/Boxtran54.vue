@@ -3,7 +3,7 @@
   <div style="">
     <div type="primary" class="box-r-scoll">
       <div>
-        <div class="font-prim"><span>Code Tranfer</span></div>
+        <div class="font-prim"><span>Code Tranfers</span></div>
       </div>
       <!-- // -->
       <!-- // -->
@@ -25,7 +25,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.com/apiRoute/member/tranferwallet/loginRequest
+            https://test-api.askmelotto.com/apiRoute/member/Tranferswallet/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -94,7 +94,7 @@
             ></i>
             <div class="btn-send">
               <a href="#openModal-about">
-                <button class="custom-btn btn-13" @click="get_tranfer">
+                <button class="custom-btn btn-13" @click="get_Tranfers">
                   Send Code
                 </button></a
               >
@@ -2955,7 +2955,7 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_tranfer();
+    // this.get_Tranfers();
   },
   watch: {
     jsonData(newValue) {
@@ -2969,14 +2969,14 @@ export default {
     },
   },
   methods: {
-    // get_tranfer() {
+    // get_Tranfers() {
     //         alert("Send code clicked!");
     //   this.isLoading = true;
     //   this.pop = true;
     //   var senduser = {
     //   };
     //   const URL =
-    //     "https://test-api.askmelotto.com/apiRoute/member/tranferwallet/loginRequest";
+    //     "https://test-api.askmelotto.com/apiRoute/member/Tranferswallet/loginRequest";
     //   this.$axios
     //     .$post(URL, senduser)
     //     .then((response) => {
@@ -3052,7 +3052,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-    get_tranfer() {
+    get_Tranfers() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;
