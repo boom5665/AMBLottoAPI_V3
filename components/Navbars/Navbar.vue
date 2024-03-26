@@ -387,7 +387,7 @@ $toggle-background-active: lighten($toggle-background, 8);
       span {
         display: table-cell;
         vertical-align: middle;
-        padding: 0px 15px;
+        padding: 0px 0px;
       }
     }
 
@@ -441,7 +441,7 @@ ul {
   list-style: none;
 
   li {
-    padding: 5px 25px;
+    padding: 5px 10px;
 
     i {
       font-size: 13px;

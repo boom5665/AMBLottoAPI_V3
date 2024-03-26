@@ -50,7 +50,7 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata" placeholder="URL" />
+          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
         </div>
       </div>
       <div class="koh-faq-answer col-12">

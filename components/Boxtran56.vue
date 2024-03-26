@@ -55,7 +55,7 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata" placeholder="URL" />
+          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -64,7 +64,7 @@
             v-model="jsonData"
             rows="8"
             class="custom-textarea"
-            placeholder="กรุณากรอกข้อความที่นี่"
+            placeholder="Please enter your request here."
           >
           </textarea>
         </code>

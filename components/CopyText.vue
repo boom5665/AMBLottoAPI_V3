@@ -5,17 +5,7 @@
     </div>
 
     <div class="">
-      <div
-        @click="copyText"
-        class="copy-clipboard"
-        style="
-          width: 20px;
-          position: absolute;
-          top: 10px;
-          left: 88%;
-          cursor: pointer;
-        "
-      >
+      <div @click="copyText" class="copy-clipboard">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <title>Copy to Clipboard</title>
           <path
@@ -60,6 +50,13 @@ export default {
 </script>
 
 <style>
+.copy-clipboard {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  cursor: pointer;
+}
 svg:hover {
   fill: gray;
 }
