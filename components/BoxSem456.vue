@@ -3,7 +3,7 @@
   <div style="">
     <div type="primary" class="box-r-scoll">
       <div>
-        <div class="font-prim"><span>Code Semless</span></div>
+        <div class="font-prim"><span>Code Seamless</span></div>
       </div>
       <!-- // -->
       <div class="col-12" id="tabSeven" style="margin-bottom: 25px">
@@ -71,7 +71,7 @@
           ></i>
           <div class="btn-send">
             <a href="#openModal-about">
-              <button class="custom-btn btn-13" @click="get_semless">
+              <button class="custom-btn btn-13" @click="get_Seamless">
                 Send Code
               </button></a
             >
@@ -186,7 +186,7 @@
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <div>
-            <div class="font-prim"><span>Code Semless</span></div>
+            <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
             <div class="koh-faq-question form-group ex">
@@ -366,7 +366,7 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_semless();
+    // this.get_Seamless();
   },
   watch: {
     jsonData(newValue) {
@@ -380,7 +380,7 @@ export default {
     },
   },
   methods: {
-    // get_semless() {
+    // get_Seamless() {
     //         alert("Send code clicked!");
     //   this.isLoading = true;
     //   this.pop = true;
@@ -544,7 +544,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-    get_semless() {
+    get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

@@ -118,79 +118,79 @@
                   <path
                     d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
                   /></svg
-                >4. Semless API</span
+                >4. Seamless API</span
               ></label
             >
             <div class="content" >
               <ul>
-                <Nuxt-link class="text-nav" to="/Semless">
+                <Nuxt-link class="text-nav" to="/Seamless">
                   <li>
                     <span>4.1 Introduction Seamless API</span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless42">
+                <Nuxt-link class="text-nav" to="/Seamless42">
                   <li>
                     <span>4.2 Workflow </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless43">
+                <Nuxt-link class="text-nav" to="/Seamless43">
                   <li>
                     <span>4.3 Setting</span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless44">
+                <Nuxt-link class="text-nav" to="/Seamless44">
                   <li>
                     <span>4.4 Login request </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless45">
+                <Nuxt-link class="text-nav" to="/Seamless45">
                   <li>
                     <span>4.5 Call Back Service </span>
                   </li>
                 </Nuxt-link>
-                  <Nuxt-link class="text-nav" to="/Semless45">
+                  <Nuxt-link class="text-nav" to="/Seamless45">
                   <li>
                     <span>4.5.1 GetUserDetail </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless452">
+                <Nuxt-link class="text-nav" to="/Seamless452">
                   <li>
                     <span>4.5.2 GetUserBalance </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless453">
+                <Nuxt-link class="text-nav" to="/Seamless453">
                   <li>
                     <span>4.5.3 UserPlaceBet </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless454">
+                <Nuxt-link class="text-nav" to="/Seamless454">
                   <li>
                     <span>4.5.4 UserPlaceBetCancel </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless455">
+                <Nuxt-link class="text-nav" to="/Seamless455">
                   <li>
                     <span>4.5.5 UserPlacePayout </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless456">
+                <Nuxt-link class="text-nav" to="/Seamless456">
                   <li>
                     <span>4.5.6 UserPlaceReToRunning </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless46">
+                <Nuxt-link class="text-nav" to="/Seamless46">
                   <li>
                     <span>4.6 ListPlaceout </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless47">
+                <Nuxt-link class="text-nav" to="/Seamless47">
                   <li>
                     <span style="word-break: break-all"
                       >4.7 ListHotnumberandLimitnumber
                     </span>
                   </li>
                 </Nuxt-link>
-                <Nuxt-link class="text-nav" to="/Semless48">
+                <Nuxt-link class="text-nav" to="/Seamless48">
                   <li>
                     <span>4.8 Detail </span>
                   </li>

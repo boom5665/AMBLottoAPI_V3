@@ -78,6 +78,6 @@
 
 <script>
 export default {
-  name: "ComSemless43",
+  name: "ComSeamless43",
 };
 </script>

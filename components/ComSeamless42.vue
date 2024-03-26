@@ -37,6 +37,6 @@
 
 <script>
 export default {
-  name: "ComSemless42",
+  name: "ComSeamless42",
 };
 </script>

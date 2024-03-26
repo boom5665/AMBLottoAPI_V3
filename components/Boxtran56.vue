@@ -167,7 +167,7 @@
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <div>
-            <div class="font-prim"><span>Code Semless</span></div>
+            <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
             <div class="koh-faq-question form-group ex">
