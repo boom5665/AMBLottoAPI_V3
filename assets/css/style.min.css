@@ -106,6 +106,7 @@ pre {
 
 .bRight {
   border-right: 1px #ced4da solid !important;
+  border-left: 1px #ced4da solid !important;
 }
 
 .bBottom {
