@@ -2957,7 +2957,17 @@ export default {
   mounted() {
     // this.get_tranfer();
   },
-  watch: {},
+  watch: {
+    jsonData(newValue) {
+      try {
+        const formattedJson = JSON.stringify(JSON.parse(newValue), null, 2);
+        this.jsonData = formattedJson;
+      } catch (error) {
+        console.error("Invalid JSON format:", error);
+        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
+      }
+    },
+  },
   methods: {
     // get_tranfer() {
     //         alert("Send code clicked!");
@@ -3054,12 +3064,7 @@ export default {
           console.log("URL", URL);
           // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
           // ตัวอย่าง:
-          const formattedJson = JSON.stringify(
-            JSON.parse(this.jsonData),
-            null,
-            2
-          );
-          this.jsonData = formattedJson;
+
           this.$axios
             .post(URL, dataToSend)
             .then((response) => {

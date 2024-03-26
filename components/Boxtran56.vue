@@ -331,7 +331,17 @@ export default {
   mounted() {
     // this.get_tranfer();
   },
-  watch: {},
+  watch: {
+    jsonData(newValue) {
+      try {
+        const formattedJson = JSON.stringify(JSON.parse(newValue), null, 2);
+        this.jsonData = formattedJson;
+      } catch (error) {
+        console.error("Invalid JSON format:", error);
+        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
+      }
+    },
+  },
   methods: {
     // get_tranfer() {
     //   alert("Send code clicked!");

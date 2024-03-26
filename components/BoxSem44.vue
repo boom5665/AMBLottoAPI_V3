@@ -329,7 +329,17 @@ export default {
   },
   beforeCreate() {},
   mounted() {},
-  watch: {},
+  watch: {
+    jsonData(newValue) {
+      try {
+        const formattedJson = JSON.stringify(JSON.parse(newValue), null, 2);
+        this.jsonData = formattedJson;
+      } catch (error) {
+        console.error("Invalid JSON format:", error);
+        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
+      }
+    },
+  },
   methods: {
     // get_semless() {
     //   alert("Send code clicked!");
@@ -426,22 +436,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-    copyText() {
-      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
-      const textToCopy = document.getElementById("myDiv").innerText;
-      // สร้าง element input สำหรับคัดลอกข้อความ
-      const inputElement = document.createElement("input");
-      inputElement.setAttribute("value", textToCopy);
-      document.body.appendChild(inputElement);
-      // เลือกและคัดลอกข้อความที่อยู่ใน input element
-      inputElement.select();
-      document.execCommand("copy");
-      // ลบ input element ที่สร้างขึ้น
-      document.body.removeChild(inputElement);
 
-      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
-      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
-    },
     get_semless() {
       alert("Send code clicked!");
       if (this.jsonData) {
