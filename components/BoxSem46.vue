@@ -2778,7 +2778,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "https://test-api.askmelotto.com/apiRoute/api/ListPlaceout", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentApiKey:  "",
       // agentApiKey: "",
     };
@@ -2799,82 +2799,7 @@ export default {
     },
   },
   methods: {
-    // get_Seamless() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     agentUsername: "buildexcompany",
-    //     agentApiKey:
-    //       "504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd",
-    //     // agentApiKey: this.agentApiKey,
-    //     // agentApiKey: this.agentApiKey,
-    //   };
-    //   const URL = "https://test-api.askmelotto.com/apiRoute/api/ListPlaceout";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
+
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {

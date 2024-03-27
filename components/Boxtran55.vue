@@ -54,7 +54,11 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -255,17 +259,17 @@
                 <pre>
 
                                     <code id="46B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0,</span>
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">{{numfail}},</span>
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"addBalance"</span>: <span class="hljs-number">100,</span>
-        <span class="hljs-attr">"afterAgentBalance"</span>:<span class="hljs-number">43813417.23,</span>
-        <span class="hljs-attr">"afterMemberBalance"</span>:<span class="hljs-number">100,</span>
-        <span class="hljs-attr">"beforeAgentBalance"</span>:<span class="hljs-number">43812886.55,</span>
-        <span class="hljs-attr">"beforeMemberBalance"</span>:<span class="hljs-number">369,</span>
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"ff4003404239450abb86dd313cb138cabea9ded4f26993a72933d318b16e86",</span>
-        <span class="hljs-attr">"playerApiUsername"</span>:<span class="hljs-string">"testuserapi001@agentapi",</span>
-        <span class="hljs-attr">"playerUsername"</span>:<span class="hljs-string">"testuserapi001",</span>
-        <span class="hljs-attr">"ref"</span>:<span class="hljs-string">"1e77a9cfc9a8b05e613cc0a4f87c2226575c5e77f095d3411b0094b0e730d4",</span>
+        <span class="hljs-attr">"addBalance"</span>: <span class="hljs-number">{{addBalance}},</span>
+        <span class="hljs-attr">"afterAgentBalance"</span>:<span class="hljs-number">{{afterAgentBalance}},</span>
+        <span class="hljs-attr">"afterMemberBalance"</span>:<span class="hljs-number">{{afterMemberBalance}},</span>
+        <span class="hljs-attr">"beforeAgentBalance"</span>:<span class="hljs-number">{{beforeAgentBalance}},</span>
+        <span class="hljs-attr">"beforeMemberBalance"</span>:<span class="hljs-number">{{beforeMemberBalance}},</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"{{playerApiId}}",</span>
+        <span class="hljs-attr">"playerApiUsername"</span>:<span class="hljs-string">"{{playerApiUsername}}",</span>
+        <span class="hljs-attr">"playerUsername"</span>:<span class="hljs-string">"{{playerUsername}}",</span>
+        <span class="hljs-attr">"ref"</span>:<span class="hljs-string">"{{ref}}",</span>
     },
     <span class="hljs-attr">"msg"</span>:<span class="hljs-string">"success"</span>
 }</code></pre>
@@ -316,10 +320,17 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
-      // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
+      URLdata: "https://test-api.askmelotto.com/apiRoute/api/deposit", // กำหนดค่าเริ่มต้นของ agentUsername
+      code: "",
+      addBalance: "",
+      afterAgentBalance: "",
+      afterMemberBalance: "",
+      beforeAgentBalance: "",
+      beforeMemberBalance: "",
+      playerApiId: "", // กำหนดค่าเริ่มต้นของ agentUsername
+      playerApiUsername: "",
+      playerUsername: "",
+      msg: "",
     };
   },
   beforeCreate() {},
@@ -443,14 +454,15 @@ export default {
                 this.code = this.response.code;
                 this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
                 this.msg = this.response.msg;
+                this.addBalance = this.response.data.addBalance;
+                this.afterAgentBalance = this.response.data.afterAgentBalance;
+                this.afterMemberBalance = this.response.data.afterMemberBalance;
+                this.beforeAgentBalance = this.response.data.beforeAgentBalance;
+                this.beforeMemberBalance = this.response.data.beforeMemberBalance;
                 this.playerApiId = this.response.data.playerApiId;
                 this.playerApiUsername = this.response.data.playerApiUsername;
                 this.playerUsername = this.response.data.playerUsername;
-                this.url = this.response.data.url;
-                this.urlFullPage = this.response.data.urlFullPage;
-                this.tkUuid = this.response.data.tkUuid;
-                this.code = this.response.code;
-                this.numfail = this.code;
+                this.ref = this.response.data.ref;
               } else if (this.response.code === 403) {
                 this.permission = "Permission denied.";
                 this.numfail = "403";

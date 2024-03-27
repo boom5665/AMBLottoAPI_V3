@@ -2947,7 +2947,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "https://test-api.askmelotto.com/apiRoute/member/Tranferswallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
       // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername

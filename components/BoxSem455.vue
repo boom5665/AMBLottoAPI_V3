@@ -513,7 +513,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Reponse
+                  >Example Service Respond Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -602,7 +602,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "https://api-test.ambexapi.com/api/v1/l/c", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
       // playerUsername: "",
