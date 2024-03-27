@@ -3064,7 +3064,6 @@ export default {
           console.log("URL", URL);
           // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
           // ตัวอย่าง:
-
           this.$axios
             .post(URL, dataToSend)
             .then((response) => {
