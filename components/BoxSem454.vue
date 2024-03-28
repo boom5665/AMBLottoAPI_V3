@@ -45,7 +45,11 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -83,8 +87,7 @@
       <div class="koh-faq-answer col-12">
         <copy-text id="myDiv">
           <pre>
-
-                                        <code id="353A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
+<code id="353A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBetCancel"</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6"</span>,
@@ -94,18 +97,18 @@
         <span class="hljs-attr">"type"</span>: <span class="hljs-string">"thailotto"</span>,
         <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
         <span class="hljs-attr">"drawId"</span>: <span class="hljs-number">44170</span>,
-        <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-number">-10000</span>
+        <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-number">-10000</span>,
         <span class="hljs-attr">"txtList"</span>: [
             {
                 <span class="hljs-attr">"agentPt"</span>: <span class="hljs-number">"95"</span>,
-                <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"5"</span>,
+                <span class="hljs-attr">"apiPt"</span>: <span class="hljs-number">"5"</span>,
                 <span class="hljs-attr">"betKey"</span>: <span class="hljs-number">"NTMwMDAtMQ=="</span>,
-                <span class="hljs-attr">"betId"</span>: <span class="hljs-string">"1"</span>,
+                <span class="hljs-attr">"betId"</span>: <span class="hljs-number">"1"</span>,
                 <span class="hljs-attr">"betType"</span>: <span class="hljs-number">"bottom2"</span>,
                 <span class="hljs-attr">"betNumber"</span>: <span class="hljs-number">"10"</span>,
                 <span class="hljs-attr">"betStatus"</span>: <span class="hljs-number">"pending"</span>,
                 <span class="hljs-attr">"betAmt"</span>: <span class="hljs-number">10000</span>,
-                <span class="hljs-attr">"betTotal"</span>: <span class="hljs-string">10000</span>,
+                <span class="hljs-attr">"betTotal"</span>: <span class="hljs-number">10000</span>,
                 <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-number">0</span>,
                 <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-number">90</span>,
                 <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-number">0</span>,
@@ -124,6 +127,7 @@
         </copy-text>
       </div>
       <!-- // -->
+
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">

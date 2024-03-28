@@ -50,7 +50,11 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -1026,11 +1030,11 @@
                                         <code id="351A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"username"</span>: <span class="hljs-string">"testa0aagentthbmb01"</span>,
-        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"0xxxxxxxx"</span>,
-        <span class="hljs-attr">"Username"</span>: <span class="hljs-string">"xxxx@gmail.com"</span>,
-        <span class="hljs-attr">"line"</span>: <span class="hljs-string">"lineX"</span>,
-        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"THB"</span>,
+        <span class="hljs-attr">"username"</span>: <span class="hljs-string">"{{username}}"</span>,
+        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"{{phone}}"</span>,
+        <span class="hljs-attr">"Username"</span>: <span class="hljs-string">"{{Username}}"</span>,
+        <span class="hljs-attr">"line"</span>: <span class="hljs-string">"{{line}}"</span>,
+        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"{{currency}}"</span>,
         <span class="hljs-attr">"rate"</span>: {
             <span class="hljs-attr">"baaclotto"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
@@ -1867,8 +1871,11 @@ export default {
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "https://api-test.ambexapi.com/api/v1/l/c", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentUsername: "",
-      // playerUsername: "",
+      username: "",
+      phone: "",
+      email: "",
+      line: "",
+      currency: "",
     };
   },
   beforeCreate() {},
@@ -1996,14 +2003,11 @@ export default {
                 this.code = this.response.code;
                 this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
                 this.msg = this.response.msg;
-                this.playerApiId = this.response.data.playerApiId;
-                this.playerApiUsername = this.response.data.playerApiUsername;
-                this.playerUsername = this.response.data.playerUsername;
-                this.url = this.response.data.url;
-                this.urlFullPage = this.response.data.urlFullPage;
-                this.tkUuid = this.response.data.tkUuid;
-                this.code = this.response.code;
-                this.numfail = this.code;
+                this.username = this.response.data.username;
+                this.phone = this.response.data.phone;
+                this.line = this.response.data.line;
+                this.email = this.response.data.email;
+                this.currency = this.response.data.currency;
               } else if (this.response.code === 403) {
                 this.permission = "Permission denied.";
                 this.numfail = "403";
