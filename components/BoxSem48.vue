@@ -31,12 +31,12 @@
           <label> content-type application/json </label>
         </div>
       </div>
-      <div class="col-12" id="tabSix" style="left: 5px; ">
+      <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
             style="color: #19a17a !important"
             set-lan="text:4.5.1 GetUserBalance"
-            >
+          >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
               >ใส่เส้น URL ของลูกค้า</span
             ></b
@@ -70,7 +70,11 @@
       </div> -->
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
         </div>
       </div>
       <div class="koh-faq-answer col-12">
@@ -242,7 +246,21 @@
               </div>
             </div>
             <div class="koh-faq-answer col-12">
-              <pre>
+              <div class="">
+                <div
+                  @click="copyTexttwo"
+                  class="copy-clipboard"
+                  style="left: 91%"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Copy to Clipboard</title>
+                    <path
+                      d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <pre id="myDivtwo">
 
                                     <code id="410B" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
@@ -579,93 +597,25 @@ export default {
     },
   },
   methods: {
-    // get_Seamless() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     agentUsername: "superadmincash",
-    //     agentApiKey:
-    //       "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
-    //     services: "DeleteLimitnumber",
-    //     // agentUsername: this.agentUsername,
-    //     // agentApiKey: this.agentApiKey,
-    //     // services: this.services,
-    //     data: {
-    //       limitnumber: {
-    //         thailotto: {
-    //           top3: {
-    //             number: "567",
-    //           },
-    //         },
-    //       },
-    //     },
-    //   };
-    //   const URL = "https://test-api.askmelotto.com/apiRoute/api/detail";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
+     copyTexttwo() {
+      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
+      var textToCopy = document.getElementById("myDivtwo").innerText;
+
+      // สร้าง element input สำหรับคัดลอกข้อความ
+      var inputElement = document.createElement("input");
+      inputElement.setAttribute("value", textToCopy);
+      document.body.appendChild(inputElement);
+
+      // เลือกและคัดลอกข้อความที่อยู่ใน input element
+      inputElement.select();
+      document.execCommand("copy");
+
+      // ลบ input element ที่สร้างขึ้น
+      document.body.removeChild(inputElement);
+
+      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
+      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
+    },
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {

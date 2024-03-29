@@ -23,6 +23,7 @@ export default {
     elementId: {
       type: String,
       default: "myDiv", // รับค่า id ของ div ที่มีข้อความที่ต้องการคัดลอก
+      defaulttwo: "myDivtwo", // รับค่า id ของ div ที่มีข้อความที่ต้องการคัดลอก
     },
   },
   methods: {
@@ -45,6 +46,7 @@ export default {
       // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
       alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
     },
+
   },
 };
 </script>

@@ -31,12 +31,12 @@
           >
         </div>
       </div>
-      <div class="col-12" id="tabSix" style="left: 5px; ">
+      <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
             style="color: #19a17a !important"
             set-lan="text:4.5.1 GetUserBalance"
-            >
+          >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
               >ใส่เส้น URL ของลูกค้า</span
             ></b
@@ -216,8 +216,21 @@
               </div>
             </div>
             <div class="koh-faq-answer col-12">
-              <pre>
-
+              <div class="">
+                <div
+                  @click="copyTexttwo"
+                  class="copy-clipboard"
+                  style="left: 93%"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Copy to Clipboard</title>
+                    <path
+                      d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <pre id="myDivtwo">
                                         <code id="351A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
@@ -1036,9 +1049,23 @@
             </div>
             <div v-if="success">
               <div class="koh-faq-answer col-12">
-                <pre>
+                <div class="">
+                  <div
+                    @click="copyTexttwo"
+                    class="copy-clipboard"
+                    style="left: 93%"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <title>Copy to Clipboard</title>
+                      <path
+                        d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <pre id="myDivtwo">
 
-                                        <code id="351A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
+                                        <code id="" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"username"</span>: <span class="hljs-string">"{{username}}"</span>,
@@ -1900,96 +1927,29 @@ export default {
         this.jsonData = formattedJson;
       } catch (error) {
         console.error("Invalid JSON format:", error);
-        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
       }
     },
   },
   methods: {
-    // get_Seamless() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     service: "GetUserDetail",
-    //     data: {
-    //       playerUsername: "testa0aagentthbmb01",
-    //       agentUsername: "comptestseamless",
+    copyTexttwo() {
+      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
+      var textToCopy = document.getElementById("myDivtwo").innerText;
 
-    //       // agentUsername: this.agentUsername,
-    //       // playerUsername: this.playerUsername,
-    //     },
-    //     // service: "GetUserDetail",
-    //     // data: {
-    //     //   playerUsername: "comptestseamless",
-    //     //   agentUsername: "top1betvip",
-    //     // },
-    //   };
-    //   // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
+      // สร้าง element input สำหรับคัดลอกข้อความ
+      var inputElement = document.createElement("input");
+      inputElement.setAttribute("value", textToCopy);
+      document.body.appendChild(inputElement);
+
+      // เลือกและคัดลอกข้อความที่อยู่ใน input element
+      inputElement.select();
+      document.execCommand("copy");
+
+      // ลบ input element ที่สร้างขึ้น
+      document.body.removeChild(inputElement);
+
+      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
+      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
+    },
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {
