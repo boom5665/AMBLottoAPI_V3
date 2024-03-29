@@ -220,7 +220,7 @@
                 <div
                   @click="copyTexttwo"
                   class="copy-clipboard"
-                  style="left: 93%"
+                  style="left: 91%"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <title>Copy to Clipboard</title>
@@ -1053,7 +1053,7 @@
                   <div
                     @click="copyTexttwo"
                     class="copy-clipboard"
-                    style="left: 93%"
+                    style="left: 91%"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <title>Copy to Clipboard</title>
