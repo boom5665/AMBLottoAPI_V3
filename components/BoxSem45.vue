@@ -27,7 +27,8 @@
             >4.5.1
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
               >GetUser Detail</span
-            ></b
+            >
+            </b
           >
         </div>
       </div>

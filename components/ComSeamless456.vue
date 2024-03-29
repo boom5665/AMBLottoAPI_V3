@@ -38,13 +38,11 @@
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">
-          <!-- <div class="form-group col-12">
+          <div class="form-group col-12">
             <label set-lan="html:356">
-              When a player places a bet, the Pretty Gaming system sends a
-              request UserPayTips to the partner's system. The request will be
-              timed out after 4 seconds and PlaceBetCancel will be sent.</label
+              ถ้ามีการออกผลรางวัล ระบบ Askmelotto จะส่งคำขอ UserPlaceReToRunning เมื่อมีการออกผลรางวัล</label
             >
-          </div> -->
+          </div>
           <div class="form-group col-12 ex">
             <div
               ><b style="color: #19a17a !important" set-lan="text:Request Body"

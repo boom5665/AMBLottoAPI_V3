@@ -85,7 +85,7 @@
                 <tr>
                   <td class="bRight">agentApiKey</td>
                   <td class="bRight">String</td>
-                  <td>System generate key ID after crate Agent.</td>
+                  <td>System generate key ID after create Agent.</td>
                 </tr>
                 <tr>
                   <td class="bRight">services</td>

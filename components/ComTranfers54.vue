@@ -84,7 +84,7 @@
                     <td class="bRight">agentApiKey</td>
                     <td class="bRight">String</td>
 
-                    <td>System generate key ID after crate Agent</td>
+                    <td>System generate key ID after create Agent</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerUsername</td>
@@ -1559,16 +1559,16 @@
                   </tr>
                   <tr>
                     <td class="bRight">71011</td>
-                    <td>missing filed 'agentUsername'.</td>
+                    <td>missing field 'agentUsername'.</td>
                   </tr>
                   <tr>
                     <td class="bRight">71012</td>
-                    <td>missing filed 'playerUsername'.</td>
+                    <td>missing field 'playerUsername'.</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71013</td>
-                    <td>missing filed 'agentApiKey'.</td>
+                    <td>missing field 'agentApiKey'.</td>
                   </tr>
                   <tr>
                     <td class="bRight">71014</td>

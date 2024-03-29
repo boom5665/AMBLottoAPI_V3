@@ -131,11 +131,11 @@
                 </tr>
                 <tr>
                   <td class="bRight">71001</td>
-                  <td>missing filed 'agentUsername'.</td>
+                  <td>missing field 'agentUsername'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71002</td>
-                  <td>missing filed 'playerUsername'.</td>
+                  <td>missing field 'playerUsername'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71003</td>
@@ -143,7 +143,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">71004</td>
-                  <td>missing filed 'agentApiKey'.</td>
+                  <td>missing field 'agentApiKey'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71005</td>
@@ -160,7 +160,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">71007</td>
-                  <td>missing filed 'transId'.</td>
+                  <td>missing field 'transId'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71008</td>
@@ -224,15 +224,15 @@
                 </tr>
                 <tr>
                   <td class="bRight">71026</td>
-                  <td>missing filed 'startDate'.</td>
+                  <td>missing field 'startDate'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71027</td>
-                  <td>missing filed 'endDate'.</td>
+                  <td>missing field 'endDate'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">71028</td>
-                  <td>missing filed 'ref'.</td>
+                  <td>missing field 'ref'.</td>
                 </tr>
                 <tr>
                   <td class="bRight">90003</td>

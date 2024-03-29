@@ -78,8 +78,8 @@
                   <tr>
                     <td class="bRight">agentApiKey</td>
                     <td class="bRight">String</td>
-                    <!-- <td>System generate <a href="https://service-api.prettygaming.asia/Page_API_Document/Seamless_API.aspx?Action=0" class="aLink">key</a> ID after crate Agent</td> -->
-                    <td>System generate key ID after crate Agent</td>
+                    <!-- <td>System generate <a href="https://service-api.prettygaming.asia/Page_API_Document/Seamless_API.aspx?Action=0" class="aLink">key</a> ID after create Agent</td> -->
+                    <td>System generate key ID after create Agent</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerUsername</td>
@@ -282,20 +282,20 @@
                   </tr>
                   <tr>
                     <td class="bRight">71001</td>
-                    <td>missing filed 'agentUsername'.</td>
+                    <td>missing field 'agentUsername'.</td>
                   </tr>
                   <tr>
                     <td class="bRight">71002</td>
-                    <td>missing filed 'agentApiKey'.</td>
+                    <td>missing field 'agentApiKey'.</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71004</td>
-                    <td>missing filed 'playerUsername'.</td>
+                    <td>missing field 'playerUsername'.</td>
                   </tr>
                   <tr>
                     <td class="bRight">71007</td>
-                    <td>missing filed 'transId'.</td>
+                    <td>missing field 'transId'.</td>
                   </tr>
 
                   <tr>
