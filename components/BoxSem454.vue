@@ -17,32 +17,18 @@
           >
         </div>
       </div>
-
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerApiId"
-            placeholder="Player Api Id"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerApiUsername"
-            placeholder="Player Api Username"
-          />
+      <div class="col-12" id="tabSix" style="left: 5px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >ใส่เส้น URL ของลูกค้า</span
+            ></b
+          >
         </div>
       </div>
-      <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerUsername"
-            placeholder="Player Username"
-          />
-        </div>
-      </div> -->
       <div class="boxinput">
         <div class="false-input">
           <input

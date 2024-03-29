@@ -28,31 +28,19 @@
           <label> content-type application/json </label>
         </div>
       </div>
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentUsername"
-            placeholder="Agent Username"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentApiKey"
-            placeholder="Agent API Key"
-          />
+
+      <div class="col-12" id="tabSix" style="left: 5px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >ใส่เส้น URL ของลูกค้า</span
+            ></b
+          >
         </div>
       </div>
-      <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerUsername"
-            placeholder="Player Username"
-          />
-        </div>
-      </div> -->
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -462,7 +450,8 @@ export default {
                 this.afterAgentBalance = this.response.data.afterAgentBalance;
                 this.afterMemberBalance = this.response.data.afterMemberBalance;
                 this.beforeAgentBalance = this.response.data.beforeAgentBalance;
-                this.beforeMemberBalance = this.response.data.beforeMemberBalance;
+                this.beforeMemberBalance =
+                  this.response.data.beforeMemberBalance;
                 this.playerApiId = this.response.data.playerApiId;
                 this.playerApiUsername = this.response.data.playerApiUsername;
                 this.playerUsername = this.response.data.playerUsername;

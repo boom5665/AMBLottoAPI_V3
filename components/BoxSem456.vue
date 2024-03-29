@@ -41,6 +41,18 @@
           />
         </div>
       </div> -->
+            <div class="col-12" id="tabSix" style="left: 5px; ">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+            >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >ใส่เส้น URL ของลูกค้า</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="boxinput">
         <div class="false-input">
           <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
