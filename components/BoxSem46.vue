@@ -1510,7 +1510,24 @@
               </div>
               <div v-if="success">
                 <div class="koh-faq-answer col-12">
-                  <pre>
+                  <div class="">
+                    <div
+                      @click="copyTextthree"
+                      class="copy-clipboard"
+                      style="left: 91%"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>Copy to Clipboard</title>
+                        <path
+                          d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <pre id="myDivtwo">
         <code  style="border-radius: 0.375rem;  height: 300px;
           overflow: scroll;" class="hljs json">{
           <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
@@ -2831,6 +2848,25 @@ export default {
     copyTexttwo() {
       // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
       var textToCopy = document.getElementById("myDivtwo").innerText;
+
+      // สร้าง element input สำหรับคัดลอกข้อความ
+      var inputElement = document.createElement("input");
+      inputElement.setAttribute("value", textToCopy);
+      document.body.appendChild(inputElement);
+
+      // เลือกและคัดลอกข้อความที่อยู่ใน input element
+      inputElement.select();
+      document.execCommand("copy");
+
+      // ลบ input element ที่สร้างขึ้น
+      document.body.removeChild(inputElement);
+
+      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
+      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
+    },
+    copyTextthree() {
+      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
+      var textToCopy = document.getElementById("myDivthree").innerText;
 
       // สร้าง element input สำหรับคัดลอกข้อความ
       var inputElement = document.createElement("input");

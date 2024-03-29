@@ -1051,7 +1051,7 @@
               <div class="koh-faq-answer col-12">
                 <div class="">
                   <div
-                    @click="copyTexttwo"
+                    @click="copyTextthree"
                     class="copy-clipboard"
                     style="left: 91%"
                   >
@@ -1063,7 +1063,7 @@
                     </svg>
                   </div>
                 </div>
-                <pre id="myDivtwo">
+                <pre id="myDivthree">
 
                                         <code id="" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
@@ -1934,6 +1934,25 @@ export default {
     copyTexttwo() {
       // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
       var textToCopy = document.getElementById("myDivtwo").innerText;
+
+      // สร้าง element input สำหรับคัดลอกข้อความ
+      var inputElement = document.createElement("input");
+      inputElement.setAttribute("value", textToCopy);
+      document.body.appendChild(inputElement);
+
+      // เลือกและคัดลอกข้อความที่อยู่ใน input element
+      inputElement.select();
+      document.execCommand("copy");
+
+      // ลบ input element ที่สร้างขึ้น
+      document.body.removeChild(inputElement);
+
+      // แสดงข้อความแจ้งเตือนหลังจากคัดลอกสำเร็จ
+      alert("คัดลอกเนื้อหาเรียบร้อยแล้ว");
+    },
+    copyTextthree() {
+      // เลือกข้อความใน div และคัดลอกไปยังคลิปบอร์ด
+      var textToCopy = document.getElementById("myDivthree").innerText;
 
       // สร้าง element input สำหรับคัดลอกข้อความ
       var inputElement = document.createElement("input");
