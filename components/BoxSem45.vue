@@ -71,7 +71,7 @@
       </div>
       <div class="koh-faq-answer col-12">
         <code>
-          <textarea v-model="jsonData" rows="8" class="custom-textarea">
+          <textarea v-model="jsonData" rows="8" class="custom-textarea" placeholder="Please enter your request here.">
           </textarea>
         </code>
       </div>

@@ -40761,6 +40761,7 @@ table.table {
   color: #333;
   margin-bottom: 20px;
   word-break: break-all;
+  border-right: 1px #ced4da solid !important;
 }
 
 table.table thead th {
