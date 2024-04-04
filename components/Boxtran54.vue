@@ -2903,7 +2903,7 @@
           </div>
         </div>
       </div>
-      <div class="loading" v-if="isLoading">Loading...</div>
+      <div class="loading" v-if="isLoading">Loading</div>
     </div>
   </div>
 </template>
