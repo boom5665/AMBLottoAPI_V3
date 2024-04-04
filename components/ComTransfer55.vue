@@ -377,6 +377,6 @@
 
 <script>
 export default {
-  name: "ComTranfers",
+  name: "ComTransfer",
 };
 </script>

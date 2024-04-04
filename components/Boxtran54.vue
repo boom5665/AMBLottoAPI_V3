@@ -3,7 +3,7 @@
   <div style="">
     <div type="primary" class="box-r-scoll">
       <div>
-        <div class="font-prim"><span>Code Tranfers</span></div>
+        <div class="font-prim"><span>Code Transfer</span></div>
       </div>
       <!-- // -->
       <!-- // -->
@@ -25,7 +25,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.com/apiRoute/member/Tranferswallet/loginRequest
+            https://test-api.askmelotto.com/apiRoute/member/Transferwallet/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -106,7 +106,7 @@
             ></i>
             <div class="btn-send">
               <a href="#openModal-about">
-                <button class="custom-btn btn-13" @click="get_Tranfers">
+                <button class="custom-btn btn-13" @click="get_Transfer">
                   Send Code
                 </button></a
               >
@@ -2959,7 +2959,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.com/apiRoute/member/Tranferswallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "https://test-api.askmelotto.com/apiRoute/member/Transferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
       // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
       // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
@@ -2967,7 +2967,7 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_Tranfers();
+    // this.get_Transfer();
   },
   watch: {
     jsonData(newValue) {
@@ -2983,7 +2983,7 @@ export default {
   methods: {
 
 
-    get_Tranfers() {
+    get_Transfer() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

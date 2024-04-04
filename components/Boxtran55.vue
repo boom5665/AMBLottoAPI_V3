@@ -3,7 +3,7 @@
   <div style="">
     <div type="primary" class="box-r-scoll">
       <div>
-        <div class="font-prim"><span>Code Tranfers</span></div>
+        <div class="font-prim"><span>Code Transfer</span></div>
       </div>
       <!-- // -->
       <div class="col-12" id="tabFour">
@@ -73,7 +73,7 @@
           ></i>
           <div class="btn-send">
             <a href="#openModal-about">
-              <button class="custom-btn btn-13" @click="get_Tranfers">
+              <button class="custom-btn btn-13" @click="get_Transfer">
                 Send Code
               </button></a
             >
@@ -322,7 +322,7 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_Tranfers();
+    // this.get_Transfer();
   },
   watch: {
     jsonData(newValue) {
@@ -336,8 +336,8 @@ export default {
     },
   },
   methods: {
-  
-    get_Tranfers() {
+
+    get_Transfer() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;
