@@ -25,7 +25,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.com/apiRoute/member/Transferwallet/loginRequest
+            https://test-api.askmelotto.com/apiRoute/member/Tranferwallet/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -34,31 +34,6 @@
         </div>
       </div>
 
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentUsername"
-            placeholder="Agent Username"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentApiKey"
-            placeholder="Agent API Key"
-          />
-        </div>
-      </div>
-      <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerUsername"
-            placeholder="Player Username"
-          />
-        </div>
-      </div> -->
             <div class="col-12" id="tabSix" style="left: 5px; ">
         <div>
           <b
@@ -2959,10 +2934,8 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.com/apiRoute/member/Transferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentUsername: "", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentApiKey: "", // กำหนดค่าเริ่มต้นของ agentApiKey
-      // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
+      URLdata: "https://test-api.askmelotto.com/apiRoute/member/Tranferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+
     };
   },
   beforeCreate() {},
@@ -2976,7 +2949,7 @@ export default {
         this.jsonData = formattedJson;
       } catch (error) {
         console.error("Invalid JSON format:", error);
-        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
+
       }
     },
   },
