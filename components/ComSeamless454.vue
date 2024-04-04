@@ -46,7 +46,7 @@
               2.1 กรณียกเลิกทั้งตั๋ว Status ของตั๋วจะเป็น "Cancel"
               ซึ่งรายละเอียดในการเดิมพันแต่ละรายการ ทุกรายการของตั๋วนั้นจะมี
               "betStatus" เป็น "Cancel"<br />
-              2.2 ถ้ายกเลิกที่ละเลข ตั๋วเป็น SUCCESS แต่ในโพยเลขที่ยกเลิก มี "betStatus"  เป็น "Cancel"
+              2.2 ถ้ายกเลิกที่ละเลข ตั๋วเป็น Success แต่ในโพยเลขที่ยกเลิก มี "betStatus"  เป็น "Cancel"
             </label>
           </div>
           <div class="form-group col-12 ex">
@@ -66,7 +66,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -320,7 +320,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -366,7 +366,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -464,7 +464,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -884,7 +884,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -933,7 +933,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -1028,7 +1028,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -1285,7 +1285,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -1334,7 +1334,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >

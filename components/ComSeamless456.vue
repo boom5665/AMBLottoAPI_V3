@@ -40,7 +40,7 @@
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
             <label set-lan="html:356">
-              ถ้ามีการออกผลรางวัล ระบบ Askmelotto จะส่งคำขอ UserPlaceReToRunning เมื่อมีการออกผลรางวัล</label
+              ถ้ามีการออกผลรางวัลผิดพลาด ระบบ AMB Lotto จะส่งคำขอ UserPlaceReToRunning แล้วระบบจะทำการออกผลใหม่อีกครั้ง</label
             >
           </div>
           <div class="form-group col-12 ex">
@@ -60,7 +60,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -317,7 +317,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -366,7 +366,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >

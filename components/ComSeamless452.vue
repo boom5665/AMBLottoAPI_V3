@@ -63,7 +63,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -165,7 +165,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
@@ -217,7 +217,7 @@
                 <thead class="rgba-green-slight">
                   <tr>
                     <th
-                      style="width: 20%"
+                      style="width: 26%"
                       set-lan="html:Parameter"
                       class="thcolor bRight txtCenter"
                     >
