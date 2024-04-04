@@ -19,7 +19,7 @@
           <div class="font-prim">Askmelotto Integration Form</div>
 
           <a
-            href="https://service-api.askmelotto.com/API_files/AMBLOTTOVIP_integration_form.docx"
+            href="AMBLOTTOVIP_integration_form.docx"
             download
           >
             <svg
