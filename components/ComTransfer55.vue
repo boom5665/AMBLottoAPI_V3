@@ -238,7 +238,7 @@
                   <td class="bRight">ref</td>
                   <td class="bRight">String</td>
 
-                  <td>Reference id Unique from AMB Lotto system.</td>
+                  <td>Reference id Unique from Askmelotto system.</td>
                 </tr>
               </tbody>
             </table>

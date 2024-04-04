@@ -1497,7 +1497,7 @@
                   <tr>
                     <td class="bRight">playerApiUsername</td>
                     <td class="bRight">String</td>
-                    <td>Player username from AMB Lotto system</td>
+                    <td>Player username from Askmelotto system</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerUsername</td>
@@ -1512,12 +1512,12 @@
                   <tr>
                     <td class="bRight">uriDesktop</td>
                     <td class="bRight">String</td>
-                    <td>AMB Lotto link but don't show web header</td>
+                    <td>Askmelotto Lotto link but don't show web header</td>
                   </tr>
                   <tr>
                     <td class="bRight">urlFullPage</td>
                     <td class="bRight">String</td>
-                    <td>AMB Lotto link fullpage</td>
+                    <td>Askmelotto Lotto link fullpage</td>
                   </tr>
                 </tbody>
               </table>
@@ -1810,7 +1810,7 @@
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #cfa137 !important">AMB Lotto direct link</b>
+              <b style="color: #cfa137 !important">Askmelotto direct link</b>
             </div>
           </div>
         </div>
