@@ -212,7 +212,7 @@
                     <td class="bRight">url</td>
                     <td class="bRight">String</td>
                     <td class="bRight">
-                      Askmelotto link but don't show web header
+                      Askmelotto link
                     </td>
                   </tr>
                   <tr>

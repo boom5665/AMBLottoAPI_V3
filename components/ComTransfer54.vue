@@ -1510,9 +1510,9 @@
                     <td>Token for send to home page.</td>
                   </tr>
                   <tr>
-                    <td class="bRight">uriDesktop</td>
+                    <td class="bRight">url</td>
                     <td class="bRight">String</td>
-                    <td>Askmelotto Lotto link but don't show web header</td>
+                    <td>Askmelotto Lotto link </td>
                   </tr>
                   <tr>
                     <td class="bRight">urlFullPage</td>
