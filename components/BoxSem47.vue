@@ -8,8 +8,8 @@
       <!-- // -->
       <div class="col-12" id="tabSeven">
         <div>
-          <b style="color: #19a17a !important" set-lan="text:4.7 UserPlaceBet"
-            >4.7
+          <b style="color: #19a17a !important" set-lan="text:4.6 UserPlaceBet"
+            >4.6
             <span style="padding-left: 3px" id="Seamless_UserPlaceBet"
               >ListHotnumberandLimitnumber</span
             ></b

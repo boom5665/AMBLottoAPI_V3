@@ -8,7 +8,7 @@
       <div class="col-12" id="tab49">
         <div
           ><h1><b style="color: #19a17a !important"
-            >4.8
+            >4.7
             <span style="padding-left: 3px" id="Seamless_Detail"
               >Detail</span
             ></b

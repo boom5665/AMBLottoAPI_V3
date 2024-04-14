@@ -114,21 +114,21 @@
               </li>
             </Nuxt-link>
 
-            <Nuxt-link class="text-nav" to="/Seamless46">
+            <!-- <Nuxt-link class="text-nav" to="/Seamless46">
               <li>
                 <span>4.6 ListPlaceout </span>
               </li>
-            </Nuxt-link>
+            </Nuxt-link> -->
             <Nuxt-link class="text-nav" to="/Seamless47">
               <li>
                 <span style="word-break: break-all"
-                  >4.7 ListHotnumberandLimitnumber
+                  >4.6 ListHotnumberandLimitnumber
                 </span>
               </li>
             </Nuxt-link>
             <Nuxt-link class="text-nav" to="/Seamless48">
               <li>
-                <span>4.8 Detail </span>
+                <span>4.7 Detail </span>
               </li>
             </Nuxt-link>
           </details>

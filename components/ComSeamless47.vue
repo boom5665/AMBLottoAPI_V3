@@ -7,7 +7,7 @@
       <div class="col-12" id="tab48">
         <div
           ><h1><b style="color: #19a17a !important"
-            >4.7
+            >4.6
             <span
               style="padding-left: 3px"
               id="Seamless_ListHotnumberandLimitnumber"
