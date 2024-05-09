@@ -128,7 +128,30 @@
         </copy-text>
       </div>
       <!-- // -->
+          <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Service Response Code
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <pre>
 
+                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
+}</code></pre>
+            </div>
+            <!-- // -->
+          </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
