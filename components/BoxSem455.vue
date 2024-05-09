@@ -86,7 +86,7 @@
             rows="10"
             cols="50"
             class="custom-textarea"
-            placeholder="Please enter your URLhere."
+            placeholder="Please enter your Json Request."
           >
           </textarea>
         </code>
