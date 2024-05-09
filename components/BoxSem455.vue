@@ -74,7 +74,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Request body <span style="color: red"> ให้เลือกใส่กรณี (ไม่ถูกรางวัล-ถูกรางวัล)</span></span
             ></b
           >
         </div>
