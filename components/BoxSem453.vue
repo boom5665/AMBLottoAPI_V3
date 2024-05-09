@@ -43,30 +43,49 @@
           />
         </div>
       </div>  -->
-            <div class="col-12" id="tabSix" style="left: 5px; ">
+
+      <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
             style="color: #19a17a !important"
             set-lan="text:4.5.1 GetUserBalance"
-            >
+          >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
+              >Input URL </span
             ></b
           >
         </div>
       </div>
+
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
+        </div>
+      </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
         </div>
       </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
           >
           </textarea>
         </code>
@@ -93,8 +112,8 @@
         </div>
       </div>
       <div class="koh-faq-answer col-12">
-         <copy-text id="myDiv">
-            <pre>
+        <copy-text id="myDiv">
+          <pre>
                                         <code id="352A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBet"</span>,
     <span class="hljs-attr">"data"</span>: {
@@ -151,7 +170,7 @@
         <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-number">"2023-10-03 05:00:00"</span>
     }
 }</code></pre>
-          </copy-text>
+        </copy-text>
       </div>
       <div>
         <div class="divBox-content">
@@ -398,6 +417,18 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      service: "GetUserBalance",
+      data: {
+        playerApiId:
+          "21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f",
+        playerApiUsername: "testa0alottoviptest2@comptestseamless",
+        playerUsername: "testa0alottoviptest2",
+      },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {
@@ -541,7 +572,7 @@ export default {
     //       this.isLoading = false;
     //     });
     // },
-   get_Seamless() {
+    get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;

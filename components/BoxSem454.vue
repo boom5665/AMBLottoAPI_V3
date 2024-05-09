@@ -17,6 +17,7 @@
           >
         </div>
       </div>
+
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -24,11 +25,12 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
+              >Input URL </span
             ></b
           >
         </div>
       </div>
+
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -38,13 +40,26 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
           >
           </textarea>
         </code>
@@ -341,6 +356,47 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      service: "UserPlaceBetCancel",
+      data: {
+        playerApiId:
+          "4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6",
+        playerApiUsername: "testa0alottoviptestcarl@comptestseamless",
+        playerUsername: "testa0alottoviptestcarl",
+        ticketId: 53000,
+        type: "thailotto",
+        government: false,
+        drawId: 44170,
+        totalBetAmt: -10000,
+        txtList: [
+          {
+            agentPt: "95",
+            apiPt: "5",
+            betKey: "NTMwMDAtMQ==",
+            betId: "1",
+            betType: "bottom2",
+            betNumber: "10",
+            betStatus: "pending",
+            betAmt: 10000,
+            betTotal: 10000,
+            betDiscount: 0,
+            payOutRate: 90,
+            rateLevel: 0,
+            rateLevelAmount: 0,
+            betResultKey: "",
+            payOutAmt: 0,
+          },
+        ],
+        status: "cancel",
+        createDate: "2023-11-11 15:16:44",
+        currency: "thb",
+        DrawOpen: "2023-11-09 01:00:00",
+        drawExpire: "2023-11-19 15:25:00",
+      },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {

@@ -57,6 +57,7 @@
           />
         </div>
       </div> -->
+
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -64,11 +65,12 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
+              >Input URL </span
             ></b
           >
         </div>
       </div>
+
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -78,13 +80,26 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
           >
           </textarea>
         </code>
@@ -314,21 +329,21 @@
             </div>
             <div v-if="success">
               <div class="koh-faq-answer col-12">
-                             <div class="">
-                <div
-                  @click="copyTextthree"
-                  class="copy-clipboard"
-                  style="left: 91%"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <title>Copy to Clipboard</title>
-                    <path
-                      d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
-                    ></path>
-                  </svg>
+                <div class="">
+                  <div
+                    @click="copyTextthree"
+                    class="copy-clipboard"
+                    style="left: 91%"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <title>Copy to Clipboard</title>
+                      <path
+                        d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <pre id="myDivthree">
+                <pre id="myDivthree">
 
                                     <code id="410B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
@@ -416,6 +431,15 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      agentUsername: "superadmincash",
+      agentApiKey: "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
+      services: "DeleteLimitnumber",
+      data: { limitnumber: { thailotto: { top3: { number: "567" } } } },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {

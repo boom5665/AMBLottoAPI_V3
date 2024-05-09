@@ -28,10 +28,10 @@
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
               >GetUser Detail</span
             >
-            </b
-          >
+          </b>
         </div>
       </div>
+
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -39,27 +39,12 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
+              >Input URL </span
             ></b
           >
         </div>
       </div>
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentUsername"
-            placeholder="Agent Username"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerUsername"
-            placeholder="Player Username"
-          />
-        </div>
-      </div> -->
+
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -69,12 +54,31 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
-          <textarea v-model="jsonData" rows="8" class="custom-textarea" placeholder="Please enter your request here.">
+          <textarea
+            v-model="jsonData"
+            rows="10"
+            cols="50"
+            class="custom-textarea"
+          >
           </textarea>
         </code>
       </div>
+
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
@@ -1920,6 +1924,16 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      service: "GetUserDetail",
+      data: {
+        playerUsername: "comptestseamless",
+        agentUsername: "top1betvip",
+      },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {

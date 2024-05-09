@@ -31,6 +31,7 @@
           <label> content-type application/json </label>
         </div>
       </div>
+      
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -38,27 +39,12 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
+              >Input URL </span
             ></b
           >
         </div>
       </div>
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentUsername"
-            placeholder="Agent Username"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="agentApiKey"
-            placeholder="Agent API Key"
-          />
-        </div>
-      </div> -->
+
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -68,17 +54,31 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
           >
           </textarea>
         </code>
       </div>
+
 
       <div class="koh-faq-question form-group ex">
         <div class="Point">
@@ -344,7 +344,17 @@ export default {
     };
   },
   beforeCreate() {},
-  mounted() {},
+  mounted() {
+    const json = {
+      agentUsername: "sportbookv2",
+      agentApiKey:
+        "29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba",
+      playerUsername: "testa0alottoviptesttong",
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
+  },
   watch: {
     jsonData(newValue) {
       try {
@@ -357,7 +367,6 @@ export default {
     },
   },
   methods: {
-
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {

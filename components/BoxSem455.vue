@@ -43,6 +43,7 @@
           />
         </div>
       </div> -->
+
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -50,11 +51,12 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
-            ></b
+              >Input URL
+            </span></b
           >
         </div>
       </div>
+
       <div class="boxinput">
         <div class="false-input">
           <input
@@ -64,13 +66,27 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
+            placeholder="Please enter your URLhere."
           >
           </textarea>
         </code>

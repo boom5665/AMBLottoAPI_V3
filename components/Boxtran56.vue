@@ -36,8 +36,8 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
-            ></b
+              >Input URL
+            </span></b
           >
         </div>
       </div>
@@ -50,17 +50,32 @@
           />
         </div>
       </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
+        </div>
+      </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
+            placeholder="Please enter your URLhere."
           >
           </textarea>
         </code>
       </div>
+      
       <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
@@ -327,7 +342,18 @@ export default {
   },
   beforeCreate() {},
   mounted() {
-    // this.get_Transfer();
+    // this.get_Seamless();
+    const json = {
+      agentUsername: "agenttoe2",
+      agentApiKey:
+        "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
+      playerUsername: "testuserapi001",
+      balance: 300,
+      transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276519",
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {

@@ -16,55 +16,48 @@
           >
         </div>
       </div>
-      <!-- <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerApiId"
-            placeholder="Player Api Id"
-          />
-        </div>
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerApiUsername"
-            placeholder="Player Api Username"
-          />
-        </div>
-      </div>
-      <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="playerUsername"
-            placeholder="Player Username"
-          />
-        </div>
-      </div> -->
-            <div class="col-12" id="tabSix" style="left: 5px; ">
+      <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
             style="color: #19a17a !important"
             set-lan="text:4.5.1 GetUserBalance"
-            >
+          >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >ใส่เส้น URL ของลูกค้า</span
-            ></b
+              >Input URL
+            </span></b
           >
         </div>
       </div>
       <div class="boxinput">
         <div class="false-input">
-          <input type="text" v-model="URLdata"  placeholder="Please enter your URLhere." />
+          <input
+            type="text"
+            v-model="URLdata"
+            placeholder="Please enter your URLhere."
+          />
+        </div>
+      </div>
+
+      <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
+        <div>
+          <b
+            style="color: #19a17a !important"
+            set-lan="text:4.5.1 GetUserBalance"
+          >
+            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
+              >Input Request body</span
+            ></b
+          >
         </div>
       </div>
       <div class="koh-faq-answer col-12">
         <code>
           <textarea
             v-model="jsonData"
-            rows="8"
+            rows="10"
+            cols="50"
             class="custom-textarea"
-            placeholder="Please enter your request here."
+            placeholder="Please enter your URLhere."
           >
           </textarea>
         </code>
@@ -379,6 +372,48 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      service: "UserPlaceReToRunning",
+      data: {
+        playerApiId:
+          "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+        playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+        playerUsername: "testa0aagentthbmb01",
+        ticketId: 40864,
+        type: "pingponglotto6",
+        government: false,
+        drawId: 37187,
+        totalBetAmt: 1243,
+        txtList: [
+          {
+            agentPt: "95",
+            apiPt: "5",
+            betKey: "NDA4NjQtMQ==",
+            betId: "1",
+            betType: "top6",
+            betNumber: "789000",
+            betStatus: "pending",
+            betAmt: 733,
+            betTotal: 733,
+            betDiscount: 0,
+            payOutRate: 50000,
+            rateLevel: 0,
+            rateLevelAmount: 0,
+            betResultKey: "",
+            payOutAmt: 0,
+          },
+        ],
+        status: "pending",
+        createDate: "2023-10-07 17:18:42",
+        DrawOpen: "2023-10-07 17:00:00",
+        currency: "thb",
+        drawExpire: "2023-10-07 17:30:00",
+        totalPayOutAmt: 0,
+      },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {
