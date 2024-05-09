@@ -405,8 +405,8 @@
                   <div class="Point">
                     <b
                       style="color: #19a17a !important"
-                      set-lan="text:Example Service Respond Code"
-                      >Example Service Respond Code</b
+                      set-lan="text:Example Service Response Code"
+                      >Example Service Response Code</b
                     >
                     <i
                       class="fa fa-chevron-down"
@@ -968,8 +968,8 @@
                   <div class="Point">
                     <b
                       style="color: #19a17a !important"
-                      set-lan="text:Example Service Respond Code"
-                      >Example Service Respond Code</b
+                      set-lan="text:Example Service Response Code"
+                      >Example Service Response Code</b
                     >
                     <i
                       class="fa fa-chevron-down"
@@ -1373,8 +1373,8 @@
                   <div class="Point">
                     <b
                       style="color: #19a17a !important"
-                      set-lan="text:Example Service Respond Code"
-                      >Example Service Respond Code</b
+                      set-lan="text:Example Service Response Code"
+                      >Example Service Response Code</b
                     >
                     <i
                       class="fa fa-chevron-down"

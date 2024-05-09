@@ -41,7 +41,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input URL
+              >Input Your URL
             </span></b
           >
         </div>
@@ -63,7 +63,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Your Request body</span
             ></b
           >
         </div>
@@ -1423,6 +1423,41 @@
         </div>
       </div>
       <!-- // -->
+                <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Response
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <pre>
+                                    <code id="44B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>:  <span class="hljs-number">200</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"ac355caa7591bae913f0e27ec84ab6c526274778"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi002@agenttoe2"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi002"</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"12cfc90e9569faf6e70c6d001b12f9e1c392f631"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
+    },
+    <span class="hljs-attr"> "msg"</span>: {
+        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success"</span>,
+        <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
+    }
+}</code></pre>
+            </div>
+            <!-- // -->
+          </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -2821,13 +2856,39 @@
             </div>
             <!-- // -->
           </div>
+                    <div class="koh-faq-question form-group ex">
+            <div class="Point">
+              <b
+                style="color: #19a17a !important"
+                set-lan="text:Example Request Body"
+              >
+                Your Request Body
+              </b>
+              <i
+                class="fa fa-chevron-down"
+                aria-hidden="true"
+                style="margin-left: 2%; font-size: 1rem"
+              ></i>
+            </div>
+          </div>
+          <div class="koh-faq-answer col-12">
+            <code>
+              <textarea
+                v-model="jsonData"
+                rows="10"
+                cols="50"
+                class="custom-textarea"
+              >
+              </textarea>
+            </code>
+          </div>
           <div>
             <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Reponse
+                  >Example Response
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -2864,7 +2925,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Reponse
+                  Response
                 </b>
                 <i
                   class="fa fa-chevron-down"

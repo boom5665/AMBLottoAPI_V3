@@ -39,7 +39,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input URL
+              >Input Your URL
             </span></b
           >
         </div>
@@ -62,7 +62,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Your Request body</span
             ></b
           >
         </div>
@@ -105,21 +105,168 @@
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
-    <span class="hljs-attr">"services"</span>: <span class="hljs-string">"DeleteLimitnumber"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"limitnumber"</span>: {
-            <span class="hljs-attr">"thailotto"</span>: {
-                <span class="hljs-attr">"top3"</span>: {
-                    <span class="hljs-attr">"number"</span>: <span class="hljs-string">"567"</span>
-                }
-            }
-        }
-    }
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd"</span>,
+
 }</code></pre>
         </copy-text>
       </div>
       <!-- // -->
+                <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Service Response Code
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <div class="">
+                <div
+                  @click="copyTexttwo"
+                  class="copy-clipboard"
+                  style="left: 91%"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Copy to Clipboard</title>
+                    <path
+                      d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <pre id="myDivtwo">
+
+                                    <code id="410B" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"rate"</span>: {
+        <span class="hljs-attr">"baaclotto"</span>: {
+        <span class="hljs-attr">"bottom1"</span>: {
+        <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+        <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2</span>,
+                },
+                <span class="hljs-attr">"bottom2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"row3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">150</span>,
+                },
+                <span class="hljs-attr">"top1"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">3.2</span>
+                },
+                <span class="hljs-attr">"top2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"top3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">5000,</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
+                }
+            },
+            <span class="hljs-attr">"gsblotto"</span>: {
+            <span class="hljs-attr">"bottom1"</span>: {
+            <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+            <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2</span>,
+                },
+                <span class="hljs-attr">"bottom2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"row3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">150</span>,
+                },
+                <span class="hljs-attr">"top1"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">3.2</span>
+                },
+                <span class="hljs-attr">"top2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"top3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">5000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
+                }
+            },
+            <span class="hljs-attr">"hanoylotto"</span>: {
+            <span class="hljs-attr">"bottom1"</span>: {
+            <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+            <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2</span>,
+                },
+                <span class="hljs-attr">"bottom2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"row3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">150</span>,
+                },
+                <span class="hljs-attr">"top1"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">3.2</span>
+                },
+                <span class="hljs-attr">"top2"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">20000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>,
+                },
+                <span class="hljs-attr">"top3"</span>: {
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"max"</span>: <span class="hljs-number">5000</span>,
+                <span class="hljs-attr">"min"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
+                }
+            },
+        }
+    }
+}</code></pre>
+            </div>
+            <!-- // -->
+          </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -205,20 +352,38 @@
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
-    <span class="hljs-attr">"services"</span>: <span class="hljs-string">"DeleteLimitnumber"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"limitnumber"</span>: {
-            <span class="hljs-attr">"thailotto"</span>: {
-                <span class="hljs-attr">"top3"</span>: {
-                    <span class="hljs-attr">"number"</span>: <span class="hljs-string">"567"</span>
-                }
-            }
-        }
-    }
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd"</span>,
+
 }</code></pre>
             </div>
             <!-- // -->
+
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                >
+                  Your Request Body
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <code>
+                <textarea
+                  v-model="jsonData"
+                  rows="10"
+                  cols="50"
+                  class="custom-textarea"
+                >
+                </textarea>
+              </code>
+            </div>
           </div>
           <div>
             <div class="koh-faq-question form-group ex">
@@ -226,7 +391,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Service Respond Code
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -384,7 +549,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Respond Code
+                  Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -590,9 +755,8 @@ export default {
     // this.get_Seamless();
     const json = {
       agentUsername: "superadmincash",
-      agentApiKey: "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
-      services: "DeleteLimitnumber",
-      data: { limitnumber: { thailotto: { top3: { number: "567" } } } },
+      agentApiKey:
+        "504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd",
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว

@@ -31,7 +31,7 @@
           <label> content-type application/json </label>
         </div>
       </div>
-      
+
       <div class="col-12" id="tabSix" style="left: 5px">
         <div>
           <b
@@ -39,8 +39,8 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input URL </span
-            ></b
+              >Input Your URL
+            </span></b
           >
         </div>
       </div>
@@ -62,7 +62,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Your Request body</span
             ></b
           >
         </div>
@@ -78,7 +78,6 @@
           </textarea>
         </code>
       </div>
-
 
       <div class="koh-faq-question form-group ex">
         <div class="Point">
@@ -115,6 +114,42 @@
           </copy-text>
         </div>
       </div>
+                <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Response
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="section">
+              <div class="slide">
+                <div class="koh-faq-answer col-12">
+                  <pre>
+
+                                        <code id="3_4B" style="border-radius: 0.375rem;width: 100% !important;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc08e7ed2e3ae953d40437a4015092fd3ea5ca691e85b6bc323b3e468e1dbfdd8ae"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong@sportbookv2"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>
+    },
+    <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -207,13 +242,40 @@
               </div>
             </div>
           </div>
+          <div class="koh-faq-question form-group ex">
+            <div class="Point">
+              <b
+                style="color: #19a17a !important"
+                set-lan="text:Example Request Body"
+              >
+                Your Request Body
+              </b>
+              <i
+                class="fa fa-chevron-down"
+                aria-hidden="true"
+                style="margin-left: 2%; font-size: 1rem"
+              ></i>
+            </div>
+          </div>
+          <div class="koh-faq-answer col-12">
+            <code>
+              <textarea
+                v-model="jsonData"
+                rows="10"
+                cols="50"
+                class="custom-textarea"
+              >
+              </textarea>
+            </code>
+          </div>
+
           <div>
             <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Reponse
+                  >Example Response
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -251,7 +313,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Reponse
+                  Response
                 </b>
                 <i
                   class="fa fa-chevron-down"

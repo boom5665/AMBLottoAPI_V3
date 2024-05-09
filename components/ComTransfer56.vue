@@ -330,7 +330,7 @@
                 <div class="koh-faq-question form-group ex">
                   <div class="Point">
                     <b style="color: #19a17a !important"
-                      >Example Service Respond Code</b
+                      >Example Service Response Code</b
                     ><i
                       class="fa fa-chevron-down"
                       aria-hidden="true"

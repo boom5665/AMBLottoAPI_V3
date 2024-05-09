@@ -27,7 +27,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input URL
+              >Input Your URL
             </span></b
           >
         </div>
@@ -50,7 +50,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Your Request body</span
             ></b
           >
         </div>
@@ -193,6 +193,32 @@
 }</code></pre>
             </div>
             <!-- // -->
+                      <div class="koh-faq-question form-group ex">
+            <div class="Point">
+              <b
+                style="color: #19a17a !important"
+                set-lan="text:Example Request Body"
+              >
+                Your Request Body
+              </b>
+              <i
+                class="fa fa-chevron-down"
+                aria-hidden="true"
+                style="margin-left: 2%; font-size: 1rem"
+              ></i>
+            </div>
+          </div>
+          <div class="koh-faq-answer col-12">
+            <code>
+              <textarea
+                v-model="jsonData"
+                rows="10"
+                cols="50"
+                class="custom-textarea"
+              >
+              </textarea>
+            </code>
+          </div>
           </div>
           <div>
             <div class="koh-faq-question form-group ex">
@@ -200,7 +226,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Service Respond Code
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -227,7 +253,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Respond Code
+                  Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

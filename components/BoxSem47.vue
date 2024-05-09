@@ -65,8 +65,8 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input URL </span
-            ></b
+              >Input Your URL
+            </span></b
           >
         </div>
       </div>
@@ -88,7 +88,7 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Request body</span
+              >Input Your Request body</span
             ></b
           >
         </div>
@@ -133,19 +133,74 @@
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
-    <span class="hljs-attr">"services"</span>: <span class="hljs-string">"DeleteLimitnumber"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"limitnumber"</span>: {
-            <span class="hljs-attr">"thailotto"</span>: {
-                <span class="hljs-attr">"top3"</span>: {
-                    <span class="hljs-attr">"number"</span>: <span class="hljs-string">"567"</span>
-                }
-            }
-        }
-    }
+
 }</code></pre>
         </copy-text>
       </div>
+                <div>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                  >Example Service Response Code
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
+            </div>
+            <div class="koh-faq-answer col-12">
+              <div class="">
+                <div
+                  @click="copyTexttwo"
+                  class="copy-clipboard"
+                  style="left: 91%"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Copy to Clipboard</title>
+                    <path
+                      d="M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <pre id="myDivtwo">
+
+                                    <code id="410B" style="border-radius: 0.375rem;" class="hljs json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">"0"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"hotnumber":</span> {
+        <span class="hljs-attr">"thailotto":</span> [
+                {
+                    <span class="hljs-attr">"agentid"</span>: <span class="hljs-number">19</span>,
+                    <span class="hljs-attr">"amount"</span>:<span class="hljs-number"> 100</span>,
+                    <span class="hljs-attr">"hotnumid"</span>: <span class="hljs-number">787</span>,
+                    <span class="hljs-attr">"number"</span>: <span class="hljs-number">"000000"</span>,
+                    <span class="hljs-attr">"subtype"</span>: <span class="hljs-number">"top6"</span>,
+                    <span class="hljs-attr">"superadmin"</span>: <span class="hljs-number">18</span>
+                }
+            ]
+        },
+        <span class="hljs-attr">"limitnumber"</span>: {
+        <span class="hljs-attr">"thailotto"</span>: [
+                {
+                    <span class="hljs-attr">"agentid"</span>: <span class="hljs-number">19</span>,
+                    <span class="hljs-attr">"amount"</span>:<span class="hljs-number">0</span>,
+                    <span class="hljs-attr">"hotnumid"</span>: <span class="hljs-number">206</span>,
+                    <span class="hljs-attr">"number"</span>: <span class="hljs-number">"123456"</span>,
+                    <span class="hljs-attr">"subtype"</span>: <span class="hljs-number">"top6"</span>,
+                    <span class="hljs-attr">"superadmin"</span>: <span class="hljs-number">18</span>
+                }
+            ]
+        }
+    }
+}</code></pre>
+            </div>
+            <!-- // -->
+          </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -232,19 +287,36 @@
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
-    <span class="hljs-attr">"services"</span>: <span class="hljs-string">"DeleteLimitnumber"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"limitnumber"</span>: {
-            <span class="hljs-attr">"thailotto"</span>: {
-                <span class="hljs-attr">"top3"</span>: {
-                    <span class="hljs-attr">"number"</span>: <span class="hljs-string">"567"</span>
-                }
-            }
-        }
-    }
+
 }</code></pre>
             </div>
             <!-- // -->
+                                <div class="koh-faq-question form-group ex">
+            <div class="Point">
+              <b
+                style="color: #19a17a !important"
+                set-lan="text:Example Request Body"
+              >
+                Your Request Body
+              </b>
+              <i
+                class="fa fa-chevron-down"
+                aria-hidden="true"
+                style="margin-left: 2%; font-size: 1rem"
+              ></i>
+            </div>
+          </div>
+          <div class="koh-faq-answer col-12">
+            <code>
+              <textarea
+                v-model="jsonData"
+                rows="10"
+                cols="50"
+                class="custom-textarea"
+              >
+              </textarea>
+            </code>
+          </div>
           </div>
           <div>
             <div class="koh-faq-question form-group ex">
@@ -252,7 +324,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Service Respond Code
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -318,7 +390,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Respond Code
+                  Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -434,8 +506,6 @@ export default {
     const json = {
       agentUsername: "superadmincash",
       agentApiKey: "345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8",
-      services: "DeleteLimitnumber",
-      data: { limitnumber: { thailotto: { top3: { number: "567" } } } },
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
