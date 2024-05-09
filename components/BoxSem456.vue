@@ -67,7 +67,7 @@
           <b
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
-            >Example Reponse
+            >Example Request body
           </b>
           <i
             class="fa fa-chevron-down"
