@@ -118,7 +118,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Response
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -1007,7 +1007,7 @@
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
-          <div>
+          <!-- <div>
             <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
@@ -1032,8 +1032,8 @@
     }
 }</code></pre>
             </div>
-            <!-- // -->
-          </div>
+
+          </div> -->
           <div class="koh-faq-question form-group ex">
             <div class="Point">
               <b
@@ -1060,13 +1060,13 @@
               </textarea>
             </code>
           </div>
-          <div>
+          <!-- <div>
             <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Response
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -1888,8 +1888,8 @@
     }
 }</code></pre>
             </div>
-            <!-- // -->
-          </div>
+
+          </div> -->
 
           <div>
             <div class="koh-faq-question form-group ex">
@@ -1898,7 +1898,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Response
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

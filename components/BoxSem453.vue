@@ -51,8 +51,8 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Your URL </span
-            ></b
+              >Input Your URL
+            </span></b
           >
         </div>
       </div>
@@ -172,30 +172,30 @@
 }</code></pre>
         </copy-text>
       </div>
-          <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="koh-faq-answer col-12">
+          <pre>
 
                                         <code id="352B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
 }</code></pre>
-            </div>
-            <!-- // -->
-          </div>
+        </div>
+        <!-- // -->
+      </div>
 
       <div>
         <div class="divBox-content">
@@ -263,7 +263,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -335,37 +335,37 @@
         <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-number">"2023-10-03 05:00:00"</span>
     }
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
-                      <div class="koh-faq-question form-group ex">
-            <div class="Point">
-              <b
-                style="color: #19a17a !important"
-                set-lan="text:Example Request Body"
-              >
-                Your Request Body
-              </b>
-              <i
-                class="fa fa-chevron-down"
-                aria-hidden="true"
-                style="margin-left: 2%; font-size: 1rem"
-              ></i>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                >
+                  Your Request Body
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
             </div>
-          </div>
-          <div class="koh-faq-answer col-12">
-            <code>
-              <textarea
-                v-model="jsonData"
-                rows="10"
-                cols="50"
-                class="custom-textarea"
-              >
-              </textarea>
-            </code>
-          </div>
+            <div class="koh-faq-answer col-12">
+              <code>
+                <textarea
+                  v-model="jsonData"
+                  rows="10"
+                  cols="50"
+                  class="custom-textarea"
+                >
+                </textarea>
+              </code>
+            </div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -385,7 +385,7 @@
                                         <code id="352B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -396,7 +396,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Response
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -469,12 +469,60 @@ export default {
   mounted() {
     // this.get_Seamless();
     const json = {
-      service: "GetUserBalance",
+      service: "UserPlaceBet",
       data: {
         playerApiId:
-          "21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f",
-        playerApiUsername: "testa0alottoviptest2@comptestseamless",
-        playerUsername: "testa0alottoviptest2",
+          "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+        playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+        playerUsername: "testa0aagentthbmb01",
+        ticketId: "39781",
+        type: "yeekeelotto",
+        government: false,
+        drawId: 36160,
+        totalBetAmt: -49.00000000000001,
+        drawName: "Yeekee Lotto",
+        drawExpire: "2023-10-03 15:14:00",
+        txtList: [
+          {
+            agentPt: "0",
+            apiPt: "100",
+            betKey: "Mzk3ODEtMQ==",
+            betId: "1",
+            betType: "top2",
+            betNumber: "12",
+            betStatus: "pending",
+            betAmt: 5,
+            betTotal: 4.95,
+            betDiscount: 0.05,
+            payOutRate: 90,
+            rateLevel: 0,
+            rateLevelAmount: 0,
+            betResultKey: " ",
+            payOutAmt: 0,
+          },
+          {
+            agentPt: "0",
+            apiPt: "100",
+            betKey: "Mzk3ODEtMQ==",
+            betId: "2",
+            betType: "bottom2",
+            betNumber: "12",
+            betStatus: "pending",
+            betAmt: 5,
+            betTotal: 5,
+            betDiscount: 0,
+            payOutRate: 90,
+            rateLevel: 0,
+            rateLevelAmount: 0,
+            betResultKey: " ",
+            payOutAmt: 0,
+          },
+        ],
+        status: "pending",
+        createDate: "2023-10-03 15:12:25",
+        ip: "8.213.194.49",
+        currency: "thb",
+        DrawOpen: "2023-10-03 05:00:00",
       },
     };
 

@@ -333,7 +333,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -355,7 +355,7 @@
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd"</span>,
 
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
 
             <div class="koh-faq-question form-group ex">
@@ -386,7 +386,7 @@
             </div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -538,7 +538,7 @@
         }
     }
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -549,7 +549,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Response Code
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

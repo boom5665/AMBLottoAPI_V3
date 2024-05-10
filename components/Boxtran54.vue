@@ -1429,7 +1429,7 @@
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Response
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -1524,7 +1524,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -2852,8 +2852,8 @@
     }
 
 }</code></pre>
-              <!-- <script src="./API_files/ex_3-1.js.download"></script> -->
-            </div>
+
+            </div> -->
             <!-- // -->
           </div>
                     <div class="koh-faq-question form-group ex">
@@ -2883,12 +2883,12 @@
             </code>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Response
+                  >Example Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -2914,7 +2914,7 @@
         <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
     }
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -2925,7 +2925,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Response
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

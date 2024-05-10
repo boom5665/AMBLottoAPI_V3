@@ -307,7 +307,7 @@
                     <b
                       style="color: #19a17a !important"
                       set-lan="text:Example Request Body"
-                      >Example Response
+                      >Example Service Response Code
                     </b>
                     <i
                       class="fa fa-chevron-down"

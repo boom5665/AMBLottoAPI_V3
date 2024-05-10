@@ -217,7 +217,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -240,7 +240,7 @@
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300</span>,
     <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f3261f2cd66126761251s2712676121657"</span>
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
                     <div class="koh-faq-question form-group ex">
@@ -270,7 +270,7 @@
             </code>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -282,9 +282,6 @@
                   aria-hidden="true"
                   style="margin-left: 2%; font-size: 1rem"
                 ></i>
-                <!-- <div class="btn-send">
-            <button class="custom-btn btn-13">Send Code</button>
-          </div> -->
               </div>
             </div>
 
@@ -306,7 +303,7 @@
     },
     <span class="hljs-attr">"msg"</span>: <span class="hljs-string">"success"</span>
 }</code></pre>
-            </div>
+            </div> -->
 
             <!-- // -->
           </div>
@@ -318,7 +315,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Response Code
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

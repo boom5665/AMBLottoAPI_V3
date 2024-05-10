@@ -7,7 +7,7 @@
         <b style="color: #19a17a !important "
           >6.
           <span style="padding-left: 3px" id="ser_Service_Respond_Code"
-            >Service Response Code</span
+            >Example Service Response Code</span
           ></b
         >
       </h1>

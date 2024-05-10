@@ -227,7 +227,7 @@
         <div class="form-group col-12 ex">
           <div
             ><b style="color: #19a17a !important"
-              >Service Response Code</b
+              >Example Service Response Code</b
             ></div
           >
         </div>

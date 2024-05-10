@@ -279,7 +279,7 @@
                     <b
                       style="color: #19a17a !important"
                       set-lan="text:Example Request Body"
-                      >Example Response Body</b
+                      >Example Service Response Code Body</b
                     >
                     <i
                       class="fa fa-chevron-down"

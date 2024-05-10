@@ -192,7 +192,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -217,7 +217,7 @@
         <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptest2"</span>
     }
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
                       <div class="koh-faq-question form-group ex">
             <div class="Point">
@@ -247,7 +247,7 @@
           </div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -268,7 +268,7 @@
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -279,7 +279,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Response Code
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

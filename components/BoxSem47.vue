@@ -267,7 +267,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -280,8 +280,8 @@
                   style="margin-left: 2%; font-size: 1rem"
                 ></i>
               </div>
-            </div>
-            <div class="koh-faq-answer col-12">
+            </div> -->
+            <!-- <div class="koh-faq-answer col-12">
               <pre>
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
@@ -289,7 +289,7 @@
     <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"345afccac1c08a4f8e37fbf1ac4f6e2a63e298062482c3f5192a63f3f8"</span>,
 
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
                                 <div class="koh-faq-question form-group ex">
             <div class="Point">
@@ -319,7 +319,7 @@
           </div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -379,7 +379,7 @@
         }
     }
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -390,7 +390,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Response Code
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

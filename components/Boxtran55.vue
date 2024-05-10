@@ -145,7 +145,7 @@
             </div>
             <!-- // -->
           </div>
-          
+
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -211,7 +211,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -235,8 +235,8 @@
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300,</span>
     <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd6612676125127126761216541276519"</span>
 }</code></pre>
-              <!-- <script src="./API_files/ex4_6.js.download"></script> -->
-            </div>
+
+            </div> -->
             <!-- // -->
           </div>
                     <div class="koh-faq-question form-group ex">
@@ -266,7 +266,7 @@
             </code>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -298,7 +298,7 @@
     },
     <span class="hljs-attr">"msg"</span>:<span class="hljs-string">"success"</span>
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -309,7 +309,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Service Response Code
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"

@@ -74,7 +74,10 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Your Request body <span style="color: red"> ให้เลือกใส่กรณี (ไม่ถูกรางวัล-ถูกรางวัล)</span></span
+              >Input Your Request body
+              <span style="color: red">
+                ให้เลือกใส่กรณี (ไม่ถูกรางวัล-ถูกรางวัล)</span
+              ></span
             ></b
           >
         </div>
@@ -299,30 +302,30 @@
 }</code></pre>
       </div>
       <!-- // -->
-                <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="koh-faq-answer col-12">
+          <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
 }</code></pre>
-            </div>
-            <!-- // -->
-          </div>
+        </div>
+        <!-- // -->
+      </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -390,7 +393,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -478,7 +481,7 @@
 
     }
 }</code></pre>
-            </div>
+            </div> -->
 
             <div class="koh-faq-question form-group ex">
               <div class="Point">
@@ -495,7 +498,7 @@
                 ></i>
               </div>
             </div>
-            <div class="koh-faq-answer col-12">
+            <!-- <div class="koh-faq-answer col-12">
               <pre>
 
                                         <code id="354A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
@@ -569,12 +572,11 @@
 
     }
 }</code></pre>
-            </div>
+            </div> -->
 
-            <!-- // -->
 
           </div>
-                                <div class="koh-faq-question form-group ex">
+          <div class="koh-faq-question form-group ex">
             <div class="Point">
               <b
                 style="color: #19a17a !important"
@@ -601,7 +603,7 @@
             </code>
           </div>
           <div>
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -621,7 +623,7 @@
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
 }</code></pre>
-            </div>
+            </div> -->
             <!-- // -->
           </div>
 
@@ -632,7 +634,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Response
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -704,6 +706,56 @@ export default {
   beforeCreate() {},
   mounted() {
     // this.get_Seamless();
+    const json = {
+      service: "UserPlacePayout",
+      data: {
+        playerApiId:
+          "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
+        playerApiUsername: "testa0aagentthbmb01@comptestseamless",
+        playerUsername: "testa0aagentthbmb01",
+        ticketId: "751811",
+        type: "stockgerman",
+        government: false,
+        drawId: 47600,
+        totalBetAmt: -9.9,
+        totalPayOutAmt: 900,
+        txtList: [
+          {
+            agentPt: "95",
+            apiPt: "5",
+            betKey: "NzUxODExLTI=",
+            betId: "1",
+            betType: "bottom2",
+            betNumber: "87",
+            betStatus: "false",
+            betAmt: 9.9,
+            betTotal: 10,
+            betDiscount: 1,
+            payOutRate: 90,
+            rateLevel: 0,
+            rateLevelAmount: 0,
+            betResultKey: "",
+            payOutAmt: 0,
+          },
+        ],
+        status: "Success",
+        result: {
+          bottom1: ["7", "8"],
+          bottom2: ["78"],
+          row2: ["77", "78", "87"],
+          row3: ["456", "465", "546", "564", "645", "654"],
+          top1: ["4", "5", "6"],
+          top2: ["56"],
+          top3: ["456"],
+        },
+        resultlink: "",
+        createDate: "2023-10-02 20:41:54",
+        currency: "thb",
+      },
+    };
+
+    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
+    this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
     jsonData(newValue) {
