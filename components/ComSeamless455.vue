@@ -92,7 +92,7 @@
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
-                    <td class="bRight">Object respone.</td>
+                    <td class="bRight">Object response.</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerApiId</td>
@@ -192,7 +192,7 @@
                     <td class="bRight">betStatus</td>
                     <td class="bRight">String</td>
                     <td class="bRight">
-                      Status of bet data(Pending, True, False, Cancel).
+                      Status of bet data(Pending).
                     </td>
                   </tr>
                   <tr>

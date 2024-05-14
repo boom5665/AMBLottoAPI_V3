@@ -180,7 +180,7 @@
                     <td class="bRight">betStatus</td>
                     <td class="bRight">String</td>
                     <td class="bRight">
-                      Status of bet data(Pending, True, False, Cancel).
+                      Status of bet data(Pending).
                     </td>
                   </tr>
                   <tr>

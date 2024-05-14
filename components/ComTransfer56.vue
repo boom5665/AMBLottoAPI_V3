@@ -187,7 +187,7 @@
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
 
-                    <td>Object respone.</td>
+                    <td>Object response.</td>
                   </tr>
                   <tr>
                     <td class="bRight">addBalance</td>

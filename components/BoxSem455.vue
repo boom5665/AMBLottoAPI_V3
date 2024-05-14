@@ -123,7 +123,7 @@
           <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
-            }
+            },
             {
           <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
           <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
@@ -140,7 +140,7 @@
           <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
-            }
+            },
             {
           <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
           <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
@@ -157,7 +157,7 @@
           <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
-            }
+            },
             {
           <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
           <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
@@ -174,7 +174,7 @@
           <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
-            }
+            },
             {
           <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
           <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
@@ -191,7 +191,7 @@
           <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
-            }
+            },
             {
           <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
           <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
@@ -209,16 +209,16 @@
           <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
           <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
             }
-        ]
+        ],
   <span class="hljs-attr">"status"</span>: <span class="hljs-string">"success"</span>,
   <span class="hljs-attr">"result"</span>: {
       <span class="hljs-attr">"bottom1"</span>: [
           <span class="hljs-attr">"1"</span>,
           <span class="hljs-attr">"2"</span>
-            ]
+            ],
       <span class="hljs-attr">"bottom2"</span>: [
           <span class="hljs-attr">"12"</span>
-            ]
+            ],
       <span class="hljs-attr">"row3"</span>: [
           <span class="hljs-attr">"189"</span>,
           <span class="hljs-attr">"198"</span>,
@@ -226,19 +226,19 @@
           <span class="hljs-attr">"891"</span>,
           <span class="hljs-attr">"918"</span>,
           <span class="hljs-attr">"981"</span>
-            ]
+            ],
       <span class="hljs-attr">"top1"</span>: [
           <span class="hljs-attr">"1"</span>,
           <span class="hljs-attr">"9"</span>,
           <span class="hljs-attr">"8"</span>
-            ]
+            ],
       <span class="hljs-attr">"top2"</span>: [
           <span class="hljs-attr">"98"</span>
-            ]
+            ],
       <span class="hljs-attr">"top3"</span>: [
           <span class="hljs-attr">"198"</span>
             ]
-        }
+        },
   <span class="hljs-attr">"resultlink"</span>: <span class="hljs-string">""</span>,
   <span class="hljs-attr">"createDate"</span>: <span class="hljs-string">"2024-05-10 16:52:53"</span>,
   <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"thb"</span>
@@ -538,7 +538,7 @@
 }</code></pre>
             </div> -->
 
-            <div class="koh-faq-question form-group ex">
+            <!-- <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
@@ -552,7 +552,7 @@
                   style="margin-left: 2%; font-size: 1rem"
                 ></i>
               </div>
-            </div>
+            </div> -->
             <!-- <div class="koh-faq-answer col-12">
               <pre>
 

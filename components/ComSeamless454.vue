@@ -227,7 +227,7 @@
                     <td class="bRight">status</td>
                     <td class="bRight">String</td>
                     <td class="bRight">
-                      Success Pending (รอผล), Cancel(ยกเลิก).
+                      Success(สำเร็จ), Pending (รอผล), Cancel(ยกเลิก).
                     </td>
                   </tr>
                   <tr>
@@ -495,7 +495,7 @@
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
-                    <td class="bRight">Object respone.</td>
+                    <td class="bRight">Object response.</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerApiId</td>

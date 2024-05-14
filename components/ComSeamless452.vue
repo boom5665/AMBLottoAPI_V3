@@ -94,7 +94,7 @@
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
-                    <td class="bRight">Object respone.</td>
+                    <td class="bRight">Object response.</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerApiId</td>

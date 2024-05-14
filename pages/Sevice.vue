@@ -78,8 +78,8 @@
         <div
           ><b style="color: #19a17a !important"
             >6.2
-            <span style="padding-left: 3px" id="ser_Service_Respone"
-              >Service Respone</span
+            <span style="padding-left: 3px" id="ser_Service_response"
+              >Service response</span
             ></b
           ></div
         >

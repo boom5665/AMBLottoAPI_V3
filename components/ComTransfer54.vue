@@ -96,7 +96,7 @@
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
 
-                    <td>Object respone.</td>
+                    <td>Object response.</td>
                   </tr>
                 </tbody>
               </table>
@@ -757,7 +757,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">15</span>
                 }
             },
-          <span class="hljs-attr">"hanoylotto"</span>: {
+          <span class="hljs-attr">"hanoilotto"</span>: {
               <span class="hljs-attr">"top3"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -795,7 +795,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">4.2</span>
                 }
             },
-          <span class="hljs-attr">"hanoylotto_set"</span>: {
+          <span class="hljs-attr">"hanoilotto_set"</span>: {
               <span class="hljs-attr">"top4"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -833,7 +833,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">15</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottospecial"</span>: {
+          <span class="hljs-attr">"hanoilottospecial"</span>: {
               <span class="hljs-attr">"top3"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -871,7 +871,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">4.2</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottospecial_set"</span>: {
+          <span class="hljs-attr">"hanoilottospecial_set"</span>: {
               <span class="hljs-attr">"top4"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -909,7 +909,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">15</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottovip"</span>: {
+          <span class="hljs-attr">"hanoilottovip"</span>: {
               <span class="hljs-attr">"top3"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -947,7 +947,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">4.2</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottovip_set"</span>: {
+          <span class="hljs-attr">"hanoilottovip_set"</span>: {
               <span class="hljs-attr">"top4"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -985,7 +985,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">15</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottotv"</span>: {
+          <span class="hljs-attr">"hanoilottotv"</span>: {
               <span class="hljs-attr">"top3"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -1023,7 +1023,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">4.2</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottotv_set"</span>: {
+          <span class="hljs-attr">"hanoilottotv_set"</span>: {
               <span class="hljs-attr">"top4"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -1061,7 +1061,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">15</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottostar"</span>: {
+          <span class="hljs-attr">"hanoilottostar"</span>: {
               <span class="hljs-attr">"top3"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -1099,7 +1099,7 @@
                   <span class="hljs-attr">"payout"</span>: <span class="hljs-string">4.2</span>
                 }
             },
-          <span class="hljs-attr">"hanoylottostar_set"</span>: {
+          <span class="hljs-attr">"hanoilottostar_set"</span>: {
               <span class="hljs-attr">"top4"</span>: {
                   <span class="hljs-attr">"discount"</span>: <span class="hljs-string">0,</span>
                   <span class="hljs-attr">"max"</span>: <span class="hljs-string">5000,</span>
@@ -1487,7 +1487,7 @@
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
-                    <td>Object respone.</td>
+                    <td>Object response.</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerApiId</td>
@@ -1646,11 +1646,11 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย</td>
-                    <td class="bRight txtCenter txtMid">hanoylotto</td>
+                    <td class="bRight txtCenter txtMid">hanoilotto</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(วีไอพี)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottovip</td>
+                    <td class="bRight txtCenter txtMid">hanoilottovip</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวย ธกส.</td>
@@ -1678,16 +1678,16 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylotto_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilotto_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอยวีไอพี(แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottovip_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilottovip_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอยพิเศษ(แบบชุด)</td>
                     <td class="bRight txtCenter txtMid">
-                      hanoylottospecial_set
+                      hanoilottospecial_set
                     </td>
                   </tr>
                   <tr>
@@ -1696,7 +1696,7 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(พิเศษ)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottospecial</td>
+                    <td class="bRight txtCenter txtMid">hanoilottospecial</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยหุ้นเกาหลี</td>
@@ -1768,15 +1768,15 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย รอบ 12.30 (แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottostar_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilottostar_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย รอบ 14.30</td>
-                    <td class="bRight txtCenter txtMid">hanoylottotv</td>
+                    <td class="bRight txtCenter txtMid">hanoilottotv</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย รอบ 14.30 (แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottotv_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilottotv_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยลาว รอบ 08.30</td>
@@ -1835,18 +1835,18 @@
               <label class="txtHead">lottotype=laoslotto</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylotto : </label>
+              <label class="txtHead"> hanoilotto : </label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylotto</label>
+              <label class="txtHead">lottotype=hanoilotto</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylottovip : </label>
+              <label class="txtHead"> hanoilottovip : </label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottovip</label>
+              <label class="txtHead">lottotype=hanoilottovip</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> baaclotto : </label>
@@ -1891,25 +1891,25 @@
               <label class="txtHead">lottotype=malaylotto</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylotto_set :</label>
+              <label class="txtHead"> hanoilotto_set :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylotto_set</label>
+              <label class="txtHead">lottotype=hanoilotto_set</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylotto_set :</label>
+              <label class="txtHead"> hanoilotto_set :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottovip_set</label>
+              <label class="txtHead">lottotype=hanoilottovip_set</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylottospecial_set :</label>
+              <label class="txtHead"> hanoilottospecial_set :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottospecial_set</label>
+              <label class="txtHead">lottotype=hanoilottospecial_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> malaylotto_set :</label>
@@ -1919,11 +1919,11 @@
               <label class="txtHead">lottotype=malaylotto_set</label>
             </div>
             <div class="col-12">
-              <label class="txtHead"> hanoylottospecial :</label>
+              <label class="txtHead"> hanoilottospecial :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottospecial</label>
+              <label class="txtHead">lottotype=hanoilottospecial</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockkorea :</label>
@@ -2060,32 +2060,32 @@
               <label class="txtHead">lottotype=pingponglotto6</label>
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottostar_set :</label>
+              <label class="txtHead">hanoilottostar_set :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottostar_set</label>
+              <label class="txtHead">lottotype=hanoilottostar_set</label>
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottostar :</label>
+              <label class="txtHead">hanoilottostar :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottostar</label>
+              <label class="txtHead">lottotype=hanoilottostar</label>
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottotv :</label>
+              <label class="txtHead">hanoilottotv :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottotv</label>
+              <label class="txtHead">lottotype=hanoilottotv</label>
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottotv_set :</label>
+              <label class="txtHead">hanoilottotv_set :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
-              <label class="txtHead">lottotype=hanoylottotv_set</label>
+              <label class="txtHead">lottotype=hanoilottotv_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottoextra :</label>
@@ -2218,17 +2218,17 @@
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylotto : </label
+              <label class="txtHead">hanoilotto : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylotto&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilotto&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottovip : </label
+              <label class="txtHead">hanoilottovip : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylottovip&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilottovip&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2282,25 +2282,25 @@
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylotto_set :</label
+              <label class="txtHead">hanoilotto_set :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylotto_set&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilotto_set&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottovip_set :</label
+              <label class="txtHead">hanoilottovip_set :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylottovip_set&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilottovip_set&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottospecial_set :</label
+              <label class="txtHead">hanoilottospecial_set :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylottospecial_set&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilottospecial_set&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2314,9 +2314,9 @@
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottospecial :</label
+              <label class="txtHead">hanoilottospecial :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoylottospecial&amp;url=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=hanoilottospecial&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2458,33 +2458,33 @@
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottostar_set : </label
+              <label class="txtHead">hanoilottostar_set : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoylottostar_set</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoilottostar_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottostar : </label
+              <label class="txtHead">hanoilottostar : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoylottostar</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoilottostar</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottotv : </label
+              <label class="txtHead">hanoilottotv : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoylottotv</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoilottotv</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
             <div class="col-12">
-              <label class="txtHead">hanoylottotv_set : </label
+              <label class="txtHead">hanoilottotv_set : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoylottotv_set</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=&amp;url=hanoilottotv_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >

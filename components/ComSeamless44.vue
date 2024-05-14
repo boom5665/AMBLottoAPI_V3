@@ -383,11 +383,11 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย</td>
-                    <td class="bRight txtCenter txtMid">hanoylotto</td>
+                    <td class="bRight txtCenter txtMid">hanoilotto</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(วีไอพี)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottovip</td>
+                    <td class="bRight txtCenter txtMid">hanoilottovip</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวย ธกส.</td>
@@ -415,16 +415,16 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylotto_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilotto_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอยวีไอพี(แบบชุด)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottovip_set</td>
+                    <td class="bRight txtCenter txtMid">hanoilottovip_set</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอยพิเศษ(แบบชุด)</td>
                     <td class="bRight txtCenter txtMid">
-                      hanoylottospecial_set
+                      hanoilottospecial_set
                     </td>
                   </tr>
                   <tr>
@@ -433,7 +433,7 @@
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยฮานอย(พิเศษ)</td>
-                    <td class="bRight txtCenter txtMid">hanoylottospecial</td>
+                    <td class="bRight txtCenter txtMid">hanoilottospecial</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">หวยหุ้นเกาหลี</td>
@@ -544,12 +544,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylotto :&nbsp;</label
+                  <label class="txtHead">hanoilotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylotto</label
+                      >lotto=hanoilotto</label
                     ></label
                   >
                 </div>
@@ -561,12 +561,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottovip :&nbsp;</label
+                  <label class="txtHead">hanoilottovip :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylottovip</label
+                      >lotto=hanoilottovip</label
                     ></label
                   >
                 </div>
@@ -680,12 +680,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylotto_set :&nbsp;</label
+                  <label class="txtHead">hanoilotto_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylotto_set</label
+                      >lotto=hanoilotto_set</label
                     ></label
                   >
                 </div>
@@ -697,12 +697,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottovip_set :&nbsp;</label
+                  <label class="txtHead">hanoilottovip_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylottovip_set</label
+                      >lotto=hanoilottovip_set</label
                     ></label
                   >
                 </div>
@@ -714,12 +714,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottospecial_set :&nbsp;</label
+                  <label class="txtHead">hanoilottospecial_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylottospecial_set</label
+                      >lotto=hanoilottospecial_set</label
                     ></label
                   >
                 </div>
@@ -748,12 +748,12 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottospecial :&nbsp;</label
+                  <label class="txtHead">hanoilottospecial :&nbsp;</label
                   ><label style="margin-bottom: 0px"
                     >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
                       class="txtHead"
                       style="margin-bottom: 0px"
-                      >lotto=hanoylottospecial</label
+                      >lotto=hanoilottospecial</label
                     ></label
                   >
                 </div>
@@ -1137,9 +1137,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylotto :&nbsp;</label
+                  <label class="txtHead">hanoilotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylotto&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilotto&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1154,9 +1154,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottovip :&nbsp;</label
+                  <label class="txtHead">hanoilottovip :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottovip&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilottovip&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1273,9 +1273,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylotto_set :&nbsp;</label
+                  <label class="txtHead">hanoilotto_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylotto_set&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilotto_set&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1290,9 +1290,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottovip_set :&nbsp;</label
+                  <label class="txtHead">hanoilottovip_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottovip_set&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilottovip_set&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1307,9 +1307,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottospecial_set :&nbsp;</label
+                  <label class="txtHead">hanoilottospecial_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottospecial_set&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilottospecial_set&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1341,9 +1341,9 @@
                   class="col-12"
                   style="padding-right: 0px; padding-left: 2px"
                 >
-                  <label class="txtHead">hanoylottospecial :&nbsp;</label
+                  <label class="txtHead">hanoilottospecial :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottospecial&url=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoilottospecial&url=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
