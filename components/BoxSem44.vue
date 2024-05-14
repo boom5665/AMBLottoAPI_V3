@@ -107,9 +107,9 @@
             <pre>
 
                                         <code id="3_4A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"sportbookv2"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba"</span>,
-    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>
+    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"handsome"</span>,
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"099e9bd891a689d7fb3c6dea5c21c461b0a5d09c7b64a73b5c6a6a91caffd130"</span>,
+    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>
 }</code></pre>
           </copy-text>
         </div>
