@@ -25,8 +25,8 @@
             set-lan="text:4.5.1 GetUserBalance"
           >
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Your URL </span
-            ></b
+              >Input Your URL
+            </span></b
           >
         </div>
       </div>
@@ -89,69 +89,69 @@
         <copy-text id="myDiv">
           <pre>
 <code id="353A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
-    <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBetCancel"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptestcarl@comptestseamless"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptestcarl"</span>,
-        <span class="hljs-attr">"ticketId"</span>: <span class="hljs-string">53000</span>,
-        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"thailotto"</span>,
-        <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
-        <span class="hljs-attr">"drawId"</span>: <span class="hljs-number">44170</span>,
-        <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-number">-10000</span>,
-        <span class="hljs-attr">"txtList"</span>: [
+<span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceBetCancel"</span>,
+<span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819"</span>,
+    <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@handsome"</span>,
+    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
+    <span class="hljs-attr">"ticketId"</span>: <span class="hljs-string">4169799</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"stockengland"</span>,
+    <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
+    <span class="hljs-attr">"drawId"</span>: <span class="hljs-string">71890</span>,
+    <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-string">-1</span>
+    <span class="hljs-attr">"txtList"</span>: [
             {
-                <span class="hljs-attr">"agentPt"</span>: <span class="hljs-number">"95"</span>,
-                <span class="hljs-attr">"apiPt"</span>: <span class="hljs-number">"5"</span>,
-                <span class="hljs-attr">"betKey"</span>: <span class="hljs-number">"NTMwMDAtMQ=="</span>,
-                <span class="hljs-attr">"betId"</span>: <span class="hljs-number">"1"</span>,
-                <span class="hljs-attr">"betType"</span>: <span class="hljs-number">"bottom2"</span>,
-                <span class="hljs-attr">"betNumber"</span>: <span class="hljs-number">"10"</span>,
-                <span class="hljs-attr">"betStatus"</span>: <span class="hljs-number">"pending"</span>,
-                <span class="hljs-attr">"betAmt"</span>: <span class="hljs-number">10000</span>,
-                <span class="hljs-attr">"betTotal"</span>: <span class="hljs-number">10000</span>,
-                <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-number">0</span>,
-                <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-number">90</span>,
-                <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-number">0</span>,
-                <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-number">0</span>,
-                <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-number">""</span>,
-                <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-number">0</span>
+            <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
+            <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
+            <span class="hljs-attr">"betKey"</span>: <span class="hljs-string">"NDE2OTc5OS0x"</span>,
+            <span class="hljs-attr">"betId"</span>: <span class="hljs-string">"1"</span>,
+            <span class="hljs-attr">"betType"</span>: <span class="hljs-string">"top3"</span>,
+            <span class="hljs-attr">"betNumber"</span>: <span class="hljs-string">"454"</span>,
+            <span class="hljs-attr">"betStatus"</span>: <span class="hljs-string">"cancel"</span>,
+            <span class="hljs-attr">"betAmt"</span>: <span class="hljs-string">1</span>,
+            <span class="hljs-attr">"betTotal"</span>: <span class="hljs-string">1</span>,
+            <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-string">0</span>,
+            <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-string">900</span>,
+            <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-string">0</span>,
+            <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
+            <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
+            <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
             }
         ],
-        <span class="hljs-attr">"status"</span>: <span class="hljs-string">"cancel"</span>,
-        <span class="hljs-attr">"createDate"</span>: <span class="hljs-string">"2023-11-11 15:16:44"</span>,
-        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"thb"</span>,
-        <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-string">"2023-11-09 01:00:00"</span>,
-        <span class="hljs-attr">"drawExpire"</span>: <span class="hljs-string">"2023-11-19 15:25:00"</span>
+    <span class="hljs-attr">"status"</span>: <span class="hljs-string">"cancel"</span>,
+    <span class="hljs-attr">"createDate"</span>: <span class="hljs-string">"2024-05-09 18:30:04"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"thb"</span>,
+    <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-string">"2024-05-09 05:00:00"</span>,
+    <span class="hljs-attr">"drawExpire"</span>: <span class="hljs-string">"2024-05-09 22:00:00"</span>
     }
 }</code></pre>
         </copy-text>
       </div>
       <!-- // -->
-          <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="koh-faq-answer col-12">
+          <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
 }</code></pre>
-            </div>
-            <!-- // -->
-          </div>
+        </div>
+        <!-- // -->
+      </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -274,32 +274,32 @@
 }</code></pre>
             </div> -->
             <!-- // -->
-                      <div class="koh-faq-question form-group ex">
-            <div class="Point">
-              <b
-                style="color: #19a17a !important"
-                set-lan="text:Example Request Body"
-              >
-                Your Request Body
-              </b>
-              <i
-                class="fa fa-chevron-down"
-                aria-hidden="true"
-                style="margin-left: 2%; font-size: 1rem"
-              ></i>
+            <div class="koh-faq-question form-group ex">
+              <div class="Point">
+                <b
+                  style="color: #19a17a !important"
+                  set-lan="text:Example Request Body"
+                >
+                  Your Request Body
+                </b>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  style="margin-left: 2%; font-size: 1rem"
+                ></i>
+              </div>
             </div>
-          </div>
-          <div class="koh-faq-answer col-12">
-            <code>
-              <textarea
-                v-model="jsonData"
-                rows="10"
-                cols="50"
-                class="custom-textarea"
-              >
-              </textarea>
-            </code>
-          </div>
+            <div class="koh-faq-answer col-12">
+              <code>
+                <textarea
+                  v-model="jsonData"
+                  rows="10"
+                  cols="50"
+                  class="custom-textarea"
+                >
+                </textarea>
+              </code>
+            </div>
           </div>
           <!-- <div>
             <div class="koh-faq-question form-group ex">
@@ -396,7 +396,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://api-test.ambexapi.com/api/v1/l/c", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "http://54.254.46.163:8080", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
       // playerUsername: "",
@@ -409,27 +409,27 @@ export default {
       service: "UserPlaceBetCancel",
       data: {
         playerApiId:
-          "4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6",
-        playerApiUsername: "testa0alottoviptestcarl@comptestseamless",
-        playerUsername: "testa0alottoviptestcarl",
-        ticketId: 53000,
-        type: "thailotto",
+          "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
+        playerApiUsername: "member1@handsome",
+        playerUsername: "member1",
+        ticketId: 4169799,
+        type: "stockengland",
         government: false,
-        drawId: 44170,
-        totalBetAmt: -10000,
+        drawId: 71890,
+        totalBetAmt: -1,
         txtList: [
           {
-            agentPt: "95",
-            apiPt: "5",
-            betKey: "NTMwMDAtMQ==",
+            agentPt: "0",
+            apiPt: "100",
+            betKey: "NDE2OTc5OS0x",
             betId: "1",
-            betType: "bottom2",
-            betNumber: "10",
-            betStatus: "pending",
-            betAmt: 10000,
-            betTotal: 10000,
+            betType: "top3",
+            betNumber: "454",
+            betStatus: "cancel",
+            betAmt: 1,
+            betTotal: 1,
             betDiscount: 0,
-            payOutRate: 90,
+            payOutRate: 900,
             rateLevel: 0,
             rateLevelAmount: 0,
             betResultKey: "",
@@ -437,10 +437,10 @@ export default {
           },
         ],
         status: "cancel",
-        createDate: "2023-11-11 15:16:44",
+        createDate: "2024-05-09 18:30:04",
         currency: "thb",
-        DrawOpen: "2023-11-09 01:00:00",
-        drawExpire: "2023-11-19 15:25:00",
+        DrawOpen: "2024-05-09 05:00:00",
+        drawExpire: "2024-05-09 22:00:00",
       },
     };
 

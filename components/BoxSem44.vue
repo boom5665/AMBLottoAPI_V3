@@ -137,12 +137,12 @@
                                         <code id="3_4B" style="border-radius: 0.375rem;width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc08e7ed2e3ae953d40437a4015092fd3ea5ca691e85b6bc323b3e468e1dbfdd8ae"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong@sportbookv2"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>,
-        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@handsome"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
+        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>
     },
     <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
 }</code></pre>
@@ -411,10 +411,10 @@ export default {
   beforeCreate() {},
   mounted() {
     const json = {
-      agentUsername: "sportbookv2",
+      agentUsername: "handsome",
       agentApiKey:
-        "29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba",
-      playerUsername: "testa0alottoviptesttong",
+        "099e9bd891a689d7fb3c6dea5c21c461b0a5d09c7b64a73b5c6a6a91caffd130",
+      playerUsername: "member1",
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว

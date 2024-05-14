@@ -104,8 +104,8 @@
           <pre>
 
                                         <code id="410A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"superadmincash"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd"</span>,
+    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"handsome"</span>,
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"099e9bd891a689d7fb3c6dea5c21c461b0a5d09c7b64a73b5c6a6a91caffd130"</span>,
 
 }</code></pre>
         </copy-text>
@@ -754,9 +754,9 @@ export default {
   mounted() {
     // this.get_Seamless();
     const json = {
-      agentUsername: "superadmincash",
+      agentUsername: "handsome",
       agentApiKey:
-        "504947f655f822e2f8f414bbc1a34ba763c7570ef638135f30b5696c899f806901e163f59f3a86d0c8cd",
+        "099e9bd891a689d7fb3c6dea5c21c461b0a5d09c7b64a73b5c6a6a91caffd130",
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว

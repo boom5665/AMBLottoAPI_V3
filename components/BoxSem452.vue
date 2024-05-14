@@ -94,9 +94,9 @@
                                         <code id="351A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"GetUserBalance"</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptest2@comptestseamless"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptest2"</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819"</span>,
+        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@handsome"</span>,
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>
     }
 }</code></pre>
         </copy-text>
@@ -294,7 +294,7 @@
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
+    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">2879</span>
 }</code></pre>
               </div>
             </div>
@@ -343,7 +343,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://api-test.ambexapi.com/api/v1/l/c", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "http://54.254.46.163:8080", // กำหนดค่าเริ่มต้นของ agentUsername
       // playerApiId: "",
       // playerApiUsername: "",
       // playerUsername: "",
@@ -356,9 +356,9 @@ export default {
       service: "GetUserBalance",
       data: {
         playerApiId:
-          "21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f",
-        playerApiUsername: "testa0alottoviptest2@comptestseamless",
-        playerUsername: "testa0alottoviptest2",
+          "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
+        playerApiUsername: "member1@handsome",
+        playerUsername: "member1",
       },
     };
 

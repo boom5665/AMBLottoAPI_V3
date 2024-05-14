@@ -106,8 +106,8 @@
                                         <code id="351A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"service"</span>: <span class="hljs-string">"GetUserDetail"</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"comptestseamless"</span>,
-        <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"top1betvip"</span>
+        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
+        <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"handsome"</span>
     }
 }</code></pre>
         </copy-text>
@@ -146,11 +146,8 @@
                                         <code id="351A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;     width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"username"</span>: <span class="hljs-string">"testa0aagentthbmb01"</span>,
-        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"0xxxxxxxx"</span>,
-        <span class="hljs-attr">"Username"</span>: <span class="hljs-string">"xxxx@gmail.com"</span>,
-        <span class="hljs-attr">"line"</span>: <span class="hljs-string">"lineX"</span>,
-        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"THB"</span>,
+        <span class="hljs-attr">"username"</span>: <span class="hljs-string">"member1"</span>,
+        <span class="hljs-attr">"line"</span>: <span class="hljs-string">""</span>,
         <span class="hljs-attr">"rate"</span>: {
             <span class="hljs-attr">"baaclotto"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
@@ -1929,10 +1926,7 @@
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"username"</span>: <span class="hljs-string">"{{username}}"</span>,
-        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"{{phone}}"</span>,
-        <span class="hljs-attr">"Username"</span>: <span class="hljs-string">"{{Username}}"</span>,
         <span class="hljs-attr">"line"</span>: <span class="hljs-string">"{{line}}"</span>,
-        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"{{currency}}"</span>,
         <span class="hljs-attr">"rate"</span>: {
             <span class="hljs-attr">"baaclotto"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
@@ -2768,7 +2762,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://api-test.ambexapi.com/api/v1/l/c", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "http://54.254.46.163:8080", // กำหนดค่าเริ่มต้นของ agentUsername
       username: "",
       phone: "",
       email: "",
@@ -2782,8 +2776,8 @@ export default {
     const json = {
       service: "GetUserDetail",
       data: {
-        playerUsername: "comptestseamless",
-        agentUsername: "top1betvip",
+        playerUsername: "member1",
+        agentUsername: "handsome",
       },
     };
 
