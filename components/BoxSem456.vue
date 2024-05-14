@@ -87,58 +87,58 @@
         <copy-text id="myDiv">
           <pre>
 <code id="356A" style="border-radius: 0.375rem;  height: 300px; overflow: scroll;" class="hljs json">{
-  <span class="hljs-attr">"service"</span>: <span class="hljs-number">"UserPlaceReToRunning"</span>,
+  <span class="hljs-attr">"service"</span>: <span class="hljs-string">"UserPlaceReToRunning"</span>,
   <span class="hljs-attr">"data"</span>: {
-      <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-number">"85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819"</span>,
-      <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-number">"member1@handsome"</span>,
-      <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-number">"member1"</span>,
-      <span class="hljs-attr">"ticketId"</span>: <span class="hljs-number">4208113</span>,
-      <span class="hljs-attr">"type"</span>: <span class="hljs-number">"stockgerman"</span>,
-      <span class="hljs-attr">"government"</span>: <span class="hljs-number">false</span>,
-      <span class="hljs-attr">"drawId"</span>: <span class="hljs-number">72140</span>,
-      <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-number">2</span>
+      <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819"</span>,
+      <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@handsome"</span>,
+      <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
+      <span class="hljs-attr">"ticketId"</span>: <span class="hljs-string">4208113</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"stockgerman"</span>,
+      <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
+      <span class="hljs-attr">"drawId"</span>: <span class="hljs-string">72140</span>,
+      <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-string">2</span>
       <span class="hljs-attr">"txtList"</span>: [
             {
-              <span class="hljs-attr">"agentPt"</span>: <span class="hljs-number">"0"</span>,
-              <span class="hljs-attr">"apiPt"</span>: <span class="hljs-number">"100"</span>,
-              <span class="hljs-attr">"betKey"</span>: <span class="hljs-number">"NDIwODExMy0x"</span>,
-              <span class="hljs-attr">"betId"</span>: <span class="hljs-number">"1"</span>,
-              <span class="hljs-attr">"betType"</span>: <span class="hljs-number">"top3"</span>,
-              <span class="hljs-attr">"betNumber"</span>: <span class="hljs-number">"198"</span>,
-              <span class="hljs-attr">"betStatus"</span>: <span class="hljs-number">"pending"</span>,
-              <span class="hljs-attr">"betAmt"</span>: <span class="hljs-number">1</span>,
-              <span class="hljs-attr">"betTotal"</span>: <span class="hljs-number">1</span>,
-              <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-number">900</span>,
-              <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-number">""</span>,
-              <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-number">0</span>
+              <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
+              <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
+              <span class="hljs-attr">"betKey"</span>: <span class="hljs-string">"NDIwODExMy0x"</span>,
+              <span class="hljs-attr">"betId"</span>: <span class="hljs-string">"1"</span>,
+              <span class="hljs-attr">"betType"</span>: <span class="hljs-string">"top3"</span>,
+              <span class="hljs-attr">"betNumber"</span>: <span class="hljs-string">"198"</span>,
+              <span class="hljs-attr">"betStatus"</span>: <span class="hljs-string">"pending"</span>,
+              <span class="hljs-attr">"betAmt"</span>: <span class="hljs-string">1</span>,
+              <span class="hljs-attr">"betTotal"</span>: <span class="hljs-string">1</span>,
+              <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-string">900</span>,
+              <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
+              <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
             },
             {
-              <span class="hljs-attr">"agentPt"</span>: <span class="hljs-number">"0"</span>,
-              <span class="hljs-attr">"apiPt"</span>: <span class="hljs-number">"100"</span>,
-              <span class="hljs-attr">"betKey"</span>: <span class="hljs-number">"NDIwODExMy0y"</span>,
-              <span class="hljs-attr">"betId"</span>: <span class="hljs-number">"2"</span>,
-              <span class="hljs-attr">"betType"</span>: <span class="hljs-number">"top3"</span>,
-              <span class="hljs-attr">"betNumber"</span>: <span class="hljs-number">"983"</span>,
-              <span class="hljs-attr">"betStatus"</span>: <span class="hljs-number">"pending"</span>,
-              <span class="hljs-attr">"betAmt"</span>: <span class="hljs-number">1</span>,
-              <span class="hljs-attr">"betTotal"</span>: <span class="hljs-number">1</span>,
-              <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-number">900</span>,
-              <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-number">""</span>,
-              <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-number">0</span>
+              <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
+              <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
+              <span class="hljs-attr">"betKey"</span>: <span class="hljs-string">"NDIwODExMy0y"</span>,
+              <span class="hljs-attr">"betId"</span>: <span class="hljs-string">"2"</span>,
+              <span class="hljs-attr">"betType"</span>: <span class="hljs-string">"top3"</span>,
+              <span class="hljs-attr">"betNumber"</span>: <span class="hljs-string">"983"</span>,
+              <span class="hljs-attr">"betStatus"</span>: <span class="hljs-string">"pending"</span>,
+              <span class="hljs-attr">"betAmt"</span>: <span class="hljs-string">1</span>,
+              <span class="hljs-attr">"betTotal"</span>: <span class="hljs-string">1</span>,
+              <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-string">900</span>,
+              <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
+              <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
+              <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
             }
         ],
-      <span class="hljs-attr">"status"</span>: <span class="hljs-number">"pending"</span>,
-      <span class="hljs-attr">"createDate"</span>: <span class="hljs-number">"2024-05-10 16:49:40"</span>,
-      <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-number">"2024-05-10 05:00:00"</span>,
-      <span class="hljs-attr">"currency"</span>: <span class="hljs-number">"thb"</span>,
-      <span class="hljs-attr">"drawExpire"</span>: <span class="hljs-number">"2024-05-10 22:00:00"</span>,
-      <span class="hljs-attr">"totalPayOutAmt"</span>: <span class="hljs-number"> 0</span>
+      <span class="hljs-attr">"status"</span>: <span class="hljs-string">"pending"</span>,
+      <span class="hljs-attr">"createDate"</span>: <span class="hljs-string">"2024-05-10 16:49:40"</span>,
+      <span class="hljs-attr">"DrawOpen"</span>: <span class="hljs-string">"2024-05-10 05:00:00"</span>,
+      <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"thb"</span>,
+      <span class="hljs-attr">"drawExpire"</span>: <span class="hljs-string">"2024-05-10 22:00:00"</span>,
+      <span class="hljs-attr">"totalPayOutAmt"</span>: <span class="hljs-string"> 0</span>
     }
 }</code></pre>
         </copy-text>
@@ -172,7 +172,7 @@
             "
           ></div>
           <pre><code id="352B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>
 }</code></pre>
         </div>
         <!-- // -->
@@ -269,25 +269,25 @@
         <span class="hljs-attr">"ticketId"</span>: <span class="hljs-string">40864</span>,
         <span class="hljs-attr">"type"</span>: <span class="hljs-string">"pingponglotto6"</span>,
         <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
-        <span class="hljs-attr">"drawId"</span>: <span class="hljs-number">37187</span>,
-        <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-number">1243</span>,
+        <span class="hljs-attr">"drawId"</span>: <span class="hljs-string">37187</span>,
+        <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-string">1243</span>,
         <span class="hljs-attr">"txtList"</span>: [
             {
                 <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"95"</span>,
-                <span class="hljs-attr">"apiPt"</span>: <span class="hljs-number">"5"</span>,
+                <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"5"</span>,
                 <span class="hljs-attr">"betKey"</span>: <span class="hljs-string">"NDA4NjQtMQ=="</span>,
-                <span class="hljs-attr">"betId"</span>: <span class="hljs-number">"1"</span>,
-                <span class="hljs-attr">"betType"</span>: <span class="hljs-number">"top6"</span>,
+                <span class="hljs-attr">"betId"</span>: <span class="hljs-string">"1"</span>,
+                <span class="hljs-attr">"betType"</span>: <span class="hljs-string">"top6"</span>,
                 <span class="hljs-attr">"betNumber"</span>: <span class="hljs-string">"789000"</span>,
-                <span class="hljs-attr">"betStatus"</span>: <span class="hljs-number">"pending"</span>,
-                <span class="hljs-attr">"betAmt"</span>: <span class="hljs-number">733</span>,
-                <span class="hljs-attr">"betTotal"</span>: <span class="hljs-number">733</span>,
+                <span class="hljs-attr">"betStatus"</span>: <span class="hljs-string">"pending"</span>,
+                <span class="hljs-attr">"betAmt"</span>: <span class="hljs-string">733</span>,
+                <span class="hljs-attr">"betTotal"</span>: <span class="hljs-string">733</span>,
                 <span class="hljs-attr">"betDiscount"</span>: <span class="hljs-string">0</span>,
-                <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-number">50000</span>,
-                <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-number">0</span>,
-                <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-number">0</span>,
-                <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-number">""</span>,
-                <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-number">0</span>
+                <span class="hljs-attr">"payOutRate"</span>: <span class="hljs-string">50000</span>,
+                <span class="hljs-attr">"rateLevel"</span>: <span class="hljs-string">0</span>,
+                <span class="hljs-attr">"rateLevelAmount"</span>: <span class="hljs-string">0</span>,
+                <span class="hljs-attr">"betResultKey"</span>: <span class="hljs-string">""</span>,
+                <span class="hljs-attr">"payOutAmt"</span>: <span class="hljs-string">0</span>
             }
         ],
         <span class="hljs-attr">"status"</span>: <span class="hljs-string">"pending"</span>,
@@ -354,7 +354,7 @@
                 "
               ></div>
               <pre><code id="352B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>
 }</code></pre>
             </div> -->
             <!-- // -->
@@ -389,7 +389,7 @@
                   "
                 ></div>
                 <pre><code id="352B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>
 }</code></pre>
               </div>
             </div>
@@ -399,7 +399,7 @@
                 <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">{{numfail}}</span>,
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">{{numfail}}</span>,
         <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">{{ nosuccess }}</span>
 }</code></pre>
               </div>
@@ -409,7 +409,7 @@
                 <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">{{numfail}}</span>,
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">{{numfail}}</span>,
         <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">{{ permission }}</span>
 }</code></pre>
               </div>
