@@ -316,7 +316,7 @@
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
                 >
-                  Your Response
+                  Your Service Response Code
                 </b>
                 <i
                   class="fa fa-chevron-down"
