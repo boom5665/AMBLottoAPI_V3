@@ -98,8 +98,8 @@
     <span class="hljs-attr">"type"</span>: <span class="hljs-string">"stockengland"</span>,
     <span class="hljs-attr">"government"</span>: <span class="hljs-string">false</span>,
     <span class="hljs-attr">"drawId"</span>: <span class="hljs-string">71890</span>,
-    <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-string">-1</span>
-    <span class="hljs-attr">"txtList"</span>: [
+    <span class="hljs-attr">"totalBetAmt"</span>: <span class="hljs-string">-1</span>,
+    <span class="hljs-attr">"txtList":</span> [
             {
             <span class="hljs-attr">"agentPt"</span>: <span class="hljs-string">"0"</span>,
             <span class="hljs-attr">"apiPt"</span>: <span class="hljs-string">"100"</span>,
