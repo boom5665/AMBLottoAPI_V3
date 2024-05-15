@@ -102,31 +102,31 @@
         </copy-text>
       </div>
 
-                <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="koh-faq-answer col-12">
+          <pre>
 
                                         <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
 }</code></pre>
-            </div>
-            <!-- // -->
-          </div>
+        </div>
+        <!-- // -->
+      </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -219,40 +219,13 @@
 }</code></pre>
             </div> -->
             <!-- // -->
-                      <div class="koh-faq-question form-group ex">
-            <div class="Point">
-              <b
-                style="color: #19a17a !important"
-                set-lan="text:Example Request Body"
-              >
-                Your Request Body
-              </b>
-              <i
-                class="fa fa-chevron-down"
-                aria-hidden="true"
-                style="margin-left: 2%; font-size: 1rem"
-              ></i>
-            </div>
-          </div>
-          <div class="koh-faq-answer col-12">
-            <code>
-              <textarea
-                v-model="jsonData"
-                rows="10"
-                cols="50"
-                class="custom-textarea"
-              >
-              </textarea>
-            </code>
-          </div>
-          </div>
-          <div>
-            <!-- <div class="koh-faq-question form-group ex">
+            <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
                   style="color: #19a17a !important"
                   set-lan="text:Example Request Body"
-                  >Example Service Response Code
+                >
+                  Your Request Body
                 </b>
                 <i
                   class="fa fa-chevron-down"
@@ -262,14 +235,19 @@
               </div>
             </div>
             <div class="koh-faq-answer col-12">
-              <pre>
+              <code>
+                <textarea
+                  v-model="jsonData"
+                  rows="10"
+                  cols="50"
+                  class="custom-textarea"
+                >
+                </textarea>
+              </code>
+            </div>
+          </div>
+          <div>
 
-                                        <code id="351B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">880</span>
-}</code></pre>
-            </div> -->
-            <!-- // -->
           </div>
 
           <div>
@@ -336,33 +314,35 @@ export default {
   name: "",
   data() {
     return {
-      success: "",
-      nosuccess: "",
-      permission: "",
-      numfail: "",
-      isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-      pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
-      jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "http://54.254.46.163:8080", // กำหนดค่าเริ่มต้นของ agentUsername
-      // playerApiId: "",
-      // playerApiUsername: "",
-      // playerUsername: "",
+      jsonData: '',
+      URLdata: 'https://handsome.pirate168.com/',  // ใช้ /api/ ใน path ของ URL
+      isLoading: false,
+      pop: false,
+      response: null,
+      success: '',
+      code: null,
+      numfail: null,
+      msg: '',
+      playerApiId: '',
+      playerApiUsername: '',
+      playerUsername: '',
+      url: '',
+      urlFullPage: '',
+      tkUuid: '',
+      permission: '',
+      nosuccess: ''
     };
   },
   beforeCreate() {},
   mounted() {
-    // this.get_Seamless();
     const json = {
       service: "GetUserBalance",
       data: {
-        playerApiId:
-          "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
+        playerApiId: "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
         playerApiUsername: "member1@handsome",
         playerUsername: "member1",
       },
     };
-
-    // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
     this.jsonData = JSON.stringify(json, null, 2);
   },
   watch: {
@@ -372,222 +352,97 @@ export default {
         this.jsonData = formattedJson;
       } catch (error) {
         console.error("Invalid JSON format:", error);
-        // ดำเนินการต่อไปตามที่ต้องการ เช่น แสดงข้อความแจ้งเตือนหรือดำเนินการอื่น ๆ
       }
     },
   },
   methods: {
-    // get_Seamless() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     service: "UserPlaceReToRunning",
-    //     data: {
-    //       playerApiId:
-    //         "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
-    //       playerApiUsername: "testa0aagentthbmb01@comptestseamless",
-    //       playerUsername: "testa0aagentthbmb01",
-    //       // playerApiId: this.playerApiId,
-    //       // playerApiUsername: this.playerApiUsername,
-    //       // playerUsername: this.playerUsername,
-    //       ticketId: 40864,
-    //       type: "pingponglotto6",
-    //       government: false,
-    //       drawId: 37187,
-    //       totalBetAmt: 1243,
-    //       txtList: [
-    //         {
-    //           agentPt: "95",
-    //           apiPt: "5",
-    //           betKey: "NDA4NjQtMQ==",
-    //           betId: "1",
-    //           betType: "top6",
-    //           betNumber: "789000",
-    //           betStatus: "pending",
-    //           betAmt: 733,
-    //           betTotal: 733,
-    //           betDiscount: 0,
-    //           payOutRate: 50000,
-    //           rateLevel: 0,
-    //           rateLevelAmount: 0,
-    //           betResultKey: "",
-    //           payOutAmt: 0,
-    //         },
-    //       ],
-    //       status: "pending",
-    //       createDate: "2023-10-07 17:18:42",
-    //       DrawOpen: "2023-10-07 17:00:00",
-    //       currency: "thb",
-    //       drawExpire: "2023-10-07 17:30:00",
-    //       totalPayOutAmt: 0,
-    //     },
-    //   };
-    //   // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
-    get_Seamless() {
+    async get_Seamless() {
       alert("Send code clicked!");
-      if (this.jsonData) {
+      if (this.jsonData && this.URLdata) {
+
         this.isLoading = true;
         this.pop = true;
-        this.isLoading = true;
         try {
           const dataToSend = JSON.parse(this.jsonData);
-          const URL = this.URLdata;
-          console.log("URL", URL);
-          // เรียกใช้ axios หรือวิธีการส่งข้อมูลไปยังเซิร์ฟเวอร์ที่คุณใช้งาน
-          // ตัวอย่าง:
-
-          this.$axios
-            .post(URL, dataToSend)
-            .then((response) => {
-              // ตอบกลับจากเซิร์ฟเวอร์
-              this.response = response.data;
-              console.log("Sending JSON serv:", this.response);
-              if (this.response.code === 0 || this.response.code === 200) {
-                this.success = "Successful operation.";
-                this.code = this.response.code;
-                this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
-                this.msg = this.response.msg;
-                this.playerApiId = this.response.data.playerApiId;
-                this.playerApiUsername = this.response.data.playerApiUsername;
-                this.playerUsername = this.response.data.playerUsername;
-                this.url = this.response.data.url;
-                this.urlFullPage = this.response.data.urlFullPage;
-                this.tkUuid = this.response.data.tkUuid;
-                this.code = this.response.code;
-                this.numfail = this.code;
-              } else if (this.response.code === 403) {
+          console.log("URL", this.URLdata);
+          // const response = await this.$axios.post(this.URLdata, dataToSend);
+          const response = await this.$axios.get(this.URLdata,{ mode: 'no-cors' }, dataToSend);
+          this.response = response.data;
+          console.log("Sending JSON serv:", this.response);
+          switch (this.response.code) {
+            case 0:
+            case 200:
+              this.success = "Successful operation.";
+              this.numfail = this.response.code;
+              this.msg = this.response.msg;
+              this.playerApiId = this.response.data.playerApiId;
+              this.playerApiUsername = this.response.data.playerApiUsername;
+              this.playerUsername = this.response.data.playerUsername;
+              this.url = this.response.data.url;
+              this.urlFullPage = this.response.data.urlFullPage;
+              this.tkUuid = this.response.data.tkUuid;
+              break;
+            case 403:
+              this.permission = "Permission denied.";
+              this.numfail = "403";
+              break;
+            case 401:
+              this.permission = "Authentication Failed.";
+              this.numfail = "401";
+              break;
+            case 404:
+              this.permission = "Not Found.";
+              this.numfail = "404";
+              break;
+            case 405:
+              this.permission = "Method Not Allowed.";
+              this.numfail = "405";
+              break;
+            case 500:
+              this.permission = "Server error.";
+              this.numfail = "500";
+              break;
+            default:
+              this.nosuccess = "Bad Request.";
+              this.numfail = "400";
+          }
+        } catch (error) {
+          console.log(error);
+          if (error.response) {
+            const statusCode = error.response.status;
+            switch (statusCode) {
+              case 403:
                 this.permission = "Permission denied.";
                 this.numfail = "403";
-              } else if (this.response.code === 401) {
-                this.numfail = "401";
+                break;
+              case 401:
                 this.permission = "Authentication Failed.";
-              } else if (this.response.code === 404) {
+                this.numfail = "401";
+                break;
+              case 404:
                 this.permission = "Not Found.";
                 this.numfail = "404";
-              } else if (this.response.code === 405) {
+                break;
+              case 405:
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-              } else if (this.response.code === 500) {
+                break;
+              case 500:
                 this.permission = "Server error.";
                 this.numfail = "500";
-              } else {
+                break;
+              default:
                 this.nosuccess = "Bad Request.";
                 this.numfail = "400";
-              }
-              this.isLoading = false;
-            })
-            .catch((error) => {
-              // จัดการข้อผิดพลาด
-              console.log(error);
-              if (error.response) {
-                const statusCode = error.response.status;
-                switch (statusCode) {
-                  case 403:
-                    this.permission = "Permission denied.";
-                    this.numfail = "403";
-                    break;
-                  case 401:
-                    this.numfail = "401";
-                    this.permission = "Authentication Failed.";
-                    break;
-                  case 404:
-                    this.permission = "Not Found.";
-                    this.numfail = "404";
-                    break;
-                  case 405:
-                    this.permission = "Method Not Allowed.";
-                    this.numfail = "405";
-                    break;
-                  case 500:
-                    this.permission = "Server error.";
-                    this.numfail = "500";
-                    break;
-                  default:
-                    this.nosuccess = "Bad Request.";
-                    this.numfail = "400";
-                }
-              } else {
-                this.nosuccess = "Bad Request.";
-                this.numfail = "400";
-              }
-              this.isLoading = false;
-            });
-        } catch (error) {
-          // กรณีที่ข้อมูล JSON ไม่ถูกต้อง
-          console.error("Invalid JSON format:", error);
-          alert("กรุณากรอกข้อมูล JSON ที่ถูกต้อง");
-          this.pop = false;
+            }
+          } else {
+            this.nosuccess = "Bad Request.";
+            this.numfail = "400";
+          }
+        } finally {
           this.isLoading = false;
         }
-        // สำหรับเนื้อหาทดสอบ
-        // console.log("Sending JSON data:", dataToSend);
-      } else if (this.URLdata) {
+      } else if (!this.URLdata) {
         alert("กรุณากรอก URL ที่นี่");
         this.pop = false;
       } else {
@@ -597,4 +452,5 @@ export default {
     },
   },
 };
+
 </script>
