@@ -246,9 +246,7 @@
               </code>
             </div>
           </div>
-          <div>
-
-          </div>
+          <div></div>
 
           <div>
             <div class="koh-faq-question form-group ex">
@@ -314,23 +312,23 @@ export default {
   name: "",
   data() {
     return {
-      jsonData: '',
-      URLdata: 'https://handsome.pirate168.com/',  // ใช้ /api/ ใน path ของ URL
+      jsonData: "",
+      URLdata: "https://handsome.pirate168.com/", // ใช้ /api/ ใน path ของ URL
       isLoading: false,
       pop: false,
       response: null,
-      success: '',
+      success: "",
       code: null,
       numfail: null,
-      msg: '',
-      playerApiId: '',
-      playerApiUsername: '',
-      playerUsername: '',
-      url: '',
-      urlFullPage: '',
-      tkUuid: '',
-      permission: '',
-      nosuccess: ''
+      msg: "",
+      playerApiId: "",
+      playerApiUsername: "",
+      playerUsername: "",
+      url: "",
+      urlFullPage: "",
+      tkUuid: "",
+      permission: "",
+      nosuccess: "",
     };
   },
   beforeCreate() {},
@@ -338,7 +336,8 @@ export default {
     const json = {
       service: "GetUserBalance",
       data: {
-        playerApiId: "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
+        playerApiId:
+          "85e6041148d44880338d625674a51c4ea0afce5108c28590ae2ef62bb265d819",
         playerApiUsername: "member1@handsome",
         playerUsername: "member1",
       },
@@ -359,7 +358,6 @@ export default {
     async get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData && this.URLdata) {
-
         this.isLoading = true;
         this.pop = true;
         try {
@@ -402,6 +400,10 @@ export default {
               this.permission = "Server error.";
               this.numfail = "500";
               break;
+            case 999:
+              this.permission = "Out of service.";
+              this.numfail = "999";
+              break;
             default:
               this.nosuccess = "Bad Request.";
               this.numfail = "400";
@@ -431,6 +433,10 @@ export default {
                 this.permission = "Server error.";
                 this.numfail = "500";
                 break;
+              case 999:
+                this.permission = "Out of service.";
+                this.numfail = "999";
+                break;
               default:
                 this.nosuccess = "Bad Request.";
                 this.numfail = "400";
@@ -452,5 +458,4 @@ export default {
     },
   },
 };
-
 </script>

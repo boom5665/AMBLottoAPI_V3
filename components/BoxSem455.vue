@@ -969,9 +969,15 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-              } else if (this.response.code === 500) {
+                            } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 999) {
+                this.permission = "Server error.";
+                this.numfail = "999";
+              } else if (this.response.code === 999) {
+                this.permission = "Server error.";
+                this.numfail = "999";
               } else {
                 this.nosuccess = "Bad Request.";
                 this.numfail = "400";
@@ -1000,7 +1006,15 @@ export default {
                     this.permission = "Method Not Allowed.";
                     this.numfail = "405";
                     break;
-                  case 500:
+                                    case 500:
+                    this.permission = "Server error.";
+                    this.numfail = "500";
+                    break;
+case 999:
+                    this.permission = "Server error.";
+                    this.numfail = "999";
+                    break;
+                  case 999:
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
