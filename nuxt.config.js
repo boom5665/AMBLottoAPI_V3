@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   serverMiddleware: [
-    // { path: '/api', handler: '~/middleware/cors.js' }, // เรียกใช้ middleware เฉพาะในเส้นทาง '/api'
+    { path: '/api', handler: '~/middleware/cors.js' }, // เรียกใช้ middleware เฉพาะในเส้นทาง '/api'
     // '~/middleware/https-redirect.js'
   ],
   //   vite: {

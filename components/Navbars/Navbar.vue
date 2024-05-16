@@ -183,7 +183,7 @@
                     <span>4.6 ListPlaceout </span>
                   </li>
                 </Nuxt-link> -->
-                <Nuxt-link class="text-nav" to="/Seamless47">
+                <!-- <Nuxt-link class="text-nav" to="/Seamless47">
                   <li>
                     <span style="word-break: break-all"
                       >4.6 ListHotnumberandLimitnumber
@@ -194,7 +194,7 @@
                   <li>
                     <span>4.7 Detail </span>
                   </li>
-                </Nuxt-link>
+                </Nuxt-link> -->
               </ul>
             </div>
           </div>
