@@ -365,8 +365,8 @@ export default {
         try {
           const dataToSend = JSON.parse(this.jsonData);
           console.log("URL", this.URLdata);
-          // const response = await this.$axios.post(this.URLdata, dataToSend);
-          const response = await this.$axios.get(this.URLdata,{ mode: 'no-cors' }, dataToSend);
+          const response = await this.$axios.post(this.URLdata, dataToSend);
+          // const response = await this.$axios.get(this.URLdata,{ mode: 'no-cors' }, dataToSend);
           this.response = response.data;
           console.log("Sending JSON serv:", this.response);
           switch (this.response.code) {

@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   serverMiddleware: [
-    // { path: '/api', handler: '~/middleware/cors.js' }, // เรียกใช้ middleware เฉพาะในเส้นทาง '/api'
+    { path: '/api', handler: '~/middleware/cors.js' }, // เรียกใช้ middleware เฉพาะในเส้นทาง '/api'
     // '~/middleware/https-redirect.js'
   ],
   //   vite: {
@@ -61,6 +61,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     "@nuxtjs/axios",
+    // '@nuxtjs/dotenv',
     '@nuxtjs/proxy'
     // 'vue-clipboard2/nuxt',
   ],
@@ -68,6 +69,7 @@ export default {
   axios: {
     proxy: true,
     // baseURL: '/' // ใช้ proxy โดยไม่ต้องมี '/api/'
+    // baseURL: process.env.CORS_PROXY + process.env.API_URL,
   },
   proxy: {
     '/api/': { target: 'https://handsome.pirate168.com/', pathRewrite: { '^/api/': '' }, changeOrigin: true }
