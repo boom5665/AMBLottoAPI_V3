@@ -3375,9 +3375,12 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                            } else if (this.response.code === 500) {
+                                         } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 503) {
+                this.permission = "Server error.";
+                this.numfail = "503";
               } else if (this.response.code === 999) {
                 this.permission = "Server error.";
                 this.numfail = "999";
@@ -3413,6 +3416,9 @@ export default {
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
+                  case 503:
+                    this.permission = "Server error.";
+                    this.numfail = "503";
 case 999:
                     this.permission = "Server error.";
                     this.numfail = "999";

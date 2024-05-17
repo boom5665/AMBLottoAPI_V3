@@ -211,8 +211,9 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-
-          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close"
+            >X</a
+          >
 
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
@@ -339,7 +340,6 @@ export default {
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "https://test-api.askmelotto.com/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
-
     };
   },
   beforeCreate() {},
@@ -366,28 +366,28 @@ export default {
     },
   },
   methods: {
-      closeAndClear() {
+    closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = 'https://test-api.askmelotto.com/apiRoute/member/loginRequest';
+      this.URLdata =
+        "https://test-api.askmelotto.com/apiRoute/member/loginRequest";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
-      this.success = '';
+      this.success = "";
       this.code = null;
       this.numfail = null;
-      this.msg = '';
-      this.playerApiId = '';
-      this.playerApiUsername = '';
-      this.playerUsername = '';
-      this.url = '';
-      this.urlFullPage = '';
-      this.tkUuid = '';
-      this.permission = '';
-      this.nosuccess = '';
+      this.msg = "";
+      this.playerApiId = "";
+      this.playerApiUsername = "";
+      this.playerUsername = "";
+      this.url = "";
+      this.urlFullPage = "";
+      this.tkUuid = "";
+      this.permission = "";
+      this.nosuccess = "";
     },
     get_Seamless() {
-
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;
@@ -434,6 +434,9 @@ export default {
               } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 503) {
+                this.permission = "Server error.";
+                this.numfail = "503";
               } else if (this.response.code === 999) {
                 this.permission = "Server error.";
                 this.numfail = "999";
@@ -468,6 +471,10 @@ export default {
                   case 500:
                     this.permission = "Server error.";
                     this.numfail = "500";
+                    break;
+                  case 503:
+                    this.permission = "Server error.";
+                    this.numfail = "503";
                     break;
                   case 999:
                     this.permission = "Server error.";
