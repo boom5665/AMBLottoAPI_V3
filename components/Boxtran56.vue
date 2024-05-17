@@ -212,7 +212,7 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -430,87 +430,27 @@ export default {
     },
   },
   methods: {
-    // get_Transfer() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     agentUsername: "agentapi",
-    //     agentApiKey:
-    //       "18c089a2e49dfc1776b6abc2ea3ee909d43b10bc37dfd7195a7265da82f8b4a983a1ebf3",
-    //     playerUsername: "testuserapi001",
-    //     // agentUsername: "top1betvip", // กำหนดค่าเริ่มต้นของ agentUsername
-    //     // agentApiKey:
-    //     //   "95b1b602d7d4929e48593af7d96fbe79c615a10b91a9411423c5ca04ae073d11", // กำหนดค่าเริ่มต้นของ agentApiKey
-    //     // playerUsername: "AALFLFLFLF000005", // กำหนดค่าเริ่มต้นของ playerUsername
-    //     balance: 100,
-    //     transId: "25f0c27dbea3f3261f2cd66126761251s2712676121657",
-    //   };
-    //   const URL = "https://test-api.askmelotto.com/apiRoute/api/deposit";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
+          closeAndClear() {
+      // รีเซ็ตค่าตัวแปรต่างๆ ใน component
+      // this.jsonData = '';
+      this.URLdata = 'https://handsome.pirate168.com/';
+      this.isLoading = false;
+      this.pop = false;
+      this.response = null;
+      this.success = '';
+      this.code = null;
+      this.numfail = null;
+      this.msg = '';
+      this.playerApiId = '';
+      this.playerApiUsername = '';
+      this.playerUsername = '';
+      this.url = '';
+      this.urlFullPage = '';
+      this.tkUuid = '';
+      this.permission = '';
+      this.nosuccess = '';
+    },
+   
     get_Transfer() {
       alert("Send code clicked!");
       if (this.jsonData) {

@@ -114,25 +114,25 @@
           </copy-text>
         </div>
       </div>
-                <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="section">
-              <div class="slide">
-                <div class="koh-faq-answer col-12">
-                  <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="section">
+          <div class="slide">
+            <div class="koh-faq-answer col-12">
+              <pre>
 
                                         <code id="3_4B" style="border-radius: 0.375rem;width: 100% !important;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
@@ -146,10 +146,10 @@
     },
     <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
 }</code></pre>
-                </div>
-              </div>
             </div>
           </div>
+        </div>
+      </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -211,39 +211,12 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" title="Close" class="close">X</a>
+
+          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
+
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
-
-          <!-- <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Request Body</b
-                >
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div>
-              <div class="koh-faq-answer col-12 test">
-                <pre>
-
-                                        <code id="3_4A" style="border-radius: 0.375rem;width: 100% !important;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"sportbookv2"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"29d09af218b716963c79a0d58c20d5e47211f65e456af68ee81687af4fa50fba"</span>,
-    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>
-}</code></pre>
-              </div>
-            </div>
-          </div> -->
-
 
           <div class="koh-faq-question form-group ex">
             <div class="Point">
@@ -271,43 +244,6 @@
               </textarea>
             </code>
           </div>
-
-          <!-- <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="section">
-              <div class="slide">
-                <div class="koh-faq-answer col-12">
-                  <pre>
-
-                                        <code id="3_4B" style="border-radius: 0.375rem;width: 100% !important;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"4e4fbb4539fb0b7bd1d6b01a7f218cc08e7ed2e3ae953d40437a4015092fd3ea5ca691e85b6bc323b3e468e1dbfdd8ae"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong@sportbookv2"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptesttong"</span>,
-        <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>,
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTA0MTA4MzEsImlkIjoidGVzdGEwYWxvdHRvdmlwdGVzdHRvbmdAc3BvcnRib29rdjIiLCJyYW5kb20iOiJ5N0ZrcXV6Qkd0bVBsQXpjRVlaRjJRPT0ifQ.QP_u3DY-OjfaYGUQoiV7ontTedGdJqyf1gLQfdL1p7k"</span>
-    },
-    <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
-}</code></pre>
-                </div>
-              </div>
-            </div>
-          </div> -->
 
           <div>
             <div class="koh-faq-question form-group ex">
@@ -403,9 +339,7 @@ export default {
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata: "https://test-api.askmelotto.com/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
-      // agentApiKey:
-      //   "", // กำหนดค่าเริ่มต้นของ agentApiKey
-      // playerUsername: "", // กำหนดค่าเริ่มต้นของ playerUsername
+
     };
   },
   beforeCreate() {},
@@ -432,7 +366,28 @@ export default {
     },
   },
   methods: {
+      closeAndClear() {
+      // รีเซ็ตค่าตัวแปรต่างๆ ใน component
+      // this.jsonData = '';
+      this.URLdata = 'https://test-api.askmelotto.com/apiRoute/member/loginRequest';
+      this.isLoading = false;
+      this.pop = false;
+      this.response = null;
+      this.success = '';
+      this.code = null;
+      this.numfail = null;
+      this.msg = '';
+      this.playerApiId = '';
+      this.playerApiUsername = '';
+      this.playerUsername = '';
+      this.url = '';
+      this.urlFullPage = '';
+      this.tkUuid = '';
+      this.permission = '';
+      this.nosuccess = '';
+    },
     get_Seamless() {
+
       alert("Send code clicked!");
       if (this.jsonData) {
         this.isLoading = true;
@@ -476,7 +431,7 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                            } else if (this.response.code === 500) {
+              } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
               } else if (this.response.code === 999) {
@@ -510,11 +465,11 @@ export default {
                     this.permission = "Method Not Allowed.";
                     this.numfail = "405";
                     break;
-                                    case 500:
+                  case 500:
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
-case 999:
+                  case 999:
                     this.permission = "Server error.";
                     this.numfail = "999";
                     break;

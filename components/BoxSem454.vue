@@ -213,7 +213,7 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -459,117 +459,27 @@ export default {
     },
   },
   methods: {
-    //     get_Seamless() {
-    //             alert("Send code clicked!");
-    //       this.isLoading = true;
-    //       this.pop = true;
-    //       var senduser = {
-    //         service: "UserPlaceBetCancel",
-    //         data: {
-    //           playerApiId:
-    //             "4e4fbb4539fb0b7bd1d6b01a7f218cc0c311466f40bade45189b24a3efa3e6ba5ef2d47ee85eb2cffa48379b4fa017c6",
-    //           playerApiUsername: "testa0alottoviptestcarl@comptestseamless",
-    //           playerUsername: "testa0alottoviptestcarl",
-    //            // playerApiId: this.playerApiId,
-    //           // playerApiUsername: this.playerApiUsername,
-    //           // playerUsername: this.playerUsername,
-    //           ticketId: 53000,
-    //           type: "thailotto",
-    //           government: false,
-    //           drawId: 44170,
-    //           totalBetAmt: -10000,
-    //           txtList: [
-    //             {
-    //               agentPt: "95",
-    //               apiPt: "5",
-    //               betKey: "NTMwMDAtMQ==",
-    //               betId: "1",
-    //               betType: "bottom2",
-    //               betNumber: "10",
-    //               betStatus: "pending",
-    //               betAmt: 10000,
-    //               betTotal: 10000,
-    //               betDiscount: 0,
-    //               payOutRate: 90,
-    //               rateLevel: 0,
-    //               rateLevelAmount: 0,
-    //               betResultKey: "",
-    //               payOutAmt: 0,
-    //             },
-    //           ],
-    //           status: "cancel",
-    //           createDate: "2023-11-11 15:16:44",
-    //           currency: "thb",
-    //           DrawOpen: "2023-11-09 01:00:00",
-    //           drawExpire: "2023-11-19 15:25:00",
-    //         },
-    //       };
-    //       // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-    //       const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-    //       this.$axios
-    //         .$post(URL, senduser)
-    //         .then((response) => {
-    //           console.log(response);
-    //           if (response.code === 0 || response.code === 200) {
-    //                         this.success = "Successful operation.";
-    //             this.code = response.code;
-    //             this.numfail = this.code;
-    //                    } else if (response.code === 403) {
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //           } else if (response.code === 401) {
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //           } else if (response.code === 404) {
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //           } else if (response.code === 405) {
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //           } else if (response.code === 500) {
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //           } else {
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //           }
-    //           this.isLoading = false;
-    //         })
-    // .catch((error) => {
-    //           if (error.response) {
-    //             const statusCode = error.response.status;
-    //             switch (statusCode) {
-    //               case 403:
-    //                 this.permission = "Permission denied.";
-    //                 this.numfail = "403";
-    //                 break;
-    //               case 401:
-    //                 this.numfail = "401";
-    //                 this.permission = "Authentication Failed.";
-    //                 break;
-    //               case 404:
-    //                 this.permission = "Not Found.";
-    //                 this.numfail = "404";
-    //                 break;
-    //               case 405:
-    //                 this.permission = "Method Not Allowed.";
-    //                 this.numfail = "405";
-    //                 break;
-    //               case 500:
-    //                 this.permission = "Server error.";
-    //                 this.numfail = "500";
-    //                 break;
-    //               default:
-    //                 this.nosuccess = "Bad Request.";
-    //                 this.numfail = "400";
-    //             }
-    //           } else {
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //           }
-    //           this.isLoading = false;
-    //         });
-    //     },
+          closeAndClear() {
+      // รีเซ็ตค่าตัวแปรต่างๆ ใน component
+      // this.jsonData = '';
+      this.URLdata = 'https://handsome.pirate168.com/';
+      this.isLoading = false;
+      this.pop = false;
+      this.response = null;
+      this.success = '';
+      this.code = null;
+      this.numfail = null;
+      this.msg = '';
+      this.playerApiId = '';
+      this.playerApiUsername = '';
+      this.playerUsername = '';
+      this.url = '';
+      this.urlFullPage = '';
+      this.tkUuid = '';
+      this.permission = '';
+      this.nosuccess = '';
+    },
+  
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {

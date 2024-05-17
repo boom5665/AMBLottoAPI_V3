@@ -360,7 +360,9 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close"
+            >X</a
+          >
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -745,136 +747,27 @@ export default {
     },
   },
   methods: {
-    // get_Seamless() {
-    //   alert("Send code clicked!");
-    //   this.isLoading = true;
-    //   this.pop = true;
-    //   var senduser = {
-    //     service: "UserPlaceBet",
-    //     data: {
-    //       playerApiId:
-    //         "281199a5837d34ce72dcc86c0e14bc26b9362d63b0f49173a3b977d0dfe2adfd",
-    //       playerApiUsername: "testa0aagentthbmb01@comptestseamless",
-    //       playerUsername: "testa0aagentthbmb01",
-    //       // playerApiId: this.playerApiId,
-    //       // playerApiUsername: this.playerApiUsername,
-    //       // playerUsername: this.playerUsername,
-    //       ticketId: "39781",
-    //       type: "yeekeelotto",
-    //       government: false,
-    //       drawId: 36160,
-    //       totalBetAmt: -49.00000000000001,
-    //       drawName: "Yeekee Lotto",
-    //       drawExpire: "2023-10-03 15:14:00",
-    //       txtList: [
-    //         {
-    //           agentPt: "0",
-    //           apiPt: "100",
-    //           betKey: "Mzk3ODEtMQ==",
-    //           betId: "1",
-    //           betType: "top2",
-    //           betNumber: "12",
-    //           betStatus: "pending",
-    //           betAmt: 5,
-    //           betTotal: 4.95,
-    //           betDiscount: 0.05,
-    //           payOutRate: 90,
-    //           rateLevel: 0,
-    //           rateLevelAmount: 0,
-    //           betResultKey: " ",
-    //           payOutAmt: 0,
-    //         },
-    //         {
-    //           agentPt: "0",
-    //           apiPt: "100",
-    //           betKey: "Mzk3ODEtMQ==",
-    //           betId: "2",
-    //           betType: "bottom2",
-    //           betNumber: "12",
-    //           betStatus: "pending",
-    //           betAmt: 5,
-    //           betTotal: 5,
-    //           betDiscount: 0,
-    //           payOutRate: 90,
-    //           rateLevel: 0,
-    //           rateLevelAmount: 0,
-    //           betResultKey: " ",
-    //           payOutAmt: 0,
-    //         },
-    //       ],
-    //       status: "pending",
-    //       createDate: "2023-10-03 15:12:25",
-    //       ip: "8.213.194.49",
-    //       currency: "thb",
-    //       DrawOpen: "2023-10-03 05:00:00",
-    //     },
-    //   };
-    //   // const URL = "https://top1betvip.infosoft.click/api/latest/integration/lotto";
-    //   const URL = "https://api-test.ambexapi.com/api/v1/l/c";
-    //   this.$axios
-    //     .$post(URL, senduser)
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.code === 0 || response.code === 200) {
-    //         this.success = "Successful operation.";
-    //         this.code = response.code;
-    //         this.numfail = this.code;
-    //       } else if (response.code === 403) {
-    //         this.permission = "Permission denied.";
-    //         this.numfail = "403";
-    //       } else if (response.code === 401) {
-    //         this.numfail = "401";
-    //         this.permission = "Authentication Failed.";
-    //       } else if (response.code === 404) {
-    //         this.permission = "Not Found.";
-    //         this.numfail = "404";
-    //       } else if (response.code === 405) {
-    //         this.permission = "Method Not Allowed.";
-    //         this.numfail = "405";
-    //       } else if (response.code === 500) {
-    //         this.permission = "Server error.";
-    //         this.numfail = "500";
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     })
-    //     .catch((error) => {
-    //       if (error.response) {
-    //         const statusCode = error.response.status;
-    //         switch (statusCode) {
-    //           case 403:
-    //             this.permission = "Permission denied.";
-    //             this.numfail = "403";
-    //             break;
-    //           case 401:
-    //             this.numfail = "401";
-    //             this.permission = "Authentication Failed.";
-    //             break;
-    //           case 404:
-    //             this.permission = "Not Found.";
-    //             this.numfail = "404";
-    //             break;
-    //           case 405:
-    //             this.permission = "Method Not Allowed.";
-    //             this.numfail = "405";
-    //             break;
-    //           case 500:
-    //             this.permission = "Server error.";
-    //             this.numfail = "500";
-    //             break;
-    //           default:
-    //             this.nosuccess = "Bad Request.";
-    //             this.numfail = "400";
-    //         }
-    //       } else {
-    //         this.nosuccess = "Bad Request.";
-    //         this.numfail = "400";
-    //       }
-    //       this.isLoading = false;
-    //     });
-    // },
+    closeAndClear() {
+      // รีเซ็ตค่าตัวแปรต่างๆ ใน component
+      // this.jsonData = '';
+      this.URLdata = "https://handsome.pirate168.com/";
+      this.isLoading = false;
+      this.pop = false;
+      this.response = null;
+      this.success = "";
+      this.code = null;
+      this.numfail = null;
+      this.msg = "";
+      this.playerApiId = "";
+      this.playerApiUsername = "";
+      this.playerUsername = "";
+      this.url = "";
+      this.urlFullPage = "";
+      this.tkUuid = "";
+      this.permission = "";
+      this.nosuccess = "";
+    },
+ 
     get_Seamless() {
       alert("Send code clicked!");
       if (this.jsonData) {
@@ -919,7 +812,7 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                            } else if (this.response.code === 500) {
+              } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
               } else if (this.response.code === 999) {
@@ -956,15 +849,15 @@ export default {
                     this.permission = "Method Not Allowed.";
                     this.numfail = "405";
                     break;
-                                    case 500:
+                  case 500:
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
-case 999:
+                  case 999:
                     this.permission = "Server error.";
                     this.numfail = "999";
                     break;
-                    case 999:
+                  case 999:
                     this.permission = "Server error.";
                     this.numfail = "999";
                     break;

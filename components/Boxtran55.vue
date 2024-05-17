@@ -206,7 +206,7 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -424,6 +424,26 @@ export default {
     },
   },
   methods: {
+          closeAndClear() {
+      // รีเซ็ตค่าตัวแปรต่างๆ ใน component
+      // this.jsonData = '';
+      this.URLdata = 'https://handsome.pirate168.com/';
+      this.isLoading = false;
+      this.pop = false;
+      this.response = null;
+      this.success = '';
+      this.code = null;
+      this.numfail = null;
+      this.msg = '';
+      this.playerApiId = '';
+      this.playerApiUsername = '';
+      this.playerUsername = '';
+      this.url = '';
+      this.urlFullPage = '';
+      this.tkUuid = '';
+      this.permission = '';
+      this.nosuccess = '';
+    },
     get_Transfer() {
       alert("Send code clicked!");
       if (this.jsonData) {
