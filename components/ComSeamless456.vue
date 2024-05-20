@@ -26,17 +26,18 @@
         </div>
         <div><b style="color: #19a17a !important"></b></div>
 
-        <div class="col-12" id="tab15">
-          <div
-            ><b style="color: #19a17a !important"
-              >4.5.6
-              <span style="padding-left: 3px" id="Seamless_UserPlaceReToRunning"
+        <div id="tabSixs" class="col-12" style="left: 10px; width: 90%">
+          <div>
+            <b
+              set-lan="text:4.5.2 GetUserBalance"
+              style="color: rgb(25, 161, 122) !important"
+              >4.5.7
+              <span id="Seamless_GetUserBalance" style="padding-left: 3px"
                 >UserPlaceReToRunning</span
               ></b
-            ></div
-          >
+            >
+          </div>
         </div>
-
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
             <label set-lan="html:356">

@@ -7,7 +7,7 @@
       </div>
       <!-- // -->
 
-      <div class="col-12" id="tabSixs" style="left: 10px; margin-bottom: 25px">
+      <div class="col-12" id="tabSixs" style=" margin-bottom: 25px">
         <div>
           <b
             style="color: #19a17a !important"

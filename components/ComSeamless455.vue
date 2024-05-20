@@ -26,17 +26,18 @@
         </div>
         <div><b style="color: #19a17a !important"></b></div>
 
-        <div class="col-12" id="tabNine">
+        <div id="tabSixs" class="col-12" style="left: 10px; width: 90%">
           <div>
-            <b style="color: #19a17a !important"
+            <b
+              set-lan="text:4.5.2 GetUserBalance"
+              style="color: rgb(25, 161, 122) !important"
               >4.5.5
-              <span style="padding-left: 3px" id="Seamless_UserPlacePayout"
+              <span id="Seamless_GetUserBalance" style="padding-left: 3px"
                 >UserPlacePayout</span
               ></b
             >
           </div>
         </div>
-
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
             <label set-lan="html:This interface will">
@@ -191,9 +192,7 @@
                   <tr>
                     <td class="bRight">betStatus</td>
                     <td class="bRight">String</td>
-                    <td class="bRight">
-                      Status of bet data(Pending).
-                    </td>
+                    <td class="bRight">Status of bet data(Pending).</td>
                   </tr>
                   <tr>
                     <td class="bRight">betAmt</td>
@@ -513,7 +512,9 @@
           </div>
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #19a17a !important">Example Service Response Code</b>
+              <b style="color: #19a17a !important"
+                >Example Service Response Code</b
+              >
             </div>
           </div>
 
@@ -591,7 +592,6 @@
           <BoxSem455 />
         </div>
       </div>
-
     </div>
   </div>
 </template>
