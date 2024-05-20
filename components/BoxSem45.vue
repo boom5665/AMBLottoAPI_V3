@@ -143,7 +143,10 @@
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"username"</span>: <span class="hljs-string">"member1"</span>,
-        <span class="hljs-attr">"line"</span>: <span class="hljs-string">"{{line}}"</span>,
+        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"0xxxxxxxx"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"handsom@gmail.com"</span>,
+        <span class="hljs-attr">"line"</span>: <span class="hljs-string">"handsom"</span>,
+        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"THB"</span>,
         <span class="hljs-attr">"rate</span>: {
         <span class="hljs-attr">"baaclotto</span>: {
             <span class="hljs-attr">"bottom1</span>: {
@@ -1081,7 +1084,10 @@
     <span class="hljs-attr">"code"</span>: <span class="hljs-string">0</span>,
     <span class="hljs-attr">"data"</span>: {
         <span class="hljs-attr">"username"</span>: <span class="hljs-string">"{{username}}"</span>,
+         <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"{{phone}}"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"{{email}}"</span>,
         <span class="hljs-attr">"line"</span>: <span class="hljs-string">"{{line}}"</span>,
+        <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"{{currency}}"</span>,
         <span class="hljs-attr">"rate</span>: {
         <span class="hljs-attr">"baaclotto</span>: {
             <span class="hljs-attr">"bottom1</span>: {
@@ -2046,7 +2052,7 @@ export default {
                 this.success = "Successful operation.";
                 this.code = this.response.code;
                 this.numfail = this.code; // กำหนดค่า success ให้เป็น "SUCCESS"
-                this.msg = this.response.msg;
+                this.currency = this.response.currency;
                 this.username = this.response.data.username;
                 this.phone = this.response.data.phone;
                 this.rate = this.response.data.rate;
