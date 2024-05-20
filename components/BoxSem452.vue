@@ -194,33 +194,7 @@
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
           <div>
-            <!-- <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Request Body</b
-                >
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
 
-                                        <code id="351A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"service"</span>: <span class="hljs-string">"GetUserBalance"</span>,
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"21f7d4c971036eea30d1db483d01f131faada79fa94d52560c9f2c2b56a6f8877b66ae2c624f89442c938db064d8179f"</span>,
-        <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testa0alottoviptest2@comptestseamless"</span>,
-        <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testa0alottoviptest2"</span>
-    }
-}</code></pre>
-            </div> -->
-            <!-- // -->
             <div class="koh-faq-question form-group ex">
               <div class="Point">
                 <b
