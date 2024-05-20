@@ -1423,23 +1423,23 @@
         </div>
       </div>
       <!-- // -->
-                <div>
-            <div class="koh-faq-question form-group ex">
-              <div class="Point">
-                <b
-                  style="color: #19a17a !important"
-                  set-lan="text:Example Request Body"
-                  >Example Service Response Code
-                </b>
-                <i
-                  class="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style="margin-left: 2%; font-size: 1rem"
-                ></i>
-              </div>
-            </div>
-            <div class="koh-faq-answer col-12">
-              <pre>
+      <div>
+        <div class="koh-faq-question form-group ex">
+          <div class="Point">
+            <b
+              style="color: #19a17a !important"
+              set-lan="text:Example Request Body"
+              >Example Service Response Code
+            </b>
+            <i
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+              style="margin-left: 2%; font-size: 1rem"
+            ></i>
+          </div>
+        </div>
+        <div class="koh-faq-answer col-12">
+          <pre>
                                     <code id="44B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>:  <span class="hljs-number">200</span>,
     <span class="hljs-attr">"data"</span>: {
@@ -1455,9 +1455,9 @@
         <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
     }
 }</code></pre>
-            </div>
-            <!-- // -->
-          </div>
+        </div>
+        <!-- // -->
+      </div>
       <div>
         <div class="divBox-content">
           <div v-if="success" class="dis-colum-center">
@@ -1519,7 +1519,9 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close"
+            >X</a
+          >
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -2856,7 +2858,7 @@
             </div> -->
             <!-- // -->
           </div>
-                    <div class="koh-faq-question form-group ex">
+          <div class="koh-faq-question form-group ex">
             <div class="Point">
               <b
                 style="color: #19a17a !important"
@@ -3312,25 +3314,25 @@ export default {
     },
   },
   methods: {
-          closeAndClear() {
+    closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = 'https://handsome.pirate168.com/';
+      this.URLdata = "https://handsome.pirate168.com/";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
-      this.success = '';
+      this.success = "";
       this.code = null;
       this.numfail = null;
-      this.msg = '';
-      this.playerApiId = '';
-      this.playerApiUsername = '';
-      this.playerUsername = '';
-      this.url = '';
-      this.urlFullPage = '';
-      this.tkUuid = '';
-      this.permission = '';
-      this.nosuccess = '';
+      this.msg = "";
+      this.playerApiId = "";
+      this.playerApiUsername = "";
+      this.playerUsername = "";
+      this.url = "";
+      this.urlFullPage = "";
+      this.tkUuid = "";
+      this.permission = "";
+      this.nosuccess = "";
     },
     get_Transfer() {
       alert("Send code clicked!");
@@ -3375,9 +3377,24 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                                         } else if (this.response.code === 500) {
+              } else if (this.response.code === 406) {
+                this.permission = "Not Acceptable";
+                this.numfail = "406";
+              } else if (this.response.code === 407) {
+                this.permission = "Proxy Authentication Required";
+                this.numfail = "407 ";
+              } else if (this.response.code === 408) {
+                this.permission = "Request Timeout";
+                this.numfail = "408";
+              } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 501) {
+                this.permission = "Not Implemented";
+                this.numfail = "501";
+              } else if (this.response.code === 502) {
+                this.permission = "Bad Gateway";
+                this.numfail = "502";
               } else if (this.response.code === 503) {
                 this.permission = "Server error.";
                 this.numfail = "503";
@@ -3401,8 +3418,8 @@ export default {
                     this.numfail = "403";
                     break;
                   case 401:
-                    this.numfail = "401";
                     this.permission = "Authentication Failed.";
+                    this.numfail = "401";
                     break;
                   case 404:
                     this.permission = "Not Found.";
@@ -3412,15 +3429,32 @@ export default {
                     this.permission = "Method Not Allowed.";
                     this.numfail = "405";
                     break;
-                                    case 500:
+                  case 406:
+                    this.permission = "Not Acceptable";
+                    this.numfail = "406";
+                    break;
+                  case 407:
+                    this.permission = "Proxy Authentication Required";
+                    this.numfail = "407";
+                    break;
+                  case 500:
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
+                  case 501:
+                    this.permission = "Not Implemented";
+                    this.numfail = "501";
+                    break;
+                  case 502:
+                    this.permission = "Bad Gateway";
+                    this.numfail = "502";
+                    break;
                   case 503:
-                    this.permission = "Server error.";
+                    this.permission = "Service Unavailable";
                     this.numfail = "503";
-case 999:
-                    this.permission = "Server error.";
+                    break;
+                  case 999:
+                    this.permission = "Out of service.";
                     this.numfail = "999";
                     break;
                   default:

@@ -478,7 +478,7 @@ export default {
                 this.playerApiUsername = this.response.data.playerApiUsername;
                 this.playerUsername = this.response.data.playerUsername;
                 this.ref = this.response.data.ref;
-              } else if (this.response.code === 403) {
+             } else if (this.response.code === 403) {
                 this.permission = "Permission denied.";
                 this.numfail = "403";
               } else if (this.response.code === 401) {
@@ -490,9 +490,24 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                                         } else if (this.response.code === 500) {
+              } else if (this.response.code === 406) {
+                this.permission = "Not Acceptable";
+                this.numfail = "406";
+              } else if (this.response.code === 407) {
+                this.permission = "Proxy Authentication Required";
+                this.numfail = "407 ";
+              } else if (this.response.code === 408) {
+                this.permission = "Request Timeout";
+                this.numfail = "408";
+              } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 501) {
+                this.permission = "Not Implemented";
+                this.numfail = "501";
+              } else if (this.response.code === 502) {
+                this.permission = "Bad Gateway";
+                this.numfail = "502";
               } else if (this.response.code === 503) {
                 this.permission = "Server error.";
                 this.numfail = "503";
@@ -511,37 +526,54 @@ export default {
               if (error.response) {
                 const statusCode = error.response.status;
                 switch (statusCode) {
-                  case 403:
-                    this.permission = "Permission denied.";
-                    this.numfail = "403";
-                    break;
-                  case 401:
-                    this.numfail = "401";
-                    this.permission = "Authentication Failed.";
-                    break;
-                  case 404:
-                    this.permission = "Not Found.";
-                    this.numfail = "404";
-                    break;
-                  case 405:
-                    this.permission = "Method Not Allowed.";
-                    this.numfail = "405";
-                    break;
-                                    case 500:
-                    this.permission = "Server error.";
-                    this.numfail = "500";
-                    break;
-                  case 503:
-                    this.permission = "Server error.";
-                    this.numfail = "503";
-case 999:
-                    this.permission = "Server error.";
-                    this.numfail = "999";
-                    break;
-                  default:
-                    this.nosuccess = "Bad Request.";
-                    this.numfail = "400";
-                }
+              case 403:
+                this.permission = "Permission denied.";
+                this.numfail = "403";
+                break;
+              case 401:
+                this.permission = "Authentication Failed.";
+                this.numfail = "401";
+                break;
+              case 404:
+                this.permission = "Not Found.";
+                this.numfail = "404";
+                break;
+              case 405:
+                this.permission = "Method Not Allowed.";
+                this.numfail = "405";
+                break;
+              case 406:
+                this.permission = "Not Acceptable";
+                this.numfail = "406";
+                break;
+              case 407:
+                this.permission = "Proxy Authentication Required";
+                this.numfail = "407";
+                break;
+              case 500:
+                this.permission = "Server error.";
+                this.numfail = "500";
+                break;
+              case 501:
+                this.permission = "Not Implemented";
+                this.numfail = "501";
+                break;
+              case 502:
+                this.permission = "Bad Gateway";
+                this.numfail = "502";
+                break;
+              case 503:
+                this.permission = "Service Unavailable";
+                this.numfail = "503";
+                break;
+              case 999:
+                this.permission = "Out of service.";
+                this.numfail = "999";
+                break;
+              default:
+                this.nosuccess = "Bad Request.";
+                this.numfail = "400";
+            }
               } else {
                 this.nosuccess = "Bad Request.";
                 this.numfail = "400";

@@ -213,7 +213,9 @@
       <!--modals-->
       <div id="openModal-about" v-if="pop" class="modalDialog">
         <div>
-          <a href="#close" @click="closeAndClear" title="Close" class="close">X</a>
+          <a href="#close" @click="closeAndClear" title="Close" class="close"
+            >X</a
+          >
           <div>
             <div class="font-prim"><span>Code Seamless</span></div>
           </div>
@@ -459,25 +461,25 @@ export default {
     },
   },
   methods: {
-          closeAndClear() {
+    closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = 'https://handsome.pirate168.com/';
+      this.URLdata = "https://handsome.pirate168.com/";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
-      this.success = '';
+      this.success = "";
       this.code = null;
       this.numfail = null;
-      this.msg = '';
-      this.playerApiId = '';
-      this.playerApiUsername = '';
-      this.playerUsername = '';
-      this.url = '';
-      this.urlFullPage = '';
-      this.tkUuid = '';
-      this.permission = '';
-      this.nosuccess = '';
+      this.msg = "";
+      this.playerApiId = "";
+      this.playerApiUsername = "";
+      this.playerUsername = "";
+      this.url = "";
+      this.urlFullPage = "";
+      this.tkUuid = "";
+      this.permission = "";
+      this.nosuccess = "";
     },
 
     get_Seamless() {
@@ -524,16 +526,28 @@ export default {
               } else if (this.response.code === 405) {
                 this.permission = "Method Not Allowed.";
                 this.numfail = "405";
-                                         } else if (this.response.code === 500) {
+              } else if (this.response.code === 406) {
+                this.permission = "Not Acceptable";
+                this.numfail = "406";
+              } else if (this.response.code === 407) {
+                this.permission = "Proxy Authentication Required";
+                this.numfail = "407 ";
+              } else if (this.response.code === 408) {
+                this.permission = "Request Timeout";
+                this.numfail = "408";
+              } else if (this.response.code === 500) {
                 this.permission = "Server error.";
                 this.numfail = "500";
+              } else if (this.response.code === 501) {
+                this.permission = "Not Implemented";
+                this.numfail = "501";
+              } else if (this.response.code === 502) {
+                this.permission = "Bad Gateway";
+                this.numfail = "502";
               } else if (this.response.code === 503) {
                 this.permission = "Server error.";
                 this.numfail = "503";
               } else if (this.response.code === 999) {
-                this.permission = "Server error.";
-                this.numfail = "999";
-                   } else if (this.response.code === 999) {
                 this.permission = "Server error.";
                 this.numfail = "999";
               } else {
@@ -553,8 +567,8 @@ export default {
                     this.numfail = "403";
                     break;
                   case 401:
-                    this.numfail = "401";
                     this.permission = "Authentication Failed.";
+                    this.numfail = "401";
                     break;
                   case 404:
                     this.permission = "Not Found.";
@@ -564,15 +578,32 @@ export default {
                     this.permission = "Method Not Allowed.";
                     this.numfail = "405";
                     break;
-                                    case 500:
+                  case 406:
+                    this.permission = "Not Acceptable";
+                    this.numfail = "406";
+                    break;
+                  case 407:
+                    this.permission = "Proxy Authentication Required";
+                    this.numfail = "407";
+                    break;
+                  case 500:
                     this.permission = "Server error.";
                     this.numfail = "500";
                     break;
+                  case 501:
+                    this.permission = "Not Implemented";
+                    this.numfail = "501";
+                    break;
+                  case 502:
+                    this.permission = "Bad Gateway";
+                    this.numfail = "502";
+                    break;
                   case 503:
-                    this.permission = "Server error.";
+                    this.permission = "Service Unavailable";
                     this.numfail = "503";
-case 999:
-                    this.permission = "Server error.";
+                    break;
+                  case 999:
+                    this.permission = "Out of service.";
                     this.numfail = "999";
                     break;
                   default:
