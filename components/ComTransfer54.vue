@@ -1819,13 +1819,13 @@
             <!-- <div class="col-12">
                             <label class="txtHead">Baccarat :</label><label>http://m.hippo168.com/?tkuuid=5ebd1f57dc7cdc7900125a65&amp;</label><label class="txtHead">game=BAC</label>
                         </div> -->
-            <div class="col-12">
+            <!-- <div class="col-12">
               <label class="txtHead">thailotto :</label>
               <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
               >
               <label class="txtHead">lottotype=zodiaclotto</label>
-            </div>
+            </div> -->
 
             <div class="col-12">
               <label class="txtHead"> laoslotto : </label>
@@ -2201,14 +2201,14 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="divBox" style="font-size: 0.681rem; margin-bottom: 15px">
-            <div class="col-12">
+            <!-- <div class="col-12">
               <label class="txtHead">thailotto : </label
               ><label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=thailotto&amp;url=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
-            </div>
+            </div> -->
             <div class="col-12">
               <label class="txtHead">laoslotto : </label
               ><label

@@ -502,21 +502,7 @@
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="divBox" style="font-size: 0.8rem; word-break: break-all">
             <div class="col-12">
-              <div class="row">
-                <div
-                  class="col-12"
-                  style="padding-right: 0px; padding-left: 2px"
-                >
-                  <label class="txtHead">thailotto :&nbsp;</label
-                  ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&amp;header=off&amp;<label
-                      class="txtHead"
-                      style="margin-bottom: 0px"
-                      >lotto=thailotto</label
-                    ></label
-                  >
-                </div>
-              </div>
+
               <!-- <label class="txtHead">thailotto
                                 :&nbsp;</label><label>https://test-front.pirate168.com/token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6IiJ9.eyJhZ2VudGlkIjoxODksImV4cCI6MTYyNzE3ODYzMCwiaWF0IjoxNjI2MzE0NjMwLCJyb2xlIjoibWVtYmVyMUBjb21wc2VhbWxlc3MiLCJzdWIiOmZhbHNlfQ.eLfAFfTnSD80OajqxH6yWmojd_m8MB7C0xxvahoWtPg&amp;</label><label
                                 class="txtHead">header=off&amp;lottotype=thailotto</label> -->
@@ -1095,21 +1081,7 @@
             style="font-size: 0.681rem; word-break: break-all; margin-left: 0"
           >
             <div class="col-12">
-              <div class="row">
-                <div
-                  class="col-12"
-                  style="padding-right: 0px; padding-left: 2px"
-                >
-                  <label class="txtHead">thailotto :&nbsp;</label
-                  ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=thailotto&url=<label
-                      class="txtHead"
-                      style="margin-bottom: 0px"
-                      >input your link here(full link with https://)</label
-                    ></label
-                  >
-                </div>
-              </div>
+            
               <!-- <label class="txtHead">Baccarat
                                 :&nbsp;</label><label>http://m.hippo168.com/?tkuuid=5ebd1f57dc7cdc7900125a65&amp;game=BAC&amp;url=</label><label
                                 class="txtHead">input your link here(full link with https://)</label> -->

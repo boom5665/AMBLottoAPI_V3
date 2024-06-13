@@ -435,7 +435,7 @@ export default {
     closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = "https://test-api.askmelotto.com/apiRoute/api/withdraw";
+      this.URLdata = "https://test-api.askmelotto.com/apiRoute/api/withdraw ";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
