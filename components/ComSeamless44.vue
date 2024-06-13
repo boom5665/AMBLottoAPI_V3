@@ -492,20 +492,17 @@
             </div>
           </div>
         </div>
-        <div class="btn-toolbar mb-3" role="toolbar">
+        <!-- <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
             <div
               ><b style="color: #19a17a !important">Game direct link</b></div
             >
           </div>
-        </div>
-        <div class="btn-toolbar mb-3" role="toolbar">
+        </div> -->
+        <!-- <div class="btn-toolbar mb-3" role="toolbar">
           <div class="divBox" style="font-size: 0.8rem; word-break: break-all">
             <div class="col-12">
 
-              <!-- <label class="txtHead">thailotto
-                                :&nbsp;</label><label>https://test-front.pirate168.com/token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6IiJ9.eyJhZ2VudGlkIjoxODksImV4cCI6MTYyNzE3ODYzMCwiaWF0IjoxNjI2MzE0NjMwLCJyb2xlIjoibWVtYmVyMUBjb21wc2VhbWxlc3MiLCJzdWIiOmZhbHNlfQ.eLfAFfTnSD80OajqxH6yWmojd_m8MB7C0xxvahoWtPg&amp;</label><label
-                                class="txtHead">header=off&amp;lottotype=thailotto</label> -->
             </div>
             <div class="col-12">
               <div class="row">
@@ -967,7 +964,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
             <div><b style="color: #19a17a !important">Language</b></div>
@@ -1081,7 +1078,7 @@
             style="font-size: 0.681rem; word-break: break-all; margin-left: 0"
           >
             <div class="col-12">
-            
+
               <!-- <label class="txtHead">Baccarat
                                 :&nbsp;</label><label>http://m.hippo168.com/?tkuuid=5ebd1f57dc7cdc7900125a65&amp;game=BAC&amp;url=</label><label
                                 class="txtHead">input your link here(full link with https://)</label> -->
