@@ -219,7 +219,7 @@
                 <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
                 }
             },
-            <span class="hljs-attr">"hanoilotto"</span>: {
+            <span class="hljs-attr">"hanoylotto"</span>: {
             <span class="hljs-attr">"bottom1"</span>: {
             <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
             <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
@@ -495,7 +495,7 @@
                 <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
                 }
             },
-            <span class="hljs-attr">"hanoilotto"</span>: {
+            <span class="hljs-attr">"hanoylotto"</span>: {
             <span class="hljs-attr">"bottom1"</span>: {
             <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
             <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,
@@ -654,7 +654,7 @@
                 <span class="hljs-attr">"payout"</span>: <span class="hljs-number">90</span>
                 }
             },
-            <span class="hljs-attr">"hanoilotto"</span>: {
+            <span class="hljs-attr">"hanoylotto"</span>: {
             <span class="hljs-attr">"bottom1"</span>: {
             <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
             <span class="hljs-attr">"max"</span>: <span class="hljs-number">200000</span>,

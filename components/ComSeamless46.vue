@@ -301,13 +301,13 @@
         <span class="hljs-attr">"gsblotto"</span>: {
             <span class="hljs-attr">"enable"</span>: <span class="hljs-number">"true"</span>
         },
-        <span class="hljs-attr">"hanoilotto"</span>: {
+        <span class="hljs-attr">"hanoylotto"</span>: {
             <span class="hljs-attr">"enable"</span>: <span class="hljs-number">"true"</span>
         },
-        <span class="hljs-attr">"hanoilottospecial"</span>: {
+        <span class="hljs-attr">"hanoylottospecial"</span>: {
             <span class="hljs-attr">"enable"</span>: <span class="hljs-number">"true"</span>
         },
-        <span class="hljs-attr">"hanoilottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
             <span class="hljs-attr">"enable"</span>: <span class="hljs-number">"false"</span>
         },
         <span class="hljs-attr">"laoslotto"</span>: {
@@ -370,8 +370,8 @@
                 <span class="hljs-attr">"amount"</span>: <span class="hljs-number">100</span>
             }
         },
-        <span class="hljs-attr">"hanoilotto"</span>: {
-            <span class="hljs-attr">"hanoilotto"</span>: {
+        <span class="hljs-attr">"hanoylotto"</span>: {
+            <span class="hljs-attr">"hanoylotto"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">5</span>
                 },
@@ -392,8 +392,8 @@
                 }
             }
         },
-        <span class="hljs-attr">"hanoilottospecial"</span>: {
-            <span class="hljs-attr">"hanoilottospecial"</span>: {
+        <span class="hljs-attr">"hanoylottospecial"</span>: {
+            <span class="hljs-attr">"hanoylottospecial"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">5</span>
                 },
@@ -413,12 +413,12 @@
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">5</span>
                 }
             },
-            <span class="hljs-attr">"hanoilottospecial"</span>: {
+            <span class="hljs-attr">"hanoylottospecial"</span>: {
                 <span class="hljs-attr">"lottoset"</span>: <span class="hljs-number">null</span>
             }
         },
-        <span class="hljs-attr">"hanoilottovip"</span>: {
-            <span class="hljs-attr">"hanoilottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
+            <span class="hljs-attr">"hanoylottovip"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">5</span>
                 },
@@ -438,12 +438,12 @@
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">10</span>
                 }
             },
-            <span class="hljs-attr">"hanoilottovip_set"</span>: {
+            <span class="hljs-attr">"hanoylottovip_set"</span>: {
                 <span class="hljs-attr">"lottoset"</span>: <span class="hljs-number">null</span>
             }
         },
-        <span class="hljs-attr">"hanoilottovip"</span>: {
-            <span class="hljs-attr">"hanoilottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
+            <span class="hljs-attr">"hanoylottovip"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
                     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">0</span>
                 },
@@ -673,7 +673,7 @@
              <span class="hljs-attr">"payout"</span>: <span class="hljs-number">1000</span>,
             }
         },
-         <span class="hljs-attr">"hanoilotto"</span>: {
+         <span class="hljs-attr">"hanoylotto"</span>: {
          <span class="hljs-attr">"bottom1"</span>: {
          <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
          <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2
@@ -699,7 +699,7 @@
             <span class="hljs-attr">"payout"</span>: <span class="hljs-number">1000</span>
             }
         },
-        <span class="hljs-attr">"hanoilotto_set"</span>: {
+        <span class="hljs-attr">"hanoylotto_set"</span>: {
         <span class="hljs-attr">"back2"</span>: {
         <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
         <span class="hljs-attr">"payout"</span>: <span class="hljs-number">100</span>
@@ -725,7 +725,7 @@
             <span class="hljs-attr">"payout"</span>:<span class="hljs-number"> 10000</span>
             }
         },
-        <span class="hljs-attr">"hanoilottospecial"</span>: {
+        <span class="hljs-attr">"hanoylottospecial"</span>: {
         <span class="hljs-attr">"bottom1"</span>: {
         <span class="hljs-attr">"discount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2</span>
@@ -751,7 +751,7 @@
             <span class="hljs-attr">"payout"</span>: <span class="hljs-number">1000</span>
             }
         },
-        <span class="hljs-attr">"hanoilottospecial_set"</span>: {
+        <span class="hljs-attr">"hanoylottospecial_set"</span>: {
         <span class="hljs-attr">"back2"</span>: {
         <span class="hljs-attr">"discount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"payout"</span>: <span class="hljs-number">100</span>
@@ -777,7 +777,7 @@
            <span class="hljs-attr"> "payout"</span>: 10000</span>
             }
         },
-        <span class="hljs-attr">"hanoilottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
         <span class="hljs-attr">"bottom1"</span>: {
         <span class="hljs-attr">"discount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"payout"</span>: <span class="hljs-number">4.2</span>
@@ -803,7 +803,7 @@
             <span class="hljs-attr">"payout"</span>:<span class="hljs-number"> 900</span>
             }
         },
-        <span class="hljs-attr">"hanoilottovip_set"</span>: {
+        <span class="hljs-attr">"hanoylottovip_set"</span>: {
         <span class="hljs-attr">"back2"</span>: {
         <span class="hljs-attr">"discount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"payout"</span>:<span class="hljs-number"> 100</span>
@@ -1109,8 +1109,8 @@
             <span class="hljs-attr">"levellist"</span>: []
             }
         },
-        <span class="hljs-attr">"hanoilotto"</span>: {
-        <span class="hljs-attr">"hanoilotto"</span>: {
+        <span class="hljs-attr">"hanoylotto"</span>: {
+        <span class="hljs-attr">"hanoylotto"</span>: {
                 <span class="hljs-attr">"bottom1"</span>: {
                 <span class="hljs-attr">"amount"</span><span class="hljs-number">0</span>,
                 <span class="hljs-attr">"levellist"</span>: []
@@ -1136,15 +1136,15 @@
                 <span class="hljs-attr">"levellist"</span>: []
                 }
             },
-            <span class="hljs-attr">"hanoilotto_set"</span>: {
+            <span class="hljs-attr">"hanoylotto_set"</span>: {
             <span class="hljs-attr">"lottoset"</span>: {
             <span class="hljs-attr">"amount"</span>: <span class="hljs-number">1000</span>,
             <span class="hljs-attr">"levellist"</span>: []
                 }
             }
         },
-        <span class="hljs-attr">"hanoilottospecial"</span>: {
-        <span class="hljs-attr">"hanoilottospecial"</span>: {
+        <span class="hljs-attr">"hanoylottospecial"</span>: {
+        <span class="hljs-attr">"hanoylottospecial"</span>: {
         <span class="hljs-attr">"bottom1"</span>: {
         <span class="hljs-attr">"amount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"levellist"</span>: []
@@ -1170,15 +1170,15 @@
                 <span class="hljs-attr">"levellist"</span>: []
                 }
             },
-            <span class="hljs-attr">"hanoilottospecial_set"</span>: {
+            <span class="hljs-attr">"hanoylottospecial_set"</span>: {
             <span class="hljs-attr">"lottoset"</span>: {
             <span class="hljs-attr">"amount"</span><span class="hljs-number">0</span>,
             <span class="hljs-attr">"levellist"</span>: []
                 }
             }
         },
-        <span class="hljs-attr">"hanoilottovip"</span>: {
-        <span class="hljs-attr">"hanoilottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
+        <span class="hljs-attr">"hanoylottovip"</span>: {
         <span class="hljs-attr">"bottom1"</span>: {
         <span class="hljs-attr">"amount"</span><span class="hljs-number">0</span>,
         <span class="hljs-attr">"levellist"</span>: [
@@ -1216,7 +1216,7 @@
                     ]
                 }
             },
-            <span class="hljs-attr">"hanoilottovip_set"</span>: {
+            <span class="hljs-attr">"hanoylottovip_set"</span>: {
             <span class="hljs-attr">"lottoset"</span>: {
             <span class="hljs-attr">"amount"</span><span class="hljs-number">0</span>,
             <span class="hljs-attr">"levellist"</span>: []

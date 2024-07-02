@@ -260,6 +260,16 @@
                       Link for show game reslut of this drawId.
                     </td>
                   </tr>
+                    <tr>
+                    <td class="bRight">createDate</td>
+                    <td class="bRight">Date</td>
+                    <td>The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">currency</td>
+                    <td class="bRight">String</td>
+                    <td>Standard of currency in various forms.</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

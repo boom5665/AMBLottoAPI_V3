@@ -14,8 +14,8 @@
                   >Call Back Service</span
                 >
               </b>
-            </h1></div
-          >
+            </h1>
+          </div>
         </div>
 
         <div class="col-12">
@@ -26,7 +26,7 @@
         </div>
         <div><b style="color: #19a17a !important"></b></div>
 
-<div id="tabSixs" class="col-12" style="left: 10px; width: 90%">
+        <div id="tabSixs" class="col-12" style="left: 10px; width: 90%">
           <div>
             <b
               set-lan="text:4.5.2 GetUserBalance"
@@ -38,7 +38,7 @@
             >
           </div>
         </div>
-    
+
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
             <label set-lan="html:when previous PlaceBet">
@@ -47,12 +47,13 @@
               2.1 กรณียกเลิกทั้งตั๋ว Status ของตั๋วจะเป็น "Cancel"
               ซึ่งรายละเอียดในการเดิมพันแต่ละรายการ ทุกรายการของตั๋วนั้นจะมี
               "betStatus" เป็น "Cancel"<br />
-              2.2 ถ้ายกเลิกทีละเลข ตั๋วเป็น Success แต่ในโพยเลขที่ยกเลิก มี "betStatus"  เป็น "Cancel"
+              2.2 ถ้ายกเลิกทีละเลข ตั๋วเป็น Success แต่ในโพยเลขที่ยกเลิก มี
+              "betStatus" เป็น "Cancel"
             </label>
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important" set-lan="text:Request Body"
+            <div>
+              <b style="color: #19a17a !important" set-lan="text:Request Body"
                 >Request Body</b
               >
             </div>
@@ -238,6 +239,21 @@
                       The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)
                     </td>
                   </tr>
+                  <tr>
+                    <td class="bRight">currency</td>
+                    <td class="bRight">String</td>
+                    <td>Standard of currency in various forms.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">DrawOpen</td>
+                    <td class="bRight">Date</td>
+                    <td>The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">drawExpire</td>
+                    <td class="bRight">Date</td>
+                    <td>The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -307,9 +323,7 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important">Response Body</b></div
-            >
+            <div><b style="color: #19a17a !important">Response Body</b></div>
           </div>
 
           <div class="form-group col-12">
@@ -354,11 +368,11 @@
             </div>
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important"
+            <div>
+              <b style="color: #19a17a !important"
                 >Example Service Response Code</b
-              ></div
-            >
+              >
+            </div>
           </div>
 
           <div class="form-group col-12">
@@ -431,14 +445,14 @@
         </div>
 
         <div class="col-12" id="tabNine">
-          <div
-            ><b style="color: #19a17a !important"
+          <div>
+            <b style="color: #19a17a !important"
               >4.5.5
               <span style="padding-left: 3px" id="Seamless_UserPlacePayout"
                 >UserPlacePayout</span
               ></b
-            ></div
-          >
+            >
+          </div>
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -449,8 +463,8 @@
             >
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important" set-lan="text:Request Body"
+            <div>
+              <b style="color: #19a17a !important" set-lan="text:Request Body"
                 >Request Body</b
               >
             </div>
@@ -871,9 +885,7 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important">Response Body</b></div
-            >
+            <div><b style="color: #19a17a !important">Response Body</b></div>
           </div>
 
           <div class="form-group col-12">
@@ -918,11 +930,11 @@
             </div>
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important"
+            <div>
+              <b style="color: #19a17a !important"
                 >Example Service Response Code</b
-              ></div
-            >
+              >
+            </div>
           </div>
 
           <div class="form-group col-12">
@@ -994,14 +1006,14 @@
         </div>
 
         <div class="col-12" id="tab15">
-          <div
-            ><b style="color: #19a17a !important"
+          <div>
+            <b style="color: #19a17a !important"
               >4.5.6
               <span style="padding-left: 3px" id="Seamless_UserPlaceReToRunning"
                 >UserPlaceReToRunning</span
               ></b
-            ></div
-          >
+            >
+          </div>
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -1013,8 +1025,8 @@
             >
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important" set-lan="text:Request Body"
+            <div>
+              <b style="color: #19a17a !important" set-lan="text:Request Body"
                 >Request Body</b
               >
             </div>
@@ -1272,9 +1284,7 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important">Response Body</b></div
-            >
+            <div><b style="color: #19a17a !important">Response Body</b></div>
           </div>
 
           <div class="form-group col-12">
@@ -1319,11 +1329,11 @@
             </div>
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important"
+            <div>
+              <b style="color: #19a17a !important"
                 >Example Service Response Code</b
-              ></div
-            >
+              >
+            </div>
           </div>
 
           <div class="form-group col-12">
@@ -1404,8 +1414,6 @@
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>
 }</code></pre>
                 </div> -->
-
-
               </div>
             </div>
           </div>
@@ -1417,7 +1425,6 @@
           <BoxSem454 />
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -1425,7 +1432,5 @@
 <script>
 export default {
   name: "ComSeamless45",
-
-
 };
 </script>

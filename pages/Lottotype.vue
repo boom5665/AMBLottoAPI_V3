@@ -48,14 +48,14 @@
                 </tr>
                 <tr>
                   <td class="bRight">3</td>
-                  <td class="bRight">hanoilotto</td>
+                  <td class="bRight">hanoylotto</td>
                   <td class="bRight">หวยฮานอย</td>
                   <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
                   <td class="bRight">4</td>
-                  <td class="bRight">hanoilottovip</td>
+                  <td class="bRight">hanoylottovip</td>
                   <td class="bRight">หวยฮานอย(วีไอพี)</td>
                   <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
@@ -108,7 +108,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">11</td>
-                  <td class="bRight">hanoilotto_set</td>
+                  <td class="bRight">hanoylotto_set</td>
                   <td class="bRight">หวยฮานอย(แบบชุด)</td>
                   <td class="bRight">
                     lottoset, top4,row4,top3,row3,back2,front2
@@ -117,7 +117,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">12</td>
-                  <td class="bRight">hanoilottovip_set</td>
+                  <td class="bRight">hanoylottovip_set</td>
                   <td class="bRight">หวยฮานอยวีไอพี(แบบชุด)</td>
                   <td class="bRight">
                     lottoset, top4,row4,top3,row3,back2,front2
@@ -126,7 +126,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">13</td>
-                  <td class="bRight">hanoilottospecial_set</td>
+                  <td class="bRight">hanoylottospecial_set</td>
                   <td class="bRight">หวยฮานอยพิเศษ(แบบชุด)</td>
                   <td class="bRight">
                     lottoset, top4,row4,top3,row3,back2,front2
@@ -144,7 +144,7 @@
                 </tr>
                 <tr>
                   <td class="bRight">15</td>
-                  <td class="bRight">hanoilottospecial</td>
+                  <td class="bRight">hanoylottospecial</td>
                   <td class="bRight">หวยฮานอย(พิเศษ)</td>
                   <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
@@ -283,28 +283,28 @@
                 </tr>
                 <tr>
                   <td class="bRight">35</td>
-                  <td class="bRight">hanoilottostar_set</td>
+                  <td class="bRight">hanoylottostar_set</td>
                   <td class="bRight">หวยฮานอย รอบ 12.30 (แบบชุด)</td>
                   <td class="bRight">row3,top1,top2,top3,bottom1,bottom2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
                   <td class="bRight">35</td>
-                  <td class="bRight">hanoilottostar</td>
+                  <td class="bRight">hanoylottostar</td>
                   <td class="bRight">หวยฮานอย รอบ 12.30</td>
                   <td class="bRight">row3,row4,top3,top4,back2,front2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
                   <td class="bRight">36</td>
-                  <td class="bRight">hanoilottotv</td>
+                  <td class="bRight">hanoylottotv</td>
                   <td class="bRight">หวยฮานอย รอบ 14.30</td>
                   <td class="bRight">row3,top1,top2,top3,bottom1,bottom2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
                   <td class="bRight">36</td>
-                  <td class="bRight">hanoilottotv_set</td>
+                  <td class="bRight">hanoylottotv_set</td>
                   <td class="bRight">หวยฮานอย รอบ 14.30 (แบบชุด)</td>
                   <td class="bRight">row3,row4,top3,top4,back2,front2</td>
                   <td class="txtCenter">ไทย</td>
