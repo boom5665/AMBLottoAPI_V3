@@ -242,6 +242,11 @@
                     <td class="bRight">Number</td>
                     <td>The smallest amount</td>
                   </tr>
+                  <tr>
+                    <td class="bRight">payout</td>
+                    <td class="bRight">Number</td>
+                    <td>Payment details</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
