@@ -274,7 +274,7 @@ a {
   -moz-user-select: none;
   user-select: none;
   background: black;
-  top: 10px;
+  top: 7px;
   left: -10px;
 }
 
