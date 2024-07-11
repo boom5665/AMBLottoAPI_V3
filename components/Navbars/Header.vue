@@ -274,31 +274,31 @@ a {
 }
 
 .header .menu-icon .navicon {
-  background: green;
+  background: rgb(0, 216, 47);
   display: block;
-  height: 3px;
+  height: 5px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 20px;
+  width: 25px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: rgb(25, 161, 122) !important;
+  background: rgb(0, 216, 47) !important;
   content: "";
   display: block;
-  height: 100%;
+  height: 5px;
   position: absolute;
   transition: all 0.2s ease-out;
-  width: 100%;
+  width: 25px;
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 8px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -8px;
 }
 
 /* menu btn */
