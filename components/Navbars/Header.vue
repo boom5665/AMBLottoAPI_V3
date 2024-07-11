@@ -268,37 +268,42 @@ a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 11px 4px;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
+  background: black;
+  top: 10px;
+  left: -10px;
 }
 
 .header .menu-icon .navicon {
-  background: rgb(0, 216, 47);
+  background: rgb(255, 255, 255);
   display: block;
-  height: 5px;
+  height: 3px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 25px;
+  width: 20px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: rgb(0, 216, 47) !important;
+  background: rgb(255, 255, 255) !important;
   content: "";
   display: block;
-  height: 5px;
+  height: 3px;
   position: absolute;
   transition: all 0.2s ease-out;
-  width: 25px;
+  width: 20px;
 }
 
 .header .menu-icon .navicon:before {
-  top: 8px;
+  top: 7px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -8px;
+  top: -7px;
 }
 
 /* menu btn */
