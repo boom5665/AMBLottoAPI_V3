@@ -26,7 +26,7 @@
           <div class="col-12">
             <label class="txtHead"> Url : </label>
             <label>
-              https://test-api.askmelotto.com/apiRoute/api/ListHotnumberandLimitnumber
+              https://test-api.askmelotto.vip/apiRoute/api/ListHotnumberandLimitnumber
             </label>
           </div>
           <div class="col-12">

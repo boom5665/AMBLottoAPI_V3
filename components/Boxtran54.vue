@@ -25,7 +25,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.com/apiRoute/member/Tranferwallet/loginRequest
+            https://test-api.askmelotto.vip/apiRoute/member/Tranferwallet/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -3012,7 +3012,7 @@ export default {
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata:
-        "https://test-api.askmelotto.com/apiRoute/member/Tranferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+        "https://test-api.askmelotto.vip/apiRoute/member/Tranferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
     };
   },
   beforeCreate() {},
@@ -3317,7 +3317,7 @@ export default {
     closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = "https://test-api.askmelotto.com/apiRoute/member/Tranferwallet/loginRequest";
+      this.URLdata = "https://test-api.askmelotto.vip/apiRoute/member/Tranferwallet/loginRequest";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

@@ -23,7 +23,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.com/apiRoute/member/loginRequest
+            https://test-api.askmelotto.vip/apiRoute/member/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -141,8 +141,8 @@
         <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"member1@handsome"</span>,
         <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"member1"</span>,
         <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>,
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://test.askmelotto1.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"https://test.askmelotto1.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I"</span>
     },
     <span class="hljs-attr">"mgs"</span>: <span class="hljs-string">"Success"</span>
 }</code></pre>
@@ -339,7 +339,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.com/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "https://test-api.askmelotto.vip/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
     };
   },
   beforeCreate() {},
@@ -370,7 +370,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
       this.URLdata =
-        "https://test-api.askmelotto.com/apiRoute/member/loginRequest";
+        "https://test-api.askmelotto.vip/apiRoute/member/loginRequest";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

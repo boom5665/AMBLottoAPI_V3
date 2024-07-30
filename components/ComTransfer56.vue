@@ -23,7 +23,7 @@
             <div class="col-12">
               <label class="txtHead">Url : </label>
               <label>
-                https://test-api.askmelotto.com/apiRoute/api/withdraw
+                https://test-api.askmelotto.vip/apiRoute/api/withdraw
               </label>
             </div>
             <div class="col-12">
