@@ -997,6 +997,10 @@
                     <td class="bRight txtMid">Thai</td>
                     <td class="txtCenter txtMid">TH</td>
                   </tr>
+                   <tr>
+                    <td class="bRight txtMid">VIETNAM</td>
+                    <td class="txtCenter txtMid">VN</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
