@@ -991,6 +991,7 @@
                 <tbody>
                   <tr>
                     <td class="bRight txtMid">English</td>
+
                     <td class="txtCenter txtMid">EN</td>
                   </tr>
                   <tr>
