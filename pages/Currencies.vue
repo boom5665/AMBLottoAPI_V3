@@ -12,6 +12,7 @@
           <div>
             <b style="color: #19a17a !important">7.1
               <span style="padding-left: 3px" id="ser_Member_Authen">Currencies</span></b>
+              <b ><div>*สกุลเงิน IDR, KHR, LAK, VND จะถูกแปลงเป็นเครดิตในอัตราส่วน 1:1000</div></b>
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
