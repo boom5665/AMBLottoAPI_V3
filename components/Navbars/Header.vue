@@ -12,55 +12,38 @@
       </div> -->
       <div class="burger-fix"></div>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
         <div class="pd-left">
-          <Nuxt-link class="text-nav" to="/"
-            ><li class="">
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+          <Nuxt-link class="text-nav" to="/">
+            <li class="">
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >1. Introduction
-            </li></Nuxt-link
-          >
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>1. Introduction
+            </li>
+          </Nuxt-link>
         </div>
         <div class="pd-left">
-          <Nuxt-link class="text-nav" to="/version"
-            ><li>
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+          <Nuxt-link class="text-nav" to="/version">
+            <li>
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >2. Version
-            </li></Nuxt-link
-          >
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>2. Version
+            </li>
+          </Nuxt-link>
         </div>
         <section>
           <details class="pd-left">
             <summary>
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >3. Lottotype
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>3. Lottotype
             </summary>
             <Nuxt-link class="text-nav" to="/Lottotype" target="_self">
               <li>
@@ -77,16 +60,11 @@
         <section>
           <details class="pd-left">
             <summary>
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >4. Seamless API
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>4. Seamless API
             </summary>
             <Nuxt-link class="text-nav" to="/Seamless">
               <li>
@@ -121,8 +99,7 @@
             </Nuxt-link> -->
             <Nuxt-link class="text-nav" to="/Seamless47">
               <li>
-                <span style="word-break: break-all"
-                  >4.6 ListHotnumberandLimitnumber
+                <span style="word-break: break-all">4.6 ListHotnumberandLimitnumber
                 </span>
               </li>
             </Nuxt-link>
@@ -136,20 +113,15 @@
         <section>
           <details class="pd-left">
             <summary>
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >5. Transferwallet API
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>5. Transferwallet API
             </summary>
             <Nuxt-link class="text-nav" to="/Transferwallet">
-              <li>5.1 Introduction Transferwallet API</li></Nuxt-link
-            >
+              <li>5.1 Introduction Transferwallet API</li>
+            </Nuxt-link>
             <Nuxt-link class="text-nav" to="/Transferwallet52">
               <li>
                 <span>5.2 Workflow</span>
@@ -180,25 +152,35 @@
         <section>
           <details class="pd-left">
             <summary>
-              <svg
-                class="svg-doc"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-              >
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
-                /></svg
-              >6. Sevice response Code
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>6. Sevice response Code
             </summary>
-            <Nuxt-link class="text-nav" to="/Sevice"
-              ><li>6.1 Member Authen</li></Nuxt-link
-            >
+            <Nuxt-link class="text-nav" to="/Sevice">
+              <li>6.1 Member Authen</li>
+            </Nuxt-link>
             <Nuxt-link class="text-nav" to="/Sevice">
               <li>
                 <span>6.2 Service response</span>
               </li>
             </Nuxt-link>
+          </details>
+        </section>
+                <section>
+          <details class="pd-left">
+            <summary>
+              <svg class="svg-doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z" />
+              </svg>7. Currencies
+            </summary>
+            <Nuxt-link class="text-nav" to="/Currencies">
+              <li>7.1 Currencies</li>
+            </Nuxt-link>
+            
           </details>
         </section>
       </ul>
@@ -218,12 +200,15 @@ ul li {
   padding: 3px 10px;
   font-size: 17px;
 }
+
 a {
   color: #000;
 }
+
 .pd-left {
   padding-left: 20px;
 }
+
 /* header */
 
 .header {
@@ -312,25 +297,25 @@ a {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 3000px;
   padding: 30px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -340,14 +325,17 @@ a {
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
@@ -359,7 +347,7 @@ section {
   margin-left: 10px;
 }
 
-details[open] summary ~ * {
+details[open] summary~* {
   animation: open 0.3s ease-in-out;
 }
 
@@ -367,10 +355,12 @@ details[open] summary ~ * {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 details summary::-webkit-details-marker {
   display: none;
 }
@@ -397,13 +387,16 @@ details summary:after {
   transform-origin: center;
   transition: 200ms linear;
 }
+
 details[open] summary:after {
   transform: rotate(45deg);
   font-size: 2rem;
 }
+
 details summary {
   outline: 0;
 }
+
 details p {
   font-size: 0.95rem;
   margin: 0 0 1rem;
