@@ -1096,7 +1096,7 @@
                 >
                   <label class="txtHead">laoslotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=laoslotto&redirect= <label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect= <label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1113,7 +1113,7 @@
                 >
                   <label class="txtHead">hanoylotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1130,7 +1130,7 @@
                 >
                   <label class="txtHead">hanoylottovip :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottovip&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1147,7 +1147,7 @@
                 >
                   <label class="txtHead">baaclotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=baaclotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1164,7 +1164,7 @@
                 >
                   <label class="txtHead">gsblotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=gsblotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1181,7 +1181,7 @@
                 >
                   <label class="txtHead">pingponglotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=pingponglotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1198,7 +1198,7 @@
                 >
                   <label class="txtHead">laoslotto_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=laoslotto_set&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1215,7 +1215,7 @@
                 >
                   <label class="txtHead">yeekeelotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=yeekeelotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1232,7 +1232,7 @@
                 >
                   <label class="txtHead">malaylotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=malaylotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1249,7 +1249,7 @@
                 >
                   <label class="txtHead">hanoylotto_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylotto_set&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1266,7 +1266,7 @@
                 >
                   <label class="txtHead">hanoylottovip_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottovip_set&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1283,7 +1283,7 @@
                 >
                   <label class="txtHead">hanoylottospecial_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottospecial_set&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1300,7 +1300,7 @@
                 >
                   <label class="txtHead">malaylotto_set :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=malaylotto_set&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1317,7 +1317,7 @@
                 >
                   <label class="txtHead">hanoylottospecial :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=hanoylottospecial&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1334,7 +1334,7 @@
                 >
                   <label class="txtHead">stockkorea :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockkorea&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1351,7 +1351,7 @@
                 >
                   <label class="txtHead">stockchina :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockchina&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1368,7 +1368,7 @@
                 >
                   <label class="txtHead">stockdowjones :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockdowjones&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1385,7 +1385,7 @@
                 >
                   <label class="txtHead">stocktaiwan :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stocktaiwan&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1402,7 +1402,7 @@
                 >
                   <label class="txtHead">stockengland :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockengland&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1419,7 +1419,7 @@
                 >
                   <label class="txtHead">stockindia :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockindia&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1436,7 +1436,7 @@
                 >
                   <label class="txtHead">stockhangseng :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockhangseng&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1453,7 +1453,7 @@
                 >
                   <label class="txtHead">stockegypt :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockegypt&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1470,7 +1470,7 @@
                 >
                   <label class="txtHead">stocknikkei :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stocknikkei&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1487,7 +1487,7 @@
                 >
                   <label class="txtHead">stocksingapore :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stocksingapore&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1504,7 +1504,7 @@
                 >
                   <label class="txtHead">stockthai :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockthai&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1521,7 +1521,7 @@
                 >
                   <label class="txtHead">stockgerman :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockgerman&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
@@ -1538,7 +1538,7 @@
                 >
                   <label class="txtHead">stockrussia :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=stockrussia&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
