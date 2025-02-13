@@ -1096,7 +1096,7 @@
                 >
                   <label class="txtHead">laoslotto :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=laoslotto&redirect=<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&header=off&lotto=laoslotto&redirect= <label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
