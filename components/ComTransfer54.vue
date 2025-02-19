@@ -1822,7 +1822,7 @@
             <!-- <div class="col-12">
               <label class="txtHead">thailotto :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=zodiaclotto</label>
             </div> -->
@@ -1830,203 +1830,203 @@
             <div class="col-12">
               <label class="txtHead"> laoslotto : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottovip : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottovip</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> baaclotto : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=baaclotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> gsblotto : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=gsblotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> pingponglotto :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> laoslotto_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> yeekeelotto :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=yeekeelotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> malaylotto :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=malaylotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottovip_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottospecial_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottospecial_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> malaylotto_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=malaylotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottospecial :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottospecial</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockkorea :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockkorea</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockchina :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockchina</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockdowjones :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockdowjones</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocktaiwan : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocktaiwan</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockengland :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockengland</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockindia :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockindia</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockhangseng :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockhangseng</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockegypt : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockegypt</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocknikkei : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocknikkei</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocksingapore :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocksingapore</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockthai :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">&lottotype=stockthai</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockgerman :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockgerman</label>
             </div>
             <div class="col-12">
               <label class="txtHead">stockrussia : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockrussia</label>
             </div>
             <div class="col-12">
               <label class="txtHead">stockrussia : </label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockrussia</label>
             </div>
             <div class="col-12">
               <label class="txtHead">zodiaclotto :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=zodiaclotto</label>
             </div>
@@ -2034,98 +2034,98 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto2 :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto2</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto2 :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto2</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto3 :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto3</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto6 :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto6</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottostar_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottostar_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottostar :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottostar</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottotv :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottotv</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottotv_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottotv_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottoextra :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottoextra</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottoextra_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottoextra_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottohd :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottohd</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottohd_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottohd_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottotv :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottotv</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottotv_set :</label>
               <label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottotv_set</label>
             </div>
@@ -2173,18 +2173,18 @@
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
-          <div class="divBox" style="font-size: 0.87rem">
+          <div class="divBox" style="font-size: 0.8rem">
             <div class="col-12">
               <label class="txtHead">English :</label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=thailotto&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;</label
               ><label class="txtHead">lang=en</label>
             </div>
 
             <div class="col-12">
               <label class="txtHead">Thai : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=laoslotto&amp;</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=laoslotto&amp;</label
               ><label class="txtHead">lang=th</label>
             </div>
           </div>
@@ -2200,24 +2200,24 @@
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
-          <div class="divBox" style="font-size: 0.681rem; margin-bottom: 15px">
+          <div class="divBox" style="font-size: 0.8rem; margin-bottom: 15px">
             <!-- <div class="col-12">
               <label class="txtHead">thailotto : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;header=off&amp;lottotype=thailotto&amp;redirect=</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div> -->
             <div class="col-12">
-              <label class="txtHead">laoslotto : </label
-              ><label
+              <!-- <label class="txtHead">laoslotto : </label> -->
+              <label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
             </div>
-            <div class="col-12">
+            <!-- <div class="col-12">
               <label class="txtHead">hanoylotto : </label
               ><label
                 >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
@@ -2452,7 +2452,7 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto6 : </label
               ><label
-                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;edirect=pingponglotto6</label
+                >https://dev-askmelotto.pirate168.com/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto6</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2536,7 +2536,7 @@
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
-            </div>
+            </div> -->
           </div>
         </div>
 
