@@ -992,15 +992,15 @@
                   <tr>
                     <td class="bRight txtMid">English</td>
 
-                    <td class="txtCenter txtMid">EN</td>
+                    <td class="txtCenter txtMid">en</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">Thai</td>
-                    <td class="txtCenter txtMid">TH</td>
+                    <td class="txtCenter txtMid">th</td>
                   </tr>
                    <tr>
                     <td class="bRight txtMid">VIETNAM</td>
-                    <td class="txtCenter txtMid">VN</td>
+                    <td class="txtCenter txtMid">vn</td>
                   </tr>
                 </tbody>
               </table>
@@ -1017,7 +1017,7 @@
                 >
                   <label class="txtHead">English :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&lotto=thailotto&<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&lottotype=thailotto&<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >lang=en</label
@@ -1037,7 +1037,7 @@
                 >
                   <label class="txtHead">Thai :&nbsp;</label
                   ><label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&lotto=laoslotto&<label
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&lottotype=laoslotto&<label
                       class="txtHead"
                       style="margin-bottom: 0px"
                       >lang=th</label

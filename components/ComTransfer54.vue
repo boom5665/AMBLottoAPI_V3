@@ -2161,11 +2161,11 @@
                 <tbody>
                   <tr>
                     <td class="bRight txtMid">English</td>
-                    <td class="txtCenter txtMid">EN</td>
+                    <td class="txtCenter txtMid">en</td>
                   </tr>
                   <tr>
                     <td class="bRight txtMid">Thai</td>
-                    <td class="txtCenter txtMid">TH</td>
+                    <td class="txtCenter txtMid">th</td>
                   </tr>
                 </tbody>
               </table>
