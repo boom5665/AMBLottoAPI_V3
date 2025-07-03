@@ -42,7 +42,7 @@
                   <td class="bRight">laoslotto</td>
                   <td class="bRight">หวยลาว(แทงแบบไทย)</td>
                   <td class="bRight">
-                    top4,row4,top3,row3,top2,bottom2,row2,top1,bottom1
+                     top6,top5,top4,row4,top3,row3,top2,bottom2,row2,top1,bottom1
                   </td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
