@@ -4,8 +4,8 @@
     <div class="box-Sem" style="display: flex">
       <div class="box-all">
         <div class="col-12" id="tabFour" style="">
-          <div
-            ><h1>
+          <div>
+            <h1>
               <b
                 style="color: #19a17a !important"
                 set-lan="text:4.4 login request"
@@ -14,8 +14,8 @@
                   >Login request</span
                 ></b
               >
-            </h1></div
-          >
+            </h1>
+          </div>
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -36,8 +36,8 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important" set-lan="text:Request Body"
+            <div>
+              <b style="color: #19a17a !important" set-lan="text:Request Body"
                 >Request Body</b
               >
             </div>
@@ -132,9 +132,7 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important">Response Body</b></div
-            >
+            <div><b style="color: #19a17a !important">Response Body</b></div>
           </div>
 
           <div class="form-group col-12">
@@ -211,9 +209,7 @@
                   <tr>
                     <td class="bRight">url</td>
                     <td class="bRight">String</td>
-                    <td class="bRight">
-                      Askmelotto link
-                    </td>
+                    <td class="bRight">Askmelotto link</td>
                   </tr>
                   <tr>
                     <td class="bRight">urlFullPage</td>
@@ -225,9 +221,7 @@
             </div>
           </div>
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important">Response Code</b></div
-            >
+            <div><b style="color: #19a17a !important">Response Code</b></div>
           </div>
 
           <div class="form-group col-12">
@@ -339,11 +333,11 @@
             </div>
           </div> -->
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important" set-lan="text:** Optional"
+            <div>
+              <b style="color: #19a17a !important" set-lan="text:** Optional"
                 >** Optional for direct/re-direct link.</b
-              ></div
-            >
+              >
+            </div>
           </div>
           <div class="form-group col-12">
             <label set-lan="html:You can add">
@@ -998,7 +992,7 @@
                     <td class="bRight txtMid">Thai</td>
                     <td class="txtCenter txtMid">th</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td class="bRight txtMid">VIETNAM</td>
                     <td class="txtCenter txtMid">vn</td>
                   </tr>
@@ -1070,11 +1064,9 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12 ex">
-            <div
-              ><b style="color: #19a17a !important"
-                >Re-direct optional link:</b
-              ></div
-            >
+            <div>
+              <b style="color: #19a17a !important">Re-direct optional link:</b>
+            </div>
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -1106,20 +1098,18 @@
                     <td class="bRight txtMid">Withdraw</td>
                     <td class="txtCenter txtMid">withdrawUrl</td>
                   </tr>
-                 
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-       
+
         <div class="btn-toolbar mb-3" role="toolbar">
           <div
             class="divBox"
             style="font-size: 0.8rem; word-break: break-all; margin-left: 0"
           >
             <div class="col-12">
-
               <!-- <label class="txtHead">Baccarat
                                 :&nbsp;</label><label>http://m.hippo168.com/?tkuuid=5ebd1f57dc7cdc7900125a65&amp;game=BAC&amp;redirect=</label><label
                                 class="txtHead">input your link here(full link with https://)</label> -->
@@ -1131,12 +1121,10 @@
                   style="padding-right: 0px; padding-left: 2px"
                 >
                   <!-- <label class="txtHead">laoslotto :&nbsp;</label > -->
-                    <label class="txtHead">Signout :&nbsp;</label
-                      >
-                    <label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect= <label
-                      class="txtHead"
-                      style="margin-bottom: 0px"
+                  <label class="txtHead">Signout :&nbsp;</label>
+                  <label style="margin-bottom: 0px"
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&redirect=
+                    <label class="txtHead" style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
                     ></label
                   >
@@ -1150,27 +1138,70 @@
                   style="padding-right: 0px; padding-left: 2px"
                 >
                   <!-- <label class="txtHead">laoslotto :&nbsp;</label > -->
-                    <label class="txtHead">Deposit &nbsp;Withdraw :&nbsp;</label
-                      >
-                    <label style="margin-bottom: 0px"
-                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&depositUrl= <label
-                      class="txtHead"
-                      style="margin-bottom: 0px"
+                  <label class="txtHead">Deposit &nbsp;Withdraw :&nbsp;</label>
+                  <label style="margin-bottom: 0px"
+                    >https://test-front.pirate168.com/token?token=jd_m8MB7C0xxvahoWtPg&depositUrl=
+                    <label class="txtHead" style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
                     ></label
                   >
                   <label style="margin-bottom: 0px"
-                    >&withdrawUrl= <label
-                      class="txtHead"
-                      style="margin-bottom: 0px"
+                    >&withdrawUrl=
+                    <label class="txtHead" style="margin-bottom: 0px"
                       >input your link here(full link with https://)</label
                     ></label
                   >
                 </div>
               </div>
             </div>
-         
-        
+
+            <div class="col-12">
+              <div class="row">
+                <div
+                  class="col-12"
+                  style="
+                    padding-right: 0px;
+                    padding-left: 2px;
+                    margin-top: 10px;
+                  "
+                >
+                  <div class="txtHead">Example:&nbsp;</div>
+                  <div class="txtHead">
+                    &footer=false (hide footer) If you add &footer=false in the
+                    URL, it will hide the footer.
+                  </div>
+
+                  <label style="margin-bottom: 0px"
+                    >https://test.askmelotto1.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I
+                    <label class="txtHead" style="margin-bottom: 0px"
+                      >&footer=false</label
+                    ></label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div
+                  class="col-12"
+                  style="
+                    padding-right: 0px;
+                    padding-left: 2px;
+                    margin-top: 10px;
+                  "
+                >
+                  <div class="txtHead">Example:&nbsp;</div>
+                  <div class="txtHead">
+                    If you don’t include &footer, the footer will be displayed
+                    as normal.
+                  </div>
+
+                  <label style="margin-bottom: 0px"
+                    >https://test.askmelotto1.com/seamless?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTU2NzU4MzMsImlkIjoibWVtYmVyMUBoYW5kc29tZSIsInJhbmRvbSI6Im9tR2pqVHJkWGZINkdYTzRPMThwbGc9PSJ9.AjEHdf7HCYZSYhibXq6uuzjb3oLtf_dqasGJgcYkJ3I
+                  </label>
+                </div>
+              </div>
+            </div>
             <!-- <div class="col-12">
               <div class="row">
                 <div
@@ -1622,7 +1653,6 @@
           <BoxSem44 />
         </div>
       </div>
-
     </div>
   </div>
 </template>
