@@ -1168,7 +1168,7 @@
                   <div class="txtHead">Example:&nbsp;</div>
                   <div class="txtHead">
                     &footer=false (hide footer) If you add &footer=false in the
-                    URL, it will hide the footer. 
+                    URL, it will hide the footer.   
                   </div>
 
                   <label style="margin-bottom: 0px"
