@@ -2,14 +2,6 @@
 <template>
   <div class="nav-mobile">
     <header class="header">
-      <!-- <div class="logo">
-        <img
-          class="con-box-two-img"
-          style="margin: 0 !important"
-          src="~/assets/image/logo.png"
-          alt=""
-        />
-      </div> -->
       <div class="burger-fix"></div>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
