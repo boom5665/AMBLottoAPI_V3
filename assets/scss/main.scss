@@ -16,7 +16,7 @@ body {
 }
 @media (max-width: 900px) {
   body {
-    zoom: 0.8; /* ย่อทั้ง layout */
+    zoom: 0.8;
   }
   .box-Navbar {
     width: max-content !important;
@@ -36,12 +36,12 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    zoom: 0.5; /* ย่อทั้ง layout */
+    zoom: 0.5;
   }
 }
 @media (max-width: 400px) {
   body {
-    zoom: 0.4; /* ย่อทั้ง layout */
+    zoom: 0.4;
   }
 }
 @font-face {
