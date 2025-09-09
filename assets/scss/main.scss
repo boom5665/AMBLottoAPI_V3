@@ -10,13 +10,13 @@ body {
   .W-default {
     width: max-content !important;
   }
-    .copy-clipboard {
+  .copy-clipboard {
     left: 88% !important;
   }
 }
 @media (max-width: 900px) {
   body {
-    zoom: 0.8; /* ย่อทั้ง layout */
+    zoom: 0.8;
   }
   .box-Navbar {
     width: max-content !important;
@@ -27,11 +27,21 @@ body {
   .box-all {
     width: 30rem !important;
   }
-
+  .box-intro {
+    width: 40rem !important;
+  }
+  .box-cotent {
+    background: #043e35 !important;
+  }
 }
 @media (max-width: 500px) {
   body {
-    zoom: 1.2;  /* ย่อทั้ง layout */
+    zoom: 0.5;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    zoom: 0.4;
   }
 }
 @font-face {
@@ -65,7 +75,7 @@ a:hover {
 }
 
 .box-cotent {
-  background: #f2f3f4 !important;
+  background: #f2f3f4;
   display: flex;
   width: 100%;
   position: relative;
