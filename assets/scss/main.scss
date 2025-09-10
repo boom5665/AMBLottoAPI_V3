@@ -13,11 +13,6 @@ body {
   .copy-clipboard {
     left: 88% !important;
   }
-}
-@media (max-width: 900px) {
-  body {
-    zoom: 0.8;
-  }
   .box-Navbar {
     width: max-content !important;
   }
@@ -27,11 +22,20 @@ body {
   .box-all {
     width: 30rem !important;
   }
-  .box-intro {
-    width: 47rem !important
+  .box-intro,
+  .box-Sev {
+    width: 47rem !important;
+  }
+  .box-version {
+    width: 66rem !important;
   }
   .box-cotent {
     background: #043e35 !important;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    zoom: 0.8;
   }
 }
 @media (max-width: 500px) {
@@ -44,6 +48,39 @@ body {
     zoom: 0.4;
   }
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-touch-callout: none) {
+    @media (max-width: 1100px) {
+      body {
+        transform: scale(0.9);
+        transform-origin: top center;
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        transform: scale(0.8);
+        transform-origin: top center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      body {
+        transform: scale(0.5);
+        transform-origin: top center;
+      }
+    }
+
+    @media (max-width: 400px) {
+      body {
+        transform: scale(0.1);
+        transform-origin: top center;
+      }
+    }
+  }
+}
+
 @font-face {
   font-family: "Pentor Corporate";
   font-style: normal;
