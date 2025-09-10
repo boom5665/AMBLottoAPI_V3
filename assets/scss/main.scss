@@ -4,7 +4,6 @@ body {
   font-family: "Pentor Corporate" !important;
 }
 @media (max-width: 1100px) {
-
   .W-default {
     width: max-content !important;
   }
@@ -30,43 +29,61 @@ body {
   .box-cotent {
     background: #043e35 !important;
   }
+  .scale-wrapper {
+    width: 100vw; /* ให้ชัดเจนว่า wrapper กว้างเท่า viewport */
+    height: 100vh; /* ให้กินเต็ม viewport */
+  }
+}
+@media (max-width: 1000px) {
+  .scale-wrapper {
+    transform: scale(1);
+    transform-origin: top left;
+  }
 }
 @media (max-width: 900px) {
-  body {
-    zoom: 0.8;
+  .scale-wrapper {
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+}
+@media (max-width: 800px) {
+  .scale-wrapper {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 700px) {
+  .scale-wrapper {
+    transform: scale(0.7);
+    transform-origin: top left;
+  }
+}
+@media (max-width: 600px) {
+  .scale-wrapper {
+    transform: scale(0.6);
+    transform-origin: top left;
   }
 }
 @media (max-width: 500px) {
-  body {
-    zoom: 0.5;
+  .scale-wrapper {
+    transform: scale(0.5);
+    transform-origin: top left;
   }
 }
+
 @media (max-width: 400px) {
-  body {
-    zoom: 0.4;
+  .scale-wrapper {
+    transform: scale(0.4);
+    transform-origin: top left;
   }
 }
-
-
-  
-
-    @media (max-width: 700px) {
-      body {
-        transform: scale(0.8);
-        transform-origin: top left;
-      }
-    }
-
-    @media (max-width: 500px) {
-      body {
-        transform: scale(0.9);
-        transform-origin: top left;
-      }
-    }
-
- 
-
-
+@media (max-width: 300px) {
+  .scale-wrapper {
+    transform: scale(0.3);
+    transform-origin: top left;
+  }
+}
 @font-face {
   font-family: "Pentor Corporate";
   font-style: normal;
@@ -451,8 +468,9 @@ img {
 }
 
 .box-r-scoll {
-  height: 950px;
-  overflow: scroll;
+  height: 960px;
+  overflow-y: scroll;   /* ✅ เลื่อนขึ้นลง */
+  overflow-x: hidden;   /* ❌ ปิดเลื่อนซ้ายขวา */
 }
 
 .buton-suscess {
