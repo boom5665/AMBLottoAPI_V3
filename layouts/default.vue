@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scale-wrapper">
     <Header />
     <div class="box-cotent">
       <div class="box-Navbar">
