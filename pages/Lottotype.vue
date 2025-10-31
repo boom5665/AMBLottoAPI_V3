@@ -88,7 +88,7 @@
                   <td class="bRight">laoslotto_set</td>
                   <td class="bRight">หวยลาว(แบบชุด)</td>
                   <td class="bRight">
-                    lottoset, top4,row4,top3,row3,back2,front2
+                     top4,row4,top3,row3,back2,front2
                   </td>
                   <td class="txtCenter">ชุด</td>
                 </tr>
