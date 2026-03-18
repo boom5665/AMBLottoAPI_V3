@@ -88,6 +88,7 @@ export default {
   /* padding: 10px; */
   color: white;
   z-index: 100000;
+  
 }
 
 .title {
