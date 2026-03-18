@@ -20,8 +20,9 @@
 
         <div class="col-12">
           <label set-lan="html:*Please keep">
-            *โปรดเก็บข้อมูล ”Call Back Service”
-            <b style="color: red">ทั้งหมดไว้เป็นความลับ</b>.
+            {{ $t("setting451") }}
+            <b style="color: red">{{ $t("setting452") }}</b
+            >.
           </label>
         </div>
         <div><b style="color: #19a17a !important"></b></div>
@@ -42,13 +43,10 @@
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
             <label set-lan="html:when previous PlaceBet">
-              1. ใช้ยกเลิกเมื่อ UserPlaceBet เกิดข้อผิดพลาด หรือ Time Out <br />
-              2. ใช้ยกเลิกกรณีที่ผู้เล่นต้องการยกเลิก <br />
-              2.1 กรณียกเลิกทั้งตั๋ว Status ของตั๋วจะเป็น "Cancel"
-              ซึ่งรายละเอียดในการเดิมพันแต่ละรายการ ทุกรายการของตั๋วนั้นจะมี
-              "betStatus" เป็น "Cancel"<br />
-              2.2 ถ้ายกเลิกทีละเลข ตั๋วเป็น Success แต่ในโพยเลขที่ยกเลิก มี
-              "betStatus" เป็น "Cancel"
+              1. {{ $t("setting4541") }}<br />
+              2. {{ $t("setting4542") }} <br />
+              2.1 {{ $t("setting4543") }}<br />
+              2.2 {{ $t("setting4544") }}
             </label>
           </div>
           <div class="form-group col-12 ex">
@@ -247,12 +245,16 @@
                   <tr>
                     <td class="bRight">DrawOpen</td>
                     <td class="bRight">Date</td>
-                    <td>The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)</td>
+                    <td>
+                      The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)
+                    </td>
                   </tr>
                   <tr>
                     <td class="bRight">drawExpire</td>
                     <td class="bRight">Date</td>
-                    <td>The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)</td>
+                    <td>
+                      The date the bet was placed. format(YYYY-MM-DD HH:mm:ss)
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -457,10 +459,9 @@
 
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
-            <label set-lan="html:This interface will">
-              ถ้ามีการออกผลรางวัล ระบบ Askmelotto จะส่งคำขอ UserPlacePayout
-              เมื่อมีการออกผลรางวัล</label
-            >
+            <label set-lan="html:This interface will"
+              >{{ $t("setting4545") }}
+            </label>
           </div>
           <div class="form-group col-12 ex">
             <div>

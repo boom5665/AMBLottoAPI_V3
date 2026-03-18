@@ -19,15 +19,14 @@
         <div class="form-group col-12">
           <label set-lan="html:0. *"
             >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            *หากคุณมีบัญชีหลัก โปรดสร้างบัญชีตัวแทน API
-            ภายใต้บัญชีหลักของคุณและเข้าสู่ระบบด้วยบัญชีตัวแทน API
-            ที่สร้างขึ้นก่อน แล้วทำตามขั้นตอนการตั้งค่า ดังนี้
-
+            {{ $t("setting3") }}
           </label>
- <div>
+          <div>
             <label set-lan="html:1.	Login"
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.เข้าสู่ระบบ</label
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.{{
+                $t("login")
+              }}</label
             >
           </div>
 
@@ -40,7 +39,7 @@
           <div class="pb-5"></div>
           <label set-lan="html:2.	Click"
             >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            2.คลิกเมนูบัญชีและเลือกเมนูโปรไฟล์</label
+            2. {{ $t("setting4") }}</label
           >
           <div class="col-12">
             <img
@@ -50,19 +49,18 @@
           </div>
           <div class="pb-5"></div>
           <label id="tabZero" set-lan="html:4. Define"
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.กำหนดข้อมูล
-            API ต่อไปนี้</label
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. {{ $t("setting31") }}</label
           >
           <div class="col-12">
             <label set-lan="html:4.1 You can"
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              3.1 Key ใช้สำหรับ auten login</label
+              3.1  {{ $t("tran513") }}</label
             >
           </div>
           <div class="col-12">
             <label set-lan="html:4.2 You can"
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              3.2 คุณสามารถคลิกปุ่ม “บันทึก” เพื่อบันทึกข้อมูล</label
+              3.2  {{ $t("tran514") }}</label
             >
           </div>
           <div class="col-12">
@@ -74,7 +72,6 @@
         </div>
       </div>
       <div class="pb-5"></div>
-
     </div>
   </div>
 </template>

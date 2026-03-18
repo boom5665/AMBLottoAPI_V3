@@ -268,7 +268,7 @@ export default {
 
 $color: #043e35;
 $toggle-background: gray;
-$toggle-background-active: lighten($toggle-background, 8);
+// $toggle-background-active: lighten($toggle-background, 8);
 
 .accordion {
   color: $color;
@@ -325,7 +325,7 @@ $toggle-background-active: lighten($toggle-background, 8);
       }
 
       &:hover {
-        background: $toggle-background-active;
+        // background: $toggle-background-active;
         font-weight: 700;
         color: $color;
       }
@@ -399,7 +399,7 @@ ul {
       cursor: pointer;
       color: $color;
       font-weight: 700;
-      background: $toggle-background-active;
+      // background: $toggle-background-active;
     }
   }
 }

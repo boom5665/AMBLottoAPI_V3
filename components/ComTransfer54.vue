@@ -11,8 +11,9 @@
                 set-lan="text:5.4 login request"
                 >5.4
                 <span style="padding-left: 3px" id="tran_login_request5"
-                  >login request</span>
-                </b>
+                  >login request</span
+                >
+              </b>
             </h1>
           </div>
         </div>
@@ -1512,7 +1513,7 @@
                   <tr>
                     <td class="bRight">url</td>
                     <td class="bRight">String</td>
-                    <td>Askmelotto Lotto link </td>
+                    <td>Askmelotto Lotto link</td>
                   </tr>
                   <tr>
                     <td class="bRight">urlFullPage</td>
@@ -1608,9 +1609,7 @@
           <div class="form-group col-12">
             <label set-lan="html:You can add"
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              คุณสามารถเพิ่มค่าพารามิเตอร์ต่อท้ายในลิงค์ (&lottotype=)
-              เพื่อเปลี่ยนเส้นทางให้ผู้เล่นไปยังหน้าแทง Askmelotto
-              ประเภทนั้นๆ</label
+              {{ $t("setting44") }}</label
             >
           </div>
           <!-- <div class="col-8">
@@ -2138,9 +2137,9 @@
           </div>
           <div class="form-group col-12">
             <label
-              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หมายเหตุ
-              : กรุณาใช้รหัสตรงตามตัวอย่าง</label
-            >
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {{ $t("setting45") }}
+            </label>
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -2545,7 +2544,6 @@
       <div class="box-all-content">
         <div style="position: sticky; top: 0px"><Boxtran54 /></div>
       </div>
-
     </div>
   </div>
 </template>

@@ -17,10 +17,8 @@
 
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
-            <label set-lan="html:4.2 Body">
-              ข้อมูลเบื้องต้นแสดงการทำงานในการเรียกใช้ API ของระบบคู่ธุรกิจ
-              เพื่อให้ระบบสามารถเรียกใช้ API
-              ได้ภายใต้เงื่อนไขได้อย่างถูกต้อง</label
+            <label set-lan="html:4.2 Body">{{ $t("work4") }}
+</label
             >
           </div>
           <div class="col-12">

@@ -32,8 +32,7 @@
       <div class="form-group col-12">
         <label set-lan="html:5.1 Body"
           >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          ในส่วนนี้จะแสดงรายละเอียดของการใช้งานระบบ Transferwallet
-          เพื่อไปใช้ในระบบคู่ธุรกิจภายนอก
+          {{ $t("tran5") }}
         </label>
       </div>
     </div>
