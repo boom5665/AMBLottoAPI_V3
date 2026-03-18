@@ -19,9 +19,10 @@
         </div>
 
         <div class="col-12">
-          <label set-lan="html:*Please keep">
-            *โปรดเก็บข้อมูล ”Call Back Service”
-            <b style="color: red">ทั้งหมดไว้เป็นความลับ</b>.
+         <label set-lan="html:*Please keep">
+            {{ $t("setting451") }}
+            <b style="color: red">{{ $t("setting452") }}</b
+            >.
           </label>
         </div>
         <div><b style="color: #19a17a !important"></b></div>
@@ -40,9 +41,8 @@
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
-            <label set-lan="html:This interface will">
-              ถ้ามีการออกผลรางวัล ระบบ Askmelotto จะส่งคำขอ UserPlacePayout
-              เมื่อมีการออกผลรางวัล</label
+            <label set-lan="html:This interface will">{{ $t("setting4545") }}
+</label
             >
           </div>
           <div class="form-group col-12 ex">

@@ -340,11 +340,7 @@
             </div>
           </div>
           <div class="form-group col-12">
-            <label set-lan="html:You can add">
-              คุณสามารถเพิ่มค่าพารามิเตอร์ต่อท้ายในลิงค์ (&lottotype=)
-              เพื่อเปลี่ยนเส้นทางให้ผู้เล่นไปยังหน้าแทง Askmelotto
-              ประเภทนั้นๆ</label
-            >
+            <label set-lan="html:You can add"> {{ $t("setting44") }}</label>
           </div>
           <div class="col-8">
             <!-- <a href="https://service-api.prettygaming.asia/img/zip/game_icons.rar" style="float: right;"
@@ -964,7 +960,7 @@
             <div><b style="color: #19a17a !important">Language</b></div>
           </div>
           <div class="form-group col-12">
-            <label> หมายเหตุ : กรุณาใช้รหัสตรงตามตัวอย่าง</label>
+            <label>{{ $t("setting45") }} </label>
           </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar">
@@ -1168,7 +1164,7 @@
                   <div class="txtHead">Example:&nbsp;</div>
                   <div class="txtHead">
                     &footer=false (hide footer) If you add &footer=false in the
-                    URL, it will hide the footer.   
+                    URL, it will hide the footer.
                   </div>
 
                   <label style="margin-bottom: 0px"

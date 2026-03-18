@@ -20,8 +20,9 @@
 
         <div class="col-12">
           <label set-lan="html:*Please keep">
-            *โปรดเก็บข้อมูล ”Call Back Service”
-            <b style="color: red">ทั้งหมดไว้เป็นความลับ</b>.
+            {{ $t("setting451") }}
+            <b style="color: red">{{ $t("setting452") }}</b
+            >.
           </label>
         </div>
         <div><b style="color: #19a17a !important"></b></div>
@@ -39,14 +40,11 @@
           </div>
         </div>
 
-
         <div class="btn-toolbar mb-3" role="toolbar">
           <div class="form-group col-12">
-            <label set-lan="html:When a player places">
-              เมื่อผู้เล่นวางเดิมพัน ระบบ Askmelotto จะส่งคำขอ UserPlaceBet
-              ไปยังระบบของคู่ธุรกิจ คำขอจะหมดเวลาหลังจาก 10 วินาทีและจะส่ง
-              PlaceBetCancel</label
-            >
+            <label set-lan="html:When a player places"
+              >{{ $t("setting4522") }}
+            </label>
           </div>
           <div class="form-group col-12 ex">
             <div>
