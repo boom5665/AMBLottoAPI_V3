@@ -26,5 +26,6 @@
   "tran513": "Key used for login authentication.",
   "tran514": "You can click the “Save” button to save the information.",
   "Curren7": "*Currencies IDR, KHR, LAK, and VND will be converted to credits at a 1:1000 .",
-  "tran5": "This section shows the details of the Transfer Wallet system used for external partner integrations."
+  "tran5": "This section shows the details of the Transfer Wallet system used for external partner integrations.",
+  "tokenre":"* Tokens will only be awarded upon successful login."
 }
