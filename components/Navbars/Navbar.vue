@@ -255,6 +255,16 @@
                       <span>5.7 Get Balance</span>
                     </li>
                   </Nuxt-link>
+                  <Nuxt-link class="text-nav" to="/Transferwallet58">
+                    <li>
+                      <span>5.8 Member Report List</span>
+                    </li>
+                  </Nuxt-link>
+                  <Nuxt-link class="text-nav" to="/Transferwallet59">
+                    <li>
+                      <span>5.9 Member Report Detailticket </span>
+                    </li>
+                  </Nuxt-link>
                 </ul>
               </ul>
             </div>

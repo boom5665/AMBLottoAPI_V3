@@ -51,7 +51,7 @@
             <span style="padding-left: 3px" id="Seamless_GetUserDetail"
               >Input Your Request body
               <span style="color: red">
-                ให้เลือกใส่กรณี (ไม่ถูกรางวัล-ถูกรางวัล)</span
+                {{ $t("sem4551") }}</span
               ></span
             ></b
           >
@@ -75,7 +75,7 @@
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
             >Example Request Body
-            <span style="color: red"> (กรณีไม่ถูกรางวัล)</span>
+            <span style="color: red">{{ $t("sem4552") }}</span>
           </b>
           <i
             class="fa fa-chevron-down"
@@ -252,7 +252,7 @@
             style="color: #19a17a !important"
             set-lan="text:Example Request Body"
             >Example Request Body
-            <span style="color: red"> (กรณีถูกรางวัล)</span></b
+            <span style="color: red">{{ $t("sem4553") }}</span></b
           >
           <i
             class="fa fa-chevron-down"

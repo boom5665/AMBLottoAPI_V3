@@ -8,9 +8,9 @@
       <div class="col-12" id="tabFour">
         <div>
           <b style="color: #19a17a !important"
-            >5.7
+            >5.9
             <span style="padding-left: 3px" id="withdrawal">
-              Get Balance</span
+               Member Report Detailticket</span
             ></b
           >
         </div>
@@ -22,7 +22,9 @@
         </div>
         <div class="col-12">
           <label class="txtHead">Url : </label>
-          <label> https://test-api.askmelotto.vip/api/v2/fe/get_balance </label>
+          <label>
+            https://test-api.askmelotto.vip/api/v2/fe/memberreport_detailticket
+          </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
@@ -34,60 +36,10 @@
         </div>
 
         <div class="col-12">
-          <b style="color: red;"
-            > {{ $t("tokenre") }}
-          </b>
+          <b style="color: red"> {{ $t("tokenre") }} </b>
         </div>
       </div>
-
-      <!-- <div class="col-12" id="tabSix" style="left: 5px">
-        <div>
-          <b
-            style="color: #19a17a !important"
-            set-lan="text:4.5.1 GetUserBalance"
-          >
-            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Your URL
-            </span></b
-          >
-        </div>
-      </div>
-      <div class="boxinput">
-        <div class="false-input">
-          <input
-            type="text"
-            v-model="URLdata"
-            placeholder="Please enter your URLhere."
-          />
-        </div>
-      </div> -->
-
-      <!-- <div class="col-12" id="tabSix" style="left: 5px; padding-top: 10px">
-        <div>
-          <b
-            style="color: #19a17a !important"
-            set-lan="text:4.5.1 GetUserBalance"
-          >
-            <span style="padding-left: 3px" id="Seamless_GetUserDetail"
-              >Input Your Request body</span
-            ></b
-          >
-        </div>
-      </div> -->
-      <!-- <div class="koh-faq-answer col-12">
-        <code>
-          <textarea
-            v-model="jsonData"
-            rows="10"
-            cols="50"
-            class="custom-textarea"
-            placeholder="Please enter your URLhere."
-          >
-          </textarea>
-        </code>
-      </div> -->
-
-      <!-- <div class="koh-faq-question form-group ex">
+      <div class="koh-faq-question form-group ex">
         <div class="Point">
           <b
             style="color: #19a17a !important"
@@ -99,27 +51,24 @@
             aria-hidden="true"
             style="margin-left: 2%; font-size: 1rem"
           ></i>
-          <div class="btn-send">
+          <!-- <div class="btn-send">
             <a href="#openModal-about">
               <button class="custom-btn btn-13" @click="get_Transfer">
                 Send Code
               </button></a
             >
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="koh-faq-answer col-12">
         <copy-text id="myDiv">
           <pre>
-                                    <code id="47A" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b"</span>,
-    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi001"</span>,
-    <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300</span>,
-    <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd6612676125127126761216541276519"</span>
-}</code></pre>
+          <code id="47B" style="border-radius: 0.375rem;" class="hljs json">      {
+            <span class="hljs-attr">"ticket_id"</span>: <span class="hljs-string">3449352</span>,
+        }</code>
+</pre>
         </copy-text>
-      </div> -->
+      </div>
       <div>
         <div class="koh-faq-question form-group ex">
           <div class="Point">
@@ -140,18 +89,52 @@
         </div>
 
         <div class="koh-faq-answer col-12">
-          <pre>
-
-                                    <code id="47B" style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">200,</span>
-    <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"credit"</span>: <span class="hljs-number">99792735,</span>
-    },
-    <span class="hljs-attr">"msg"</span>: {
-       <span class="hljs-attr">"en"</span>:<span class="hljs-string">"success"</span>
-        <span class="hljs-attr">"th"</span>:<span class="hljs-string">"สำเร็จ"</span>
-  }
-}</code></pre>
+        <pre>
+          <code id="47D" style="border-radius: 0.375rem;" class="hljs json">      {
+            <span class="hljs-attr">"code"</span>: <span class="hljs-number">200</span>,
+            <span class="hljs-attr">"data"</span>: {
+              <span class="hljs-attr">"total"</span>: <span class="hljs-number">-2</span>,
+              <span class="hljs-attr">"comment"</span>: <span class="hljs-string">""</span>,
+              <span class="hljs-attr">"type"</span>: <span class="hljs-string">"thailotto"</span>,
+              <span class="hljs-attr">"round"</span>: <span class="hljs-number">1</span>,
+              <span class="hljs-attr">"date_time"</span>: <span class="hljs-string">"2025-11-16T00:00:00+07:00"</span>,
+              <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"usd"</span>,
+              <span class="hljs-attr">"created_date"</span>: <span class="hljs-string">"2025-11-05T11:55:25.87378+07:00"</span>,
+              <span class="hljs-attr">"result"</span>: <span class="hljs-literal">null</span>,
+              <span class="hljs-attr">"bet_data"</span>: [
+                {
+                  <span class="hljs-attr">"bet_id"</span>: <span class="hljs-string">"1"</span>,
+                  <span class="hljs-attr">"bet_status"</span>: <span class="hljs-string">"pending"</span>,
+                  <span class="hljs-attr">"number"</span>: <span class="hljs-string">"40"</span>,
+                  <span class="hljs-attr">"lotto_type"</span>: <span class="hljs-string">"bottom2"</span>,
+                  <span class="hljs-attr">"amount"</span>: <span class="hljs-number">1</span>,
+                  <span class="hljs-attr">"total"</span>: <span class="hljs-number">-1</span>,
+                  <span class="hljs-attr">"rate"</span>: <span class="hljs-number">90</span>,
+                  <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                  <span class="hljs-attr">"cancel_status"</span>: <span class="hljs-literal">false</span>
+                },
+                {
+                  <span class="hljs-attr">"bet_id"</span>: <span class="hljs-string">"2"</span>,
+                  <span class="hljs-attr">"bet_status"</span>: <span class="hljs-string">"pending"</span>,
+                  <span class="hljs-attr">"number"</span>: <span class="hljs-string">"21"</span>,
+                  <span class="hljs-attr">"lotto_type"</span>: <span class="hljs-string">"bottom2"</span>,
+                  <span class="hljs-attr">"amount"</span>: <span class="hljs-number">1</span>,
+                  <span class="hljs-attr">"total"</span>: <span class="hljs-number">-1</span>,
+                  <span class="hljs-attr">"rate"</span>: <span class="hljs-number">90</span>,
+                  <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                  <span class="hljs-attr">"cancel_status"</span>: <span class="hljs-literal">false</span>
+                }
+              ],
+              <span class="hljs-attr">"draw_id"</span>: <span class="hljs-number">263513</span>,
+              <span class="hljs-attr">"draw_date"</span>: <span class="hljs-string">"2025-11-05T11:55:25.87378+07:00"</span>,
+              <span class="hljs-attr">"cancel_status"</span>: <span class="hljs-literal">false</span>
+            },
+            <span class="hljs-attr">"msg"</span>: {
+              <span class="hljs-attr">"en"</span>: <span class="hljs-string">"Success"</span>,
+              <span class="hljs-attr">"th"</span>: <span class="hljs-string">"สำเร็จ"</span>
+            }
+                }</code>
+        </pre>
         </div>
 
         <!-- // -->
