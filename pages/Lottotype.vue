@@ -50,14 +50,14 @@
                   <td class="bRight">3</td>
                   <td class="bRight">hanoylotto</td>
                   <td class="bRight">หวยฮานอย</td>
-                  <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
+                  <td class="bRight">top5,top4,row4,top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
                   <td class="bRight">4</td>
                   <td class="bRight">hanoylottovip</td>
                   <td class="bRight">หวยฮานอย(วีไอพี)</td>
-                  <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
+                  <td class="bRight">top5,top4,row4,top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
@@ -111,7 +111,7 @@
                   <td class="bRight">hanoylotto_set</td>
                   <td class="bRight">หวยฮานอย(แบบชุด)</td>
                   <td class="bRight">
-                    lottoset, top4,row4,top3,row3,back2,front2
+                    top4,row4,top3,row3,back2,front2
                   </td>
                   <td class="txtCenter">ชุด</td>
                 </tr>
@@ -120,7 +120,7 @@
                   <td class="bRight">hanoylottovip_set</td>
                   <td class="bRight">หวยฮานอยวีไอพี(แบบชุด)</td>
                   <td class="bRight">
-                    lottoset, top4,row4,top3,row3,back2,front2
+                     top4,row4,top3,row3,back2,front2
                   </td>
                   <td class="txtCenter">ชุด</td>
                 </tr>
@@ -129,7 +129,7 @@
                   <td class="bRight">hanoylottospecial_set</td>
                   <td class="bRight">หวยฮานอยพิเศษ(แบบชุด)</td>
                   <td class="bRight">
-                    lottoset, top4,row4,top3,row3,back2,front2
+                    top4,row4,top3,row3,back2,front2
                   </td>
                   <td class="txtCenter">ชุด</td>
                 </tr>
@@ -138,7 +138,7 @@
                   <td class="bRight">malaylotto_set</td>
                   <td class="bRight">หวยมาเลย์(แบบชุด)</td>
                   <td class="bRight">
-                    lottoset, top4,row4,top3,row3,back2,front2
+                    top4,row4,top3,row3,back2,front2
                   </td>
                   <td class="txtCenter">ชุด</td>
                 </tr>
@@ -146,7 +146,7 @@
                   <td class="bRight">15</td>
                   <td class="bRight">hanoylottospecial</td>
                   <td class="bRight">หวยฮานอย(พิเศษ)</td>
-                  <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
+                  <td class="bRight">top5,top4,row4,top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
@@ -240,7 +240,7 @@
                   <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="bRight">29</td>
                   <td class="bRight">stock</td>
                   <td class="bRight">
@@ -248,23 +248,23 @@
                   </td>
                   <td class="bRight">top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
-                </tr>
+                </tr> -->
                 <tr>
-                  <td class="bRight">30</td>
+                  <td class="bRight">29</td>
                   <td class="bRight">zodiaclotto</td>
                   <td class="bRight">หวยยี่กีนักษัตร</td>
                   <td class="bRight">ball1,ball2,ball3,ball4,color</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">31</td>
+                  <td class="bRight">30</td>
                   <td class="bRight">pingponglotto2</td>
                   <td class="bRight">หวยปิงปองออนไลน์ 2 ตัว</td>
                   <td class="bRight">row2,top1,top2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">33</td>
+                  <td class="bRight">31</td>
                   <td class="bRight">pingponglotto3</td>
                   <td class="bRight">หวยปิงปองออนไลน์ 3 ตัว</td>
                   <td class="bRight">
@@ -273,7 +273,7 @@
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">34</td>
+                  <td class="bRight">32</td>
                   <td class="bRight">pingponglotto6</td>
                   <td class="bRight">หวยปิงปองออนไลน์ 6 ตัว</td>
                   <td class="bRight">
@@ -282,24 +282,24 @@
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">35</td>
+                  <td class="bRight">33</td>
                   <td class="bRight">hanoylottostar_set</td>
                   <td class="bRight">หวยฮานอย รอบ 12.30 (แบบชุด)</td>
                   <td class="bRight">row3,top1,top2,top3,bottom1,bottom2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">35</td>
+                  <td class="bRight">34</td>
                   <td class="bRight">hanoylottostar</td>
                   <td class="bRight">หวยฮานอย รอบ 12.30</td>
-                  <td class="bRight">row3,row4,top3,top4,back2,front2</td>
+                  <td class="bRight">top5,top4,row4,top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">36</td>
+                  <td class="bRight">35</td>
                   <td class="bRight">hanoylottotv</td>
                   <td class="bRight">หวยฮานอย รอบ 14.30</td>
-                  <td class="bRight">row3,top1,top2,top3,bottom1,bottom2</td>
+                  <td class="bRight">top5,top4,row4,top3,row3,top2,bottom2,top1,bottom1</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
@@ -319,14 +319,14 @@
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">37</td>
+                  <td class="bRight">38</td>
                   <td class="bRight">laoslottoextra_set</td>
                   <td class="bRight">หวยลาว รอบ 08.30 (แบบชุด)</td>
                   <td class="bRight">row3,row4,top3,top4,back2,front2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">37</td>
+                  <td class="bRight">39</td>
                   <td class="bRight">laoslottohd</td>
                   <td class="bRight">หวยลาว รอบ 13.45</td>
                   <td class="bRight">
@@ -335,14 +335,14 @@
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">37</td>
+                  <td class="bRight">40</td>
                   <td class="bRight">laoslottohd_set</td>
                   <td class="bRight">หวยลาว รอบ 13.45 (แบบชุด)</td>
                   <td class="bRight">row3,row4,top3,top4,back2,front2</td>
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">38</td>
+                  <td class="bRight">41</td>
                   <td class="bRight">laoslottotv</td>
                   <td class="bRight">หวยลาว รอบ 10.30</td>
                   <td class="bRight">
@@ -351,7 +351,7 @@
                   <td class="txtCenter">ไทย</td>
                 </tr>
                 <tr>
-                  <td class="bRight">38</td>
+                  <td class="bRight">42</td>
                   <td class="bRight">laoslottotv_set</td>
                   <td class="bRight">หวยลาว รอบ 10.30 (แบบชุด)</td>
                   <td class="bRight">row3,row4,top3,top4,back2,front2</td>
