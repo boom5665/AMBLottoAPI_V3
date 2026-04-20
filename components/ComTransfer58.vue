@@ -463,6 +463,50 @@
                     <td class="bRight">200</td>
                     <td>success</td>
                   </tr>
+                  <tr>
+                    <td class="bRight">41001</td>
+                    <td>Error Request body is not an object.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71001</td>
+                    <td>missing field 'agentUsername'.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71002</td>
+                    <td>missing field 'agentApiKey'.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71004</td>
+                    <td>Invalid agentUsername or apiKey.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71010</td>
+                    <td>invalid ApiKey or UserAgent.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71014</td>
+                    <td>invalid userMember.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71022</td>
+                    <td>invalid input format 'startDate' field.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71023</td>
+                    <td>invalid input format 'endDate' field.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71026</td>
+                    <td>missing field 'startDate'.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">71027</td>
+                    <td>missing field 'endDate'.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">20017</td>
+                    <td>Invalid currency.</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
