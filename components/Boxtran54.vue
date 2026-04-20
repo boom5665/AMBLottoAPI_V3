@@ -77,7 +77,7 @@
         <div class="koh-faq-answer col-12">
           <copy-text id="myDiv">
             <pre>
-    <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
+  <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
 {
    "agentUsername": "agenttoe2",
    "agentApiKey": "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
