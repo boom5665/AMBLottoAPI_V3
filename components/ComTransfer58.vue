@@ -6,12 +6,9 @@
         <div class="col-12" id="tab7">
           <div>
             <h1>
-              <b style="color: #19a17a !important"
-                >5.8
+              <b style="color: #19a17a !important">5.8
                 <span style="padding-left: 3px" id="tran_withdrawal">
-                  Member Report List</span
-                ></b
-              >
+                  Member Report List</span></b>
             </h1>
           </div>
         </div>
@@ -71,32 +68,19 @@
           </div> -->
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #19a17a !important" set-lan="text:Request Body"
-                >Request Body</b
-              >
+              <b style="color: #19a17a !important" set-lan="text:Request Body">Request Body</b>
             </div>
           </div>
 
           <div class="form-group col-12">
             <div class="table-wrapper">
-              <table
-                class="table table-borderless table-striped"
-                id="DataTable47A"
-              >
+              <table class="table table-borderless table-striped" id="DataTable47A">
                 <thead class="rgba-green-slight">
                   <tr>
-                    <th
-                      style="width: 26%"
-                      set-lan="html:Parameter"
-                      class="thcolor bRight txtCenter"
-                    >
+                    <th style="width: 26%" set-lan="html:Parameter" class="thcolor bRight txtCenter">
                       Parameter
                     </th>
-                    <th
-                      style="width: 15%"
-                      set-lan="html:Type"
-                      class="thcolor bRight txtCenter"
-                    >
+                    <th style="width: 15%" set-lan="html:Type" class="thcolor bRight txtCenter">
                       Type
                     </th>
                     <th set-lan="html:Description" class="thcolor txtCenter">
@@ -106,21 +90,23 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="bRight">lotto</td>
-                    <td class="bRight">array</td>
-                    <td>Types of lottery to filter, e.g. ["all"]</td>
+                    <td class="bRight">agentUsername</td>
+                    <td class="bRight">string</td>
+                    <td>Agent account , Account length is restricted to 36 chars at most.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">slot</td>
-                    <td class="bRight">array</td>
-                    <td>Types of slot games to filter, e.g. ["all"]</td>
+                    <td class="bRight">agentApiKey</td>
+                    <td class="bRight">string</td>
+                    <td>System generate key ID after crate Agent</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">livecasino</td>
-                    <td class="bRight">array</td>
-                    <td>Types of live casino games to filter, e.g. ["all"]</td>
+                    <td class="bRight">playerUserName</td>
+                    <td class="bRight">string</td>
+                    <td>Player username (Member Username) to retrieve data. If not specified, the system will return
+                      data for all members.
+                    </td>
                   </tr>
 
                   <tr>
@@ -131,7 +117,6 @@
                       "2025-11-05T00:00:00+07:00"
                     </td>
                   </tr>
-
                   <tr>
                     <td class="bRight">end_date</td>
                     <td class="bRight">string (datetime)</td>
@@ -140,26 +125,21 @@
                       "2025-11-05T23:59:59+07:00"
                     </td>
                   </tr>
-
-                  <tr>
-                    <td class="bRight">status</td>
-                    <td class="bRight">array</td>
-                    <td>
-                      Status of the records, e.g. "win", "pending", "lose",
-                      "success"
-                    </td>
-                  </tr>
-
                   <tr>
                     <td class="bRight">page</td>
                     <td class="bRight">number</td>
                     <td>Page number to retrieve</td>
                   </tr>
-
                   <tr>
-                    <td class="bRight">perpage</td>
+                    <td class="bRight">limit</td>
                     <td class="bRight">number</td>
-                    <td>Number of items per page</td>
+                    <td>Limit that was used.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">currency</td>
+                    <td class="bRight">string</td>
+                    <td>Currency thb, usd, cny, idr, vnd, lak, myr, mmk, khr, php, eur, twd, inr, gbp, krw..
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -171,24 +151,13 @@
 
           <div class="form-group col-12">
             <div class="table-wrapper">
-              <table
-                class="table table-borderless table-striped"
-                id="DataTable47B"
-              >
+              <table class="table table-borderless table-striped" id="DataTable47B">
                 <thead class="rgba-green-slight">
                   <tr>
-                    <th
-                      style="width: 26%"
-                      set-lan="html:Parameter"
-                      class="thcolor bRight txtCenter"
-                    >
+                    <th style="width: 26%" set-lan="html:Parameter" class="thcolor bRight txtCenter">
                       Parameter
                     </th>
-                    <th
-                      style="width: 15%"
-                      set-lan="html:Type"
-                      class="thcolor bRight txtCenter"
-                    >
+                    <th style="width: 15%" set-lan="html:Type" class="thcolor bRight txtCenter">
                       Type
                     </th>
 
@@ -203,135 +172,285 @@
                     <td class="bRight">number</td>
                     <td>Status code returned from the system, e.g. 200</td>
                   </tr>
-
                   <tr>
                     <td class="bRight">msg</td>
                     <td class="bRight">object</td>
-                    <td>Status message object, e.g. "Success"</td>
+                    <td>Information message.</td>
                   </tr>
-
-                  <tr>
-                    <td class="bRight">en</td>
-                    <td class="bRight">string</td>
-                    <td>Status message in English</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">th</td>
-                    <td class="bRight">string</td>
-                    <td>Status message in Thai</td>
-                  </tr>
-
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">object</td>
-                    <td>Main response data</td>
+                    <td>Object response.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">agentUsername</td>
+                    <td class="bRight">string</td>
+                    <td>Agent account, Account length is restricted to 36 chars at most.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">sum</td>
-                    <td class="bRight">number</td>
-                    <td>Total net amount of all bets (including win/lose)</td>
+                    <td class="bRight">startDate</td>
+                    <td class="bRight">string</td>
+                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">count_success</td>
-                    <td class="bRight">number</td>
-                    <td>Number of completed tickets</td>
+                    <td class="bRight">endDate</td>
+                    <td class="bRight">string</td>
+                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">count_pending</td>
-                    <td class="bRight">number</td>
-                    <td>Number of pending tickets</td>
+                    <td class="bRight">result</td>
+                    <td class="bRight">array object</td>
+                    <td>List of result documents.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">list</td>
+                    <td class="bRight">docs</td>
                     <td class="bRight">array</td>
-                    <td>List of ticket records</td>
+                    <td>Array of bet documents.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">ticket_id</td>
+                    <td class="bRight">totalDocs</td>
                     <td class="bRight">number</td>
-                    <td>Ticket ID</td>
+                    <td>Total number of documents in collection that match a query.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">limit</td>
+                    <td class="bRight">number</td>
+                    <td>Limit that was used.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">totalPages</td>
+                    <td class="bRight">number</td>
+                    <td>Total number of pages.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">page</td>
+                    <td class="bRight">number</td>
+                    <td>Current page number.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">hasprevPage</td>
+                    <td class="bRight">boolean</td>
+                    <td>Has previous page (true/false)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">hasnextPage</td>
+                    <td class="bRight">boolean</td>
+                    <td>Has next page (true/false)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">prevPage</td>
+                    <td class="bRight">number / null</td>
+                    <td>Previous page number</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">nextPage</td>
+                    <td class="bRight">number / null</td>
+                    <td>Next page number</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">no</td>
+                    <td class="bRight">number</td>
+                    <td>Order number.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">playerApiId</td>
+                    <td class="bRight">string</td>
+                    <td>Player Id from partner system.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">playerUsername</td>
+                    <td class="bRight">string</td>
+                    <td>Player username from partner system.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">datetime</td>
+                    <td class="bRight">string</td>
+                    <td>The date the bet was placed (YYYY-MM-DD HH:mm:ss)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">ticketId</td>
+                    <td class="bRight">number</td>
+                    <td>User bet group record from one submit.</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">type</td>
                     <td class="bRight">string</td>
-                    <td>
-                      Lottery type, e.g. thailotto, zodiaclotto, pingponglotto
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">amount</td>
-                    <td class="bRight">number</td>
-                    <td>Total bet amount of the ticket</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">created_at</td>
-                    <td class="bRight">string (datetime)</td>
-                    <td>Ticket creation date and time</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">bet_status</td>
-                    <td class="bRight">string</td>
-                    <td>Ticket status, e.g. win, lose, pending, success</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">betbalance</td>
-                    <td class="bRight">number</td>
-                    <td>Net win/loss amount of the ticket</td>
+                    <td>Type of lotto.</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">round</td>
                     <td class="bRight">number</td>
-                    <td>Lottery round number</td>
+                    <td>Round of draw agent (default = 1)</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">page_total</td>
-                    <td class="bRight">number</td>
-                    <td>Total number of pages</td>
+                    <td class="bRight">goverment</td>
+                    <td class="bRight">boolean</td>
+                    <td>true = government lotto, false = normal lotto</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">current_page</td>
+                    <td class="bRight">totalBetAmount</td>
                     <td class="bRight">number</td>
-                    <td>Current page number</td>
+                    <td>Total bet amount.</td>
                   </tr>
+
+                  <tr>
+                    <td class="bRight">discount</td>
+                    <td class="bRight">number</td>
+                    <td>Discount amount.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">totalPayOutAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Payout amount (0 when lose)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">totalBalanceAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Net result of ticket.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">status</td>
+                    <td class="bRight">string</td>
+                    <td>False = lose, True = win, Pending = waiting, Cancel = cancelled</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">drawResult</td>
+                    <td class="bRight">object / null</td>
+                    <td>Lottery result object (top/bottom/range numbers)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betKey</td>
+                    <td class="bRight">string</td>
+                    <td>Base64(ticketId-betId)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betId</td>
+                    <td class="bRight">string</td>
+                    <td>Bet position id.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betType</td>
+                    <td class="bRight">string</td>
+                    <td>Bet type (top6, top5, top4, top3, top2, top1, row*, bottom*)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betNumber</td>
+                    <td class="bRight">string</td>
+                    <td>User selected number.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betStatus</td>
+                    <td class="bRight">string</td>
+                    <td>Pending / False / True status of bet</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Bet amount after discount.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betTotal</td>
+                    <td class="bRight">number</td>
+                    <td>Total bet amount.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betDiscount</td>
+                    <td class="bRight">number</td>
+                    <td>Discount amount.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">payOutRate</td>
+                    <td class="bRight">number</td>
+                    <td>Payout rate when win.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">payOutAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Payout result amount.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">rateLevel</td>
+                    <td class="bRight">number</td>
+                    <td>0 = normal, 1-4 = discount level</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">rateLevelAmount</td>
+                    <td class="bRight">float</td>
+                    <td>Amount based on rate level.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">apiPt</td>
+                    <td class="bRight">number</td>
+                    <td>API commission %</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">agentPt</td>
+                    <td class="bRight">number</td>
+                    <td>Agent commission %</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">betResultKey</td>
+                    <td class="bRight">string</td>
+                    <td>Result key mapping (top/bottom/range)</td>
+                  </tr>
+
+
                 </tbody>
               </table>
             </div>
           </div>
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #19a17a !important"
-                >Example Service Response Code</b
-              >
+              <b style="color: #19a17a !important">Example Service Response Code</b>
             </div>
           </div>
 
           <div class="form-group col-12">
             <div class="table-wrapper">
-              <table
-                class="table table-borderless table-striped"
-                id="DataTable47C"
-              >
+              <table class="table table-borderless table-striped" id="DataTable47C">
                 <thead class="rgba-green-slight">
                   <tr>
-                    <th
-                      style="width: 26%"
-                      set-lan="html:Parameter"
-                      class="thcolor bRight txtCenter"
-                    >
+                    <th style="width: 26%" set-lan="html:Parameter" class="thcolor bRight txtCenter">
                       Parameter
                     </th>
                     <th set-lan="html:Description" class="thcolor txtCenter">
@@ -392,7 +511,9 @@
         <div class="pb-5"></div>
       </div>
       <div class="box-all-content">
-        <div style="position: sticky; top: 0px"><Boxtran58 /></div>
+        <div style="position: sticky; top: 0px">
+          <Boxtran58 />
+        </div>
       </div>
     </div>
   </div>
