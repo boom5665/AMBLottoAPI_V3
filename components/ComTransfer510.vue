@@ -6,15 +6,14 @@
         <div class="col-12" id="tab7">
           <div>
             <h1>
-              <b style="color: #19a17a !important">5.10
+              <b style="color: #19a17a !important">5.9
                 <span style="padding-left: 3px" id="tran_withdrawal">
-                  Deposit Withdraw History</span></b>
+                  Member Report Detailticket</span></b>
             </h1>
           </div>
         </div>
 
         <div class="btn-toolbar mb-3" role="toolbar">
-
           <div class="form-group col-12 ex">
             <div>
               <b style="color: #19a17a !important" set-lan="text:Request Body">Request Body</b>
@@ -38,22 +37,56 @@
                   </tr>
                 </thead>
                 <tbody>
+
                   <tr>
                     <td class="bRight">agentUsername</td>
                     <td class="bRight">string</td>
-                    <td>Agent account, account length is restricted to 36 characters at most.</td>
+                    <td>Agent account, Account length is restricted to 36 characters at most.</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">agentApiKey</td>
                     <td class="bRight">string</td>
-                    <td>System generated key ID after creating agent.</td>
+                    <td>System generated API key after creating agent.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">ref</td>
+                    <td class="bRight">ticketId</td>
+                    <td class="bRight">integer</td>
+                    <td>If you want to show a specific ticket, send ticketId. If not provided, all tickets will be
+                      returned.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">startDate</td>
+                    <td class="bRight">string (datetime)</td>
+                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">endDate</td>
+                    <td class="bRight">string (datetime)</td>
+                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">page</td>
+                    <td class="bRight">integer</td>
+                    <td>Current page number.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">limit</td>
+                    <td class="bRight">integer</td>
+                    <td>Limit of records per page.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">currency</td>
                     <td class="bRight">string</td>
-                    <td>Deposit/Withdraw transaction reference.</td>
+                    <td>
+                      Supported currencies: thb, usd, cny, idr, vnd, lak, myr, mmk, khr, php, eur, twd, inr, gbp, krw
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -86,67 +119,233 @@
                     <td class="bRight">number</td>
                     <td>Result Code Reference.</td>
                   </tr>
-
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">object</td>
                     <td>Object response.</td>
                   </tr>
-
+                  <tr>
+                    <td class="bRight">agentUsername</td>
+                    <td class="bRight">string</td>
+                    <td>Agent account, account length is restricted to 36 characters at most.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">startDate</td>
+                    <td class="bRight">date</td>
+                    <td>Date type “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">endDate</td>
+                    <td class="bRight">date</td>
+                    <td>Date type “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">result</td>
+                    <td class="bRight">arrayobject</td>
+                    <td>Result data container.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">docs</td>
+                    <td class="bRight">arrayobject</td>
+                    <td>Array of documents.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">no</td>
+                    <td class="bRight">number</td>
+                    <td>Sequence number of the record.</td>
+                  </tr>
                   <tr>
                     <td class="bRight">playerApiId</td>
                     <td class="bRight">string</td>
                     <td>Player ID from partner system.</td>
                   </tr>
-
-                  <tr>
-                    <td class="bRight">playerApiUsername</td>
-                    <td class="bRight">string</td>
-                    <td>Player username from partner system.</td>
-                  </tr>
-
                   <tr>
                     <td class="bRight">playerUsername</td>
                     <td class="bRight">string</td>
-                    <td>Player username from Askmelotto system.</td>
+                    <td>Player username from partner system.</td>
                   </tr>
-
                   <tr>
-                    <td class="bRight">ref</td>
+                    <td class="bRight">datetime</td>
                     <td class="bRight">string</td>
-                    <td>Deposit/Withdraw transaction reference.</td>
+                    <td>The date the bet was placed. Format: YYYY-MM-DD HH:mm:ss</td>
                   </tr>
-
                   <tr>
-                    <td class="bRight">transferAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Transaction amount.</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">transferDate</td>
-                    <td class="bRight">date</td>
-                    <td>Transaction date.</td>
-                  </tr>
-
-                  <tr>
-                    <td class="bRight">transId</td>
+                    <td class="bRight">ticketId</td>
                     <td class="bRight">string</td>
-                    <td>Unique transaction ID from your system (Deposit / Withdrawal).</td>
+                    <td>User bet group record from one submit.</td>
                   </tr>
-
                   <tr>
                     <td class="bRight">type</td>
                     <td class="bRight">string</td>
-                    <td>Transaction type (DEPOSIT / WITHDRAW).</td>
+                    <td>Type of lotto.</td>
                   </tr>
-
+                  <tr>
+                    <td class="bRight">round</td>
+                    <td class="bRight">number</td>
+                    <td>Round of drawagent เช่น yeekeelotto round 88</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">goverment</td>
+                    <td class="bRight">boolean</td>
+                    <td>If true = lottoset, if false = lotto</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">totalBetAmount</td>
+                    <td class="bRight">string</td>
+                    <td>User bet amount.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">discount</td>
+                    <td class="bRight">number</td>
+                    <td>Discount bet amount.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">totalPayOutAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Equals 0 when a player loses.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">totalBalanceAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Net of bet ticket.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">status</td>
+                    <td class="bRight">string</td>
+                    <td>False(ไม่ถูกรางวัล), True(ถูกรางวัล), Pending(รอผล), Cancel(ยกเลิก)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">drawResult</td>
+                    <td class="bRight">arrayobject</td>
+                    <td>Bet result object เช่น top6, top5, top4, top3, top2, top1, row4, row3, row2, bottom3, bottom2,
+                      bottom1</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">txtList</td>
+                    <td class="bRight">arrayobject</td>
+                    <td>Bet detail, max 200 numbers/ticket.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betKey</td>
+                    <td class="bRight">number</td>
+                    <td>betKey = encode64("ticketId" - "betId")</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betId</td>
+                    <td class="bRight">string</td>
+                    <td>Bet ID of bet position.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betType</td>
+                    <td class="bRight">string</td>
+                    <td>User bet type เช่น top6, top5, top4, top3, top2, top1, row4, row3, row2, bottom3, bottom2,
+                      bottom1</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betNumber</td>
+                    <td class="bRight">number</td>
+                    <td>User bet number.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betStatus</td>
+                    <td class="bRight">string</td>
+                    <td>Status of bet data (Pending).</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Bet amount = betTotal - betDiscount</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betTotal</td>
+                    <td class="bRight">number</td>
+                    <td>User bet total amount.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betDiscount</td>
+                    <td class="bRight">number</td>
+                    <td>Discount bet amount.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">payOutRate</td>
+                    <td class="bRight">number</td>
+                    <td>Rate payout when member wins.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">payOutAmount</td>
+                    <td class="bRight">number</td>
+                    <td>Payout amount of this record.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">rateLevel</td>
+                    <td class="bRight">number</td>
+                    <td>If 0 = normal payout, if 1,2,3,4 = discount rate</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">rateLevelAmount</td>
+                    <td class="bRight">float</td>
+                    <td>Amount by rateLevel.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">apiPt</td>
+                    <td class="bRight">number</td>
+                    <td>Position tracking (%) of API (askmelotto).</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">agentPt</td>
+                    <td class="bRight">number</td>
+                    <td>Position tracking (%) of agent.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">betResultKey</td>
+                    <td class="bRight">string</td>
+                    <td>Bet result key lotto set.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">totalDocs</td>
+                    <td class="bRight">number</td>
+                    <td>Total number of matching documents.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">limit</td>
+                    <td class="bRight">number</td>
+                    <td>Limit that was used.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">totalPages</td>
+                    <td class="bRight">number</td>
+                    <td>Total number of pages.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">page</td>
+                    <td class="bRight">number</td>
+                    <td>Current page number.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">hasprevPage</td>
+                    <td class="bRight">boolean</td>
+                    <td>Has previous page (true / false)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">hasnextPage</td>
+                    <td class="bRight">boolean</td>
+                    <td>Has next page (true / false)</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">prevPage</td>
+                    <td class="bRight">number</td>
+                    <td>Previous page number.</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">nextPage</td>
+                    <td class="bRight">number</td>
+                    <td>Next page number.</td>
+                  </tr>
                   <tr>
                     <td class="bRight">msg</td>
                     <td class="bRight">string</td>
                     <td>Information message.</td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
@@ -168,7 +367,6 @@
                     <th style="width: 15%" set-lan="html:Type" class="thcolor bRight txtCenter">
                       Type
                     </th>
-
                     <th set-lan="html:Description" class="thcolor txtCenter">
                       Description
                     </th>
@@ -176,9 +374,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="bRight">0</td>
+                    <td class="bRight">200</td>
                     <td class="bRight">success</td>
                     <td>Request completed successfully.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">41001</td>
+                    <td class="bRight">error</td>
+                    <td>Request body is not an object.</td>
                   </tr>
 
                   <tr>
@@ -200,15 +404,45 @@
                   </tr>
 
                   <tr>
-                    <td class="bRight">71020</td>
+                    <td class="bRight">71022</td>
                     <td class="bRight">error</td>
-                    <td>Invalid referenceId.</td>
+                    <td>Invalid input format in 'startDate' field.</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">71028</td>
+                    <td class="bRight">71023</td>
                     <td class="bRight">error</td>
-                    <td>Missing field 'ref'.</td>
+                    <td>Invalid input format in 'endDate' field.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">71026</td>
+                    <td class="bRight">error</td>
+                    <td>Missing field 'startDate'.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">71027</td>
+                    <td class="bRight">error</td>
+                    <td>Missing field 'endDate'.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">90003</td>
+                    <td class="bRight">error</td>
+                    <td>Limit should be greater than 0.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">20017</td>
+                    <td class="bRight">error</td>
+                    <td>Invalid currency.</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">72003</td>
+                    <td class="bRight">error</td>
+                    <td>Invalid ticketId.</td>
                   </tr>
                 </tbody>
               </table>
@@ -259,7 +493,7 @@
       </div>
       <div class="box-all-content">
         <div style="position: sticky; top: 0px">
-          <Boxtran510 />
+          <Boxtran59 />
         </div>
       </div>
     </div>
