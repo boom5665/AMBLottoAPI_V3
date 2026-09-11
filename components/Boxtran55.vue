@@ -20,7 +20,7 @@
         </div>
         <div class="col-12">
           <label class="txtHead">Url : </label>
-          <label> https://test-api.askmelotto.vip/apiRoute/api/deposit </label>
+          <label> {Url}/apiRoute/api/deposit </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
@@ -100,10 +100,10 @@
 
                                     <code id="46A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",</span>
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"{agentApiKey}",</span>
     <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi001",</span>
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300,</span>
-    <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd6612676125127126761216541276519"</span>
+    <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd66126761251271267612w16541276519"</span>
 }</code></pre>
         </copy-text>
       </div>
@@ -130,17 +130,20 @@
                                     <code id="46B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">0,</span>
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"addBalance"</span>: <span class="hljs-number">100,</span>
-        <span class="hljs-attr">"afterAgentBalance"</span>:<span class="hljs-number">43813417.23,</span>
-        <span class="hljs-attr">"afterMemberBalance"</span>:<span class="hljs-number">100,</span>
-        <span class="hljs-attr">"beforeAgentBalance"</span>:<span class="hljs-number">43812886.55,</span>
-        <span class="hljs-attr">"beforeMemberBalance"</span>:<span class="hljs-number">369,</span>
-        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"ff4003404239450abb86dd313cb138cabea9ded4f26993a72933d318b16e86",</span>
-        <span class="hljs-attr">"playerApiUsername"</span>:<span class="hljs-string">"testuserapi001@agentapi",</span>
+        <span class="hljs-attr">"addBalance"</span>: <span class="hljs-number">300,</span>
+        <span class="hljs-attr">"afterAgentBalance"</span>:<span class="hljs-number">8200,</span>
+        <span class="hljs-attr">"afterMemberBalance"</span>:<span class="hljs-number">1300,</span>
+        <span class="hljs-attr">"beforeAgentBalance"</span>:<span class="hljs-number">8500,</span>
+        <span class="hljs-attr">"beforeMemberBalance"</span>:<span class="hljs-number">1000,</span>
+        <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"bc10ab9fc99b46d77a10275c67966c2c48103600",</span>
+        <span class="hljs-attr">"playerApiUsername"</span>:<span class="hljs-string">"testuserapi001@agenttoe2",</span>
         <span class="hljs-attr">"playerUsername"</span>:<span class="hljs-string">"testuserapi001",</span>
-        <span class="hljs-attr">"ref"</span>:<span class="hljs-string">"1e77a9cfc9a8b05e613cc0a4f87c2226575c5e77f095d3411b0094b0e730d4",</span>
+        <span class="hljs-attr">"ref"</span>:<span class="hljs-string">"e247fb052a1868ebd3a68d8d65e41fc7c86dc9b0",</span>
     },
-    <span class="hljs-attr">"msg"</span>:<span class="hljs-string">"success"</span>
+    <span class="hljs-attr">"msg"</span>: {
+        <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success"</span>,
+        <span class="hljs-attr">"th"</span>:  <span class="hljs-attr">"สำเร็จ"</span>
+    }
 }</code></pre>
             </div>
             <!-- // -->
@@ -384,7 +387,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.vip/apiRoute/api/deposit", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/apiRoute/api/deposit", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -402,11 +405,10 @@ export default {
     // this.get_Seamless();
     const json = {
       agentUsername: "agenttoe2",
-      agentApiKey:
-        "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
+      agentApiKey: "{agentApiKey}",
       playerUsername: "testuserapi001",
       balance: 300,
-      transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276519",
+      transId: "25f0c27dbea3f32s61f2cd66126761251271267612w16541276519",
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
@@ -427,7 +429,7 @@ export default {
           closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = 'https://test-api.askmelotto.vip/apiRoute/api/deposit';
+      this.URLdata = '{Url}/apiRoute/api/deposit';
       this.isLoading = false;
       this.pop = false;
       this.response = null;

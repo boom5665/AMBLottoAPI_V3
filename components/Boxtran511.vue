@@ -4,11 +4,12 @@
       <div>
         <div class="font-prim"><span>Code Transfer</span></div>
       </div>
+  
       <div class="col-12" id="tabFour">
         <div>
-          <b style="color: #19a17a !important">5.8
+          <b style="color: #19a17a !important">5.11
             <span style="padding-left: 3px" id="withdrawal">
-              Deposit Withdraw History ByTransId</span></b>
+              Deposit Withdraw History</span></b>
         </div>
       </div>
       <div class="divBox">
@@ -19,21 +20,14 @@
         <div class="col-12">
           <label class="txtHead">Url : </label>
           <label>
-            https://test-api.askmelotto.vip/apiRoute/api/depositWithdrawHistoryByTransId
+           {Url}/apiRoute/api/depositWithdrawHistory
           </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
           <label> content-type application/json </label>
         </div>
-        <!-- <div class="col-12">
-          <label class="txtHead"> bearer token </label>
-          <label> Login request token (tkUuid)</label>
-        </div>
 
-        <div class="col-12">
-          <b style="color: red"> {{ $t("tokenre") }} </b>
-        </div> -->
       </div>
       <div class="koh-faq-question form-group ex">
         <div class="Point">
@@ -51,11 +45,13 @@
       <div class="koh-faq-answer col-12">
         <copy-text id="myDiv">
           <pre>
-  <code style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b"</span>,
-    <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f3grf2cd6612676125127126761216541276519"</span>
-}</code>
+    <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
+{
+  <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
+  <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"{agentApiKey}"</span>,
+  <span class="hljs-attr">"ref"</span>: <span class="hljs-string">"1e85bf651d85c6267d59948b979ab262b336909e"</span>
+}
+    </code>
   </pre>
         </copy-text>
       </div>
@@ -73,24 +69,27 @@
         <div class="koh-faq-answer col-12">
 
           <pre>
-  <code style="border-radius: 0.375rem;" class="hljs json">{
-    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"data"</span>: {
-      <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"798e898d5ca3f7ab8aca1cca11bb91c96914b1cf"</span>,
-      <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi5@agenttoe2"</span>,
-      <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi5"</span>,
-      <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f3grf2cd6612676125127126761216541276519"</span>,
-      <span class="hljs-attr">"transferAmount"</span>: <span class="hljs-number">300</span>,
-      <span class="hljs-attr">"transferDate"</span>: <span class="hljs-string">"2026-04-17 13:18:22"</span>,
-      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"DEPOSIT"</span>
-    },
-    <span class="hljs-attr">"msg"</span>: <span class="hljs-string">"success"</span>
-}</code>
+    <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
+{
+  <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"playerApiId"</span>: <span class="hljs-string">"798e898d5ca3f7ab8aca1cca11bb91c96914b1cf"</span>,
+    <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi5@agenttoe2"</span>,
+    <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi5"</span>,
+    <span class="hljs-attr">"ref"</span>: <span class="hljs-string">"1e85bf651d85c6267d59948b979ab262b336909e"</span>,
+    <span class="hljs-attr">"transferAmount"</span>: <span class="hljs-number">300</span>,
+    <span class="hljs-attr">"transferDate"</span>: <span class="hljs-string">"2026-04-17 13:18:22"</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"DEPOSIT"</span>
+  },
+  <span class="hljs-attr">"msg"</span>: {
+    <span class="hljs-attr">"en"</span>: <span class="hljs-string">"Success"</span>,
+    <span class="hljs-attr">"th"</span>: <span class="hljs-string">"สำเร็จ"</span>
+  }
+}
+    </code>
   </pre>
 
         </div>
-
-        <!-- // -->
       </div>
 
     </div>
@@ -113,7 +112,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.vip/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -135,7 +134,7 @@ export default {
         "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
       playerUsername: "testuserapi001",
       balance: 300,
-      transId: "90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b",
+      transId: "25f0c27dbea3f32s61f2cd6612676125127126761216541276519",
     };
 
     // ใช้ JSON.stringify() เพื่อจัดรูปแบบ JSON แล้วกำหนดให้ jsonData เป็นค่าที่จัดรูปแบบแล้ว
@@ -157,7 +156,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
 
-      this.URLdata = "https://test-api.askmelotto.vip/api/v2/fe/get_balance";
+      this.URLdata = "{Url}/api/v2/fe/get_balance";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

@@ -198,22 +198,27 @@
                   </Nuxt-link>
                   <Nuxt-link class="text-nav" to="/Transferwallet58">
                     <li>
-                      <span>5.8 Member Report List</span>
+                      <span>5.8 Outstanding</span>
                     </li>
                   </Nuxt-link>
                   <Nuxt-link class="text-nav" to="/Transferwallet59">
                     <li>
-                      <span>5.9 Member Report Detailticket </span>
+                      <span>5.9 Member Report List</span>
                     </li>
                   </Nuxt-link>
                   <Nuxt-link class="text-nav" to="/Transferwallet510">
                     <li>
-                      <span>5.10 Deposit Withdraw History </span>
+                      <span>5.10 Member Report Detailticket </span>
                     </li>
                   </Nuxt-link>
                   <Nuxt-link class="text-nav" to="/Transferwallet511">
                     <li>
-                      <span>5.11 Deposit Withdraw History ByTransId </span>
+                      <span>5.11 Deposit Withdraw History </span>
+                    </li>
+                  </Nuxt-link>
+                  <Nuxt-link class="text-nav" to="/Transferwallet512">
+                    <li>
+                      <span>5.12 Deposit Withdraw History ByTransId </span>
                     </li>
                   </Nuxt-link>
                 </ul>
