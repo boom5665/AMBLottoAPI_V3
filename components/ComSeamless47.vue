@@ -26,7 +26,7 @@
           <div class="col-12">
             <label class="txtHead"> Url : </label>
             <label>
-              &lt;Url&gt;/apiRoute/api/ListHotnumberandLimitnumber
+              {Url}/apiRoute/api/ListHotnumberandLimitnumber
             </label>
           </div>
           <div class="col-12">

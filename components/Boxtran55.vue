@@ -20,7 +20,7 @@
         </div>
         <div class="col-12">
           <label class="txtHead">Url : </label>
-          <label> &lt;Url&gt;/apiRoute/api/deposit </label>
+          <label> {Url}/apiRoute/api/deposit </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
@@ -100,7 +100,7 @@
 
                                     <code id="46A" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2",</span>
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"&lt;agentApiKey&gt;",</span>
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"{agentApiKey}",</span>
     <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi001",</span>
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">300,</span>
     <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f32s61f2cd66126761251271267612w16541276519"</span>
@@ -387,7 +387,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "<Url>/apiRoute/api/deposit", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/apiRoute/api/deposit", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -405,7 +405,7 @@ export default {
     // this.get_Seamless();
     const json = {
       agentUsername: "agenttoe2",
-      agentApiKey: "<agentApiKey>",
+      agentApiKey: "{agentApiKey}",
       playerUsername: "testuserapi001",
       balance: 300,
       transId: "25f0c27dbea3f32s61f2cd66126761251271267612w16541276519",
@@ -429,7 +429,7 @@ export default {
           closeAndClear() {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
-      this.URLdata = '<Url>/apiRoute/api/deposit';
+      this.URLdata = '{Url}/apiRoute/api/deposit';
       this.isLoading = false;
       this.pop = false;
       this.response = null;

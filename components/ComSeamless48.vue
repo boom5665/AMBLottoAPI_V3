@@ -24,7 +24,7 @@
           </div>
           <div class="col-12">
             <label class="txtHead"> Url : </label>
-            <label> &lt;Url&gt;/apiRoute/api/detail </label>
+            <label> {Url}/apiRoute/api/detail </label>
           </div>
           <div class="col-12">
             <label class="txtHead"> headers : </label>

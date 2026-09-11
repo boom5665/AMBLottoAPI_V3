@@ -22,7 +22,7 @@
         </div>
         <div class="col-12">
           <label class="txtHead">Url : </label>
-          <label> &lt;Url&gt;/api/v2/fe/get_balance </label>
+          <label> {Url}/api/v2/fe/get_balance </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
@@ -177,7 +177,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "<Url>/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -221,7 +221,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
 
-      this.URLdata = "<Url>/api/v2/fe/get_balance";
+      this.URLdata = "{Url}/api/v2/fe/get_balance";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

@@ -35,7 +35,7 @@
                   </tr>
                   <tr>
                     <td class="bRight">URL</td>
-                    <td>&lt;Url&gt;/apiRoute/api/outstanding</td>
+                    <td>{Url}/apiRoute/api/outstanding</td>
                   </tr>
                   <tr>
                     <td class="bRight">Headers</td>

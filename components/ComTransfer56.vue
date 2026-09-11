@@ -26,7 +26,7 @@
             <div class="col-12">
               <label class="txtHead">Url : </label>
               <label>
-                &lt;Url&gt;/apiRoute/api/withdraw
+                {Url}/apiRoute/api/withdraw
               </label>
             </div>
             <div class="col-12">

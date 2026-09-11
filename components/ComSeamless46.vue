@@ -23,7 +23,7 @@
           <div class="col-12">
             <label class="txtHead"> Url : </label>
             <label>
-              &lt;Url&gt;/apiRoute/api/ListPlaceout
+              {Url}/apiRoute/api/ListPlaceout
             </label>
           </div>
           <div class="col-12">

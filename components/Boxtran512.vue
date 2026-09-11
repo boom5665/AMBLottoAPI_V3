@@ -19,7 +19,7 @@
         <div class="col-12">
           <label class="txtHead">Url : </label>
           <label>
-            &lt;Url&gt;/apiRoute/api/depositWithdrawHistoryByTransId
+            {Url}/apiRoute/api/depositWithdrawHistoryByTransId
           </label>
         </div>
         <div class="col-12">
@@ -53,7 +53,7 @@
           <pre>
   <code style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
-    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"&lt;agentApiKey&gt;"</span>,
+    <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"{agentApiKey}"</span>,
     <span class="hljs-attr">"transId"</span>: <span class="hljs-string">"25f0c27dbea3f3grf2cd6612676125127126761216541276519"</span>
 }</code>
   </pre>
@@ -116,7 +116,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "<Url>/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -160,7 +160,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
 
-      this.URLdata = "<Url>/api/v2/fe/get_balance";
+      this.URLdata = "{Url}/api/v2/fe/get_balance";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

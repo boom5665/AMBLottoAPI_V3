@@ -20,7 +20,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            &lt;Url&gt;/apiRoute/member/Tranferwallet/loginRequest
+            {Url}/apiRoute/member/Tranferwallet/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -80,7 +80,7 @@
   <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
 {
    "agentUsername": "agenttoe2",
-   "agentApiKey": "&lt;agentApiKey&gt;",
+   "agentApiKey": "{agentApiKey}",
    "playerUsername": "testuserapi5",
    "data": {
        "username": "testuserapi5",
@@ -115,7 +115,7 @@
         <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi5@agenttoe2"</span>,
         <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi5"</span>,
         <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"&lt;tkUuid&gt;"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"&lt;Url&gt;/token?token=&lt;tkUuid&gt;"</span>
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"{Url}/token?token=&lt;tkUuid&gt;"</span>
     },
     <span class="hljs-attr"> "msg"</span>: {
         <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success"</span>,
@@ -234,8 +234,8 @@
         <span class="hljs-attr">"playerApiUsername"</span>: <span class="hljs-string">"testuserapi002@agenttoe2"</span>,
         <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testuserapi002"</span>,
         <span class="hljs-attr">"tkUuid"</span>: <span class="hljs-string">"12cfc90e9569faf6e70c6d001b12f9e1c392f631"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off"</span>,
-        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=off"</span>,
+        <span class="hljs-attr">"urlFullPage"</span>: <span class="hljs-string">"{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&header=on"</span>
     },
     <span class="hljs-attr"> "msg"</span>: {
         <span class="hljs-attr">"en"</span>:  <span class="hljs-attr">"Success"</span>,
@@ -331,7 +331,7 @@ export default {
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
       URLdata:
-        "<Url>/apiRoute/member/Tranferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+        "{Url}/apiRoute/member/Tranferwallet/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
     };
   },
   beforeCreate() { },
@@ -339,7 +339,7 @@ export default {
     // this.get_Seamless();
     const json = {
       "agentUsername": "agenttoe2",
-      "agentApiKey": "<agentApiKey>",
+      "agentApiKey": "{agentApiKey}",
       "playerUsername": "testuserapi5",
       "data": {
         "username": "testuserapi5",
@@ -369,7 +369,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
       this.URLdata =
-        "<Url>/apiRoute/member/Tranferwallet/loginRequest";
+        "{Url}/apiRoute/member/Tranferwallet/loginRequest";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

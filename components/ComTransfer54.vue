@@ -28,7 +28,7 @@
             <div class="col-12">
               <label class="txtHead"> Url : </label>
               <label>
-                &lt;Url&gt;/api/v2/apiRoute/member/Transferwallet/loginRequest
+                {Url}/api/v2/apiRoute/member/Transferwallet/loginRequest
               </label>
             </div>
             <div class="col-12">
@@ -1916,7 +1916,7 @@
             <!-- <div class="col-12">
               <label class="txtHead">thailotto :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=zodiaclotto</label>
             </div> -->
@@ -1924,203 +1924,203 @@
             <div class="col-12">
               <label class="txtHead"> laoslotto : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottovip : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottovip</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> baaclotto : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=baaclotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> gsblotto : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=gsblotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> pingponglotto :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> laoslotto_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> yeekeelotto :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=yeekeelotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> malaylotto :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=malaylotto</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylotto_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottovip_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottospecial_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottospecial_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> malaylotto_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=malaylotto_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> hanoylottospecial :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottospecial</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockkorea :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockkorea</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockchina :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockchina</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockdowjones :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockdowjones</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocktaiwan : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocktaiwan</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockengland :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockengland</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockindia :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockindia</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockhangseng :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockhangseng</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockegypt : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockegypt</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocknikkei : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocknikkei</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stocksingapore :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stocksingapore</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockthai :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">&lottotype=stockthai</label>
             </div>
             <div class="col-12">
               <label class="txtHead"> stockgerman :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockgerman</label>
             </div>
             <div class="col-12">
               <label class="txtHead">stockrussia : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockrussia</label>
             </div>
             <div class="col-12">
               <label class="txtHead">stockrussia : </label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=stockrussia</label>
             </div>
             <div class="col-12">
               <label class="txtHead">zodiaclotto :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=zodiaclotto</label>
             </div>
@@ -2128,98 +2128,98 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto2 :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto2</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto2 :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto2</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto3 :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto3</label>
             </div>
             <div class="col-12">
               <label class="txtHead">pingponglotto6 :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=pingponglotto6</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottostar_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottostar_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottostar :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottostar</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottotv :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottotv</label>
             </div>
             <div class="col-12">
               <label class="txtHead">hanoylottotv_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=hanoylottotv_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottoextra :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottoextra</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottoextra_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottoextra_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottohd :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottohd</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottohd_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottohd_set</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottotv :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottotv</label>
             </div>
             <div class="col-12">
               <label class="txtHead">laoslottotv_set :</label>
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;</label
               >
               <label class="txtHead">lottotype=laoslottotv_set</label>
             </div>
@@ -2271,14 +2271,14 @@
             <div class="col-12">
               <label class="txtHead">English :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;</label
               ><label class="txtHead">lang=en</label>
             </div>
 
             <div class="col-12">
               <label class="txtHead">Thai : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=laoslotto&amp;</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=laoslotto&amp;</label
               ><label class="txtHead">lang=th</label>
             </div>
           </div>
@@ -2298,7 +2298,7 @@
             <!-- <div class="col-12">
               <label class="txtHead">thailotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;lottotype=thailotto&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2306,7 +2306,7 @@
             <div class="col-12">
               <!-- <label class="txtHead">laoslotto : </label> -->
               <label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2314,7 +2314,7 @@
             <!-- <div class="col-12">
               <label class="txtHead">hanoylotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2322,7 +2322,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottovip : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2330,7 +2330,7 @@
             <div class="col-12">
               <label class="txtHead">baaclotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2338,7 +2338,7 @@
             <div class="col-12">
               <label class="txtHead"> gsblotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2346,7 +2346,7 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2354,7 +2354,7 @@
             <div class="col-12">
               <label class="txtHead">laoslotto_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2362,7 +2362,7 @@
             <div class="col-12">
               <label class="txtHead">yeekeelotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2370,7 +2370,7 @@
             <div class="col-12">
               <label class="txtHead">malaylotto :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2378,7 +2378,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylotto_set :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2386,7 +2386,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottovip_set :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2394,7 +2394,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottospecial_set :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2402,7 +2402,7 @@
             <div class="col-12">
               <label class="txtHead">malaylotto_set :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2410,7 +2410,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottospecial :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2418,7 +2418,7 @@
             <div class="col-12">
               <label class="txtHead">stockkorea : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2426,7 +2426,7 @@
             <div class="col-12">
               <label class="txtHead">stockchina :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2434,7 +2434,7 @@
             <div class="col-12">
               <label class="txtHead">stockdowjones :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2442,7 +2442,7 @@
             <div class="col-12">
               <label class="txtHead">stocktaiwan :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2450,7 +2450,7 @@
             <div class="col-12">
               <label class="txtHead">stockengland :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2458,7 +2458,7 @@
             <div class="col-12">
               <label class="txtHead"> stockindia :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2466,7 +2466,7 @@
             <div class="col-12">
               <label class="txtHead">stockhangseng :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2474,7 +2474,7 @@
             <div class="col-12">
               <label class="txtHead">stockegypt :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2482,7 +2482,7 @@
             <div class="col-12">
               <label class="txtHead">stocknikkei :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2490,7 +2490,7 @@
             <div class="col-12">
               <label class="txtHead">stocksingapore :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2498,7 +2498,7 @@
             <div class="col-12">
               <label class="txtHead">stockthai :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2506,7 +2506,7 @@
             <div class="col-12">
               <label class="txtHead">stockgerman :</label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2514,7 +2514,7 @@
             <div class="col-12">
               <label class="txtHead">stockrussia : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2522,7 +2522,7 @@
             <div class="col-12">
               <label class="txtHead">zodiaclotto : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=zodiaclotto</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=zodiaclotto</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2530,7 +2530,7 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto2 : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto2</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto2</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2538,7 +2538,7 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto3 : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto3</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto3</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2546,7 +2546,7 @@
             <div class="col-12">
               <label class="txtHead">pingponglotto6 : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto6</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=pingponglotto6</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2554,7 +2554,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottostar_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&ampredirect=hanoylottostar_set</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&ampredirect=hanoylottostar_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2562,7 +2562,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottostar : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottostar</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottostar</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2570,7 +2570,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottotv : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottotv</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottotv</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2578,7 +2578,7 @@
             <div class="col-12">
               <label class="txtHead">hanoylottotv_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottotv_set</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=hanoylottotv_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2586,7 +2586,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottoextra : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottoextra</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottoextra</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2594,7 +2594,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottoextra_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottoextra_set</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottoextra_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2602,7 +2602,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottohd : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottohd</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottohd</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2610,7 +2610,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottohd_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottohd_set</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottohd_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2618,7 +2618,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottotv : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottotv</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottotv</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >
@@ -2626,7 +2626,7 @@
             <div class="col-12">
               <label class="txtHead">laoslottotv_set : </label
               ><label
-                >&lt;Url&gt;/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottotv_set</label
+                >{Url}/token?token=12cfc90e9569faf6e70c6d001b12f9e1c392f631&amp;redirect=laoslottotv_set</label
               ><label class="txtHead"
                 >input your link here(full link with https://)</label
               >

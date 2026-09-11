@@ -20,7 +20,7 @@
         <div class="col-12">
           <label class="txtHead">Url : </label>
           <label>
-           &lt;Url&gt;/apiRoute/api/outstanding
+           {Url}/apiRoute/api/outstanding
           </label>
         </div>
         <div class="col-12">
@@ -41,7 +41,7 @@
     <code style="border-radius: 0.375rem;" class="hljs json">
 {
   <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
-  <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"&lt;agentApiKey&gt;"</span>,
+  <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"{agentApiKey}"</span>,
   <span class="hljs-attr">"playerUsername"</span>: <span class="hljs-string">"testlog0012"</span>
 }
     </code>
@@ -62,29 +62,29 @@
     <code style="border-radius: 0.375rem;" class="hljs json">
 {
   <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"msg"</span>: {
-    <span class="hljs-attr">"th"</span>: <span class="hljs-string">"สำเร็จ"</span>,
-    <span class="hljs-attr">"en"</span>: <span class="hljs-string">"Success"</span>
-  },
   <span class="hljs-attr">"data"</span>: {
-    <span class="hljs-attr">"totalOutstanding"</span>: <span class="hljs-number">12500</span>,
+    <span class="hljs-attr">"totalOutstanding"</span>: <span class="hljs-number">7</span>,
     <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"thb"</span>,
     <span class="hljs-attr">"list"</span>: {
       <span class="hljs-attr">"lotto"</span>: [
         {
-          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"government"</span>,
-          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">8000</span>
+          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"stockgerman"</span>,
+          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">3</span>
         },
         {
-          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"hanoi_vip"</span>,
-          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">1000</span>
+          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"thailotto"</span>,
+          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">1</span>
         },
         {
-          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"yeekee"</span>,
-          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">3500</span>
+          <span class="hljs-attr">"gameId"</span>: <span class="hljs-string">"yeekeelotto"</span>,
+          <span class="hljs-attr">"outstanding"</span>: <span class="hljs-number">3</span>
         }
       ]
     }
+  },
+  <span class="hljs-attr">"msg"</span>: {
+    <span class="hljs-attr">"en"</span>: <span class="hljs-string">"Success"</span>,
+    <span class="hljs-attr">"th"</span>: <span class="hljs-string">"สำเร็จ"</span>
   }
 }
     </code>
@@ -113,7 +113,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "<Url>/apiRoute/api/outstanding", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "{Url}/apiRoute/api/outstanding", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       totalOutstanding: "",
       currency: "",
@@ -124,7 +124,7 @@ export default {
   mounted() {
     const json = {
       agentUsername: "agenttoe2",
-      agentApiKey: "<agentApiKey>",
+      agentApiKey: "{agentApiKey}",
       playerUsername: "testlog0012",
     };
 
@@ -143,7 +143,7 @@ export default {
   },
   methods: {
     closeAndClear() {
-      this.URLdata = "<Url>/apiRoute/api/outstanding";
+      this.URLdata = "{Url}/apiRoute/api/outstanding";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
