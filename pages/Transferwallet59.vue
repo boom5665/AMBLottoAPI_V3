@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="box-sem" >
-    <div class="col-12 M-pading-none"><ComTransfer58 /></div>
+    <div class="col-12 M-pading-none"><ComTransfer59 /></div>
   </div>
 </template>
 

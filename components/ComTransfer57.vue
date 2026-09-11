@@ -13,6 +13,8 @@
                 ></b
               >
             </h1>
+            <p style="margin-bottom: 0">{{ $t("tran571") }}</p>
+            <p style="color: red; margin-top: 0">{{ $t("tran572") }}</p>
           </div>
         </div>
 
@@ -25,7 +27,7 @@
             <div class="col-12">
               <label class="txtHead">Url : </label>
               <label>
-                https://test-api.askmelotto.vip/apiRoute/api/withdraw
+                &lt;Url&gt;/apiRoute/api/withdraw
               </label>
             </div>
             <div class="col-12">
@@ -105,27 +107,39 @@
                 <tbody>
                   <tr>
                     <td class="bRight">code</td>
-                    <td class="bRight">integer</td>
+                    <td class="bRight">Number</td>
 
-                    <td>Result Code Reference.</td>
-                  </tr>
-                  <tr>
-                    <td class="bRight">msg</td>
-                    <td class="bRight">String</td>
-
-                    <td>Information message.</td>
+                    <td>{{ $t("tran57_res_code") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
 
-                    <td>Object response.</td>
+                    <td>{{ $t("tran57_res_data") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">credit</td>
-                    <td class="bRight">number</td>
+                    <td class="bRight">data.credit</td>
+                    <td class="bRight">Number</td>
 
-                    <td>Credit balance.</td>
+                    <td>{{ $t("tran57_res_data_credit") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">msg</td>
+                    <td class="bRight">Object</td>
+
+                    <td>{{ $t("tran57_res_msg") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">msg.en</td>
+                    <td class="bRight">String</td>
+
+                    <td>{{ $t("tran57_res_msg_en") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">msg.th</td>
+                    <td class="bRight">String</td>
+
+                    <td>{{ $t("tran57_res_msg_th") }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -133,9 +147,7 @@
           </div>
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #19a17a !important"
-                >Example Service Response Code</b
-              >
+              <b style="color: #19a17a !important">Response Code</b>
             </div>
           </div>
 
@@ -162,7 +174,11 @@
                 <tbody>
                   <tr>
                     <td class="bRight">200</td>
-                    <td>success</td>
+                    <td>{{ $t("tran57_err_200") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">1007</td>
+                    <td>{{ $t("tran57_err_1007") }}</td>
                   </tr>
                 </tbody>
               </table>

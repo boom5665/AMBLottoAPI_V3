@@ -23,7 +23,7 @@
         <div class="col-12">
           <label class="txtHead"> Url : </label>
           <label>
-            https://test-api.askmelotto.vip/apiRoute/member/loginRequest
+            &lt;Url&gt;/apiRoute/member/loginRequest
           </label>
         </div>
         <div class="col-12">
@@ -339,7 +339,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.vip/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "<Url>/apiRoute/member/loginRequest", // กำหนดค่าเริ่มต้นของ agentUsername
     };
   },
   beforeCreate() {},
@@ -370,7 +370,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
       this.URLdata =
-        "https://test-api.askmelotto.vip/apiRoute/member/loginRequest";
+        "<Url>/apiRoute/member/loginRequest";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

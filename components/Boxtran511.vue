@@ -7,9 +7,9 @@
   
       <div class="col-12" id="tabFour">
         <div>
-          <b style="color: #19a17a !important">5.10
+          <b style="color: #19a17a !important">5.11
             <span style="padding-left: 3px" id="withdrawal">
-              Member Report List</span></b>
+              Deposit Withdraw History</span></b>
         </div>
       </div>
       <div class="divBox">
@@ -20,7 +20,7 @@
         <div class="col-12">
           <label class="txtHead">Url : </label>
           <label>
-           https://test-api.askmelotto.vip/apiRoute/api/depositWithdrawHistory
+           &lt;Url&gt;/apiRoute/api/depositWithdrawHistory
           </label>
         </div>
         <div class="col-12">
@@ -48,7 +48,7 @@
     <code id="47B" style="border-radius: 0.375rem;" class="hljs json">
 {
   <span class="hljs-attr">"agentUsername"</span>: <span class="hljs-string">"agenttoe2"</span>,
-  <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"90c1f92bf298eeedf29ddea95681f56c7b707ec32368f820e01270d2bf9cda8b"</span>,
+  <span class="hljs-attr">"agentApiKey"</span>: <span class="hljs-string">"&lt;agentApiKey&gt;"</span>,
   <span class="hljs-attr">"ref"</span>: <span class="hljs-string">"1e85bf651d85c6267d59948b979ab262b336909e"</span>
 }
     </code>
@@ -81,7 +81,10 @@
     <span class="hljs-attr">"transferDate"</span>: <span class="hljs-string">"2026-04-17 13:18:22"</span>,
     <span class="hljs-attr">"type"</span>: <span class="hljs-string">"DEPOSIT"</span>
   },
-  <span class="hljs-attr">"msg"</span>: <span class="hljs-string">"success"</span>
+  <span class="hljs-attr">"msg"</span>: {
+    <span class="hljs-attr">"en"</span>: <span class="hljs-string">"Success"</span>,
+    <span class="hljs-attr">"th"</span>: <span class="hljs-string">"สำเร็จ"</span>
+  }
 }
     </code>
   </pre>
@@ -109,7 +112,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.vip/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "<Url>/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -153,7 +156,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
 
-      this.URLdata = "https://test-api.askmelotto.vip/api/v2/fe/get_balance";
+      this.URLdata = "<Url>/api/v2/fe/get_balance";
       this.isLoading = false;
       this.pop = false;
       this.response = null;

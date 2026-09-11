@@ -11,6 +11,9 @@
                 >withdrawal</span
               ></b
             ></h1>
+            <p style="margin-bottom: 0">{{ $t("tran561") }}</p>
+            <p style="color: red; margin-top: 0; margin-bottom: 0">{{ $t("tran562") }}</p>
+            <p>{{ $t("tran563") }}</p>
           </div>
         </div>
 
@@ -23,7 +26,7 @@
             <div class="col-12">
               <label class="txtHead">Url : </label>
               <label>
-                https://test-api.askmelotto.vip/apiRoute/api/withdraw
+                &lt;Url&gt;/apiRoute/api/withdraw
               </label>
             </div>
             <div class="col-12">
@@ -70,33 +73,27 @@
                   <tr>
                     <td class="bRight">agentUsername</td>
                     <td class="bRight">String</td>
-                    <td>
-                      Agent account , Account length is restricted to 36 chars
-                      at most.
-                    </td>
+                    <td>{{ $t("tran56_req_agentUsername") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">agentApiKey</td>
                     <td class="bRight">String</td>
-                    <!-- <td>System generate <a href="https://service-api.prettygaming.asia/Page_API_Document/Seamless_API.aspx?Action=0" class="aLink">key</a> ID after create Agent</td> -->
-                    <td>System generate key ID after create Agent</td>
+                    <td>{{ $t("tran56_req_agentApiKey") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">playerUsername</td>
                     <td class="bRight">String</td>
-                    <td>Player username from partner system.</td>
+                    <td>{{ $t("tran56_req_playerUsername") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">balance</td>
                     <td class="bRight">Number</td>
-                    <td>Withdraw balance.</td>
+                    <td>{{ $t("tran56_req_balance") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">transId</td>
                     <td class="bRight">String</td>
-                    <td>
-                      transId Unique from your system type Deposit / Withdrawal
-                    </td>
+                    <td>{{ $t("tran56_req_transId") }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -175,71 +172,71 @@
                     <td class="bRight">code</td>
                     <td class="bRight">Number</td>
 
-                    <td>Result Code Reference.</td>
+                    <td>{{ $t("tran56_res_code") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">msg</td>
-                    <td class="bRight">String</td>
+                    <td class="bRight">Object</td>
 
-                    <td>Information message.</td>
+                    <td>{{ $t("tran56_res_msg") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">data</td>
                     <td class="bRight">Object</td>
 
-                    <td>Object response.</td>
+                    <td>{{ $t("tran56_res_data") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">addBalance</td>
+                    <td class="bRight">data.addBalance</td>
                     <td class="bRight">Number</td>
 
-                    <td>Withdraw balance.</td>
+                    <td>{{ $t("tran56_res_addBalance") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">afterAgentBalance</td>
+                    <td class="bRight">data.afterAgentBalance</td>
                     <td class="bRight">Number</td>
 
-                    <td>Balance after Withdraw of agent.</td>
+                    <td>{{ $t("tran56_res_afterAgentBalance") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">afterMemberBalance</td>
+                    <td class="bRight">data.afterMemberBalance</td>
                     <td class="bRight">Number</td>
 
-                    <td>Balance after Withdraw of member.</td>
+                    <td>{{ $t("tran56_res_afterMemberBalance") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">beforeAgentBalance</td>
+                    <td class="bRight">data.beforeAgentBalance</td>
                     <td class="bRight">Number</td>
-                    <td>Balance before Withdraw of agent.</td>
+                    <td>{{ $t("tran56_res_beforeAgentBalance") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">beforeMemberBalance</td>
+                    <td class="bRight">data.beforeMemberBalance</td>
                     <td class="bRight">Number</td>
-                    <td>Balance before Withdraw of member.</td>
+                    <td>{{ $t("tran56_res_beforeMemberBalance") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">playerApiId</td>
+                    <td class="bRight">data.playerApiId</td>
                     <td class="bRight">String</td>
 
-                    <td>Player Id from partner system.</td>
+                    <td>{{ $t("tran56_res_playerApiId") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">playerApiUsername</td>
+                    <td class="bRight">data.playerApiUsername</td>
                     <td class="bRight">String</td>
 
-                    <td>Player username from Askmelotto system.</td>
+                    <td>{{ $t("tran56_res_playerApiUsername") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">playerUsername</td>
+                    <td class="bRight">data.playerUsername</td>
                     <td class="bRight">String</td>
 
-                    <td>Player username from partner system.</td>
+                    <td>{{ $t("tran56_res_playerUsername") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">ref</td>
+                    <td class="bRight">data.ref</td>
                     <td class="bRight">String</td>
 
-                    <td>Reference id Unique from Askmelotto  system.</td>
+                    <td>{{ $t("tran56_res_ref") }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -274,51 +271,71 @@
                 <tbody>
                   <tr>
                     <td class="bRight">0</td>
-                    <td>success</td>
+                    <td>{{ $t("tran56_err_0") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">41001</td>
-                    <td>Error Request body is not an object.</td>
+                    <td>{{ $t("tran56_err_41001") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">50301</td>
+                    <td>{{ $t("tran56_err_50301") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71001</td>
-                    <td>missing field 'agentUsername'.</td>
+                    <td>{{ $t("tran56_err_71001") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71002</td>
-                    <td>missing field 'agentApiKey'.</td>
+                    <td>{{ $t("tran56_err_71002") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71004</td>
-                    <td>missing field 'playerUsername'.</td>
+                    <td>{{ $t("tran56_err_71004") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71007</td>
-                    <td>missing field 'transId'.</td>
+                    <td>{{ $t("tran56_err_71007") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71010</td>
-                    <td>invalid ApiKey or UserAgent</td>
+                    <td>{{ $t("tran56_err_71010") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71014</td>
-                    <td>invalid UserMember.</td>
+                    <td>{{ $t("tran56_err_71014") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">71017</td>
-                    <td>transId has already existed</td>
+                    <td>{{ $t("tran56_err_71017") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71025</td>
-                    <td>balance should be greater than 0</td>
+                    <td>{{ $t("tran56_err_71025") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">911001</td>
-                    <td>Insufficient balance.</td>
+                    <td class="bRight">72002</td>
+                    <td>{{ $t("tran56_err_72002") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">72004</td>
+                    <td>{{ $t("tran56_err_72004") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">72301</td>
+                    <td>{{ $t("tran56_err_72301") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">72302</td>
+                    <td>{{ $t("tran56_err_72302") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">75301</td>
+                    <td>{{ $t("tran56_err_75301") }}</td>
                   </tr>
                 </tbody>
               </table>

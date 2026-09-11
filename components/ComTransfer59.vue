@@ -6,10 +6,12 @@
         <div class="col-12" id="tab7">
           <div>
             <h1>
-              <b style="color: #19a17a !important">5.8
+              <b style="color: #19a17a !important">5.9
                 <span style="padding-left: 3px" id="tran_withdrawal">
                   Member Report List</span></b>
             </h1>
+            <p style="margin-bottom: 0">{{ $t("tran581") }}</p>
+            <p style="margin-top: 0">{{ $t("tran582") }}</p>
           </div>
         </div>
 
@@ -22,7 +24,7 @@
             <div class="col-12">
               <label class="txtHead">Url : </label>
               <label>
-                https://test-api.askmelotto.vip/apiRoute/api/withdraw
+                &lt;Url&gt;/apiRoute/api/withdraw
               </label>
             </div>
             <div class="col-12">
@@ -91,55 +93,51 @@
                 <tbody>
                   <tr>
                     <td class="bRight">agentUsername</td>
-                    <td class="bRight">string</td>
-                    <td>Agent account , Account length is restricted to 36 chars at most.</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_agentUsername") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">agentApiKey</td>
-                    <td class="bRight">string</td>
-                    <td>System generate key ID after crate Agent</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_agentApiKey") }}</td>
                   </tr>
 
                   <tr>
                     <td class="bRight">playerUserName</td>
-                    <td class="bRight">string</td>
-                    <td>Player username (Member Username) to retrieve data. If not specified, the system will return
-                      data for all members.
-                    </td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_playerUserName") }}</td>
                   </tr>
 
                   <tr>
+                    <td class="bRight">currency</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_currency") }}</td>
+                  </tr>
+                  <tr>
                     <td class="bRight">startDate</td>
-                    <td class="bRight">string (datetime)</td>
-                    <td>
-                      Start date for fetching data, e.g.
-                      "2025-11-05T00:00:00+07:00"
-                    </td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_startDate") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">endDate</td>
-                    <td class="bRight">string (datetime)</td>
-                    <td>
-                      End date for fetching data, e.g.
-                      "2025-11-05T23:59:59+07:00"
-                    </td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_req_endDate") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">isUpdate</td>
+                    <td class="bRight">Boolean</td>
+                    <td>{{ $t("tran58_req_isUpdate") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">page</td>
-                    <td class="bRight">number</td>
-                    <td>Page number to retrieve</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_req_page") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">limit</td>
-                    <td class="bRight">number</td>
-                    <td>Limit that was used.</td>
-                  </tr>
-                  <tr>
-                    <td class="bRight">currency</td>
-                    <td class="bRight">string</td>
-                    <td>Currency thb, usd, cny, idr, vnd, lak, myr, mmk, khr, php, eur, twd, inr, gbp, krw..
-                    </td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_req_limit") }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -169,271 +167,295 @@
                 <tbody>
                   <tr>
                     <td class="bRight">code</td>
-                    <td class="bRight">number</td>
-                    <td>Status code returned from the system, e.g. 200</td>
-                  </tr>
-                  <tr>
-                    <td class="bRight">msg</td>
-                    <td class="bRight">object</td>
-                    <td>Information message.</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_code") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">data</td>
-                    <td class="bRight">object</td>
-                    <td>Object response.</td>
+                    <td class="bRight">Object</td>
+                    <td>{{ $t("tran58_res_data") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">agentUsername</td>
-                    <td class="bRight">string</td>
-                    <td>Agent account, Account length is restricted to 36 chars at most.</td>
+                    <td class="bRight">data.agentUsername</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_data_agentUsername") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">startDate</td>
-                    <td class="bRight">string</td>
-                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                    <td class="bRight">data.startDate</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_data_startDate") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">endDate</td>
-                    <td class="bRight">string</td>
-                    <td>Date format “yyyy-MM-dd HH:mm:ss” (GMT+7)</td>
+                    <td class="bRight">data.endDate</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_data_endDate") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">result</td>
-                    <td class="bRight">array object</td>
-                    <td>List of result documents.</td>
+                    <td class="bRight">data.result</td>
+                    <td class="bRight">Object</td>
+                    <td>{{ $t("tran58_res_data_result") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">docs</td>
-                    <td class="bRight">array</td>
-                    <td>Array of bet documents.</td>
+                    <td class="bRight">data.result.docs</td>
+                    <td class="bRight">Array&lt;Object&gt;</td>
+                    <td>{{ $t("tran58_res_data_result_docs") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">totalDocs</td>
-                    <td class="bRight">number</td>
-                    <td>Total number of documents in collection that match a query.</td>
+                    <td class="bRight">docs[].no</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_no") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">limit</td>
-                    <td class="bRight">number</td>
-                    <td>Limit that was used.</td>
+                    <td class="bRight">docs[].playerApiId</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_playerApiId") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">totalPages</td>
-                    <td class="bRight">number</td>
-                    <td>Total number of pages.</td>
+                    <td class="bRight">docs[].playerUsername</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_playerUsername") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">page</td>
-                    <td class="bRight">number</td>
-                    <td>Current page number.</td>
+                    <td class="bRight">docs[].datetime</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_datetime") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">hasprevPage</td>
-                    <td class="bRight">boolean</td>
-                    <td>Has previous page (true/false)</td>
+                    <td class="bRight">docs[].updatedAt</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_updatedAt") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">hasnextPage</td>
-                    <td class="bRight">boolean</td>
-                    <td>Has next page (true/false)</td>
+                    <td class="bRight">docs[].ticketId</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_ticketId") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">prevPage</td>
-                    <td class="bRight">number / null</td>
-                    <td>Previous page number</td>
+                    <td class="bRight">docs[].type</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_type") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">nextPage</td>
-                    <td class="bRight">number / null</td>
-                    <td>Next page number</td>
+                    <td class="bRight">docs[].round</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_round") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">no</td>
-                    <td class="bRight">number</td>
-                    <td>Order number.</td>
+                    <td class="bRight">docs[].goverment</td>
+                    <td class="bRight">Boolean</td>
+                    <td>{{ $t("tran58_res_docs_goverment") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">playerApiId</td>
-                    <td class="bRight">string</td>
-                    <td>Player Id from partner system.</td>
+                    <td class="bRight">docs[].totalBetAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_totalBetAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">playerUsername</td>
-                    <td class="bRight">string</td>
-                    <td>Player username from partner system.</td>
+                    <td class="bRight">docs[].discount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_discount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">datetime</td>
-                    <td class="bRight">string</td>
-                    <td>The date the bet was placed (YYYY-MM-DD HH:mm:ss)</td>
+                    <td class="bRight">docs[].totalPayOutAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_totalPayOutAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">ticketId</td>
-                    <td class="bRight">number</td>
-                    <td>User bet group record from one submit.</td>
+                    <td class="bRight">docs[].totalBalanceAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_docs_totalBalanceAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">type</td>
-                    <td class="bRight">string</td>
-                    <td>Type of lotto.</td>
+                    <td class="bRight">docs[].status</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_docs_status") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">round</td>
-                    <td class="bRight">number</td>
-                    <td>Round of draw agent (default = 1)</td>
+                    <td class="bRight">docs[].drawResult</td>
+                    <td class="bRight">Object/Null</td>
+                    <td>{{ $t("tran58_res_docs_drawResult") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">goverment</td>
-                    <td class="bRight">boolean</td>
-                    <td>true = government lotto, false = normal lotto</td>
+                    <td class="bRight">docs[].txtList</td>
+                    <td class="bRight">Array&lt;Object&gt;</td>
+                    <td>{{ $t("tran58_res_docs_txtList") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">totalBetAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Total bet amount.</td>
+                    <td class="bRight">txtList[].betKey</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betKey") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">discount</td>
-                    <td class="bRight">number</td>
-                    <td>Discount amount.</td>
+                    <td class="bRight">txtList[].betId</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betId") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">totalPayOutAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Payout amount (0 when lose)</td>
+                    <td class="bRight">txtList[].betType</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betType") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">totalBalanceAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Net result of ticket.</td>
+                    <td class="bRight">txtList[].betNumber</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betNumber") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">status</td>
-                    <td class="bRight">string</td>
-                    <td>False = lose, True = win, Pending = waiting, Cancel = cancelled</td>
+                    <td class="bRight">txtList[].betStatus</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betStatus") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">drawResult</td>
-                    <td class="bRight">object / null</td>
-                    <td>Lottery result object (top/bottom/range numbers)</td>
+                    <td class="bRight">txtList[].betAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_betAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betKey</td>
-                    <td class="bRight">string</td>
-                    <td>Base64(ticketId-betId)</td>
+                    <td class="bRight">txtList[].betTotal</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_betTotal") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betId</td>
-                    <td class="bRight">string</td>
-                    <td>Bet position id.</td>
+                    <td class="bRight">txtList[].betDiscount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_betDiscount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betType</td>
-                    <td class="bRight">string</td>
-                    <td>Bet type (top6, top5, top4, top3, top2, top1, row*, bottom*)</td>
+                    <td class="bRight">txtList[].payOutRate</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_payOutRate") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betNumber</td>
-                    <td class="bRight">string</td>
-                    <td>User selected number.</td>
+                    <td class="bRight">txtList[].payOutAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_payOutAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betStatus</td>
-                    <td class="bRight">string</td>
-                    <td>Pending / False / True status of bet</td>
+                    <td class="bRight">txtList[].rateLevel</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_rateLevel") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Bet amount after discount.</td>
+                    <td class="bRight">txtList[].rateLevelAmount</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_rateLevelAmount") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betTotal</td>
-                    <td class="bRight">number</td>
-                    <td>Total bet amount.</td>
+                    <td class="bRight">txtList[].apiPt</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_apiPt") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betDiscount</td>
-                    <td class="bRight">number</td>
-                    <td>Discount amount.</td>
+                    <td class="bRight">txtList[].agentPt</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_txtList_agentPt") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">payOutRate</td>
-                    <td class="bRight">number</td>
-                    <td>Payout rate when win.</td>
+                    <td class="bRight">txtList[].betResultKey</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_txtList_betResultKey") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">payOutAmount</td>
-                    <td class="bRight">number</td>
-                    <td>Payout result amount.</td>
+                    <td class="bRight">data.result.totalDocs</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_data_result_totalDocs") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">rateLevel</td>
-                    <td class="bRight">number</td>
-                    <td>0 = normal, 1-4 = discount level</td>
+                    <td class="bRight">data.result.limit</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_data_result_limit") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">rateLevelAmount</td>
-                    <td class="bRight">float</td>
-                    <td>Amount based on rate level.</td>
+                    <td class="bRight">data.result.totalPages</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_data_result_totalPages") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">apiPt</td>
-                    <td class="bRight">number</td>
-                    <td>API commission %</td>
+                    <td class="bRight">data.result.page</td>
+                    <td class="bRight">Number</td>
+                    <td>{{ $t("tran58_res_data_result_page") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">agentPt</td>
-                    <td class="bRight">number</td>
-                    <td>Agent commission %</td>
+                    <td class="bRight">data.result.hasprevPage</td>
+                    <td class="bRight">Boolean</td>
+                    <td>{{ $t("tran58_res_data_result_hasprevPage") }}</td>
                   </tr>
 
                   <tr>
-                    <td class="bRight">betResultKey</td>
-                    <td class="bRight">string</td>
-                    <td>Result key mapping (top/bottom/range)</td>
+                    <td class="bRight">data.result.hasnextPage</td>
+                    <td class="bRight">Boolean</td>
+                    <td>{{ $t("tran58_res_data_result_hasnextPage") }}</td>
                   </tr>
 
+                  <tr>
+                    <td class="bRight">data.result.prevPage</td>
+                    <td class="bRight">Number/Null</td>
+                    <td>{{ $t("tran58_res_data_result_prevPage") }}</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">data.result.nextPage</td>
+                    <td class="bRight">Number/Null</td>
+                    <td>{{ $t("tran58_res_data_result_nextPage") }}</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">msg</td>
+                    <td class="bRight">Object</td>
+                    <td>{{ $t("tran58_res_msg") }}</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">msg.en</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_msg_en") }}</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bRight">msg.th</td>
+                    <td class="bRight">String</td>
+                    <td>{{ $t("tran58_res_msg_th") }}</td>
+                  </tr>
 
                 </tbody>
               </table>
@@ -441,7 +463,7 @@
           </div>
           <div class="form-group col-12 ex">
             <div>
-              <b style="color: #19a17a !important">Example Service Response Code</b>
+              <b style="color: #19a17a !important">Response Code</b>
             </div>
           </div>
 
@@ -460,52 +482,60 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="bRight">200</td>
-                    <td>success</td>
+                    <td class="bRight">0</td>
+                    <td>{{ $t("tran58_err_0") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">41001</td>
-                    <td>Error Request body is not an object.</td>
+                    <td>{{ $t("tran58_err_41001") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">50301</td>
+                    <td>{{ $t("tran58_err_50301") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71001</td>
-                    <td>missing field 'agentUsername'.</td>
+                    <td>{{ $t("tran58_err_71001") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71002</td>
-                    <td>missing field 'agentApiKey'.</td>
-                  </tr>
-                  <tr>
-                    <td class="bRight">71004</td>
-                    <td>Invalid agentUsername or apiKey.</td>
+                    <td>{{ $t("tran58_err_71002") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71010</td>
-                    <td>invalid ApiKey or UserAgent.</td>
+                    <td>{{ $t("tran58_err_71010") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71014</td>
-                    <td>invalid userMember.</td>
+                    <td>{{ $t("tran58_err_71014") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71022</td>
-                    <td>invalid input format 'startDate' field.</td>
+                    <td>{{ $t("tran58_err_71022") }}</td>
                   </tr>
                   <tr>
                     <td class="bRight">71023</td>
-                    <td>invalid input format 'endDate' field.</td>
+                    <td>{{ $t("tran58_err_71023") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">71026</td>
-                    <td>missing field 'startDate'.</td>
+                    <td class="bRight">71401</td>
+                    <td>{{ $t("tran58_err_71401") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">71027</td>
-                    <td>missing field 'endDate'.</td>
+                    <td class="bRight">71402</td>
+                    <td>{{ $t("tran58_err_71402") }}</td>
                   </tr>
                   <tr>
-                    <td class="bRight">20017</td>
-                    <td>Invalid currency.</td>
+                    <td class="bRight">71403</td>
+                    <td>{{ $t("tran58_err_71403") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">72004</td>
+                    <td>{{ $t("tran58_err_72004") }}</td>
+                  </tr>
+                  <tr>
+                    <td class="bRight">75401</td>
+                    <td>{{ $t("tran58_err_75401") }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -556,7 +586,7 @@
       </div>
       <div class="box-all-content">
         <div style="position: sticky; top: 0px">
-          <Boxtran58 />
+          <Boxtran59 />
         </div>
       </div>
     </div>

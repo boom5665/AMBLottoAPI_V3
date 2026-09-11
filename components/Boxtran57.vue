@@ -22,7 +22,7 @@
         </div>
         <div class="col-12">
           <label class="txtHead">Url : </label>
-          <label> https://test-api.askmelotto.vip/api/v2/fe/get_balance </label>
+          <label> &lt;Url&gt;/api/v2/fe/get_balance </label>
         </div>
         <div class="col-12">
           <label class="txtHead"> headers : </label>
@@ -145,12 +145,12 @@
                                     <code id="47B" style="border-radius: 0.375rem;" class="hljs json">{
     <span class="hljs-attr">"code"</span>: <span class="hljs-number">200,</span>
     <span class="hljs-attr">"data"</span>: {
-        <span class="hljs-attr">"credit"</span>: <span class="hljs-number">99792735,</span>
+        <span class="hljs-attr">"credit"</span>: <span class="hljs-number">997284.6</span>
     },
     <span class="hljs-attr">"msg"</span>: {
-       <span class="hljs-attr">"en"</span>:<span class="hljs-string">"success"</span>
-        <span class="hljs-attr">"th"</span>:<span class="hljs-string">"สำเร็จ"</span>
-  }
+        <span class="hljs-attr">"en"</span>: <span class="hljs-attr">"Success"</span>,
+        <span class="hljs-attr">"th"</span>: <span class="hljs-attr">"สำเร็จ"</span>
+    }
 }</code></pre>
         </div>
 
@@ -177,7 +177,7 @@ export default {
       isLoading: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       pop: false, // กำหนดให้แสดง "Loading..." ในเริ่มต้น
       jsonData: "", // ข้อมูล JSON ที่จะส่งไปยังเซิร์ฟเวอร์
-      URLdata: "https://test-api.askmelotto.vip/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
+      URLdata: "<Url>/api/v2/fe/get_balance", // กำหนดค่าเริ่มต้นของ agentUsername
       code: "",
       addBalance: "",
       afterAgentBalance: "",
@@ -221,7 +221,7 @@ export default {
       // รีเซ็ตค่าตัวแปรต่างๆ ใน component
       // this.jsonData = '';
 
-      this.URLdata = "https://test-api.askmelotto.vip/api/v2/fe/get_balance";
+      this.URLdata = "<Url>/api/v2/fe/get_balance";
       this.isLoading = false;
       this.pop = false;
       this.response = null;
